@@ -49,6 +49,8 @@ func (s *server) login(w http.ResponseWriter, r *http.Request) {
 	switch r.URL.Path {
 	case "/login/LoginViaSwitch":
 		s.loginViaSwitch(w, r)
+	case "/login/TokenPurpose":
+		s.tokenPurpose(w, r)
 	default:
 		body, _ := io.ReadAll(io.LimitReader(r.Body, 1<<16))
 		log.Printf("[klei] !! login %s %s not implemented, body=%s", r.Method, r.URL.Path, summarise(body))
@@ -104,6 +106,8 @@ func (s *server) loginViaSwitch(w http.ResponseWriter, r *http.Request) {
 	if name == "" {
 		name = ku
 	}
+	s.names.set(ku, name)
+
 	log.Printf("[klei] LoginViaSwitch: game=%q pid=%d %s -> %s (%s), account token %s",
 		in.Game, p.PID, p.BaasUserID, ku, name, present(in.AccountToken))
 
@@ -118,6 +122,45 @@ func (s *server) loginViaSwitch(w http.ResponseWriter, r *http.Request) {
 		"AuthProviderEnv": "prod",
 	})
 }
+
+// tokenPurpose answers "whose token is this, and for which game". A DST host calls it while
+// starting its server — twice, once per shard — and refuses to start when it does not get an
+// answer: "Server failed to start", which is how this gap reached the player.
+//
+// The reply carries the same identity the login minted, plus the game the token is good for.
+// The client compares that against its own "DontStarveTogether" and logs
+// "[ACCOUNT_ACTION_TOKEN_PURPOSE] Game mismatch failure, expected %s, received %s" when they
+// differ, so the name is not decoration (nso 0x21e2d4–0x21e3dc). It then logs
+// "Received (%s) from TokenPurpose" with the UserID and goes on to start the server.
+func (s *server) tokenPurpose(w http.ResponseWriter, r *http.Request) {
+	body, _ := io.ReadAll(io.LimitReader(r.Body, 1<<16))
+	var in struct {
+		Token string `json:"Token"`
+	}
+	_ = json.Unmarshal(body, &in)
+
+	ku := s.userForToken(in.Token)
+	if ku == "" {
+		log.Printf("[klei] TokenPurpose: token not one of ours: %s", summarise(body))
+		loginError(w, "E_WRONG_TOKEN_PURPOSE")
+		return
+	}
+
+	name := s.names.get(ku)
+	log.Printf("[klei] TokenPurpose: %s (%s)", ku, name)
+
+	writeJSON(w, 200, map[string]any{
+		"Error":           false,
+		"Game":            dstGame,
+		"UserID":          ku,
+		"Username":        name,
+		"AnalyticsJWT":    "",
+		"AuthProviderEnv": "prod",
+	})
+}
+
+// dstGame is the only game served here. The client checks it by name.
+const dstGame = "DontStarveTogether"
 
 // loginError answers the shape the client's failure branch reads: "Error" as a string (which is
 // exactly what makes it *not* a boolean, and so a failure) plus the code it logs and shows.

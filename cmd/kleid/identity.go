@@ -14,6 +14,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"sync"
 	"time"
 )
 
@@ -88,4 +89,30 @@ func (c identityClient) byIDToken(tok string) (*player, error) {
 		return nil, fmt.Errorf("nx-baas identity: incomplete reply")
 	}
 	return &p, nil
+}
+
+// nameStore remembers the display name a login minted, so TokenPurpose answers with the same one
+// rather than a second nickname lookup. Losing it across a restart costs nothing: the player logs
+// in again, and until then their Klei id stands in for their name.
+type nameStore struct {
+	mu sync.Mutex
+	by map[string]string
+}
+
+func (n *nameStore) set(id, name string) {
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	if n.by == nil {
+		n.by = map[string]string{}
+	}
+	n.by[id] = name
+}
+
+func (n *nameStore) get(id string) string {
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	if name, ok := n.by[id]; ok {
+		return name
+	}
+	return id
 }

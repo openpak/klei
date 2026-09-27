@@ -83,16 +83,42 @@ Error codes the binary carries: `E_INVALID_INPUT`, `E_UNAUTHORIZED`, `E_DB_FAIL`
 `E_INVALID_CODE`, `E_PRICE_MISMATCH`, `E_CURRENCY_MISMATCH`, `E_BALANCE_MISMATCH`,
 `E_NINTENDO_ERROR`.
 
+### TokenPurpose — what a host asks before it starts
+
+```
+POST /login/TokenPurpose
+{"Token":"<the session token from LoginViaSwitch>"}
+```
+
+Measured 2026-09-27: a Switch host sends this **twice** while starting its server (once per
+shard) and, without an answer, puts up "Server failed to start" and disconnects the player.
+
+The reply is the same envelope as the login — `Error` must be the boolean `false` — carrying the
+identity the token stands for:
+
+```jsonc
+{"Error": false,
+ "Game": "DontStarveTogether",   // compared by name against the client's own
+ "UserID": "KU_xxxxxxxx",
+ "Username": "<display name>",
+ "AnalyticsJWT": "",
+ "AuthProviderEnv": "prod"}
+```
+
+The client reads `Game` first and, on a mismatch, logs "[ACCOUNT_ACTION_TOKEN_PURPOSE] Game
+mismatch failure, expected %s, received %s" and stops; otherwise it logs "Received (%s) from
+TokenPurpose" with the UserID and starts the server *(nso 0x21e2c8–0x21e3fc)*.
+
+A sibling action in the same parser handles `GenerateClusterToken`: it reads `Token` out of the
+reply, logs "cluster_token: %s" and writes `cluster_token.txt`, and says "[Error] No
+cluster_token received" when the field is missing *(nso 0x21df2c–0x21dfd0)*. That is the
+dedicated-server path and a Switch host does not take it.
+
 ### Other /login paths, not yet implemented
 
 `/login/Login`, `/login/CreateAccount`, `/login/ChangePassword`, `/login/RecoverPassword`,
-`/login/Logout`, `/login/LogoutAll`, `/login/GameSessionToken`, `/login/TokenPurpose`,
-`/login/RegisterGameKey`, `/login/ReportUser`, `/login/auto/?Game=DontStarveTogether`.
-
-`/login/TokenPurpose` is the one that matters next: it is how a host gets the token it
-broadcasts with (`GenerateClusterToken`, `ServerToken`/`Region`/`KU` at nso 0x21a49c), and until
-a real host run shows its request and reply, `kleid` logs the lobby token instead of enforcing
-it.
+`/login/Logout`, `/login/LogoutAll`, `/login/GameSessionToken`, `/login/RegisterGameKey`,
+`/login/ReportUser`, `/login/auto/?Game=DontStarveTogether`.
 
 ## 3. Lobby v2
 
@@ -146,7 +172,30 @@ steamclanid steamid steamroom tags tick worldgen
 unchanged, and the two builds agree with each other rather than with us. The only field the
 service adds is `__rowId` on the way out.
 
-## 4. What is still unknown
+## 4. The item server, seen but not served
+
+`items.kleientertainment.com` is skins, inventory and in-game currency. A Switch client asks for
+all of this the moment it reaches the main menu, and carries on when it gets a 404 — so it is
+not on the critical path, and it is not served. The requests measured on 2026-09-27, verbatim:
+
+```
+POST /iap/DST/GetPricingInfo                      {"PricingHash": 0, "ClientToken": "…"}
+POST /clientitems/DST/DailyGift                   {"ClientToken": "…"}
+POST /gameevents/DontStarveTogether/KeyValuesGetMulti
+     {"Token": "…", "Events": [{"Event": "COOKBOOK", "Revision": 0}, {"Event": "PLANTREGISTRY", …}]}
+POST /clientitems/DST/GetAllItems
+     {"CheckTwitchEntitlements": true, "ClientToken": "…", "InventoryStateToken": "", "EventHash": ""}
+```
+
+`ClientToken` is the session token from LoginViaSwitch, echoed back — so the tier is already
+authenticated by what login mints. The rest of the surface, from the binary:
+`clientitems/DST/` `Tick`, `Swap`, `ValidateItems`, `SetItemOpened`, `OpenMysteryBox`,
+`RedeemCode`, `ReportMission/`, `ReportUnknownItemType`, `VerifyGiftingReceipt`; `iap/DST/`
+`BarterGainItem`, `BarterLoseItem`, `BarterDuplicateItems`, `PurchaseWithCurrency`;
+`gameevents/DST/GetStatus`. GetAllItems' reply is read for `Error` and `Unchanged`
+*(nso 0x188324)*.
+
+## 5. What is still unknown
 
 - The reply to `/login/TokenPurpose`, and therefore which token a host broadcasts with.
 - Whether `Username` has to satisfy anything (length, uniqueness); DST shows it in the browser.

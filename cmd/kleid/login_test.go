@@ -97,3 +97,32 @@ func TestTokenWithDashInID(t *testing.T) {
 		t.Errorf("a forged token verified as %q", got)
 	}
 }
+
+// A host calls TokenPurpose while starting its server and will not start without an answer. The
+// game name is checked by the client, and "Error" is the same boolean switch as the login.
+func TestTokenPurpose(t *testing.T) {
+	s := newServer(stubIdentity(t, 200, `{"pid":1,"baas_user_id":"aaaaaaaaaaaa0001","nickname":"hansolo"}`), "secret")
+	login := post(t, s, "/login/LoginViaSwitch", `{"NSAToken":"eyJ.a.b"}`)
+	token, _ := login["Token"].(string)
+
+	out := post(t, s, "/login/TokenPurpose", `{"Token":"`+token+`"}`)
+	if err, ok := out["Error"].(bool); !ok || err {
+		t.Fatalf("Error must be the JSON boolean false, got %#v", out["Error"])
+	}
+	if out["Game"] != "DontStarveTogether" {
+		t.Errorf("Game = %#v; the client compares it by name and refuses a mismatch", out["Game"])
+	}
+	if out["UserID"] != login["UserID"] {
+		t.Errorf("UserID = %v, want the id the login minted (%v)", out["UserID"], login["UserID"])
+	}
+	// The name comes back from the login, not from a second identity lookup.
+	if out["Username"] != "hansolo" {
+		t.Errorf("Username = %#v, want the name the login gave", out["Username"])
+	}
+
+	// A token this service did not mint is not an identity.
+	bad := post(t, s, "/login/TokenPurpose", `{"Token":"KU_someoneelse.forged"}`)
+	if bad["ErrorCode"] != "E_WRONG_TOKEN_PURPOSE" {
+		t.Errorf("a forged token answered %#v", bad)
+	}
+}

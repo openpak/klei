@@ -57,6 +57,7 @@ func main() {
 type server struct {
 	ids     identityClient
 	secret  []byte
+	names   nameStore
 	lobbies lobbyStore
 }
 

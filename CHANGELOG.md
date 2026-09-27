@@ -1,5 +1,16 @@
 # Changelog — klei
 
+## v0.2.0 — 2026-09-27
+
+**A Switch host can start its server.** `/login/TokenPurpose` is what a host asks before it
+starts — twice, once per shard — and an unanswered one is "Server failed to start" followed by a
+disconnect, which is exactly how far the first hosting attempt got. It now answers with the
+identity the token stands for, including the game name the client checks by hand.
+
+Also recorded, not served: the item server's four opening requests, captured verbatim now that
+an unhandled request logs its body. The client survives their 404s, so skins and inventory stay
+unserved and the browser comes first.
+
 ## v0.1.1 — 2026-09-27
 
 An unhandled request now logs its **body**, not just its method and path. The first Switch run
