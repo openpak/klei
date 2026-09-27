@@ -21,6 +21,7 @@ package main
 import (
 	"encoding/json"
 	"flag"
+	"io"
 	"log"
 	"net/http"
 	"os"
@@ -75,8 +76,11 @@ func (s *server) route(w http.ResponseWriter, r *http.Request) {
 		s.cdn(w, r)
 	default:
 		// Every unhandled request is a finding: this stack was recovered from one title, and the
-		// next name or path a guest asks for is how the next one gets added.
-		log.Printf("[klei] !! unhandled %s %s%s", r.Method, host, r.URL.Path)
+		// next name or path a guest asks for is how the next one gets added. Log the body too --
+		// the request is the specification for the handler that has to answer it, and a guest
+		// rarely asks twice.
+		body, _ := io.ReadAll(io.LimitReader(r.Body, 1<<16))
+		log.Printf("[klei] !! unhandled %s %s%s body=%s", r.Method, host, r.URL.Path, summarise(body))
 		writeJSON(w, 404, map[string]any{"error": "not found"})
 	}
 }

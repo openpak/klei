@@ -1,5 +1,12 @@
 # Changelog — klei
 
+## v0.1.1 — 2026-09-27
+
+An unhandled request now logs its **body**, not just its method and path. The first Switch run
+past login went straight to `items.kleientertainment.com` (skins and inventory), and a line that
+says only "GET /clientitems/DST/ReportMission/" is not enough to write the handler from. The
+request is the specification, and a guest rarely asks twice.
+
 ## v0.1.0 — 2026-09-27
 
 **Don't Starve Together can log in.** The title's whole online stack is Klei's own HTTPS REST —
