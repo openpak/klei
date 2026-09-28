@@ -120,6 +120,13 @@ func TestTokenPurpose(t *testing.T) {
 		t.Errorf("Username = %#v, want the name the login gave", out["Username"])
 	}
 
+	// The other action on this path, GenerateClusterToken, reads Token and says
+	// "[Error] No cluster_token received" without it — which stopped the server starting even
+	// after TokenPurpose itself was answered.
+	if tok, _ := out["Token"].(string); s.userForToken(tok) != login["UserID"] {
+		t.Errorf("Token = %#v, want a cluster token for this player", out["Token"])
+	}
+
 	// A token this service did not mint is not an identity.
 	bad := post(t, s, "/login/TokenPurpose", `{"Token":"KU_someoneelse.forged"}`)
 	if bad["ErrorCode"] != "E_WRONG_TOKEN_PURPOSE" {

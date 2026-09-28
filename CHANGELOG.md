@@ -1,5 +1,13 @@
 # Changelog — klei
 
+## v0.2.1 — 2026-09-28
+
+**TokenPurpose also has to hand back a cluster token.** A host calls that one path twice and the
+two calls are *different actions* — the second is `GenerateClusterToken`, which reads `Token`
+and nothing else. Answering only the identity half left the host on "[Error] No cluster_token
+received" and still "Server failed to start", with nothing in the emulator log because the abort
+comes before the game touches the network. The reply now carries both halves.
+
 ## v0.2.0 — 2026-09-27
 
 **A Switch host can start its server.** `/login/TokenPurpose` is what a host asks before it

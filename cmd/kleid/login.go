@@ -149,8 +149,21 @@ func (s *server) tokenPurpose(w http.ResponseWriter, r *http.Request) {
 	name := s.names.get(ku)
 	log.Printf("[klei] TokenPurpose: %s (%s)", ku, name)
 
+	// Two different client actions POST to this one path, and which one is running is the
+	// client's own state — the request body is `{"Token":…}` either way. So the reply carries
+	// both sets of fields, and the action reads the half it wants:
+	//
+	//	TokenPurpose          Game, UserID, Username, AnalyticsJWT   (nso 0x21e2d4)
+	//	GenerateClusterToken  Token, and nothing else                (nso 0x21df2c)
+	//
+	// Answering only the first is why hosting still failed after TokenPurpose started working:
+	// the second call went down "[Error] No cluster_token received" and the server never
+	// started, with no syscall behind the failure because the game had not reached the network
+	// yet. The cluster token is the session token again — opaque to the client, and the lobby
+	// then recognises the broadcast as this player's.
 	writeJSON(w, 200, map[string]any{
 		"Error":           false,
+		"Token":           s.mintToken(ku),
 		"Game":            dstGame,
 		"UserID":          ku,
 		"Username":        name,

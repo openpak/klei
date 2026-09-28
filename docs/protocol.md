@@ -109,10 +109,16 @@ The client reads `Game` first and, on a mismatch, logs "[ACCOUNT_ACTION_TOKEN_PU
 mismatch failure, expected %s, received %s" and stops; otherwise it logs "Received (%s) from
 TokenPurpose" with the UserID and starts the server *(nso 0x21e2c8–0x21e3fc)*.
 
-A sibling action in the same parser handles `GenerateClusterToken`: it reads `Token` out of the
-reply, logs "cluster_token: %s" and writes `cluster_token.txt`, and says "[Error] No
-cluster_token received" when the field is missing *(nso 0x21df2c–0x21dfd0)*. That is the
-dedicated-server path and a Switch host does not take it.
+**A Switch host sends this twice, and the two calls are different actions.** Which one is
+running is the client's own state; the request body is `{"Token":…}` either way. The second is
+`GenerateClusterToken`, which reads **`Token`** out of the reply, logs "cluster_token: %s" and
+writes `cluster_token.txt`, and takes "[Error] No cluster_token received" when the field is
+missing *(nso 0x21df2c–0x21dfd0)*. Measured 2026-09-28: answering only the identity half still
+ends in "Server failed to start", and because the abort happens before the game touches the
+network there is no syscall behind it — the emulator log simply stops.
+
+So the reply carries both halves. `Token` is opaque to the client; `kleid` reuses the session
+token, which also lets the lobby recognise the broadcast as that player's.
 
 ### Other /login paths, not yet implemented
 
