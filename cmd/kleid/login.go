@@ -53,8 +53,6 @@ func (s *server) login(w http.ResponseWriter, r *http.Request) {
 		s.tokenPurpose(w, r)
 	case "/login/GameSessionToken":
 		s.gameSessionToken(w, r)
-	case "/login/ValidateToken":
-		s.validateToken(w, r)
 	default:
 		body, _ := io.ReadAll(io.LimitReader(r.Body, 1<<16))
 		log.Printf("[klei] !! login %s %s not implemented, body=%s", r.Method, r.URL.Path, summarise(body))
@@ -206,7 +204,7 @@ func (s *server) tokenPurpose(w http.ResponseWriter, r *http.Request) {
 // The client reads a token string out of the reply and refuses an empty one
 // ("[Connect] Received an empty GameSessionToken.", nso 0x1b8d40) or one it considers stale
 // ("[Connect] Received a GameSessionToken that is no longer valid.", nso 0x1b8d0c). It then
-// hands that token to the server, which calls ValidateToken below.
+// hands that token to the server, which posts it back to TokenPurpose to be checked.
 //
 // ponytail: the reply carries the token under both "Token" and "GameSessionToken". Which name
 // the client reads is not recovered yet — the parser takes the string from its caller — and one
@@ -255,43 +253,8 @@ func (s *server) gameSessionToken(w http.ResponseWriter, r *http.Request) {
 	})
 }
 
-// validateToken is the other half, called by the server the player is joining.
-//
-// It answers with the server the token was issued for. The client-side parser checks "Error" is
-// a boolean exactly as login does (nso 0x21fac4, `cmp w8,#6`), then reads "Server" as a string
-// and compares it to its own id; a mismatch is "Failed to set game session token, session host
-// mismatch" (nso 0x171ae4) and the join is refused. So a token minted for one host must never
-// validate for another — which is why the host is inside the token rather than beside it.
-func (s *server) validateToken(w http.ResponseWriter, r *http.Request) {
-	body, _ := io.ReadAll(io.LimitReader(r.Body, 1<<16))
-	var in struct {
-		Token            string `json:"Token"`
-		GameSessionToken string `json:"GameSessionToken"`
-	}
-	_ = json.Unmarshal(body, &in)
-
-	tok := in.GameSessionToken
-	if tok == "" {
-		tok = in.Token
-	}
-	ku, host := s.gameSessionParts(tok)
-	if host == "" {
-		log.Printf("[klei] ValidateToken: not a game session token of ours: %s", summarise(body))
-		loginError(w, "E_INVALID_CLIENT_TOKEN")
-		return
-	}
-
-	log.Printf("[klei] ValidateToken: %s is cleared for server %s", ku, host)
-	writeJSON(w, 200, map[string]any{
-		"Error":    false,
-		"Server":   host,
-		"UserID":   ku,
-		"Username": s.names.get(ku),
-	})
-}
-
 // mintGameSession binds the joining player to the host they were cleared for. Same trick as
-// mintToken: the pair is inside the HMAC, so ValidateToken can name the host again without a
+// mintToken: the pair is inside the HMAC, so the validate path can name the host again without a
 // session table, and a token cannot be replayed against a different one.
 func (s *server) mintGameSession(ku, host string) string {
 	mac := hmac.New(sha256.New, s.secret)

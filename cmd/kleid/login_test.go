@@ -153,9 +153,11 @@ func TestGameSessionTokenBindsToItsHost(t *testing.T) {
 		t.Errorf("GameSessionToken %v != Token %v", out["GameSessionToken"], out["Token"])
 	}
 
-	got := post(t, s, "/login/ValidateToken", `{"Token":"`+tok+`"}`)
+	// The server validates by posting the token back to TokenPurpose -- there is no
+	// /login/ValidateToken. It reads "Server" out of the reply and compares it to its own id.
+	got := post(t, s, "/login/TokenPurpose", `{"Token":"`+tok+`"}`)
 	if got["Error"] != false || got["Server"] != "KU_hostaaaa" {
-		t.Fatalf("ValidateToken answered %#v, want Error false and Server KU_hostaaaa", got)
+		t.Fatalf("TokenPurpose/validate answered %#v, want Error false and Server KU_hostaaaa", got)
 	}
 
 	// Same player, different host: the HMAC covers the pair, so this one is not ours.
