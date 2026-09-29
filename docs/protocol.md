@@ -120,39 +120,53 @@ network there is no syscall behind it — the emulator log simply stops.
 So the reply carries both halves. `Token` is opaque to the client; `kleid` reuses the session
 token, which also lets the lobby recognise the broadcast as that player's.
 
-### GameSessionToken and ValidateToken — joining a server, including your own
+### Joining a server — including the host joining its own world
+
+This is the last stretch, and all of it was measured on 2026-09-29 by watching a host go from
+"Launching server" to standing in the world.
 
 ```
-POST /login/GameSessionToken   {"Token":"<session token>","Server":"KU_xxxxxxxx"}
-POST /login/ValidateToken      {"Token":"<game session token>"}
+POST /login/GameSessionToken  {"Token":"<session token>","Server":"KU_xxxxxxxx"}
+POST /login/TokenPurpose      {"Token":"<game session token>"}      <- yes, TokenPurpose again
 ```
 
-Measured 2026-09-29: this is the **last** step before a host reaches its own world. The instant
-the client goes to join the server it just started, it asks for a game session token; a 404 here
-is "Could not connect, unable to reach the Klei server" on screen and the server shuts back down.
+**There is no `/login/ValidateToken`.** The binary carries a bare `ValidateToken` string and an
+earlier draft of this file guessed a path from it; the server actually validates by posting the
+player's game session token back to `/login/TokenPurpose`, which makes **three** distinct client
+actions on that one path.
 
-The client reads a token string out of the reply and rejects an empty one ("[Connect] Received
-an empty GameSessionToken.", *nso 0x1b8d40*) or a stale one ("[Connect] Received a
-GameSessionToken that is no longer valid.", *nso 0x1b8d0c*). It hands that token to the server,
-which posts it to `ValidateToken` and reads the owner back:
+The sequence, and what each failure looks like on screen:
+
+| Step | Who | Missing → what the player sees |
+| --- | --- | --- |
+| `GameSessionToken` | joining client | 404 → "Could not connect, unable to reach the Klei server", and the server shuts back down |
+| reply's `GUID` | joining client | "[Connect] Received a GameSessionToken that is no longer valid" *(nso 0x1b8cb4 → 0x1b8d0c)*, stuck on Connecting |
+| `TokenPurpose` with that token | the **server** | E_WRONG_TOKEN_PURPOSE → "Authentication failed. Please try again" |
 
 ```jsonc
 // GameSessionToken
 {"Error": false, "Token": "<opaque>", "GameSessionToken": "<same>",
+ "GUID": "<the server's RakNet guid>", "Server": "KU_xxxxxxxx",
  "UserID": "KU_xxxxxxxx", "Username": "<display name>"}
 
-// ValidateToken
-{"Error": false, "Server": "KU_xxxxxxxx", "UserID": "KU_xxxxxxxx", "Username": "<name>"}
+// TokenPurpose, given a game session token
+{"Error": false, "Server": "KU_xxxxxxxx", "Game": "DontStarveTogether",
+ "UserID": "<the joining player>", "Username": "<name>"}
 ```
 
-`Error` is the JSON **boolean** again — the validate parser checks the member's type with the
-same `cmp w8,#6` as login *(nso 0x21fac4)*. It then reads `Server` as a string and compares it
-to the server's own id; a mismatch logs "Failed to set game session token, session host
-mismatch" *(nso 0x171ae4)* and the join is refused. So a token minted for one host must not
-validate for another — `kleid` puts the pair inside the HMAC rather than keeping a session table.
+Two load-bearing details:
 
-Which key the client reads the token from is **not** recovered — the parser receives the string
-from its caller — so `kleid` sends it under both `Token` and `GameSessionToken`.
+- **`GUID` is the server's RakNet guid, not the player's.** In `WAIT_TOKEN` the client compares a
+  string from this reply against the server it is dialling *(nso 0x1b8c9c, the compare at
+  0x1f5200, which also requires the pending connection to be in state 5)*. The request names the
+  host only by `UserID`, so `kleid` takes the guid from the listing that host broadcast to the
+  lobby — it is the row id, because a host brings its own guid.
+- **`Server` must be the host the token was minted for.** The server compares it to its own id
+  and a mismatch is "Failed to set game session token, session host mismatch" *(nso 0x171ae4)*.
+  `kleid` puts the pair inside the HMAC so a token cannot be replayed against another host.
+
+On success the server logs `New incoming connection` / `Client connected from [LAN]` and the
+client reaches `[PendingConnection] -> CONNECTION_COMPLETE` and `kLoadingStatus_Done`.
 
 ### Other /login paths, not yet implemented
 
