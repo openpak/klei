@@ -178,6 +178,38 @@ steamclanid steamid steamroom tags tick worldgen
 unchanged, and the two builds agree with each other rather than with us. The only field the
 service adds is `__rowId` on the way out.
 
+**What a Switch host actually broadcasts**, captured 2026-09-29 16:34 local from a live Eden host
+(the whole body is in the workspace at `scratch/dst/switch-host-listing.json`):
+
+```jsonc
+{"allownewplayers": true, "clanonly": false, "clienthosted": true, "clientmodsoff": false,
+ "connected": 0, "data": "return { day=43, dayselapsedinseason=7, daysleftinseason=13 }",
+ "dedicated": true, "desc": "", "fo": false, "guid": "13285033608306768903",
+ "host": "KU_ZUFa4usM", "intent": "survival", "lanonly": false, "masterversion": 1,
+ "maxconnections": 4, "mode": "survival", "mods": false, "mods_info": [],
+ "name": "AndroidTest's World", "nat": 5, "password": false,
+ "platform": 32,                              // an INTEGER, not the string "Switch"
+ "players": "return {  }", "port": 10999,     // the Master shard's game port
+ "pvp": false, "season": "spring", "secondaries": {}, "serverpaused": false,
+ "session": "1155BB968E8485EB",               // the NEX session a joiner attaches to
+ "steamid": "N:C4arryabHW4BAAAAAAAAAAE",      // the console's Nintendo netid, "N:"-prefixed
+ "steamroom": "680893", "tags": "WS:AA,english,survival", "tick": 15, "v": 740510500,
+ "worldgen": "return {str=\"<base64 zlib>\"}"}
+```
+
+Three things this settles:
+
+- **There is no `__addr`.** The host sends none, so on real Klei the lobby fills it from the
+  source IP of the write. OpenPak cannot: Traefik's TCP router splices the stream and `kleid`
+  only ever sees an internal 10.89.x.
+- **A Switch joiner probably never needs one.** `steamid` is the console's netid and `session` is
+  a NEX session id — the pair a Switch client would use to punch through to `port` rather than
+  dialling an address. That puts the NEX half (game server **251BB200**) on the join path.
+- **`platform` is the integer 32**, so `kleid`'s `in["platform"].(string)` fails and it stores
+  `""`. That disables the platform filter, which is the only reason the row survives a read.
+  Do not "fix" the assert without mapping `32 ↔ Switch`, or every Switch row starts being
+  filtered out of `<region>-Switch.json.gz`.
+
 ## 4. The item server, seen but not served
 
 `items.kleientertainment.com` is skins, inventory and in-game currency. A Switch client asks for
