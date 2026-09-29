@@ -203,7 +203,14 @@ authenticated by what login mints. The rest of the surface, from the binary:
 
 ## 5. What is still unknown
 
-- The reply to `/login/TokenPurpose`, and therefore which token a host broadcasts with.
+- **The join path.** A Switch host reached the lobby and kept its listing alive for five hours on
+  2026-09-28 (`/lobby/write` then a keepAlive every three minutes), so hosting works. No client
+  has ever browsed: there is not one `/lobby/read` or `.json.gz` fetch in the service's whole
+  history. Until one happens we do not know whether the listing a Switch host writes carries the
+  address a second console needs. `__addr` is the field for it, and on real Klei the lobby fills
+  it from the source IP of the write — which OpenPak cannot do, because Traefik's TCP router
+  splices the stream and `kleid` only ever sees an internal 10.89.x. `/lobby/write` now logs the
+  whole listing so the next host start answers this.
 - Whether `Username` has to satisfy anything (length, uniqueness); DST shows it in the browser.
 - The skin/inventory tier (`items.kleientertainment.com`), which the main menu will reach for
   once login succeeds. Not served: a skinless account is a working account.

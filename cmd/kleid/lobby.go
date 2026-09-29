@@ -145,13 +145,21 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 		}
 		data := map[string]any{}
 		for k, v := range in {
-			if !strings.HasPrefix(k, "__") && k != "masterversion" {
+			// __addr is the one __ key that belongs to the listing rather than to the envelope:
+			// it is the address a browsing player dials. Keep whatever the host sent.
+			if k == "__addr" || (!strings.HasPrefix(k, "__") && k != "masterversion") {
 				data[k] = v
 			}
 		}
 		platform, _ := in["platform"].(string)
 		s.lobbies.put(rowID, platform, data)
-		log.Printf("[klei] lobby %s: game=%q row=%s fields=%d", r.URL.Path, gameID, rowID, len(data))
+		log.Printf("[klei] lobby %s: game=%q row=%s fields=%d addr=%v port=%v nat=%v",
+			r.URL.Path, gameID, rowID, len(data), in["__addr"], in["port"], in["nat"])
+		if r.URL.Path == "/lobby/write" {
+			// A host writes its full listing once per start; that body is the only record of what
+			// a Switch host actually broadcasts, and the join path is read out of it.
+			log.Printf("[klei] lobby write listing: %s", body)
+		}
 		writeJSON(w, 200, map[string]any{"result": "OK", "region": region})
 
 	case "/lobby/delete":

@@ -1,5 +1,14 @@
 # Changelog — klei
 
+## v0.2.2 — 2026-09-29
+
+**Keep `__addr`, and log what a host actually broadcasts.** The write handler stripped every
+`__`-prefixed key as envelope, `__addr` with them — and `__addr` is the address a browsing
+player dials, so a listing came back out of the browser with nowhere to connect. It is now
+carried through. `/lobby/write` also logs the full listing once per host start (keepAlives stay
+quiet): hosting has worked since 2026-09-28 but nothing has ever browsed, and that body is what
+says whether a joining console gets an address.
+
 ## v0.2.1 — 2026-09-28
 
 **TokenPurpose also has to hand back a cluster token.** A host calls that one path twice and the

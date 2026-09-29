@@ -35,7 +35,7 @@ func rowsOf(t *testing.T, out map[string]any) []any {
 func TestLobbyWriteThenRead(t *testing.T) {
 	s := newServer(identityClient{}, "secret")
 	out := lobbyPost(t, s, "/lobby/write", `{"__token":"t","__gameId":"DontStarveTogether","__rowId":"row1",
-		"masterversion":"1.29.0","name":"hansolo's world","platform":"Switch","connected":1,"season":"autumn"}`)
+		"__addr":"1.2.3.4","masterversion":"1.29.0","name":"hansolo's world","platform":"Switch","connected":1,"season":"autumn"}`)
 	if out["result"] != "OK" {
 		t.Fatalf("write answered %#v, want result OK", out)
 	}
@@ -50,6 +50,9 @@ func TestLobbyWriteThenRead(t *testing.T) {
 	row := rows[0].(map[string]any)
 	if row["name"] != "hansolo's world" || row["season"] != "autumn" {
 		t.Errorf("the listing came back changed: %#v", row)
+	}
+	if row["__addr"] != "1.2.3.4" {
+		t.Errorf("__addr = %v, want 1.2.3.4 — the join address must survive the write", row["__addr"])
 	}
 	if row["__rowId"] != "row1" {
 		t.Errorf("__rowId = %v, want row1", row["__rowId"])
