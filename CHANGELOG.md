@@ -1,5 +1,14 @@
 # Changelog — klei
 
+## v0.3.2 — 2026-09-29
+
+**TokenPurpose is where a game session token is validated, and that makes three actions on one
+path.** The server a player joins posts the player's game session token back to
+`/login/TokenPurpose` -- there is no `/login/ValidateToken`, which was a guess. Unrecognised, it
+answered E_WRONG_TOKEN_PURPOSE and the player got "Authentication failed". It now recognises a
+game session token and replies with the `Server` that token was minted for, which is what the
+server compares against its own id.
+
 ## v0.3.1 — 2026-09-29
 
 **The GameSessionToken reply has to name the server's guid.** With v0.3.0 the client got its

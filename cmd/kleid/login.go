@@ -143,6 +143,26 @@ func (s *server) tokenPurpose(w http.ResponseWriter, r *http.Request) {
 	}
 	_ = json.Unmarshal(body, &in)
 
+	// A THIRD action posts here, and it is the one that finishes a join: the server a player is
+	// connecting to sends the player's *game session* token back to be checked. Measured
+	// 2026-09-29 -- there is no /login/ValidateToken, it is this path again. The reply is read
+	// by ValidateGameSessionTokenResponse, which checks Error is a boolean and then compares
+	// "Server" to the server's own id; a mismatch is "Failed to set game session token, session
+	// host mismatch" (nso 0x171ae4) and the player sees "Authentication failed".
+	if joiner, host := s.gameSessionParts(in.Token); host != "" {
+		log.Printf("[klei] TokenPurpose/validate: %s is cleared for server %s", joiner, host)
+		writeJSON(w, 200, map[string]any{
+			"Error":           false,
+			"Server":          host,
+			"Game":            dstGame,
+			"UserID":          joiner,
+			"Username":        s.names.get(joiner),
+			"AnalyticsJWT":    "",
+			"AuthProviderEnv": "prod",
+		})
+		return
+	}
+
 	ku := s.userForToken(in.Token)
 	if ku == "" {
 		log.Printf("[klei] TokenPurpose: token not one of ours: %s", summarise(body))
