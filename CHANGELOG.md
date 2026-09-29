@@ -1,5 +1,13 @@
 # Changelog — klei
 
+## v0.3.1 — 2026-09-29
+
+**The GameSessionToken reply has to name the server's guid.** With v0.3.0 the client got its
+token and then threw it away: "[Connect] Received a GameSessionToken that is no longer valid."
+In WAIT_TOKEN it compares a string out of the reply against the server it is dialling, and a
+missing one fails that compare. The string is the server's RakNet guid; the request names the
+host only by UserID, so the guid is looked up from the listing that host broadcast to the lobby.
+
 ## v0.3.0 — 2026-09-29
 
 **Serve GameSessionToken and ValidateToken — the last step before a host reaches its own world.**

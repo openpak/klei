@@ -212,12 +212,24 @@ func (s *server) gameSessionToken(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// The client does not just read the token: in WAIT_TOKEN it compares a string from this
+	// reply against the server it is dialling, and a mismatch is "Received a GameSessionToken
+	// that is no longer valid" (nso 0x1b8cb4 -> 0x1b8d0c) — which is what an answer without it
+	// looked like on 2026-09-29. That string is the server's RakNet guid, and the request names
+	// the host only by UserID, so it comes from the listing that host broadcast.
+	guid := s.lobbies.guidForHost(in.Server)
+	if guid == "" {
+		log.Printf("[klei] GameSessionToken: no live listing for server %s; answering without a guid", in.Server)
+	}
+
 	tok := s.mintGameSession(ku, in.Server)
-	log.Printf("[klei] GameSessionToken: %s cleared for server %s", ku, in.Server)
+	log.Printf("[klei] GameSessionToken: %s cleared for server %s guid=%s", ku, in.Server, guid)
 	writeJSON(w, 200, map[string]any{
 		"Error":            false,
 		"Token":            tok,
 		"GameSessionToken": tok,
+		"GUID":             guid,
+		"Server":           in.Server,
 		"UserID":           ku,
 		"Username":         s.names.get(ku),
 	})

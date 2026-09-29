@@ -82,6 +82,33 @@ func (s *lobbyStore) put(rowID, platform string, data map[string]any) {
 	s.rows[rowID] = listing{data: data, platform: platform, seen: time.Now()}
 }
 
+// guidForHost returns the RakNet guid of the live listing a given Klei user is hosting.
+//
+// The join handshake needs it: a client in WAIT_TOKEN compares the guid in the GameSessionToken
+// reply against the server it is dialling, and a mismatch is "Received a GameSessionToken that
+// is no longer valid" (nso 0x1b8d0c). The request only names the host by UserID, so the guid has
+// to come from the listing that host broadcast — which is the row id, since a host brings its
+// own guid (see newRowID).
+func (s *lobbyStore) guidForHost(host string) string {
+	if host == "" {
+		return ""
+	}
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	for id, l := range s.rows {
+		if time.Since(l.seen) > listingTTL {
+			continue
+		}
+		if h, _ := l.data["host"].(string); h == host {
+			if g, ok := l.data["guid"].(string); ok && g != "" {
+				return g
+			}
+			return id
+		}
+	}
+	return ""
+}
+
 func (s *lobbyStore) drop(rowID string) {
 	s.mu.Lock()
 	defer s.mu.Unlock()
