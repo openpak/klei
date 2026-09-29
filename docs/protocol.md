@@ -204,7 +204,8 @@ authenticated by what login mints. The rest of the surface, from the binary:
 ## 5. What is still unknown
 
 - **The join path.** A Switch host reached the lobby and kept its listing alive for five hours on
-  2026-09-28 (`/lobby/write` then a keepAlive every three minutes), so hosting works. No client
+  2026-09-28 (`/lobby/write` then a keepAlive every three minutes), so hosting works — with caves,
+  which is the only way Switch DST hosts: the world-creation screen has no toggle for them. No client
   has ever browsed: there is not one `/lobby/read` or `.json.gz` fetch in the service's whole
   history. Until one happens we do not know whether the listing a Switch host writes carries the
   address a second console needs. `__addr` is the field for it, and on real Klei the lobby fills
