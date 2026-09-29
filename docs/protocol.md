@@ -120,11 +120,45 @@ network there is no syscall behind it — the emulator log simply stops.
 So the reply carries both halves. `Token` is opaque to the client; `kleid` reuses the session
 token, which also lets the lobby recognise the broadcast as that player's.
 
+### GameSessionToken and ValidateToken — joining a server, including your own
+
+```
+POST /login/GameSessionToken   {"Token":"<session token>","Server":"KU_xxxxxxxx"}
+POST /login/ValidateToken      {"Token":"<game session token>"}
+```
+
+Measured 2026-09-29: this is the **last** step before a host reaches its own world. The instant
+the client goes to join the server it just started, it asks for a game session token; a 404 here
+is "Could not connect, unable to reach the Klei server" on screen and the server shuts back down.
+
+The client reads a token string out of the reply and rejects an empty one ("[Connect] Received
+an empty GameSessionToken.", *nso 0x1b8d40*) or a stale one ("[Connect] Received a
+GameSessionToken that is no longer valid.", *nso 0x1b8d0c*). It hands that token to the server,
+which posts it to `ValidateToken` and reads the owner back:
+
+```jsonc
+// GameSessionToken
+{"Error": false, "Token": "<opaque>", "GameSessionToken": "<same>",
+ "UserID": "KU_xxxxxxxx", "Username": "<display name>"}
+
+// ValidateToken
+{"Error": false, "Server": "KU_xxxxxxxx", "UserID": "KU_xxxxxxxx", "Username": "<name>"}
+```
+
+`Error` is the JSON **boolean** again — the validate parser checks the member's type with the
+same `cmp w8,#6` as login *(nso 0x21fac4)*. It then reads `Server` as a string and compares it
+to the server's own id; a mismatch logs "Failed to set game session token, session host
+mismatch" *(nso 0x171ae4)* and the join is refused. So a token minted for one host must not
+validate for another — `kleid` puts the pair inside the HMAC rather than keeping a session table.
+
+Which key the client reads the token from is **not** recovered — the parser receives the string
+from its caller — so `kleid` sends it under both `Token` and `GameSessionToken`.
+
 ### Other /login paths, not yet implemented
 
 `/login/Login`, `/login/CreateAccount`, `/login/ChangePassword`, `/login/RecoverPassword`,
-`/login/Logout`, `/login/LogoutAll`, `/login/GameSessionToken`, `/login/RegisterGameKey`,
-`/login/ReportUser`, `/login/auto/?Game=DontStarveTogether`.
+`/login/Logout`, `/login/LogoutAll`, `/login/RegisterGameKey`, `/login/ReportUser`,
+`/login/auto/?Game=DontStarveTogether`.
 
 ## 3. Lobby v2
 

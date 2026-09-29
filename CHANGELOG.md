@@ -1,5 +1,15 @@
 # Changelog — klei
 
+## v0.3.0 — 2026-09-29
+
+**Serve GameSessionToken and ValidateToken — the last step before a host reaches its own world.**
+A 404 on `/login/GameSessionToken` is what put "Could not connect, unable to reach the Klei
+server" on screen: the moment the client goes to join the server it just started, it asks Klei
+to clear it for that host, and without an answer the server shuts back down. The client then
+hands the token to the server, which calls `ValidateToken` and compares the `Server` it gets
+back to its own id — so the host is inside the HMAC and a token cannot be replayed against a
+different one.
+
 ## v0.2.2 — 2026-09-29
 
 **Keep `__addr`, and log what a host actually broadcasts.** The write handler stripped every

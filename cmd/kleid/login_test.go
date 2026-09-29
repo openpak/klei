@@ -133,3 +133,37 @@ func TestTokenPurpose(t *testing.T) {
 		t.Errorf("a forged token answered %#v", bad)
 	}
 }
+
+// A game session token must name the host it was minted for, and must not validate for any
+// other one — the client refuses a mismatch with "session host mismatch" and the join dies.
+func TestGameSessionTokenBindsToItsHost(t *testing.T) {
+	s := newServer(identityClient{}, "secret")
+	sess := s.mintToken("KU_player00")
+
+	out := post(t, s, "/login/GameSessionToken",
+		`{"Token":"`+sess+`","Server":"KU_hostaaaa"}`)
+	if out["Error"] != false {
+		t.Fatalf("GameSessionToken answered %#v, want Error false", out)
+	}
+	tok, _ := out["Token"].(string)
+	if tok == "" {
+		t.Fatal("no Token in reply; the client refuses an empty GameSessionToken")
+	}
+	if out["GameSessionToken"] != out["Token"] {
+		t.Errorf("GameSessionToken %v != Token %v", out["GameSessionToken"], out["Token"])
+	}
+
+	got := post(t, s, "/login/ValidateToken", `{"Token":"`+tok+`"}`)
+	if got["Error"] != false || got["Server"] != "KU_hostaaaa" {
+		t.Fatalf("ValidateToken answered %#v, want Error false and Server KU_hostaaaa", got)
+	}
+
+	// Same player, different host: the HMAC covers the pair, so this one is not ours.
+	other := s.mintGameSession("KU_player00", "KU_hostbbbb")
+	if _, host := s.gameSessionParts(other[:len(other)-4] + "AAAA"); host != "" {
+		t.Error("a tampered game session token validated")
+	}
+	if _, host := s.gameSessionParts(other); host != "KU_hostbbbb" {
+		t.Errorf("host = %q, want KU_hostbbbb", host)
+	}
+}
