@@ -14,9 +14,12 @@ package main
 //
 // The response shapes are read out of the Switch build (docs/protocol.md §3):
 //
-//	write/update/keepAlive/delete  {"result":"OK","region":"<region>"} — the client compares
-//	                               result to "OK" literally, and logs every key it does not know
+//	write/update/keepAlive         {"POST":{"__rowId":…,"__addr":…},"result":"OK","region":"<region>"}
+//	                               — the client compares result to "OK" literally, takes its
+//	                               row id from POST, and logs every key it does not know
+//	delete                         {"result":"OK","region":"<region>"}
 //	read                           {"GET":[<listing>,…]} — "error" instead when it failed
+//	getIP                          {"__addr":"<the caller's address>"}
 //	regioncapabilities-v2.json     {"LobbyRegions":[{"Region":"<region>"}]}
 
 import (
@@ -25,6 +28,7 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"net"
 	"net/http"
 	"strings"
 	"sync"
@@ -187,14 +191,27 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 			// a Switch host actually broadcasts, and the join path is read out of it.
 			log.Printf("[klei] lobby write listing: %s", body)
 		}
-		writeJSON(w, 200, map[string]any{"result": "OK", "region": region})
+		// The host takes its row id from POST.__rowId (nso 0x1cca44, 0x1fd2f0). A master shard
+		// will not read its shard link at all until it holds both a row and a region (0x20ca78),
+		// so without POST a world with caves never finishes launching: the secondary's info
+		// packet sits unread and the player waits on "DST_Secondary Ready" for ever.
+		writeJSON(w, 200, map[string]any{
+			"POST":   map[string]any{"__rowId": rowID, "__addr": callerAddr(r)},
+			"result": "OK", "region": region,
+		})
+
+	case "/lobby/getIP":
+		// A secondary shard asks for its own address once the master has told it its row and
+		// region, and reads exactly the top-level string __addr (nso 0x211790).
+		log.Printf("[klei] lobby getIP: row=%s -> %s", rowID, callerAddr(r))
+		writeJSON(w, 200, map[string]any{"__addr": callerAddr(r)})
 
 	case "/lobby/delete":
 		s.lobbies.drop(rowID)
 		log.Printf("[klei] lobby delete: game=%q row=%s", gameID, rowID)
 		writeJSON(w, 200, map[string]any{"result": "OK", "region": region})
 
-	case "/lobby/read", "/lobby/getIP":
+	case "/lobby/read":
 		rows := s.lobbies.all(queryString(in, "platform"), queryRows(in))
 		log.Printf("[klei] lobby read: game=%q rows=%d", gameID, len(rows))
 		writeJSON(w, 200, map[string]any{"GET": rows})
@@ -203,6 +220,18 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 		log.Printf("[klei] !! lobby %s %s not implemented, body=%s", r.Method, r.URL.Path, summarise(body))
 		writeJSON(w, 200, map[string]any{"Error": "true", "Code": "E_INVALID_INPUT"})
 	}
+}
+
+// callerAddr is the address the lobby saw the request come from.
+// ponytail: behind Traefik's TCP passthrough that is Traefik's own 10.89.x address, not the
+// console's. Both shards of a host get the same value, which is all the shard link needs; it
+// becomes wrong for a remote player migrating shards. Fix with PROXY protocol on the klei router.
+func callerAddr(r *http.Request) string {
+	host, _, err := net.SplitHostPort(r.RemoteAddr)
+	if err != nil {
+		return r.RemoteAddr
+	}
+	return host
 }
 
 // cdn serves lobby-v2-cdn.klei.com: the region list, and the pre-baked listing files the browser

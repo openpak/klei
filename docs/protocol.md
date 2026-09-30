@@ -204,7 +204,13 @@ Live browser, on `lobby-v2-<region>.klei.com`:
 | `/lobby/keepAlive` | `__token`, `__rowId` | same |
 | `/lobby/delete` | `__token`, `__rowId` | same |
 | `/lobby/read` | `__token`, `__gameId`, `query` (`__rowId`, `region`, …) | `{"GET":[<listing>,…]}` |
-| `/lobby/getIP` | as read; used by shard migration | as read |
+| `/lobby/getIP` | `__rowId`, `region`; a secondary shard asking for its own address | `{"__addr":"<ip>"}` *(nso 0x211790)* |
+
+A write answers `{"POST":{"__rowId":…,"__addr":…},"result":"OK","region":…}`. The host takes its
+row id from `POST.__rowId` *(nso 0x1cca44, 0x1fd2f0)*, and a master shard does not read its shard
+link until it holds a row and a region *(0x20ca78–0x20cac0)*: without `POST` the secondary's
+`ID_SHD_S2M_SECONDARY_INFO` (0x87) is never dispatched and a world with caves hangs at launch —
+on a real console exactly as on the emulators.
 
 The client compares `result` to the literal `OK`, logs `region` as "Server registered via geo
 DNS in %s", warns "unknown key %s in server broadcast response" for anything else, and reads

@@ -124,3 +124,19 @@ func TestCDN(t *testing.T) {
 		t.Errorf("listings gave %d rows, want the one Switch host", len(rows))
 	}
 }
+
+// A master shard takes its row id from POST.__rowId and will not read its shard link without
+// one; a secondary then asks getIP for a bare __addr. Without both, a world with caves hangs
+// at launch.
+func TestLobbyGivesShardsTheirRowAndAddress(t *testing.T) {
+	s := newServer(identityClient{}, "secret")
+	out := lobbyPost(t, s, "/lobby/write", `{"__rowId":"row1","platform":"Switch"}`)
+	post, _ := out["POST"].(map[string]any)
+	if post["__rowId"] != "row1" {
+		t.Fatalf("write answered %#v, want POST.__rowId row1", out)
+	}
+	ip := lobbyPost(t, s, "/lobby/getIP", `{"__rowId":"row1","region":"us-east-1"}`)
+	if a, _ := ip["__addr"].(string); a == "" {
+		t.Fatalf("getIP answered %#v, want a top-level __addr string", ip)
+	}
+}
