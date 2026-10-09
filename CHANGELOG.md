@@ -1,5 +1,14 @@
 # Changelog — klei
 
+## v0.3.4 — 2026-10-09
+
+**Versions never share a world.** A login records the player's title version from the NSA id
+token (`nintendo.av`). `/lobby/read` hides a listing whose host is on another version from the
+reader, and GameSessionToken refuses a join across versions with `E_WRONG_API_VERSION`, a code
+the client carries. Writes log the listing's `v` beside its host's version. A player whose
+version is unknown sees and joins everything, as before; the pre-baked `.json.gz` carries no
+token and is not filtered.
+
 ## v0.3.2 — 2026-09-29
 
 **TokenPurpose is where a game session token is validated, and that makes three actions on one

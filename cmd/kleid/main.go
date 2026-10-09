@@ -55,10 +55,11 @@ func main() {
 }
 
 type server struct {
-	ids     identityClient
-	secret  []byte
-	names   nameStore
-	lobbies lobbyStore
+	ids      identityClient
+	secret   []byte
+	names    nameStore
+	versions versionStore
+	lobbies  lobbyStore
 }
 
 // route dispatches on path first and hostname second. The three tiers arrive on one port behind

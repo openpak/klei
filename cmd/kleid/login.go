@@ -109,9 +109,11 @@ func (s *server) loginViaSwitch(w http.ResponseWriter, r *http.Request) {
 		name = ku
 	}
 	s.names.set(ku, name)
+	av := appVersionClaim(in.NSAToken)
+	s.versions.set(ku, av)
 
-	log.Printf("[klei] LoginViaSwitch: game=%q pid=%d %s -> %s (%s), account token %s",
-		in.Game, p.PID, p.BaasUserID, ku, name, present(in.AccountToken))
+	log.Printf("[klei] LoginViaSwitch: game=%q pid=%d %s -> %s (%s), account token %s, version %q",
+		in.Game, p.PID, p.BaasUserID, ku, name, present(in.AccountToken), av)
 
 	writeJSON(w, 200, map[string]any{
 		"Error":    false, // a JSON boolean, and the whole success/failure switch (§2)
@@ -235,6 +237,14 @@ func (s *server) gameSessionToken(w http.ResponseWriter, r *http.Request) {
 	// that is no longer valid" (nso 0x1b8cb4 -> 0x1b8d0c) — which is what an answer without it
 	// looked like on 2026-09-29. That string is the server's RakNet guid, and the request names
 	// the host only by UserID, so it comes from the listing that host broadcast.
+	if !s.versions.fits(ku, in.Server) {
+		// Another version's world: the client knows this code ("wrong version") and the join
+		// ends here instead of in a handshake the two builds cannot finish.
+		log.Printf("[klei] GameSessionToken: %s (version %s) refused for server %s (version %s)",
+			ku, s.versions.get(ku), in.Server, s.versions.get(in.Server))
+		loginError(w, "E_WRONG_API_VERSION")
+		return
+	}
 	guid := s.lobbies.guidForHost(in.Server)
 	if guid == "" {
 		log.Printf("[klei] GameSessionToken: no live listing for server %s; answering without a guid", in.Server)

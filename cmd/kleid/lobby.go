@@ -184,8 +184,8 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 		}
 		platform, _ := in["platform"].(string)
 		s.lobbies.put(rowID, platform, data)
-		log.Printf("[klei] lobby %s: game=%q row=%s fields=%d addr=%v port=%v nat=%v",
-			r.URL.Path, gameID, rowID, len(data), in["__addr"], in["port"], in["nat"])
+		log.Printf("[klei] lobby %s: game=%q row=%s fields=%d addr=%v port=%v nat=%v v=%v host=%v version=%q",
+			r.URL.Path, gameID, rowID, len(data), in["__addr"], in["port"], in["nat"], in["v"], in["host"], s.versions.get(str(in["host"])))
 		if r.URL.Path == "/lobby/write" {
 			// A host writes its full listing once per start; that body is the only record of what
 			// a Switch host actually broadcasts, and the join path is read out of it.
@@ -213,7 +213,18 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 
 	case "/lobby/read":
 		rows := s.lobbies.all(queryString(in, "platform"), queryRows(in))
-		log.Printf("[klei] lobby read: game=%q rows=%d", gameID, len(rows))
+		reader := s.userForToken(tok)
+		kept := rows[:0]
+		for _, row := range rows {
+			if host := str(row["host"]); !s.versions.fits(reader, host) {
+				log.Printf("[klei] lobby read: row %v (host %s, version %s, v=%v) hidden from %s (version %s)",
+					row["__rowId"], host, s.versions.get(host), row["v"], reader, s.versions.get(reader))
+				continue
+			}
+			kept = append(kept, row)
+		}
+		rows = kept
+		log.Printf("[klei] lobby read: game=%q reader=%s rows=%d", gameID, reader, len(rows))
 		writeJSON(w, 200, map[string]any{"GET": rows})
 
 	default:
@@ -283,6 +294,11 @@ func queryRows(in map[string]any) []string {
 		return out
 	}
 	return nil
+}
+
+func str(v any) string {
+	s, _ := v.(string)
+	return s
 }
 
 func queryString(in map[string]any, key string) string {
