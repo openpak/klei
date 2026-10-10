@@ -28,6 +28,8 @@ import (
 	"log"
 	"net/http"
 	"strings"
+
+	"openpak/klei/redact"
 )
 
 func newServer(id identityClient, secret string) *server {
@@ -55,7 +57,7 @@ func (s *server) login(w http.ResponseWriter, r *http.Request) {
 		s.gameSessionToken(w, r)
 	default:
 		body, _ := io.ReadAll(io.LimitReader(r.Body, 1<<16))
-		log.Printf("[klei] !! login %s %s not implemented, body=%s", r.Method, r.URL.Path, redactBody(body))
+		log.Printf("[klei] !! login %s %s not implemented, body=%s", r.Method, logPath(r.URL.Path), redactBody(body))
 		loginError(w, "E_NOT_IMPLEMENTED")
 	}
 }
@@ -90,15 +92,15 @@ func (s *server) loginViaSwitch(w http.ResponseWriter, r *http.Request) {
 	p, err := s.ids.byIDToken(in.NSAToken)
 	switch {
 	case errors.Is(err, errTokenRejected):
-		log.Printf("[klei] LoginViaSwitch: nx-baas rejected the NSAToken: %v", err)
+		log.Printf("[klei] LoginViaSwitch: nx-baas rejected the NSAToken: %v", redact.Err(err))
 		loginError(w, "E_INVALID_CLIENT_TOKEN")
 		return
 	case errors.Is(err, errAccountBanned):
-		log.Printf("[klei] LoginViaSwitch: account banned: %v", err)
+		log.Printf("[klei] LoginViaSwitch: account banned: %v", redact.Err(err))
 		loginError(w, "E_BANNED_GAME")
 		return
 	case err != nil:
-		log.Printf("[klei] LoginViaSwitch: identity lookup failed: %v", err)
+		log.Printf("[klei] LoginViaSwitch: identity lookup failed: %v", redact.Err(err))
 		loginError(w, "E_DB_FAIL")
 		return
 	}
@@ -112,8 +114,8 @@ func (s *server) loginViaSwitch(w http.ResponseWriter, r *http.Request) {
 	av := appVersionClaim(in.NSAToken)
 	s.versions.set(ku, av)
 
-	log.Printf("[klei] LoginViaSwitch: game=%q %s, account token %s, version %q",
-		in.Game, who(ku), present(in.AccountToken), av)
+	log.Printf("[klei] LoginViaSwitch: game=%s %s, account token %s, version %q",
+		logGame(in.Game), who(ku), present(in.AccountToken), av)
 
 	writeJSON(w, 200, map[string]any{
 		"Error":    false, // a JSON boolean, and the whole success/failure switch (§2)
@@ -251,7 +253,7 @@ func (s *server) gameSessionToken(w http.ResponseWriter, r *http.Request) {
 	}
 
 	tok := s.mintGameSession(ku, in.Server)
-	log.Printf("[klei] GameSessionToken: %s cleared for server %s guid=%s", who(ku), who(in.Server), guid)
+	log.Printf("[klei] GameSessionToken: %s cleared for server %s guid=%s", who(ku), who(in.Server), who(guid))
 	writeJSON(w, 200, map[string]any{
 		"Error":            false,
 		"Token":            tok,

@@ -179,7 +179,7 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 	dec := json.NewDecoder(bytes.NewReader(body))
 	dec.UseNumber()
 	if len(body) > 0 && dec.Decode(&in) != nil {
-		log.Printf("[klei] lobby %s: unreadable body (%d bytes)", r.URL.Path, len(body))
+		log.Printf("[klei] lobby %s: unreadable body (%d bytes)", logPath(r.URL.Path), len(body))
 		writeJSON(w, 200, map[string]any{"Error": "true", "Code": "E_INVALID_INPUT"})
 		return
 	}
@@ -190,7 +190,7 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 	// /login/TokenPurpose, whose contract is not recovered yet, so refusing an unrecognised one
 	// would refuse every host. Enforce once a real host has shown which token it sends.
 	if tok != "" && s.userForToken(tok) == "" {
-		log.Printf("[klei] lobby %s: token not one of ours (%d bytes)", r.URL.Path, len(tok))
+		log.Printf("[klei] lobby %s: token not one of ours (%d bytes)", logPath(r.URL.Path), len(tok))
 	}
 
 	switch r.URL.Path {
@@ -221,12 +221,12 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 		if r.URL.Path != "/lobby/write" {
 			keys = " keys=" + keysOf(data)
 		}
-		log.Printf("[klei] lobby %s: game=%q row=%s fields=%d%s addr=%v port=%v nat=%v v=%v host=%s version=%q",
-			r.URL.Path, gameID, rowID, len(data), keys, in["__addr"], in["port"], in["nat"], in["v"],
+		log.Printf("[klei] lobby %s: game=%s row=%s fields=%d%s port=%v nat=%v v=%v host=%s version=%q",
+			logPath(r.URL.Path), logGame(gameID), who(rowID), len(data), keys, in["port"], in["nat"], in["v"],
 			who(str(in["host"])), s.versions.get(str(in["host"])))
 		if !written {
 			log.Printf("[klei] lobby %s: row %s has no listing from a write (host wrote before this process started?); hidden until the host writes again",
-				r.URL.Path, rowID)
+				logPath(r.URL.Path), who(rowID))
 		}
 		if r.URL.Path == "/lobby/write" {
 			// A host writes its full listing once per start; that body is the only record of what
@@ -246,12 +246,12 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 	case "/lobby/getIP":
 		// A secondary shard asks for its own address once the master has told it its row and
 		// region, and reads exactly the top-level string __addr (nso 0x211790).
-		log.Printf("[klei] lobby getIP: row=%s -> %s", rowID, callerAddr(r))
+		log.Printf("[klei] lobby getIP: row=%s", who(rowID))
 		writeJSON(w, 200, map[string]any{"__addr": callerAddr(r)})
 
 	case "/lobby/delete":
 		s.lobbies.drop(rowID)
-		log.Printf("[klei] lobby delete: game=%q row=%s", gameID, rowID)
+		log.Printf("[klei] lobby delete: game=%s row=%s", logGame(gameID), who(rowID))
 		writeJSON(w, 200, map[string]any{"result": "OK", "region": region})
 
 	case "/lobby/read":
@@ -260,18 +260,18 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 		kept := rows[:0]
 		for _, row := range rows {
 			if host := str(row["host"]); !s.versions.fits(reader, host) {
-				log.Printf("[klei] lobby read: row %v (host %s, version %s, v=%v) hidden from %s (version %s)",
-					row["__rowId"], who(host), s.versions.get(host), row["v"], who(reader), s.versions.get(reader))
+				log.Printf("[klei] lobby read: row %s (host %s, version %s, v=%v) hidden from %s (version %s)",
+					who(str(row["__rowId"])), who(host), s.versions.get(host), row["v"], who(reader), s.versions.get(reader))
 				continue
 			}
 			kept = append(kept, row)
 		}
 		rows = kept
-		log.Printf("[klei] lobby read: game=%q reader=%s rows=%d", gameID, who(reader), len(rows))
+		log.Printf("[klei] lobby read: game=%s reader=%s rows=%d", logGame(gameID), who(reader), len(rows))
 		writeJSON(w, 200, map[string]any{"GET": rows})
 
 	default:
-		log.Printf("[klei] !! lobby %s %s not implemented, body=%s", r.Method, r.URL.Path, redactBody(body))
+		log.Printf("[klei] !! lobby %s %s not implemented, body=%s", r.Method, logPath(r.URL.Path), redactBody(body))
 		writeJSON(w, 200, map[string]any{"Error": "true", "Code": "E_INVALID_INPUT"})
 	}
 }
@@ -305,7 +305,7 @@ func (s *server) cdn(w http.ResponseWriter, r *http.Request) {
 			platform = name[i+1:]
 		}
 		rows := s.lobbies.all(platform, nil)
-		log.Printf("[klei] cdn listings: %s rows=%d keys=%s", path, len(rows), rowKeys(rows))
+		log.Printf("[klei] cdn listings: %s rows=%d keys=%s", logPath(path), len(rows), rowKeys(rows))
 		w.Header().Set("Content-Type", "application/json")
 		w.Header().Set("Content-Encoding", "gzip")
 		gz := gzip.NewWriter(w)
@@ -313,7 +313,7 @@ func (s *server) cdn(w http.ResponseWriter, r *http.Request) {
 		_ = json.NewEncoder(gz).Encode(map[string]any{"GET": rows})
 
 	default:
-		log.Printf("[klei] !! cdn %s %s not implemented", r.Method, scrubText(r.URL.Path))
+		log.Printf("[klei] !! cdn %s %s not implemented", r.Method, logPath(r.URL.Path))
 		http.NotFound(w, r)
 	}
 }

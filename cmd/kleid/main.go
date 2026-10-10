@@ -90,7 +90,7 @@ func (s *server) route(w http.ResponseWriter, r *http.Request) {
 			vals, _ := url.ParseQuery(r.URL.RawQuery)
 			q = "?" + redactQuery(vals)
 		}
-		log.Printf("[klei] !! unhandled %s %s%s%s body=%s", r.Method, host, scrubText(r.URL.Path), q, redactBody(body))
+		log.Printf("[klei] !! unhandled %s %s%s%s body=%s", r.Method, host, logPath(r.URL.Path), q, redactBody(body))
 		writeJSON(w, 404, map[string]any{"error": "not found"})
 	}
 }

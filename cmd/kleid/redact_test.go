@@ -85,7 +85,7 @@ func TestRedactBodyKeepsShape(t *testing.T) {
 			t.Errorf("redactBody = %s, want it to contain %s", got, want)
 		}
 	}
-	if got := redactBody([]byte("token=abc123&x=1")); got != "token=<redacted 6>&x=1" {
+	if got := redactBody([]byte("token=abc123&game=DST&x=1")); got != "game=DST&token=<redacted 6>&x=<redacted 1>" {
 		t.Errorf("form body = %q", got)
 	}
 }

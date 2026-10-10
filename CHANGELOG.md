@@ -1,5 +1,17 @@
 # Changelog — klei
 
+## v0.3.6 — 2026-10-10
+
+**The log carries nothing a person typed or a client's address.** The tags that name players and
+hosts in log lines are now keyed per process (HMAC, new on every start) instead of an unkeyed
+hash of the Klei id, which anyone could recompute; they correlate lines within one run and
+nothing else. A listing's row id and RakNet guid are tagged too, and the lobby lines no longer
+print the `__addr` a host wrote or the address `getIP` answered. Request bodies and query strings
+now show a string only under the few keys that carry a fixed word (game, platform, event, ...);
+every other string, and every id or name-like key, is logged as its length, and a body that is
+neither JSON nor a form is logged as its size. Game ids a client invents, request paths and
+errors from nx-baas (which spell out its URL) are cut down the same way.
+
 ## v0.3.5 — 2026-10-10
 
 **A host's world stays in the browser.** A joiner's Browse Games showed "0 of 0 shown" while the
