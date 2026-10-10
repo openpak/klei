@@ -1,5 +1,24 @@
 # Changelog — klei
 
+## v0.3.5 — 2026-10-10
+
+**A host's world stays in the browser.** A joiner's Browse Games showed "0 of 0 shown" while the
+listing file served one row -- a row of nothing but `data`, `players` and `secondaries`, which
+the browser drops. A listing expired three minutes after the host was last heard from, but a
+Switch host is quiet for up to five minutes between its updates and keepAlives (longer once its
+world is paused), so any browse in that window deleted the row, and the host's next keepAlive and
+update rebuilt it from the two or three fields they carry. Listings now live 15 minutes, an
+expired one is remembered for an hour and comes back whole, a write replaces the row while update
+and keepAlive merge into it, and a row no write ever filled is not served. Numbers in a listing
+go back out exactly as the host wrote them.
+
+**The log no longer carries credentials or identities.** Request bodies (unhandled requests,
+unimplemented login paths, refused tokens, the host's write listing) and query strings are
+logged with every token, ticket, password, Klei id, netid, session id and name replaced by its
+length, keys kept. Log lines name players and hosts by a short stable tag instead of their Klei
+id, and the login line no longer logs the BAAS id, pid or nickname. A lobby update or keepAlive
+logs which keys it carried, and the listing-file line logs each served row's key count.
+
 ## v0.3.4 — 2026-10-09
 
 **Versions never share a world.** A login records the player's title version from the NSA id

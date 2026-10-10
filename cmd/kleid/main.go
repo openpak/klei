@@ -24,6 +24,7 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"net/url"
 	"os"
 	"strings"
 )
@@ -82,7 +83,14 @@ func (s *server) route(w http.ResponseWriter, r *http.Request) {
 		// the request is the specification for the handler that has to answer it, and a guest
 		// rarely asks twice.
 		body, _ := io.ReadAll(io.LimitReader(r.Body, 1<<16))
-		log.Printf("[klei] !! unhandled %s %s%s body=%s", r.Method, host, r.URL.Path, summarise(body))
+		// Bodies and query strings go through the redactor: this tier is where the item server's
+		// ClientToken arrives, and a session token in a log is a session anyone can borrow.
+		q := ""
+		if r.URL.RawQuery != "" {
+			vals, _ := url.ParseQuery(r.URL.RawQuery)
+			q = "?" + redactQuery(vals)
+		}
+		log.Printf("[klei] !! unhandled %s %s%s%s body=%s", r.Method, host, scrubText(r.URL.Path), q, redactBody(body))
 		writeJSON(w, 404, map[string]any{"error": "not found"})
 	}
 }

@@ -55,7 +55,7 @@ func (s *server) login(w http.ResponseWriter, r *http.Request) {
 		s.gameSessionToken(w, r)
 	default:
 		body, _ := io.ReadAll(io.LimitReader(r.Body, 1<<16))
-		log.Printf("[klei] !! login %s %s not implemented, body=%s", r.Method, r.URL.Path, summarise(body))
+		log.Printf("[klei] !! login %s %s not implemented, body=%s", r.Method, r.URL.Path, redactBody(body))
 		loginError(w, "E_NOT_IMPLEMENTED")
 	}
 }
@@ -82,7 +82,7 @@ func (s *server) loginViaSwitch(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if in.NSAToken == "" {
-		log.Printf("[klei] LoginViaSwitch: no NSAToken in body=%s", summarise(body))
+		log.Printf("[klei] LoginViaSwitch: no NSAToken in body=%s", redactBody(body))
 		loginError(w, "E_MISSING_FIELD")
 		return
 	}
@@ -112,8 +112,8 @@ func (s *server) loginViaSwitch(w http.ResponseWriter, r *http.Request) {
 	av := appVersionClaim(in.NSAToken)
 	s.versions.set(ku, av)
 
-	log.Printf("[klei] LoginViaSwitch: game=%q pid=%d %s -> %s (%s), account token %s, version %q",
-		in.Game, p.PID, p.BaasUserID, ku, name, present(in.AccountToken), av)
+	log.Printf("[klei] LoginViaSwitch: game=%q %s, account token %s, version %q",
+		in.Game, who(ku), present(in.AccountToken), av)
 
 	writeJSON(w, 200, map[string]any{
 		"Error":    false, // a JSON boolean, and the whole success/failure switch (§2)
@@ -150,7 +150,7 @@ func (s *server) tokenPurpose(w http.ResponseWriter, r *http.Request) {
 	// "Server" to the server's own id; a mismatch is "Failed to set game session token, session
 	// host mismatch" (nso 0x171ae4) and the player sees "Authentication failed".
 	if joiner, host := s.gameSessionParts(in.Token); host != "" {
-		log.Printf("[klei] TokenPurpose/validate: %s is cleared for server %s", joiner, host)
+		log.Printf("[klei] TokenPurpose/validate: %s is cleared for server %s", who(joiner), who(host))
 		writeJSON(w, 200, map[string]any{
 			"Error":           false,
 			"Server":          host,
@@ -165,13 +165,13 @@ func (s *server) tokenPurpose(w http.ResponseWriter, r *http.Request) {
 
 	ku := s.userForToken(in.Token)
 	if ku == "" {
-		log.Printf("[klei] TokenPurpose: token not one of ours: %s", summarise(body))
+		log.Printf("[klei] TokenPurpose: token not one of ours: %s", redactBody(body))
 		loginError(w, "E_WRONG_TOKEN_PURPOSE")
 		return
 	}
 
 	name := s.names.get(ku)
-	log.Printf("[klei] TokenPurpose: %s (%s)", ku, name)
+	log.Printf("[klei] TokenPurpose: %s", who(ku))
 
 	// Two different client actions POST to this one path, and which one is running is the
 	// client's own state — the request body is `{"Token":…}` either way. So the reply carries
@@ -222,12 +222,12 @@ func (s *server) gameSessionToken(w http.ResponseWriter, r *http.Request) {
 
 	ku := s.userForToken(in.Token)
 	if ku == "" {
-		log.Printf("[klei] GameSessionToken: token not one of ours: %s", summarise(body))
+		log.Printf("[klei] GameSessionToken: token not one of ours: %s", redactBody(body))
 		loginError(w, "E_INVALID_CLIENT_TOKEN")
 		return
 	}
 	if in.Server == "" {
-		log.Printf("[klei] GameSessionToken: no Server in %s", summarise(body))
+		log.Printf("[klei] GameSessionToken: no Server in %s", redactBody(body))
 		loginError(w, "E_NO_ID")
 		return
 	}
@@ -241,17 +241,17 @@ func (s *server) gameSessionToken(w http.ResponseWriter, r *http.Request) {
 		// Another version's world: the client knows this code ("wrong version") and the join
 		// ends here instead of in a handshake the two builds cannot finish.
 		log.Printf("[klei] GameSessionToken: %s (version %s) refused for server %s (version %s)",
-			ku, s.versions.get(ku), in.Server, s.versions.get(in.Server))
+			who(ku), s.versions.get(ku), who(in.Server), s.versions.get(in.Server))
 		loginError(w, "E_WRONG_API_VERSION")
 		return
 	}
 	guid := s.lobbies.guidForHost(in.Server)
 	if guid == "" {
-		log.Printf("[klei] GameSessionToken: no live listing for server %s; answering without a guid", in.Server)
+		log.Printf("[klei] GameSessionToken: no live listing for server %s; answering without a guid", who(in.Server))
 	}
 
 	tok := s.mintGameSession(ku, in.Server)
-	log.Printf("[klei] GameSessionToken: %s cleared for server %s guid=%s", ku, in.Server, guid)
+	log.Printf("[klei] GameSessionToken: %s cleared for server %s guid=%s", who(ku), who(in.Server), guid)
 	writeJSON(w, 200, map[string]any{
 		"Error":            false,
 		"Token":            tok,
@@ -322,14 +322,6 @@ func (s *server) userForToken(tok string) string {
 		return ""
 	}
 	return ku
-}
-
-// summarise keeps a log line readable when the body is two JWTs.
-func summarise(body []byte) string {
-	if len(body) > 400 {
-		return string(body[:400]) + "…"
-	}
-	return string(body)
 }
 
 func present(s string) string {

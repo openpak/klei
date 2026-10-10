@@ -23,6 +23,7 @@ package main
 //	regioncapabilities-v2.json     {"LobbyRegions":[{"Region":"<region>"}]}
 
 import (
+	"bytes"
 	"compress/gzip"
 	"encoding/json"
 	"fmt"
@@ -30,6 +31,7 @@ import (
 	"log"
 	"net"
 	"net/http"
+	"sort"
 	"strings"
 	"sync"
 	"time"
@@ -40,15 +42,28 @@ import (
 // name to Traefik and the network profile, not just this constant.
 const region = "us-east-1"
 
-// listingTTL drops a host that stopped keeping its listing alive. The game keeps alive well
-// inside a minute; three is long enough to survive a hiccup and short enough that a closed game
-// leaves the browser promptly.
-const listingTTL = 3 * time.Minute
+// listingTTL hides a host that stopped keeping its listing alive. It has to outlast the longest
+// silence a live host keeps, and that is longer than it looks: a Switch host sends a keepAlive
+// every eight minutes with an update of its day/players in between, so its gaps alternate ~3
+// and ~5 minutes (measured 2026-09-30, keepAlives at 16:44:24, 16:52:11, 17:00:10), and once the
+// world is paused with nobody in it the updates stop and only the keepAlives are left. The
+// value up to v0.3.4 was three minutes: every host dropped out of the browser for part of each cycle.
+const listingTTL = 15 * time.Minute
+
+// listingKeep is how long a hidden listing is remembered. A host that comes back inside it --
+// a late keepAlive, a long pause -- is revived whole, rather than rebuilt from the two or three
+// fields its next update carries. That rebuild is what served the joiner a row of nothing but
+// data/players/secondaries on 2026-10-10, which the browser drops ("0 of 0 shown").
+const listingKeep = time.Hour
 
 type listing struct {
 	data     map[string]any // the host's own listing object, verbatim
 	platform string
 	seen     time.Time
+	// written is whether a /lobby/write has given this row a whole listing. A row that only
+	// ever saw update/keepAlive (a host that wrote before this process started) has no name,
+	// version or port, and the browser cannot show it, so it is not served until it is written.
+	written bool
 }
 
 type lobbyStore struct {
@@ -56,34 +71,37 @@ type lobbyStore struct {
 	rows map[string]listing
 }
 
-func (s *lobbyStore) put(rowID, platform string, data map[string]any) {
+// write replaces a row with the whole listing a host broadcasts once per world start.
+func (s *lobbyStore) write(rowID, platform string, data map[string]any) {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	if s.rows == nil {
+		s.rows = map[string]listing{}
+	}
+	s.rows[rowID] = listing{data: data, platform: platform, seen: time.Now(), written: true}
+}
+
+// update merges a partial listing (update) or none at all (keepAlive) into a row and marks it
+// alive. It reports whether the row had ever been written.
+func (s *lobbyStore) update(rowID, platform string, data map[string]any) bool {
 	s.mu.Lock()
 	defer s.mu.Unlock()
 	if s.rows == nil {
 		s.rows = map[string]listing{}
 	}
 	old, had := s.rows[rowID]
-	if had && len(data) == 0 {
-		// A keepAlive carries no listing: touch what is there rather than blanking it.
-		old.seen = time.Now()
-		s.rows[rowID] = old
-		return
+	merged := make(map[string]any, len(old.data)+len(data))
+	for k, v := range old.data {
+		merged[k] = v
 	}
-	if had {
-		// An update can be partial. Merge over what the host said last.
-		merged := make(map[string]any, len(old.data)+len(data))
-		for k, v := range old.data {
-			merged[k] = v
-		}
-		for k, v := range data {
-			merged[k] = v
-		}
-		data = merged
+	for k, v := range data {
+		merged[k] = v
 	}
-	if platform == "" && had {
+	if platform == "" {
 		platform = old.platform
 	}
-	s.rows[rowID] = listing{data: data, platform: platform, seen: time.Now()}
+	s.rows[rowID] = listing{data: merged, platform: platform, seen: time.Now(), written: had && old.written}
+	return had && old.written
 }
 
 // guidForHost returns the RakNet guid of the live listing a given Klei user is hosting.
@@ -100,7 +118,7 @@ func (s *lobbyStore) guidForHost(host string) string {
 	s.mu.Lock()
 	defer s.mu.Unlock()
 	for id, l := range s.rows {
-		if time.Since(l.seen) > listingTTL {
+		if time.Since(l.seen) > listingTTL || !l.written {
 			continue
 		}
 		if h, _ := l.data["host"].(string); h == host {
@@ -130,8 +148,10 @@ func (s *lobbyStore) all(platform string, rowIDs []string) []map[string]any {
 	}
 	out := []map[string]any{}
 	for id, l := range s.rows {
-		if time.Since(l.seen) > listingTTL {
+		if age := time.Since(l.seen); age > listingKeep {
 			delete(s.rows, id)
+			continue
+		} else if age > listingTTL || !l.written {
 			continue
 		}
 		if len(want) > 0 && !want[id] {
@@ -154,7 +174,11 @@ func (s *lobbyStore) all(platform string, rowIDs []string) []map[string]any {
 func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 	body, _ := io.ReadAll(io.LimitReader(r.Body, 1<<20))
 	var in map[string]any
-	if len(body) > 0 && json.Unmarshal(body, &in) != nil {
+	// UseNumber keeps every number exactly as the host wrote it (v, guid-sized ids), so the
+	// listing goes back out byte-for-byte rather than through a float64.
+	dec := json.NewDecoder(bytes.NewReader(body))
+	dec.UseNumber()
+	if len(body) > 0 && dec.Decode(&in) != nil {
 		log.Printf("[klei] lobby %s: unreadable body (%d bytes)", r.URL.Path, len(body))
 		writeJSON(w, 200, map[string]any{"Error": "true", "Code": "E_INVALID_INPUT"})
 		return
@@ -162,11 +186,11 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 	rowID, _ := in["__rowId"].(string)
 	gameID, _ := in["__gameId"].(string)
 	tok, _ := in["__token"].(string)
-	// ponytail: the token is logged, not enforced. The client's broadcast token comes from
+	// ponytail: the token is noted, not enforced. The client's broadcast token comes from
 	// /login/TokenPurpose, whose contract is not recovered yet, so refusing an unrecognised one
 	// would refuse every host. Enforce once a real host has shown which token it sends.
 	if tok != "" && s.userForToken(tok) == "" {
-		log.Printf("[klei] lobby %s: token not one of ours (%.12s…)", r.URL.Path, tok)
+		log.Printf("[klei] lobby %s: token not one of ours (%d bytes)", r.URL.Path, len(tok))
 	}
 
 	switch r.URL.Path {
@@ -183,13 +207,32 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 			}
 		}
 		platform, _ := in["platform"].(string)
-		s.lobbies.put(rowID, platform, data)
-		log.Printf("[klei] lobby %s: game=%q row=%s fields=%d addr=%v port=%v nat=%v v=%v host=%v version=%q",
-			r.URL.Path, gameID, rowID, len(data), in["__addr"], in["port"], in["nat"], in["v"], in["host"], s.versions.get(str(in["host"])))
+		// write is the whole listing, once per world start, and replaces the row. update is a
+		// partial listing (day, players) and keepAlive is none; both merge into the row the
+		// write made and only mark it alive -- replacing it with what they carry would leave a
+		// row the browser cannot show.
+		written := true
+		if r.URL.Path == "/lobby/write" {
+			s.lobbies.write(rowID, platform, data)
+		} else {
+			written = s.lobbies.update(rowID, platform, data)
+		}
+		keys := "" // a write's keys are in its listing line below
+		if r.URL.Path != "/lobby/write" {
+			keys = " keys=" + keysOf(data)
+		}
+		log.Printf("[klei] lobby %s: game=%q row=%s fields=%d%s addr=%v port=%v nat=%v v=%v host=%s version=%q",
+			r.URL.Path, gameID, rowID, len(data), keys, in["__addr"], in["port"], in["nat"], in["v"],
+			who(str(in["host"])), s.versions.get(str(in["host"])))
+		if !written {
+			log.Printf("[klei] lobby %s: row %s has no listing from a write (host wrote before this process started?); hidden until the host writes again",
+				r.URL.Path, rowID)
+		}
 		if r.URL.Path == "/lobby/write" {
 			// A host writes its full listing once per start; that body is the only record of what
-			// a Switch host actually broadcasts, and the join path is read out of it.
-			log.Printf("[klei] lobby write listing: %s", body)
+			// a Switch host actually broadcasts, and the join path is read out of it. Redacted:
+			// the envelope carries the host's session token and the listing names the player.
+			log.Printf("[klei] lobby write listing: %s", redacted(body))
 		}
 		// The host takes its row id from POST.__rowId (nso 0x1cca44, 0x1fd2f0). A master shard
 		// will not read its shard link at all until it holds both a row and a region (0x20ca78),
@@ -218,17 +261,17 @@ func (s *server) lobby(w http.ResponseWriter, r *http.Request) {
 		for _, row := range rows {
 			if host := str(row["host"]); !s.versions.fits(reader, host) {
 				log.Printf("[klei] lobby read: row %v (host %s, version %s, v=%v) hidden from %s (version %s)",
-					row["__rowId"], host, s.versions.get(host), row["v"], reader, s.versions.get(reader))
+					row["__rowId"], who(host), s.versions.get(host), row["v"], who(reader), s.versions.get(reader))
 				continue
 			}
 			kept = append(kept, row)
 		}
 		rows = kept
-		log.Printf("[klei] lobby read: game=%q reader=%s rows=%d", gameID, reader, len(rows))
+		log.Printf("[klei] lobby read: game=%q reader=%s rows=%d", gameID, who(reader), len(rows))
 		writeJSON(w, 200, map[string]any{"GET": rows})
 
 	default:
-		log.Printf("[klei] !! lobby %s %s not implemented, body=%s", r.Method, r.URL.Path, summarise(body))
+		log.Printf("[klei] !! lobby %s %s not implemented, body=%s", r.Method, r.URL.Path, redactBody(body))
 		writeJSON(w, 200, map[string]any{"Error": "true", "Code": "E_INVALID_INPUT"})
 	}
 }
@@ -262,7 +305,7 @@ func (s *server) cdn(w http.ResponseWriter, r *http.Request) {
 			platform = name[i+1:]
 		}
 		rows := s.lobbies.all(platform, nil)
-		log.Printf("[klei] cdn listings: %s rows=%d", path, len(rows))
+		log.Printf("[klei] cdn listings: %s rows=%d keys=%s", path, len(rows), rowKeys(rows))
 		w.Header().Set("Content-Type", "application/json")
 		w.Header().Set("Content-Encoding", "gzip")
 		gz := gzip.NewWriter(w)
@@ -270,7 +313,7 @@ func (s *server) cdn(w http.ResponseWriter, r *http.Request) {
 		_ = json.NewEncoder(gz).Encode(map[string]any{"GET": rows})
 
 	default:
-		log.Printf("[klei] !! cdn %s %s not implemented", r.Method, r.URL.Path)
+		log.Printf("[klei] !! cdn %s %s not implemented", r.Method, scrubText(r.URL.Path))
 		http.NotFound(w, r)
 	}
 }
@@ -317,4 +360,23 @@ func newRowID(in map[string]any) string {
 		return g
 	}
 	return fmt.Sprintf("openpak-%d", time.Now().UnixNano())
+}
+
+// keysOf lists a listing's keys, sorted: what a host sent, without what it said.
+func keysOf(m map[string]any) string {
+	keys := make([]string, 0, len(m))
+	for k := range m {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	return strings.Join(keys, ",")
+}
+
+// rowKeys is the key count of each served row, which is enough to see a gutted one in the log.
+func rowKeys(rows []map[string]any) string {
+	n := make([]string, len(rows))
+	for i, r := range rows {
+		n[i] = fmt.Sprint(len(r))
+	}
+	return "[" + strings.Join(n, " ") + "]"
 }

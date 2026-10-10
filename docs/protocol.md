@@ -199,12 +199,23 @@ Live browser, on `lobby-v2-<region>.klei.com`:
 
 | Path | Body | Reply |
 | --- | --- | --- |
-| `/lobby/write` | `__token`, `__gameId`, `__rowId`, `masterversion` + the listing | `{"result":"OK","region":"<region>"}` |
-| `/lobby/update` | same, partial | same |
+| `/lobby/write` | `__token`, `__gameId`, `__rowId`, `masterversion` + the whole listing (34 fields), once per world start | `{"POST":{…},"result":"OK","region":"<region>"}` |
+| `/lobby/update` | same, partial: 0–5 fields (`data`, `players`, `connected`, `secondaries`, `serverpaused`) | same |
 | `/lobby/keepAlive` | `__token`, `__rowId` | same |
 | `/lobby/delete` | `__token`, `__rowId` | same |
 | `/lobby/read` | `__token`, `__gameId`, `query` (`__rowId`, `region`, …) | `{"GET":[<listing>,…]}` |
 | `/lobby/getIP` | `__rowId`, `region`; a secondary shard asking for its own address | `{"__addr":"<ip>"}` *(nso 0x211790)* |
+
+**A write is the listing; update and keepAlive are not.** A Switch host writes its whole listing
+once per world start and never again; from then on it sends an update with the fields that
+changed (day, players) and a keepAlive with none, alternating, so it is silent for up to five
+minutes at a time (measured 2026-09-30: keepAlives at 16:44:24, 16:52:11, 17:00:10, an update
+about three minutes after each). So `kleid` replaces a row on write, merges update and keepAlive
+into it, keeps a listing for 15 minutes after the host was last heard from, and remembers a
+hidden one for an hour so a late host comes back whole. Rebuilding a row from updates alone gives
+`data`/`players`/`secondaries` and nothing else, which the browser drops ("0 of 0 shown",
+2026-10-10): it is not served until the host writes again. The envelope (`__token`, `__gameId`,
+`masterversion`) never reaches the listing, which `lobby-v2-cdn` serves to anyone.
 
 A write answers `{"POST":{"__rowId":…,"__addr":…},"result":"OK","region":…}`. The host takes its
 row id from `POST.__rowId` *(nso 0x1cca44, 0x1fd2f0)*, and a master shard does not read its shard
@@ -290,7 +301,7 @@ authenticated by what login mints. The rest of the surface, from the binary:
 ## 5. What is still unknown
 
 - **The join path.** A Switch host reached the lobby and kept its listing alive for five hours on
-  2026-09-28 (`/lobby/write` then a keepAlive every three minutes), so hosting works — with caves,
+  2026-09-28 (`/lobby/write` then updates and keepAlives, see §3), so hosting works — with caves,
   which is the only way Switch DST hosts: the world-creation screen has no toggle for them. No client
   has ever browsed: there is not one `/lobby/read` or `.json.gz` fetch in the service's whole
   history. Until one happens we do not know whether the listing a Switch host writes carries the
