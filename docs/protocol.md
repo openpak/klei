@@ -1,5 +1,13 @@
 # Klei's online stack, as the Switch build speaks it
 
+> **Current Switch client (2026-10-13): Harbor**, at
+> `~/REPOS/Openpak/emulators/harbor`. Harbor is an independent
+> OpenPak project based on Eden. Citron, Ryujinx (desktop and Android), and
+> the former OpenPak Eden checkouts have been removed. References to those
+> forks below record historical evidence only: do not run their commands,
+> reinstall them, or select them for current work. Use Harbor's README and
+> current handoff for builds and testing; old results do not establish Harbor parity.
+
 Recovered 2026-09-27 from Don't Starve Together for Switch — `010090100E334000`, update v1.29.0,
 build `DontStarveTogether/740510032` — two ways:
 
