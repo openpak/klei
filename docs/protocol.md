@@ -325,3 +325,18 @@ authenticated by what login mints. The rest of the surface, from the binary:
 
 The way to close each of these is the same one that produced this file: put the name in front of
 `kleid`, read the request it logs, and disassemble the handler that consumes the reply.
+
+## From the previous README
+
+The service a Klei Switch title reaches when a console is redirected to OpenPak. Today that is
+**Don't Starve Together** (`010090100E334000`). One process serves both tiers, dispatching on
+path and hostname:
+
+| Host | What it answers |
+| --- | --- |
+| `login.kleientertainment.com` | `POST /login/LoginViaSwitch` — the console's own BAAS token in, a Klei user out |
+| `lobby-v2-cdn.klei.com` | the region list and the pre-baked `<region>-Switch.json.gz` listings |
+| `lobby-v2-us-east-1.klei.com` | `/lobby/write\|update\|keepAlive\|delete\|read` — the live server browser |
+
+`galette.klei.com` and `cdn-galette.klei.com` are deliberately **not** redirected: they serve the
+game's own content and they work against real Klei.
