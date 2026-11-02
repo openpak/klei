@@ -42,9 +42,7 @@ NX_INTERNAL_URL=http://127.0.0.1:20070 NX_INTERNAL_KEY=… go run ./cmd/kleid
 ## Docs
 
 - [protocol.md](docs/protocol.md): hosts, endpoints, wire formats, message shapes
-- [evidence.md](docs/evidence.md): captures, traces, what is confirmed and what is assumed
 - [deploy.md](docs/deploy.md): ports, env vars, image, run and build detail
-- [notes.md](docs/notes.md): design rationale, history, status
 - [ports.md](docs/ports.md): port allocation for this network
 
 Live compatibility status: [openpak.org/titles](https://openpak.org/titles)

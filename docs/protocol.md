@@ -340,3 +340,17 @@ path and hostname:
 
 `galette.klei.com` and `cdn-galette.klei.com` are deliberately **not** redirected: they serve the
 game's own content and they work against real Klei.
+
+## Design decisions
+
+- **Token verification.** `LoginViaSwitch` carries a BAAS `id_token` that OpenPak signed. Rather
+  than checking the signature itself, `kleid` asks nx-baas's `/internal/switch/identity`, which
+  also returns the player's nickname (their Klei `Username`), whether the account is banned, and
+  "this player is online now" (what the titles grid counts playtime from).
+- **Real Klei rejects the console.** Against real Klei the failure is one request:
+  `POST /login/LoginViaSwitch` carries the NSA id_token, real Klei cannot have Nintendo vouch for
+  a token OpenPak signed, and answers HTTP 500, shown as "connection to Klei failed" (measured
+  2026-09-27 with an SSL trace).
+- **The listing is the host's.** A DST server listing has forty-odd fields from the host's build.
+  `kleid` stores the object the host wrote and returns it unchanged, adding only `__rowId`.
+  Two builds then agree with each other rather than with us.
