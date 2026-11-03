@@ -3,9 +3,11 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"io"
 	"net/http"
 	"net/http/httptest"
+	"os"
 	"strings"
 	"sync"
 	"testing"
@@ -129,9 +131,19 @@ func TestExpiredListingIsNoRoom(t *testing.T) {
 	}
 }
 
-type memBacking struct{ m map[string]string }
+type memBacking struct {
+	m     map[string]string
+	clock []byte
+	down  bool
+}
 
-func (b *memBacking) upsert(_ context.Context, ku, baas string) error { b.m[ku] = baas; return nil }
+func (b *memBacking) upsert(_ context.Context, ku, baas string) error {
+	if b.down {
+		return errors.New("db down")
+	}
+	b.m[ku] = baas
+	return nil
+}
 func (b *memBacking) load(context.Context) (map[string]string, error) {
 	out := map[string]string{}
 	for k, v := range b.m {
@@ -139,12 +151,20 @@ func (b *memBacking) load(context.Context) (map[string]string, error) {
 	}
 	return out, nil
 }
+func (b *memBacking) saveClock(_ context.Context, _ string, raw []byte) error {
+	if b.down {
+		return errors.New("db down")
+	}
+	b.clock = raw
+	return nil
+}
+func (b *memBacking) loadClock(context.Context, string) ([]byte, error) { return b.clock, nil }
 
 // A login is written through, and a fresh process that loads the store maps the roster again.
 func TestKUMapSurvivesRestart(t *testing.T) {
 	disk := &memBacking{m: map[string]string{}}
 	s1 := newServer(stubIdentity(t, 200, `{"pid":1,"baas_user_id":"aaaaaaaaaaaa0001","nickname":"a"}`), "secret")
-	if err := s1.baas.attach(context.Background(), disk); err != nil {
+	if err := s1.connect(context.Background(), disk, emit.NewSessions(nil, sessionMetric, 0), true); err != nil {
 		t.Fatal(err)
 	}
 	out := post(t, s1, "/login/LoginViaSwitch", `{"NSAToken":"eyJ.a.b","Game":"DontStarveTogether"}`)
@@ -154,12 +174,111 @@ func TestKUMapSurvivesRestart(t *testing.T) {
 	}
 
 	s2 := newServer(identityClient{}, "secret") // the restart: nobody has logged in yet
-	if err := s2.baas.attach(context.Background(), disk); err != nil {
+	if err := s2.connect(context.Background(), disk, emit.NewSessions(nil, sessionMetric, 0), true); err != nil {
 		t.Fatal(err)
 	}
 	lobbyPost(t, s2, "/lobby/write", `{"__rowId":"r","name":"w","platform":"Switch","players":"return { {netid=\"`+ku+`\"} }"}`)
 	rooms := s2.rewardRooms(time.Now())
 	if len(rooms) != 1 || len(rooms[0].Players) != 1 || rooms[0].Players[0].Subject != "aaaaaaaaaaaa0001" {
 		t.Fatalf("roster did not map after restart: %+v", rooms)
+	}
+}
+
+// Two players have shared a room for 2 minutes when kleid restarts; after the restart one more
+// minute completes the three, and nothing is counted twice.
+func TestSessionClockSurvivesRestart(t *testing.T) {
+	disk := &memBacking{m: map[string]string{}}
+	f, rw := newFakeRewards(t)
+	room := []emit.Room{{ID: "dst:r@1", Players: []emit.Identity{{Namespace: "switch", Subject: "a"}, {Namespace: "switch", Subject: "b"}}}}
+	now := time.Now()
+
+	s1 := newServer(identityClient{}, "secret")
+	sess1 := emit.NewSessions(rw, sessionMetric, 0)
+	sess1.SetOnTick(s1.clock.save)
+	if err := s1.connect(context.Background(), disk, sess1, true); err != nil {
+		t.Fatal(err)
+	}
+	sess1.Tick(now, room)
+	s1.clock.save(sess1.State())
+	sess1.Tick(now.Add(2*time.Minute), room)
+	s1.clock.save(sess1.State())
+
+	s2 := newServer(identityClient{}, "secret") // restart
+	sess2 := emit.NewSessions(rw, sessionMetric, 0)
+	if err := s2.connect(context.Background(), disk, sess2, true); err != nil {
+		t.Fatal(err)
+	}
+	if n := sess2.Tick(now.Add(2*time.Minute+20*time.Second), room); n != 0 {
+		t.Fatalf("emitted early: %d", n)
+	}
+	if n := sess2.Tick(now.Add(3*time.Minute+5*time.Second), room); n != 2 {
+		t.Fatalf("the restored clock should finish the session, got %d", n)
+	}
+	s2.clock.save(sess2.State())
+
+	s3 := newServer(identityClient{}, "secret") // another restart: already emitted
+	sess3 := emit.NewSessions(rw, sessionMetric, 0)
+	_ = s3.connect(context.Background(), disk, sess3, true)
+	if n := sess3.Tick(now.Add(5*time.Minute), room); n != 0 {
+		t.Fatalf("emitted again after a restart: %d", n)
+	}
+	if ev := f.drain(t, rw); len(ev) != 2 {
+		t.Fatalf("rewards got %d events", len(ev))
+	}
+}
+
+// With the database down nothing is lost: writes stay pending and go through once it is back.
+func TestStoreDownThenBack(t *testing.T) {
+	disk := &memBacking{m: map[string]string{}, down: true}
+	s := newServer(identityClient{}, "secret")
+	s.baas.set("KU_aaaaaaaa", "aaaaaaaaaaaa0001") // not connected yet
+	s.baas.back = disk                            // connected but failing
+	s.baas.set("KU_bbbbbbbb", "bbbbbbbbbbbb0002")
+	if len(disk.m) != 0 || s.baas.get("KU_bbbbbbbb") == "" {
+		t.Fatal("memory must keep serving while the store is down")
+	}
+	disk.down = false
+	s.baas.flush(context.Background())
+	if len(disk.m) != 2 {
+		t.Fatalf("pending entries not written through: %v", disk.m)
+	}
+}
+
+// Against a real Postgres when KLEI_TEST_DATABASE_URL is set: the same restart cases as above.
+func TestPostgresRestart(t *testing.T) {
+	url := os.Getenv("KLEI_TEST_DATABASE_URL")
+	if url == "" {
+		t.Skip("KLEI_TEST_DATABASE_URL not set")
+	}
+	ctx := context.Background()
+	db, err := openKU(ctx, url)
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer db.pool.Close()
+	_, _ = db.pool.Exec(ctx, `DELETE FROM klei_users; DELETE FROM klei_session_clock`)
+
+	s1 := newServer(identityClient{}, "secret")
+	_, rw := newFakeRewards(t)
+	sess1 := emit.NewSessions(rw, sessionMetric, 0)
+	if err := s1.connect(ctx, db, sess1, true); err != nil {
+		t.Fatal(err)
+	}
+	s1.baas.set("KU_aaaaaaaa", "aaaaaaaaaaaa0001")
+	s1.baas.set("KU_aaaaaaaa", "aaaaaaaaaaaa0001") // upsert, not a second row
+	room := []emit.Room{{ID: "x", Players: []emit.Identity{{Namespace: "switch", Subject: "a"}, {Namespace: "switch", Subject: "b"}}}}
+	sess1.Tick(time.Now(), room)
+	s1.clock.save(sess1.State())
+
+	s2 := newServer(identityClient{}, "secret")
+	sess2 := emit.NewSessions(rw, sessionMetric, 0)
+	if err := s2.connect(ctx, db, sess2, true); err != nil {
+		t.Fatal(err)
+	}
+	if s2.baas.get("KU_aaaaaaaa") != "aaaaaaaaaaaa0001" {
+		t.Fatal("id map lost across restart")
+	}
+	if len(sess2.State().Since) != 2 {
+		t.Fatalf("clock lost across restart: %+v", sess2.State())
 	}
 }

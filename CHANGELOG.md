@@ -1,5 +1,16 @@
 # Changelog — klei
 
+## v0.3.10 — 2026-11-03
+
+**Rewards state is permanent.** The session clock (who has been in a room together since when, and which
+players already counted) is saved to Postgres (`klei_session_clock`) after every tick and restored at start,
+next to the Klei-id map, so a restart no longer resets the three-minute timer or lets a session count twice.
+If the database is down kleid keeps running on memory, logs `ERROR` lines, keeps the unsaved id-map writes
+pending and flushes them when the store is back (the connect is retried every 30 seconds; the clock is saved
+again on the next tick). Lobby listings themselves are still in memory: after a restart a host's world only
+reappears when it writes its listing again, and a rewritten world is a new room, so a restored clock only
+helps a room that comes back under the same key.
+
 ## v0.3.9 — 2026-11-03
 
 **The Klei-id map survives a restart.** The map from Klei user id to BAAS user id that rewards sessions

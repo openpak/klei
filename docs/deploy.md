@@ -19,3 +19,8 @@ serves both tiers.
 Set `REWARDS_EVENTS_URL` (e.g. `http://openpak-rewards:20180`) and `REWARDS_EVENTS_KEY` (or `REWARDS_EVENTS_KEY_FILE`) to report
 `game_sessions.dont-starve-together` events to the rewards service; unset, the reporter is off. `REWARDS_SESSION_MIN` (default `3m`) is how long a
 player must share a room with at least one other player. A room is a lobby listing (live, written, host heard within 15 minutes); members come from the host's `players` roster, and a player is counted only if they have logged in through kleid at least once. The Klei-id to BAAS-id map is stored in Postgres (`klei_users`: `ku`, `baas_user_id`, `last_seen`) when `KLEI_DATABASE_URL` is set, upserted on every `LoginViaSwitch` and loaded at start; the pool is capped at 2 connections. Without it the map is memory only.
+
+`KLEI_DATABASE_URL` (Postgres, e.g. `postgres://klei:…@openpak-postgres:5432/klei?sslmode=disable`) keeps the id map and the
+rewards session clock across restarts (tables are created on start; pool of 2). Unset, or if the database is
+unreachable, the service logs `ERROR` and runs on memory, retrying the connection every 30 seconds and
+writing pending entries through when it returns.

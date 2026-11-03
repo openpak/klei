@@ -43,9 +43,11 @@ var (
 func main() {
 	flag.Parse()
 	s := newServer(newIdentityClient(), *tokenSecret)
-	attachKUStore(context.Background(), s, os.Getenv("KLEI_DATABASE_URL"), log.Printf)
+	ctx := context.Background()
 	rw := emit.FromEnv("klei")
-	s.watchSessions(context.Background(), rw, 20*time.Second)
+	sess := emit.NewSessions(rw, sessionMetric, 0)
+	s.startStore(ctx, os.Getenv("KLEI_DATABASE_URL"), sess)
+	s.runSessions(ctx, sess, 20*time.Second)
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", s.route)
@@ -69,6 +71,7 @@ type server struct {
 	versions versionStore
 	lobbies  lobbyStore
 	baas     baasStore
+	clock    clockSaver
 }
 
 // route dispatches on path first and hostname second. The three tiers arrive on one port behind

@@ -37,29 +37,35 @@ type kuBacking interface {
 	load(ctx context.Context) (map[string]string, error)
 }
 
-// baasStore remembers which BAAS user a Klei user id was minted for, in memory and, when a
-// backing store is attached, durably.
+// baasStore remembers which BAAS user a Klei user id was minted for, in memory and, once a backing
+// store is attached, durably. Writes that cannot reach the store (not attached yet, or the database
+// is down) are kept pending, logged at error level, and written through the next time the store is
+// reachable (flush, called on every set and by the reconnect loop).
 type baasStore struct {
-	mu   sync.Mutex
-	by   map[string]string
-	back kuBacking
+	mu      sync.Mutex
+	by      map[string]string
+	pending map[string]string
+	back    kuBacking
 }
 
-// attach loads the persisted map and makes later sets write through to it.
+// attach loads the persisted map, makes later sets write through to it, and flushes what was pending.
 func (b *baasStore) attach(ctx context.Context, back kuBacking) error {
 	m, err := back.load(ctx)
 	if err != nil {
 		return err
 	}
 	b.mu.Lock()
-	defer b.mu.Unlock()
 	if b.by == nil {
 		b.by = map[string]string{}
 	}
 	for k, v := range m {
-		b.by[k] = v
+		if _, mine := b.pending[k]; !mine {
+			b.by[k] = v
+		}
 	}
 	b.back = back
+	b.mu.Unlock()
+	b.flush(ctx)
 	return nil
 }
 
@@ -68,15 +74,43 @@ func (b *baasStore) set(ku, baas string) {
 	if b.by == nil {
 		b.by = map[string]string{}
 	}
+	if b.pending == nil {
+		b.pending = map[string]string{}
+	}
 	b.by[ku] = baas
-	back := b.back
+	b.pending[ku] = baas
 	b.mu.Unlock()
-	if back != nil {
-		ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
-		defer cancel()
-		if err := back.upsert(ctx, ku, baas); err != nil {
-			log.Printf("[klei] persisting the Klei-id map failed: %v", redact.Err(err))
+	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+	defer cancel()
+	b.flush(ctx)
+}
+
+// flush writes the pending entries to the store, keeping any that fail.
+func (b *baasStore) flush(ctx context.Context) {
+	b.mu.Lock()
+	back := b.back
+	todo := make(map[string]string, len(b.pending))
+	for k, v := range b.pending {
+		todo[k] = v
+	}
+	b.mu.Unlock()
+	if len(todo) == 0 {
+		return
+	}
+	if back == nil {
+		log.Printf("[klei] ERROR Klei-id map store not connected: %d entries held in memory only until it is", len(todo))
+		return
+	}
+	for k, v := range todo {
+		if err := back.upsert(ctx, k, v); err != nil {
+			log.Printf("[klei] ERROR persisting the Klei-id map failed (%d entries pending, will retry): %v", len(todo), redact.Err(err))
+			return
 		}
+		b.mu.Lock()
+		if b.pending[k] == v {
+			delete(b.pending, k)
+		}
+		b.mu.Unlock()
 	}
 }
 
@@ -123,10 +157,10 @@ func (s *server) rewardRooms(now time.Time) []emit.Room {
 	return rooms
 }
 
-func (s *server) watchSessions(ctx context.Context, rw *emit.Client, every time.Duration) {
-	if !rw.Enabled() {
-		return
-	}
-	sess := emit.NewSessions(rw, "game_sessions.dont-starve-together", 0)
+const sessionMetric = "game_sessions.dont-starve-together"
+
+// runSessions saves the clock after every tick and starts the watcher.
+func (s *server) runSessions(ctx context.Context, sess *emit.Sessions, every time.Duration) {
+	sess.SetOnTick(s.clock.save)
 	sess.Watch(ctx, every, func() []emit.Room { return s.rewardRooms(time.Now()) })
 }
