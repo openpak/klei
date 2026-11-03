@@ -128,3 +128,38 @@ func TestExpiredListingIsNoRoom(t *testing.T) {
 		t.Fatalf("%d rooms from a silent host", n)
 	}
 }
+
+type memBacking struct{ m map[string]string }
+
+func (b *memBacking) upsert(_ context.Context, ku, baas string) error { b.m[ku] = baas; return nil }
+func (b *memBacking) load(context.Context) (map[string]string, error) {
+	out := map[string]string{}
+	for k, v := range b.m {
+		out[k] = v
+	}
+	return out, nil
+}
+
+// A login is written through, and a fresh process that loads the store maps the roster again.
+func TestKUMapSurvivesRestart(t *testing.T) {
+	disk := &memBacking{m: map[string]string{}}
+	s1 := newServer(stubIdentity(t, 200, `{"pid":1,"baas_user_id":"aaaaaaaaaaaa0001","nickname":"a"}`), "secret")
+	if err := s1.baas.attach(context.Background(), disk); err != nil {
+		t.Fatal(err)
+	}
+	out := post(t, s1, "/login/LoginViaSwitch", `{"NSAToken":"eyJ.a.b","Game":"DontStarveTogether"}`)
+	ku, _ := out["UserID"].(string)
+	if disk.m[ku] != "aaaaaaaaaaaa0001" {
+		t.Fatalf("login was not persisted: %v", disk.m)
+	}
+
+	s2 := newServer(identityClient{}, "secret") // the restart: nobody has logged in yet
+	if err := s2.baas.attach(context.Background(), disk); err != nil {
+		t.Fatal(err)
+	}
+	lobbyPost(t, s2, "/lobby/write", `{"__rowId":"r","name":"w","platform":"Switch","players":"return { {netid=\"`+ku+`\"} }"}`)
+	rooms := s2.rewardRooms(time.Now())
+	if len(rooms) != 1 || len(rooms[0].Players) != 1 || rooms[0].Players[0].Subject != "aaaaaaaaaaaa0001" {
+		t.Fatalf("roster did not map after restart: %+v", rooms)
+	}
+}

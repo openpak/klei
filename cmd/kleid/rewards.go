@@ -10,7 +10,7 @@ package main
 // least one other player this host can map to an OpenPak account.
 //
 // Mapping: kuid is a one-way hash of the BAAS user id, so LoginViaSwitch remembers KU -> BAAS id
-// in memory. A kleid restart forgets it until the player logs in again; unmapped players are left
+// in Postgres (kustore.go) when KLEI_DATABASE_URL is set, loaded at start. Unmapped players are left
 // out (and so do not count as the second player). Nothing is guessed: a roster entry that is not a
 // KU id kleid minted for a logged-in console is ignored.
 //
@@ -20,27 +20,64 @@ package main
 import (
 	"context"
 	"fmt"
+	"log"
 	"regexp"
 	"sort"
 	"sync"
 	"time"
 
 	emit "github.com/openpak/rewards-emit"
+
+	"openpak/klei/redact"
 )
 
-// baasStore remembers which BAAS user a Klei user id was minted for.
-type baasStore struct {
-	mu sync.Mutex
-	by map[string]string
+// kuBacking is where the KU -> BAAS map survives a restart (Postgres in production).
+type kuBacking interface {
+	upsert(ctx context.Context, ku, baas string) error
+	load(ctx context.Context) (map[string]string, error)
 }
 
-func (b *baasStore) set(ku, baas string) {
+// baasStore remembers which BAAS user a Klei user id was minted for, in memory and, when a
+// backing store is attached, durably.
+type baasStore struct {
+	mu   sync.Mutex
+	by   map[string]string
+	back kuBacking
+}
+
+// attach loads the persisted map and makes later sets write through to it.
+func (b *baasStore) attach(ctx context.Context, back kuBacking) error {
+	m, err := back.load(ctx)
+	if err != nil {
+		return err
+	}
 	b.mu.Lock()
 	defer b.mu.Unlock()
 	if b.by == nil {
 		b.by = map[string]string{}
 	}
+	for k, v := range m {
+		b.by[k] = v
+	}
+	b.back = back
+	return nil
+}
+
+func (b *baasStore) set(ku, baas string) {
+	b.mu.Lock()
+	if b.by == nil {
+		b.by = map[string]string{}
+	}
 	b.by[ku] = baas
+	back := b.back
+	b.mu.Unlock()
+	if back != nil {
+		ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+		defer cancel()
+		if err := back.upsert(ctx, ku, baas); err != nil {
+			log.Printf("[klei] persisting the Klei-id map failed: %v", redact.Err(err))
+		}
+	}
 }
 
 func (b *baasStore) get(ku string) string {

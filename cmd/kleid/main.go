@@ -43,6 +43,7 @@ var (
 func main() {
 	flag.Parse()
 	s := newServer(newIdentityClient(), *tokenSecret)
+	attachKUStore(context.Background(), s, os.Getenv("KLEI_DATABASE_URL"), log.Printf)
 	rw := emit.FromEnv("klei")
 	s.watchSessions(context.Background(), rw, 20*time.Second)
 

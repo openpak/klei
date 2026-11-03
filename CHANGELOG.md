@@ -1,5 +1,12 @@
 # Changelog — klei
 
+## v0.3.8 — 2026-11-03
+
+**The Klei-id map survives a restart.** The map from Klei user id to BAAS user id that rewards sessions
+need is now kept in Postgres (`klei_users`, set `KLEI_DATABASE_URL`): upserted with a `last_seen` on every
+`LoginViaSwitch`, loaded at start, two connections at most. Without the variable, or if the database is
+down, kleid runs on the in-memory map as before.
+
 ## v0.3.7 — 2026-11-03
 
 **Rewards sessions.** A player now earns a Don't Starve Together session (`game_sessions.dont-starve-together`)
