@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.3.11 — 2026-11-03
+
+**Rewards events survive a restart.** Bumps rewards-emit to v0.3.0: with `REWARDS_EMIT_DATABASE_URL` set the undelivered reward-event queue lives in Postgres (schema `emit`) instead of memory. Unset, behaviour is unchanged.
+
 ## v0.3.10 — 2026-11-03
 
 **Rewards state is permanent.** The session clock (who has been in a room together since when, and which
