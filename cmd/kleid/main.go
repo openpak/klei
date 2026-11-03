@@ -31,6 +31,7 @@ import (
 	"time"
 
 	emit "github.com/openpak/rewards-emit"
+	"openpak/klei/internal/httplog"
 )
 
 var (
@@ -61,7 +62,7 @@ func main() {
 	}()
 
 	log.Printf("[klei] serving login and lobby-v2 on %s", *addr)
-	log.Fatal(http.ListenAndServe(*addr, mux))
+	log.Fatal(http.ListenAndServe(*addr, httplog.Middleware(mux)))
 }
 
 type server struct {
