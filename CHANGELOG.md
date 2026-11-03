@@ -1,6 +1,6 @@
 # Changelog — klei
 
-## v0.3.8 — 2026-11-03
+## v0.3.9 — 2026-11-03
 
 **The Klei-id map survives a restart.** The map from Klei user id to BAAS user id that rewards sessions
 need is now kept in Postgres (`klei_users`, set `KLEI_DATABASE_URL`): upserted with a `last_seen` on every
