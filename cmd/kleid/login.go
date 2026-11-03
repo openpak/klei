@@ -111,6 +111,7 @@ func (s *server) loginViaSwitch(w http.ResponseWriter, r *http.Request) {
 		name = ku
 	}
 	s.names.set(ku, name)
+	s.baas.set(ku, p.BaasUserID)
 	av := appVersionClaim(in.NSAToken)
 	s.versions.set(ku, av)
 

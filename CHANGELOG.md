@@ -1,5 +1,13 @@
 # Changelog — klei
 
+## v0.3.7 — 2026-11-03
+
+**Rewards sessions.** A player now earns a Don't Starve Together session (`game_sessions.dont-starve-together`)
+after three unbroken minutes in a live lobby listing with another player. Membership is the only thing the
+lobby observes, the host's `players` roster (Klei user ids), mapped to BAAS user ids remembered from
+`LoginViaSwitch`; players the process did not log in are left out. A rewritten world is a new room. Off unless
+`REWARDS_EVENTS_URL` and `REWARDS_EVENTS_KEY` are set. The image build now downloads modules.
+
 ## v0.3.6 — 2026-10-10
 
 **The log carries nothing a person typed or a client's address.** The tags that name players and

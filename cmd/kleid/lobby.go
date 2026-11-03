@@ -64,6 +64,9 @@ type listing struct {
 	// ever saw update/keepAlive (a host that wrote before this process started) has no name,
 	// version or port, and the browser cannot show it, so it is not served until it is written.
 	written bool
+	// created is when the world's /lobby/write arrived. A row id (the host's RakNet guid) can come
+	// back after a restart, so rewards keys a room by id and creation time together.
+	created time.Time
 }
 
 type lobbyStore struct {
@@ -78,7 +81,8 @@ func (s *lobbyStore) write(rowID, platform string, data map[string]any) {
 	if s.rows == nil {
 		s.rows = map[string]listing{}
 	}
-	s.rows[rowID] = listing{data: data, platform: platform, seen: time.Now(), written: true}
+	now := time.Now()
+	s.rows[rowID] = listing{data: data, platform: platform, seen: now, written: true, created: now}
 }
 
 // update merges a partial listing (update) or none at all (keepAlive) into a row and marks it
@@ -100,7 +104,11 @@ func (s *lobbyStore) update(rowID, platform string, data map[string]any) bool {
 	if platform == "" {
 		platform = old.platform
 	}
-	s.rows[rowID] = listing{data: merged, platform: platform, seen: time.Now(), written: had && old.written}
+	created := old.created
+	if created.IsZero() {
+		created = time.Now()
+	}
+	s.rows[rowID] = listing{data: merged, platform: platform, seen: time.Now(), written: had && old.written, created: created}
 	return had && old.written
 }
 

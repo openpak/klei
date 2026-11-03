@@ -19,6 +19,7 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"flag"
 	"io"
@@ -27,6 +28,9 @@ import (
 	"net/url"
 	"os"
 	"strings"
+	"time"
+
+	emit "github.com/openpak/rewards-emit"
 )
 
 var (
@@ -39,6 +43,8 @@ var (
 func main() {
 	flag.Parse()
 	s := newServer(newIdentityClient(), *tokenSecret)
+	rw := emit.FromEnv("klei")
+	s.watchSessions(context.Background(), rw, 20*time.Second)
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", s.route)
@@ -61,6 +67,7 @@ type server struct {
 	names    nameStore
 	versions versionStore
 	lobbies  lobbyStore
+	baas     baasStore
 }
 
 // route dispatches on path first and hostname second. The three tiers arrive on one port behind
