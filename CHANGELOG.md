@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.5.0 — 2026-11-04
+
+- Account erasure (prds#120): `DELETE /internal/accounts/{account_id}/data` on the health listener (22641; `Authorization: Bearer $ACCOUNT_ERASE_KEY`, unset = 503). Resolves the account's BAAS ids through the core (`ACCOUNT_GRPC_ADDR`, `ACCOUNT_INTERNAL_KEY`, read-only ListAccountLinks; without them the call fails 500 so the account is not marked erased) and removes the `klei_users` rows, the account's entries in `klei_session_clock`, and the in-memory names, versions and lobby listings that mention its Klei id. Idempotent, one `account erased` log line. No authored content is stored, so nothing is kept.
+
 ## v0.4.0 — 2026-11-03
 - Per-request logging: one slog line per HTTP request (method, path, status, ms) on stderr via internal/httplog. Query strings, headers and bodies are never logged; /healthz and /metrics are skipped.
 

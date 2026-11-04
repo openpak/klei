@@ -44,6 +44,7 @@ var (
 func main() {
 	flag.Parse()
 	s := newServer(newIdentityClient(), *tokenSecret)
+	s.links = newLinksFromEnv()
 	ctx := context.Background()
 	rw := emit.FromEnv("klei")
 	sess := emit.NewSessions(rw, sessionMetric, 0)
@@ -57,6 +58,7 @@ func main() {
 		h.HandleFunc("/health", func(w http.ResponseWriter, _ *http.Request) {
 			writeJSON(w, 200, map[string]any{"status": "ok"})
 		})
+		h.HandleFunc("/internal/accounts/", eraseHandler("klei", s.Erase))
 		log.Printf("[klei] health on %s", *healthAddr)
 		log.Fatal(http.ListenAndServe(*healthAddr, h))
 	}()
@@ -73,6 +75,8 @@ type server struct {
 	lobbies  lobbyStore
 	baas     baasStore
 	clock    clockSaver
+	links    switchLinks  // account core, read-only (erasure); nil when not configured
+	eraser   eraseBacking // Postgres side of erasure; nil without a database
 }
 
 // route dispatches on path first and hostname second. The three tiers arrive on one port behind

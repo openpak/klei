@@ -171,6 +171,9 @@ func (s *server) connect(ctx context.Context, db interface {
 		}
 	}
 	s.clock.attach(db)
+	if e, ok := db.(eraseBacking); ok {
+		s.eraser = e
+	}
 	return nil
 }
 

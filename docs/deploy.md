@@ -24,3 +24,9 @@ player must share a room with at least one other player. A room is a lobby listi
 rewards session clock across restarts (tables are created on start; pool of 2). Unset, or if the database is
 unreachable, the service logs `ERROR` and runs on memory, retrying the connection every 30 seconds and
 writing pending entries through when it returns.
+
+## Account erasure
+
+`DELETE /internal/accounts/{account_id}/data` on the health listener (`http://openpak-klei:22641`, not routed by Traefik), header `Authorization: Bearer <ACCOUNT_ERASE_KEY>`; key unset answers 503. Needs `ACCOUNT_GRPC_ADDR` + `ACCOUNT_INTERNAL_KEY` (read-only core link lookup: the Klei id is a one-way hash of the BAAS id, so the account's BAAS ids come from its Switch links; without them the call answers 500). Answers `{"service":"klei","rows":N}`.
+
+Erased: `klei_users` rows (KU -> BAAS id), the account's keys in the `klei_session_clock` state, and in memory the display name, game version, BAAS map entry and any lobby listing naming its Klei id. Kept: nothing; kleid stores no authored content (world listings are the hosts' own, ephemeral, and dropped here if they name the player). Run it before the core deletes the links.
