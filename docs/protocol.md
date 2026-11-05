@@ -336,6 +336,12 @@ a **non-empty** array ("Missing IAPDefs" otherwise); each def needs `ItemType` (
 
 Test switch: `KLEI_ITEMS_TEST=wilson_formal,...` is the list of item types every account is shown as owning (the per-account list from Rewards replaces it).
 
+**More startup calls (found in the owner's 18:35 run; replies in `KLEI_ITEMS=probe`).**
+
+- `GET /iap/dst/GetShopEpoch` (lower case `dst`; asked by `PurchasePackScreen`, Lua only, not in the NSO). Reply `{"Time": <unix seconds>}`; the Shop warns the player ("shop epoch is wrong") when it differs from the console's clock by more than 60 s, so it is the current time.
+- `POST /iap/DST/PurchaseCreateAndComplete` (body: `ClientToken`, `Environment`, `PlatformAuthToken`, `TitleId`, `UserID`; the token is the console's eShop credential and is never read). Asked at every start after the shop-service consumable list. Reply read by `OnItemServerPurchaseCompleted` (nso 0x277e30): `Error` must be false, `Message` "Purchase Completed" marks success, `Items` an optional array. OpenPak answers `{"Error": false, "Message": "Purchase Completed", "Items": []}`: nothing to settle. Either way the game then calls `OnCheckUnusedPurchasesComplete` and the Shop opens.
+- The Lua text "failed to download your item collection" (`PLAYERSUMMARYSCREEN.FAILED_INVENTORY_BODY`) is shown when `TheInventory:HasDownloadedInventory()` is false. The native flag is the result of the inventory processor (nso 0x188b04). Still open on the console after the three replies above: what else makes it false.
+
 ## 4b. The in-game Shop and "Loading..." (card #141, 2026-11-05)
 
 The owner's console run showed the Shop stuck on "Loading...". From the game's Lua (RomFS `scripts/screens/redux/multiplayermainscreen.lua`,

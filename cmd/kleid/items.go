@@ -15,6 +15,7 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"time"
 )
 
 func itemsMode() string { return strings.ToLower(os.Getenv("KLEI_ITEMS")) }
@@ -50,10 +51,26 @@ func inventoryReply(types []string) map[string]any {
 // items answers items.kleientertainment.com. It reports false when the request is not one it handles, so the caller
 // falls through to the logged 404.
 func (s *server) items(w http.ResponseWriter, r *http.Request) bool {
-	if itemsMode() != "probe" || r.Method != http.MethodPost {
+	if itemsMode() != "probe" {
+		return false
+	}
+	// The Shop screen asks for the server's clock and warns the player when it is more than 60 s from the console's
+	// (purchasepackscreen.lua, PurchasePackScreen constructor): the answer is the current time, never a fixed value.
+	// The path is lower case "dst" there, and the console sends GET although the script says POST.
+	if r.URL.Path == "/iap/dst/GetShopEpoch" {
+		writeJSON(w, 200, map[string]any{"Time": time.Now().Unix()})
+		return true
+	}
+	if r.Method != http.MethodPost {
 		return false
 	}
 	switch r.URL.Path {
+	case "/iap/DST/PurchaseCreateAndComplete":
+		// Asked at every start ("[NX Store] Checking for unconsumed purchases..."): "settle the eShop purchases I have not
+		// consumed yet". OpenPak sells nothing for money, so there is nothing to complete: a finished purchase with no items.
+		// The body carries the console's eShop auth token; it is never read or logged (the log shows the redacted body).
+		writeJSON(w, 200, map[string]any{"Error": false, "Message": "Purchase Completed", "Items": []any{}})
+		return true
 	case "/clientitems/DST/GetAllItems":
 		writeJSON(w, 200, inventoryReply(testItems()))
 		return true

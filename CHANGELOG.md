@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.7.2 -- 2026-11-05
+
+- `KLEI_ITEMS=probe` also answers `GET /iap/dst/GetShopEpoch` (`{"Time": now}`; the Shop warns when the clock is more than 60 s off) and `POST /iap/DST/PurchaseCreateAndComplete` (`{"Error": false, "Message": "Purchase Completed", "Items": []}`: nothing to settle, nothing is sold for money). Both seen in the owner's console run.
+
 ## v0.7.1 -- 2026-11-05
 
 - docs/protocol.md 4b: why the in-game Shop hung on "Loading..." (the Nintendo shop-service consumable list, answered by nx-shop v0.3.1 with an empty list) and every call the Shop makes. No code change.

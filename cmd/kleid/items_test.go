@@ -6,6 +6,7 @@ import (
 	"net/http/httptest"
 	"strings"
 	"testing"
+	"time"
 )
 
 func itemsPost(t *testing.T, s *server, path string) (int, map[string]any) {
@@ -53,6 +54,18 @@ func TestItemRepliesHaveTheShapeTheClientReads(t *testing.T) {
 	}
 	if code, m = itemsPost(t, s, "/gameevents/DontStarveTogether/KeyValuesGetMulti"); code != 200 || m["Events"] == nil {
 		t.Fatalf("KeyValuesGetMulti: %d %v", code, m)
+	}
+	// The Shop's clock check wants the real time (a fixed value would raise the "clock is wrong" popup), on GET.
+	w := httptest.NewRecorder()
+	s.route(w, httptest.NewRequest(http.MethodGet, "http://items.kleientertainment.com/iap/dst/GetShopEpoch", nil))
+	var ep map[string]any
+	json.Unmarshal(w.Body.Bytes(), &ep)
+	if tm, ok := ep["Time"].(float64); w.Code != 200 || !ok || tm < float64(time.Now().Unix()-5) || tm > float64(time.Now().Unix()+5) {
+		t.Fatalf("GetShopEpoch: %d %s", w.Code, w.Body.String())
+	}
+	// Nothing to settle: a completed purchase with no items, Error false.
+	if code, m = itemsPost(t, s, "/iap/DST/PurchaseCreateAndComplete"); code != 200 || m["Error"] != false || m["Message"] != "Purchase Completed" || len(m["Items"].([]any)) != 0 {
+		t.Fatalf("PurchaseCreateAndComplete: %d %v", code, m)
 	}
 	// Pricing stays a 404 unless asked for; asked for, it lists a def per test item and Error is false.
 	if code, _ = itemsPost(t, s, "/iap/DST/GetPricingInfo"); code != 404 {
