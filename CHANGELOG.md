@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.8.0 -- 2026-11-05
+
+- Card #141: `KLEI_ITEMS=rewards`. `GetAllItems` lists the player's DST skins from Rewards by network identity (events key), cached 60 s and refreshed on `entitlement_changed` from the account core stream; `KLEI_ITEMS=probe` and the test list stay for experiments. `tools/catalog/gen_catalog.py` + `dst-import.json`: the 431 character skins for the Rewards import. Equip is local to the console (docs/protocol.md 4c).
+
 ## v0.7.5 -- 2026-11-05
 
 - Item step (card #141): with `KLEI_ITEMS_TEST=wilson_formal` the list now has the real skin key (`wilson_formal` is a character skin in the game's prefabskins.lua; `ItemID` stays a number, the item key a string) and pricing lists every test item at 999999 plus the `openpak_none` placeholder, so the pricing reply is never empty and no def is free. Variant 1 (empty list + `UserID`) passed on the owner's Switch: My Item Collection opens. The Shop says "The Klei store is closed right now" because the Shop screen shows that when no def survives its filter (in_store, a known MISC_ITEMS type, virtual currency): expected with nothing for sale.

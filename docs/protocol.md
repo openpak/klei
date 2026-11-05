@@ -359,6 +359,22 @@ The owner's console run showed the Shop stuck on "Loading...". From the game's L
    `BarterLoseItem`, `BarterDuplicateItems`, and `clientitems/DST/OpenMysteryBox`, `Swap`, `ValidateItems`, `RedeemCode`, `Tick`, `ReportMission/<name>`,
    `SetItemOpened`, `ReportUnknownItemType`, `VerifyGiftingReceipt`, `gameevents/DST/GetStatus`. None is answered: with no products and no IAP defs nothing can be bought.
 
+## 4c. Owned cosmetics from Rewards (card #141)
+
+`KLEI_ITEMS=rewards` replaces the test list: `GetAllItems` lists the DST skins the player owns in Rewards. kleid names the player by network identity
+(`namespace=switch`, `subject` = the BAAS user id the Klei id was minted for, from the persisted Klei-id map) and asks Rewards'
+`GET /internal/v1/adapter/inventory?...&game=dst` with the events key it already holds (`REWARDS_EVENTS_URL`, `REWARDS_EVENTS_KEY`). Answers are cached 60 s per
+player and dropped at once on the account core's `entitlement_changed` (subject `dst`) through `SubscribeAccountEvents`; a Rewards outage serves the last answer for
+a day. An item's `ItemType` is its game key (`wilson_formal`); only keys Rewards marks deliverable are returned. A player nobody linked to an OpenPak account owns nothing.
+
+**Equip is local.** DST has no equip call to the item server: the calls it makes are `GetAllItems`, `DailyGift`, `KeyValuesGetMulti/Set(Multi)`, `Swap`, `ValidateItems`,
+`SetItemOpened`, `OpenMysteryBox`, `RedeemCode`, `Tick`, `ReportMission`, `ReportUnknownItemType`, `VerifyGiftingReceipt` and the `iap/DST/*` shop calls. The chosen skin is kept
+in the player's own profile on the console, so nothing is reported to Rewards (no `PUT /adapter/equipped`).
+
+`tools/catalog/gen_catalog.py` builds the Rewards import list from the game's scripts: 431 character skins (`type = "base"` in `prefabs/skinprefabs.lua`), named from
+`skin_strings.lua` (`wilson_formal` is "Guest of Honor"), priced by the game's rarity (Heirloom* legendary 400, Elegant epic 200, Complimentary common 30; Event and Loyal are
+earned, not sold), `deliverable` when the skin's build `anim/dynamic/<name>.zip` is in the installed RomFS (430 of 431).
+
 ## 5. What is still unknown
 
 - **The join path.** A Switch host reached the lobby and kept its listing alive for five hours on

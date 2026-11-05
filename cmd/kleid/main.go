@@ -45,11 +45,15 @@ func main() {
 	flag.Parse()
 	s := newServer(newIdentityClient(), *tokenSecret)
 	s.links = newLinksFromEnv()
+	s.inv = newRewardsInventory()
 	ctx := context.Background()
 	rw := emit.FromEnv("klei")
 	sess := emit.NewSessions(rw, sessionMetric, 0)
 	s.startStore(ctx, os.Getenv("KLEI_DATABASE_URL"), sess)
 	s.runSessions(ctx, sess, 20*time.Second)
+	if s.inv != nil && itemsMode() == "rewards" {
+		go s.inv.follow(ctx)
+	}
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", s.route)
@@ -74,6 +78,7 @@ type server struct {
 	versions versionStore
 	lobbies  lobbyStore
 	baas     baasStore
+	inv      *rewardsInventory // the players' DST cosmetics from Rewards; nil without REWARDS_EVENTS_URL/KEY
 	clock    clockSaver
 	links    switchLinks  // account core, read-only (erasure); nil when not configured
 	eraser   eraseBacking // Postgres side of erasure; nil without a database

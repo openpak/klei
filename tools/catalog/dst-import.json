@@ -1,0 +1,4746 @@
+{
+"catalog_rev": "dst-1.29.0",
+"items": [
+{
+"game_ref": "hermitcrab_coral",
+"slot": "skin",
+"name": "Hermitcrab: Grandmother-of-Pearl",
+"rarity": "common",
+"origin": "promo",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "hermitcrab_hairy",
+"slot": "skin",
+"name": "Hermitcrab: Prickly Pearl",
+"rarity": "common",
+"origin": "promo",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "hermitcrab_none",
+"slot": "skin",
+"name": "Hermitcrab: Pearl",
+"rarity": "common",
+"origin": "promo",
+"deliverable": false,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "hermitcrab_peacock",
+"slot": "skin",
+"name": "Hermitcrab: Crabulous Pearl",
+"rarity": "common",
+"origin": "promo",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "hermitcrab_pointy",
+"slot": "skin",
+"name": "Hermitcrab: Shellderly Pearl",
+"rarity": "common",
+"origin": "promo",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_20s",
+"slot": "skin",
+"name": "Walter: The Roarer (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_ancient",
+"slot": "skin",
+"name": "Walter: The Archaic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_bee",
+"slot": "skin",
+"name": "Walter: Bee Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_bee_d",
+"slot": "skin",
+"name": "Walter: Buzzy Boy Head",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_bee_p",
+"slot": "skin",
+"name": "Walter: Buzzy Boy Head (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_detective",
+"slot": "skin",
+"name": "Walter: The Boy Detective (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_formal",
+"slot": "skin",
+"name": "Walter: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_hazard",
+"slot": "skin",
+"name": "Walter: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_ice",
+"slot": "skin",
+"name": "Walter: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_lunar",
+"slot": "skin",
+"name": "Walter: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_nature",
+"slot": "skin",
+"name": "Walter: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_rose",
+"slot": "skin",
+"name": "Walter: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_shadow",
+"slot": "skin",
+"name": "Walter: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_survivor",
+"slot": "skin",
+"name": "Walter: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_ventriloquist",
+"slot": "skin",
+"name": "Walter: The Chatterbox (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_victorian",
+"slot": "skin",
+"name": "Walter: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "walter_yule",
+"slot": "skin",
+"name": "Walter: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_bishop",
+"slot": "skin",
+"name": "Wanda: Clockwork Bishop Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_bishop_d",
+"slot": "skin",
+"name": "Wanda: Wandashop Bulb",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_bishop_p",
+"slot": "skin",
+"name": "Wanda: Wandashop Bulb (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_formal",
+"slot": "skin",
+"name": "Wanda: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_hazard",
+"slot": "skin",
+"name": "Wanda: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_ice",
+"slot": "skin",
+"name": "Wanda: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_lunar",
+"slot": "skin",
+"name": "Wanda: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_masquerade",
+"slot": "skin",
+"name": "Wanda: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_nature",
+"slot": "skin",
+"name": "Wanda: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_rose",
+"slot": "skin",
+"name": "Wanda: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_shadow",
+"slot": "skin",
+"name": "Wanda: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_steampunk",
+"slot": "skin",
+"name": "Wanda: The Tinkersmith (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_western",
+"slot": "skin",
+"name": "Wanda: The Stampeder (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wanda_yule",
+"slot": "skin",
+"name": "Wanda: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_candyman",
+"slot": "skin",
+"name": "Warly: The Candy Man (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_carrat",
+"slot": "skin",
+"name": "Warly: Carrat Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_carrat_d",
+"slot": "skin",
+"name": "Warly: Warrat Head",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_carrat_p",
+"slot": "skin",
+"name": "Warly: Warrat Head (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_chef",
+"slot": "skin",
+"name": "Warly: The Head Chef (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_fisherman",
+"slot": "skin",
+"name": "Warly: The Trawler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_formal",
+"slot": "skin",
+"name": "Warly: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_hazard",
+"slot": "skin",
+"name": "Warly: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_ice",
+"slot": "skin",
+"name": "Warly: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_lunar",
+"slot": "skin",
+"name": "Warly: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_masquerade",
+"slot": "skin",
+"name": "Warly: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_nature",
+"slot": "skin",
+"name": "Warly: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_pirate",
+"slot": "skin",
+"name": "Warly: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_rose",
+"slot": "skin",
+"name": "Warly: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_shadow",
+"slot": "skin",
+"name": "Warly: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_survivor",
+"slot": "skin",
+"name": "Warly: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_victorian",
+"slot": "skin",
+"name": "Warly: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "warly_yule",
+"slot": "skin",
+"name": "Warly: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_ancient",
+"slot": "skin",
+"name": "Wathgrithr: The Archaic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_combatant",
+"slot": "skin",
+"name": "Wathgrithr: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_cook",
+"slot": "skin",
+"name": "Wathgrithr: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_deerclops",
+"slot": "skin",
+"name": "Wathgrithr: Deerclops Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_deerclops_d",
+"slot": "skin",
+"name": "Wathgrithr: Deerfrid Mask",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_deerclops_p",
+"slot": "skin",
+"name": "Wathgrithr: Deerfrid Mask (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_formal",
+"slot": "skin",
+"name": "Wathgrithr: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_formalp",
+"slot": "skin",
+"name": "Wathgrithr: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_gladiator",
+"slot": "skin",
+"name": "Wathgrithr: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_hazard",
+"slot": "skin",
+"name": "Wathgrithr: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_ice",
+"slot": "skin",
+"name": "Wathgrithr: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_lunar",
+"slot": "skin",
+"name": "Wathgrithr: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_magma",
+"slot": "skin",
+"name": "Wathgrithr: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_masquerade",
+"slot": "skin",
+"name": "Wathgrithr: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_nature",
+"slot": "skin",
+"name": "Wathgrithr: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_pirate",
+"slot": "skin",
+"name": "Wathgrithr: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_rose",
+"slot": "skin",
+"name": "Wathgrithr: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_rosep",
+"slot": "skin",
+"name": "Wathgrithr: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_scarecrow",
+"slot": "skin",
+"name": "Wathgrithr: The Straw-Stuffed (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_shadow",
+"slot": "skin",
+"name": "Wathgrithr: The Triumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_shadowp",
+"slot": "skin",
+"name": "Wathgrithr: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_survivor",
+"slot": "skin",
+"name": "Wathgrithr: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_survivorp",
+"slot": "skin",
+"name": "Wathgrithr: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_valkyrie",
+"slot": "skin",
+"name": "Wathgrithr: Winged Victory (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_victorian",
+"slot": "skin",
+"name": "Wathgrithr: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_western",
+"slot": "skin",
+"name": "Wathgrithr: The Stampeder (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_wrestler",
+"slot": "skin",
+"name": "Wathgrithr: The Ultimate Performer (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wathgrithr_yule",
+"slot": "skin",
+"name": "Wathgrithr: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_combatant",
+"slot": "skin",
+"name": "Waxwell: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_cook",
+"slot": "skin",
+"name": "Waxwell: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_formal",
+"slot": "skin",
+"name": "Waxwell: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_formalp",
+"slot": "skin",
+"name": "Waxwell: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_gladiator",
+"slot": "skin",
+"name": "Waxwell: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_hazard",
+"slot": "skin",
+"name": "Waxwell: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_ice",
+"slot": "skin",
+"name": "Waxwell: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_krampus",
+"slot": "skin",
+"name": "Waxwell: Krampus Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_krampus_d",
+"slot": "skin",
+"name": "Waxwell: Krampwell Head",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_krampus_p",
+"slot": "skin",
+"name": "Waxwell: Krampwell Head (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_lunar",
+"slot": "skin",
+"name": "Waxwell: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_magma",
+"slot": "skin",
+"name": "Waxwell: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_masquerade",
+"slot": "skin",
+"name": "Waxwell: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_nature",
+"slot": "skin",
+"name": "Waxwell: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_pirate",
+"slot": "skin",
+"name": "Waxwell: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_rose",
+"slot": "skin",
+"name": "Waxwell: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_rosep",
+"slot": "skin",
+"name": "Waxwell: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_spring",
+"slot": "skin",
+"name": "Waxwell: The Equinor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_survivor",
+"slot": "skin",
+"name": "Waxwell: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_survivorp",
+"slot": "skin",
+"name": "Waxwell: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_unshadow",
+"slot": "skin",
+"name": "Waxwell: The Untriumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_unshadowp",
+"slot": "skin",
+"name": "Waxwell: The Untriumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_vampire",
+"slot": "skin",
+"name": "Waxwell: The Vampiric (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_victorian",
+"slot": "skin",
+"name": "Waxwell: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_western",
+"slot": "skin",
+"name": "Waxwell: The Stampeder (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_wizard",
+"slot": "skin",
+"name": "Waxwell: The Dark Wizard (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "waxwell_yule",
+"slot": "skin",
+"name": "Waxwell: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_bat",
+"slot": "skin",
+"name": "Webber: Batilisk Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_bat_d",
+"slot": "skin",
+"name": "Webber: Webilisk Head",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_bat_p",
+"slot": "skin",
+"name": "Webber: Webilisk Head (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_boy",
+"slot": "skin",
+"name": "Webber: The Farmspider (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_combatant",
+"slot": "skin",
+"name": "Webber: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_cook",
+"slot": "skin",
+"name": "Webber: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_formal",
+"slot": "skin",
+"name": "Webber: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_formalp",
+"slot": "skin",
+"name": "Webber: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_gladiator",
+"slot": "skin",
+"name": "Webber: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_hazard",
+"slot": "skin",
+"name": "Webber: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_ice",
+"slot": "skin",
+"name": "Webber: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_lunar",
+"slot": "skin",
+"name": "Webber: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_magma",
+"slot": "skin",
+"name": "Webber: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_masquerade",
+"slot": "skin",
+"name": "Webber: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_nature",
+"slot": "skin",
+"name": "Webber: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_pirate",
+"slot": "skin",
+"name": "Webber: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_punk",
+"slot": "skin",
+"name": "Webber: The Rebel (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_rose",
+"slot": "skin",
+"name": "Webber: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_rosep",
+"slot": "skin",
+"name": "Webber: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_shadow",
+"slot": "skin",
+"name": "Webber: The Triumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_shadowp",
+"slot": "skin",
+"name": "Webber: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_spring",
+"slot": "skin",
+"name": "Webber: The Equinor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_survivor",
+"slot": "skin",
+"name": "Webber: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_survivorp",
+"slot": "skin",
+"name": "Webber: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_victorian",
+"slot": "skin",
+"name": "Webber: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_wrestler",
+"slot": "skin",
+"name": "Webber: El Tigre Cub (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "webber_yule",
+"slot": "skin",
+"name": "Webber: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_ancient",
+"slot": "skin",
+"name": "Wendy: The Archaic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_combatant",
+"slot": "skin",
+"name": "Wendy: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_cook",
+"slot": "skin",
+"name": "Wendy: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_creepy",
+"slot": "skin",
+"name": "Wendy: The Supernatural (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_formal",
+"slot": "skin",
+"name": "Wendy: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_formalp",
+"slot": "skin",
+"name": "Wendy: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_gladiator",
+"slot": "skin",
+"name": "Wendy: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_handmedown",
+"slot": "skin",
+"name": "Wendy: The Nostalgic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_hazard",
+"slot": "skin",
+"name": "Wendy: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_ice",
+"slot": "skin",
+"name": "Wendy: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_lunar",
+"slot": "skin",
+"name": "Wendy: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_lureplant",
+"slot": "skin",
+"name": "Wendy: Lureplant Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_lureplant_d",
+"slot": "skin",
+"name": "Wendy: Wendyflower Head",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_lureplant_p",
+"slot": "skin",
+"name": "Wendy: Wendyflower Head (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_magma",
+"slot": "skin",
+"name": "Wendy: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_masquerade",
+"slot": "skin",
+"name": "Wendy: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_nature",
+"slot": "skin",
+"name": "Wendy: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_pirate",
+"slot": "skin",
+"name": "Wendy: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_rose",
+"slot": "skin",
+"name": "Wendy: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_rosep",
+"slot": "skin",
+"name": "Wendy: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_shadow",
+"slot": "skin",
+"name": "Wendy: The Triumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_shadowp",
+"slot": "skin",
+"name": "Wendy: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_survivor",
+"slot": "skin",
+"name": "Wendy: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_survivorp",
+"slot": "skin",
+"name": "Wendy: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_victorian",
+"slot": "skin",
+"name": "Wendy: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wendy_yule",
+"slot": "skin",
+"name": "Wendy: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_clown",
+"slot": "skin",
+"name": "Wes: The Pierrot (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_combatant",
+"slot": "skin",
+"name": "Wes: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_cook",
+"slot": "skin",
+"name": "Wes: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_formal",
+"slot": "skin",
+"name": "Wes: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_formalp",
+"slot": "skin",
+"name": "Wes: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_gladiator",
+"slot": "skin",
+"name": "Wes: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_harlequin",
+"slot": "skin",
+"name": "Wes: The Fool (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_hazard",
+"slot": "skin",
+"name": "Wes: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_ice",
+"slot": "skin",
+"name": "Wes: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_lunar",
+"slot": "skin",
+"name": "Wes: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_magma",
+"slot": "skin",
+"name": "Wes: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_mandrake",
+"slot": "skin",
+"name": "Wes: Mandrake Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_mandrake_d",
+"slot": "skin",
+"name": "Wes: Wesdrake Makeup",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_mandrake_p",
+"slot": "skin",
+"name": "Wes: Wesdrake Makeup (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_masquerade",
+"slot": "skin",
+"name": "Wes: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_nature",
+"slot": "skin",
+"name": "Wes: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_pirate",
+"slot": "skin",
+"name": "Wes: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_rose",
+"slot": "skin",
+"name": "Wes: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_rosep",
+"slot": "skin",
+"name": "Wes: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_shadow",
+"slot": "skin",
+"name": "Wes: The Triumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_shadowp",
+"slot": "skin",
+"name": "Wes: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_survivor",
+"slot": "skin",
+"name": "Wes: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_survivorp",
+"slot": "skin",
+"name": "Wes: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_victorian",
+"slot": "skin",
+"name": "Wes: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_western",
+"slot": "skin",
+"name": "Wes: The Stampeder (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_wrestler",
+"slot": "skin",
+"name": "Wes: The Lover (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wes_yule",
+"slot": "skin",
+"name": "Wes: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_combatant",
+"slot": "skin",
+"name": "Wickerbottom: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_cook",
+"slot": "skin",
+"name": "Wickerbottom: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_formal",
+"slot": "skin",
+"name": "Wickerbottom: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_formalp",
+"slot": "skin",
+"name": "Wickerbottom: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_gladiator",
+"slot": "skin",
+"name": "Wickerbottom: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_hazard",
+"slot": "skin",
+"name": "Wickerbottom: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_ice",
+"slot": "skin",
+"name": "Wickerbottom: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_lightninggoat",
+"slot": "skin",
+"name": "Wickerbottom: Volt Goat Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_lightninggoat_d",
+"slot": "skin",
+"name": "Wickerbottom: Ms. Voltbottom Antlers",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_lightninggoat_p",
+"slot": "skin",
+"name": "Wickerbottom: Ms. Voltbottom Antlers (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_lunar",
+"slot": "skin",
+"name": "Wickerbottom: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_magma",
+"slot": "skin",
+"name": "Wickerbottom: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_masquerade",
+"slot": "skin",
+"name": "Wickerbottom: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_nature",
+"slot": "skin",
+"name": "Wickerbottom: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_ornate",
+"slot": "skin",
+"name": "Wickerbottom: The Nom de Plume (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_pirate",
+"slot": "skin",
+"name": "Wickerbottom: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_rose",
+"slot": "skin",
+"name": "Wickerbottom: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_rosep",
+"slot": "skin",
+"name": "Wickerbottom: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_shadow",
+"slot": "skin",
+"name": "Wickerbottom: The Triumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_shadowp",
+"slot": "skin",
+"name": "Wickerbottom: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_spiderwitch",
+"slot": "skin",
+"name": "Wickerbottom: The Bewitched (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_survivor",
+"slot": "skin",
+"name": "Wickerbottom: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_survivorp",
+"slot": "skin",
+"name": "Wickerbottom: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_victorian",
+"slot": "skin",
+"name": "Wickerbottom: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wickerbottom_yule",
+"slot": "skin",
+"name": "Wickerbottom: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_ancient",
+"slot": "skin",
+"name": "Willow: The Archaic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_combatant",
+"slot": "skin",
+"name": "Willow: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_cook",
+"slot": "skin",
+"name": "Willow: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_dowdy",
+"slot": "skin",
+"name": "Willow: The Woeful (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_dragonfly",
+"slot": "skin",
+"name": "Willow: Dragonfly Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_dragonfly_d",
+"slot": "skin",
+"name": "Willow: Willowfly Head",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_dragonfly_p",
+"slot": "skin",
+"name": "Willow: Willowfly Head (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_formal",
+"slot": "skin",
+"name": "Willow: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_formalp",
+"slot": "skin",
+"name": "Willow: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_gladiator",
+"slot": "skin",
+"name": "Willow: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_haunteddoll",
+"slot": "skin",
+"name": "Willow: The Forlorn Doll (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_hazard",
+"slot": "skin",
+"name": "Willow: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_ice",
+"slot": "skin",
+"name": "Willow: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_lunar",
+"slot": "skin",
+"name": "Willow: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_magma",
+"slot": "skin",
+"name": "Willow: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_masquerade",
+"slot": "skin",
+"name": "Willow: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_nature",
+"slot": "skin",
+"name": "Willow: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_pirate",
+"slot": "skin",
+"name": "Willow: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_rose",
+"slot": "skin",
+"name": "Willow: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_rosep",
+"slot": "skin",
+"name": "Willow: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_shadow",
+"slot": "skin",
+"name": "Willow: The Triumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_shadowp",
+"slot": "skin",
+"name": "Willow: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_spring",
+"slot": "skin",
+"name": "Willow: The Equinor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_survivor",
+"slot": "skin",
+"name": "Willow: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_survivorp",
+"slot": "skin",
+"name": "Willow: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_victorian",
+"slot": "skin",
+"name": "Willow: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "willow_yule",
+"slot": "skin",
+"name": "Willow: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_barber",
+"slot": "skin",
+"name": "Wilson: The Barber (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_combatant",
+"slot": "skin",
+"name": "Wilson: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_cook",
+"slot": "skin",
+"name": "Wilson: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_formal",
+"slot": "skin",
+"name": "Wilson: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_formalp",
+"slot": "skin",
+"name": "Wilson: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_gladiator",
+"slot": "skin",
+"name": "Wilson: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_hazard",
+"slot": "skin",
+"name": "Wilson: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_ice",
+"slot": "skin",
+"name": "Wilson: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_lunar",
+"slot": "skin",
+"name": "Wilson: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_madscience",
+"slot": "skin",
+"name": "Wilson: The Mad Scientist (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_magma",
+"slot": "skin",
+"name": "Wilson: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_masquerade",
+"slot": "skin",
+"name": "Wilson: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_nature",
+"slot": "skin",
+"name": "Wilson: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_pigguard",
+"slot": "skin",
+"name": "Wilson: Guard Pig Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_pigguard_d",
+"slot": "skin",
+"name": "Wilson: Piggsbury Mask",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_pigguard_p",
+"slot": "skin",
+"name": "Wilson: Piggsbury Mask (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_pirate",
+"slot": "skin",
+"name": "Wilson: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_rose",
+"slot": "skin",
+"name": "Wilson: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_rosep",
+"slot": "skin",
+"name": "Wilson: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_shadow",
+"slot": "skin",
+"name": "Wilson: The Triumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_shadowp",
+"slot": "skin",
+"name": "Wilson: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_spring",
+"slot": "skin",
+"name": "Wilson: The Equinor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_survivor",
+"slot": "skin",
+"name": "Wilson: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_survivorp",
+"slot": "skin",
+"name": "Wilson: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_victorian",
+"slot": "skin",
+"name": "Wilson: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wilson_yule",
+"slot": "skin",
+"name": "Wilson: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_20s",
+"slot": "skin",
+"name": "Winona: The Roarer (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_ancient",
+"slot": "skin",
+"name": "Winona: The Archaic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_combatant",
+"slot": "skin",
+"name": "Winona: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_cook",
+"slot": "skin",
+"name": "Winona: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_factory",
+"slot": "skin",
+"name": "Winona: The Industrious (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_formal",
+"slot": "skin",
+"name": "Winona: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_formalp",
+"slot": "skin",
+"name": "Winona: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_frankenstein",
+"slot": "skin",
+"name": "Winona: The Creature (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_gladiator",
+"slot": "skin",
+"name": "Winona: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_grassgecko",
+"slot": "skin",
+"name": "Winona: Grass Gekko Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_grassgecko_d",
+"slot": "skin",
+"name": "Winona: Nona Gekko Head",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_grassgecko_p",
+"slot": "skin",
+"name": "Winona: Nona Gekko Head (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_hazard",
+"slot": "skin",
+"name": "Winona: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_ice",
+"slot": "skin",
+"name": "Winona: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_lunar",
+"slot": "skin",
+"name": "Winona: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_magma",
+"slot": "skin",
+"name": "Winona: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_masquerade",
+"slot": "skin",
+"name": "Winona: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_nature",
+"slot": "skin",
+"name": "Winona: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_pirate",
+"slot": "skin",
+"name": "Winona: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_rose",
+"slot": "skin",
+"name": "Winona: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_rosep",
+"slot": "skin",
+"name": "Winona: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_shadow",
+"slot": "skin",
+"name": "Winona: The Triumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_shadowp",
+"slot": "skin",
+"name": "Winona: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_spring",
+"slot": "skin",
+"name": "Winona: The Equinor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_survivor",
+"slot": "skin",
+"name": "Winona: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_survivorp",
+"slot": "skin",
+"name": "Winona: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_victorian",
+"slot": "skin",
+"name": "Winona: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_wrestler",
+"slot": "skin",
+"name": "Winona: The Fixer (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "winona_yule",
+"slot": "skin",
+"name": "Winona: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_ancient",
+"slot": "skin",
+"name": "Wolfgang: The Archaic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_combatant",
+"slot": "skin",
+"name": "Wolfgang: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_cook",
+"slot": "skin",
+"name": "Wolfgang: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_formal",
+"slot": "skin",
+"name": "Wolfgang: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_formalp",
+"slot": "skin",
+"name": "Wolfgang: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_gladiator",
+"slot": "skin",
+"name": "Wolfgang: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_hazard",
+"slot": "skin",
+"name": "Wolfgang: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_ice",
+"slot": "skin",
+"name": "Wolfgang: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_lunar",
+"slot": "skin",
+"name": "Wolfgang: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_magma",
+"slot": "skin",
+"name": "Wolfgang: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_nature",
+"slot": "skin",
+"name": "Wolfgang: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_pirate",
+"slot": "skin",
+"name": "Wolfgang: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_rose",
+"slot": "skin",
+"name": "Wolfgang: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_rosep",
+"slot": "skin",
+"name": "Wolfgang: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_shadow",
+"slot": "skin",
+"name": "Wolfgang: The Triumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_shadowp",
+"slot": "skin",
+"name": "Wolfgang: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_strongman",
+"slot": "skin",
+"name": "Wolfgang: The Incredible Strongman (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_survivor",
+"slot": "skin",
+"name": "Wolfgang: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_survivorp",
+"slot": "skin",
+"name": "Wolfgang: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_victorian",
+"slot": "skin",
+"name": "Wolfgang: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_walrus",
+"slot": "skin",
+"name": "Wolfgang: MacTusk Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_walrus_d",
+"slot": "skin",
+"name": "Wolfgang: MacWolf Bald Cap",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_walrus_p",
+"slot": "skin",
+"name": "Wolfgang: MacWolf Bald Cap (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_western",
+"slot": "skin",
+"name": "Wolfgang: The Stampeder (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_wolfman",
+"slot": "skin",
+"name": "Wolfgang: The Wolfman (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_wrestler",
+"slot": "skin",
+"name": "Wolfgang: The Giant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wolfgang_yule",
+"slot": "skin",
+"name": "Wolfgang: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_ancient",
+"slot": "skin",
+"name": "Woodie: The Archaic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_combatant",
+"slot": "skin",
+"name": "Woodie: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_cook",
+"slot": "skin",
+"name": "Woodie: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_formal",
+"slot": "skin",
+"name": "Woodie: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_formalp",
+"slot": "skin",
+"name": "Woodie: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_gladiator",
+"slot": "skin",
+"name": "Woodie: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_hazard",
+"slot": "skin",
+"name": "Woodie: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_hippie",
+"slot": "skin",
+"name": "Woodie: The Tree Hugger (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_hockey",
+"slot": "skin",
+"name": "Woodie: The Team Player (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_ice",
+"slot": "skin",
+"name": "Woodie: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_lunar",
+"slot": "skin",
+"name": "Woodie: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_magma",
+"slot": "skin",
+"name": "Woodie: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_masquerade",
+"slot": "skin",
+"name": "Woodie: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_nature",
+"slot": "skin",
+"name": "Woodie: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_pirate",
+"slot": "skin",
+"name": "Woodie: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_rose",
+"slot": "skin",
+"name": "Woodie: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_rosep",
+"slot": "skin",
+"name": "Woodie: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_shadow",
+"slot": "skin",
+"name": "Woodie: The Triumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_shadowp",
+"slot": "skin",
+"name": "Woodie: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_survivor",
+"slot": "skin",
+"name": "Woodie: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_survivorp",
+"slot": "skin",
+"name": "Woodie: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_treeguard",
+"slot": "skin",
+"name": "Woodie: Treeguard Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_treeguard_d",
+"slot": "skin",
+"name": "Woodie: Woodguard Head",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_treeguard_p",
+"slot": "skin",
+"name": "Woodie: Woodguard Head (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_victorian",
+"slot": "skin",
+"name": "Woodie: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "woodie_yule",
+"slot": "skin",
+"name": "Woodie: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_ancient",
+"slot": "skin",
+"name": "Wormwood: The Archaic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_cactus",
+"slot": "skin",
+"name": "Wormwood: The Oasis Bound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_formal",
+"slot": "skin",
+"name": "Wormwood: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_hazard",
+"slot": "skin",
+"name": "Wormwood: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_ice",
+"slot": "skin",
+"name": "Wormwood: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_lunar",
+"slot": "skin",
+"name": "Wormwood: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_mushroom",
+"slot": "skin",
+"name": "Wormwood: The Hollow (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_nature",
+"slot": "skin",
+"name": "Wormwood: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_pumpkin",
+"slot": "skin",
+"name": "Wormwood: The Wormwood O'Lantern (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_rose",
+"slot": "skin",
+"name": "Wormwood: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_saladmander",
+"slot": "skin",
+"name": "Wormwood: Saladmander Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_saladmander_d",
+"slot": "skin",
+"name": "Wormwood: Wormander Head",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_saladmander_p",
+"slot": "skin",
+"name": "Wormwood: Wormander Head (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_shadow",
+"slot": "skin",
+"name": "Wormwood: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_survivor",
+"slot": "skin",
+"name": "Wormwood: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_victorian",
+"slot": "skin",
+"name": "Wormwood: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wormwood_yule",
+"slot": "skin",
+"name": "Wormwood: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_ancient",
+"slot": "skin",
+"name": "Wortox: The Archaic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_dragon",
+"slot": "skin",
+"name": "Wortox: The Draconic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_formal",
+"slot": "skin",
+"name": "Wortox: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_hazard",
+"slot": "skin",
+"name": "Wortox: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_ice",
+"slot": "skin",
+"name": "Wortox: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_lunar",
+"slot": "skin",
+"name": "Wortox: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_masquerade",
+"slot": "skin",
+"name": "Wortox: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_minotaur",
+"slot": "skin",
+"name": "Wortox: The Minotaur (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_nature",
+"slot": "skin",
+"name": "Wortox: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_noeyeddeer",
+"slot": "skin",
+"name": "Wortox: No-Eyed Deer Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_noeyeddeer_d",
+"slot": "skin",
+"name": "Wortox: No-Eyed Deertox Antlers",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_noeyeddeer_p",
+"slot": "skin",
+"name": "Wortox: No-Eyed Deertox Antlers (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_original",
+"slot": "skin",
+"name": "Wortox: The Uncorrupted (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_pirate",
+"slot": "skin",
+"name": "Wortox: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_rose",
+"slot": "skin",
+"name": "Wortox: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_shadow",
+"slot": "skin",
+"name": "Wortox: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_survivor",
+"slot": "skin",
+"name": "Wortox: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_victorian",
+"slot": "skin",
+"name": "Wortox: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wortox_yule",
+"slot": "skin",
+"name": "Wortox: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_ancient",
+"slot": "skin",
+"name": "Wurt: The Archaic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_cave",
+"slot": "skin",
+"name": "Wurt: The Abyssal (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_formal",
+"slot": "skin",
+"name": "Wurt: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_hazard",
+"slot": "skin",
+"name": "Wurt: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_ice",
+"slot": "skin",
+"name": "Wurt: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_lunar",
+"slot": "skin",
+"name": "Wurt: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_masquerade",
+"slot": "skin",
+"name": "Wurt: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_nature",
+"slot": "skin",
+"name": "Wurt: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_pirate",
+"slot": "skin",
+"name": "Wurt: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_rose",
+"slot": "skin",
+"name": "Wurt: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_shadow",
+"slot": "skin",
+"name": "Wurt: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_squid",
+"slot": "skin",
+"name": "Wurt: The Little Sinker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_survivor",
+"slot": "skin",
+"name": "Wurt: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_toadstool",
+"slot": "skin",
+"name": "Wurt: Toadstool Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_toadstool_d",
+"slot": "skin",
+"name": "Wurt: Wurtstool Cap",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_toadstool_p",
+"slot": "skin",
+"name": "Wurt: Wurtstool Cap (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_victorian",
+"slot": "skin",
+"name": "Wurt: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_western",
+"slot": "skin",
+"name": "Wurt: The Stampeder (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wurt_yule",
+"slot": "skin",
+"name": "Wurt: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_ancient",
+"slot": "skin",
+"name": "Wx78: The Archaic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_combatant",
+"slot": "skin",
+"name": "Wx78: The Challenger",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_cook",
+"slot": "skin",
+"name": "Wx78: The Culinarian",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_formal",
+"slot": "skin",
+"name": "Wx78: Guest of Honor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_formalp",
+"slot": "skin",
+"name": "Wx78: Guest of Honor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_gladiator",
+"slot": "skin",
+"name": "Wx78: The Gladiator (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_hazard",
+"slot": "skin",
+"name": "Wx78: The Hermetic",
+"rarity": "event",
+"origin": "earned",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_ice",
+"slot": "skin",
+"name": "Wx78: The Snowfallen (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_lunar",
+"slot": "skin",
+"name": "Wx78: The Moonbound (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_magma",
+"slot": "skin",
+"name": "Wx78: The Magmatic (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_masquerade",
+"slot": "skin",
+"name": "Wx78: The Masquerader (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_nature",
+"slot": "skin",
+"name": "Wx78: The Verdant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_pirate",
+"slot": "skin",
+"name": "Wx78: The Swashbuckler (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_retro",
+"slot": "skin",
+"name": "Wx78: The Experiment (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_rhinorook",
+"slot": "skin",
+"name": "Wx78: Rook Costume",
+"rarity": "event",
+"origin": "event",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_rhinorook_d",
+"slot": "skin",
+"name": "Wx78: Rookiebot Headplate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_rhinorook_p",
+"slot": "skin",
+"name": "Wx78: Rookiebot Headplate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_rose",
+"slot": "skin",
+"name": "Wx78: The Roseate",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_rosep",
+"slot": "skin",
+"name": "Wx78: The Roseate (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_shadow",
+"slot": "skin",
+"name": "Wx78: The Triumphant",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_shadowp",
+"slot": "skin",
+"name": "Wx78: The Triumphant (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_survivor",
+"slot": "skin",
+"name": "Wx78: The Survivor",
+"rarity": "legendary",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_survivorp",
+"slot": "skin",
+"name": "Wx78: The Survivor (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_victorian",
+"slot": "skin",
+"name": "Wx78: The Victorian (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_wip",
+"slot": "skin",
+"name": "Wx78: The Unfinished (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_wrestler",
+"slot": "skin",
+"name": "Wx78: The Midori Roboto (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "wx78_yule",
+"slot": "skin",
+"name": "Wx78: The Merrymaker (Woven)",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+}
+]
+}

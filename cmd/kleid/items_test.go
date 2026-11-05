@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"net/http"
 	"net/http/httptest"
@@ -94,5 +95,62 @@ func TestItemRepliesHaveTheShapeTheClientReads(t *testing.T) {
 	code, m = itemsPost(t, s, "/iap/DST/GetPricingInfo")
 	if defs, _ := m["IAPDefs"].([]any); code != 200 || len(defs) != 1 {
 		t.Fatalf("pricing without test items: %d %v", code, m)
+	}
+}
+
+// KLEI_ITEMS=rewards: GetAllItems lists what Rewards says the player owns (asked by network identity), cached for a minute and
+// dropped when the account's entitlement changes; a player Rewards does not know owns nothing.
+func TestInventoryFromRewards(t *testing.T) {
+	calls := 0
+	owned := []string{"wilson_formal"}
+	rw := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		calls++
+		if r.Header.Get("X-Internal-Key") != "k" || r.URL.Query().Get("game") != "dst" || r.URL.Query().Get("namespace") != "switch" || r.URL.Query().Get("subject") != "baas-1" {
+			http.Error(w, "no", 401)
+			return
+		}
+		o := []map[string]any{}
+		for _, t := range owned {
+			o = append(o, map[string]any{"game_ref": t})
+		}
+		json.NewEncoder(w).Encode(map[string]any{"account": "acc-1", "owned": o, "base": []any{}})
+	}))
+	defer rw.Close()
+	t.Setenv("KLEI_ITEMS", "rewards")
+	now := time.Now()
+	s := &server{secret: []byte("s"), inv: &rewardsInventory{base: rw.URL, key: "k", http: rw.Client(), now: func() time.Time { return now }, by: map[string]invEntry{}}}
+	ku := kuid("baas-1")
+	s.baas.set(ku, "baas-1")
+	list := func() []any {
+		w := httptest.NewRecorder()
+		s.route(w, httptest.NewRequest(http.MethodPost, "http://items.kleientertainment.com/clientitems/DST/GetAllItems", strings.NewReader(`{"ClientToken":"`+s.mintToken(ku)+`"}`)))
+		var m map[string]any
+		json.Unmarshal(w.Body.Bytes(), &m)
+		if m["Error"] != false {
+			t.Fatalf("reply: %v", m)
+		}
+		return m["Items"].([]any)
+	}
+	if it := list(); len(it) != 1 || it[0].(map[string]any)["ItemType"] != "wilson_formal" {
+		t.Fatalf("owned: %v", it)
+	}
+	list()
+	if calls != 1 {
+		t.Fatalf("rewards asked %d times within a minute, want 1", calls)
+	}
+	owned = []string{"wilson_formal", "walter_formal"}
+	s.inv.drop("acc-1") // entitlement_changed
+	if it := list(); len(it) != 2 || calls != 2 {
+		t.Fatalf("after the event: %v (calls %d)", it, calls)
+	}
+	// Rewards down: the last answer is served; a player never seen gets nothing.
+	rw.Close()
+	now = now.Add(2 * time.Minute)
+	if it := list(); len(it) != 2 {
+		t.Fatalf("outage: %v", it)
+	}
+	s.baas.set(kuid("baas-2"), "baas-2")
+	if got := s.inv.owned(context.Background(), kuid("baas-2"), "baas-2"); len(got) != 0 {
+		t.Fatalf("unknown player: %v", got)
 	}
 }

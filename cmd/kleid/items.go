@@ -20,6 +20,8 @@ import (
 	"time"
 )
 
+// itemsMode is "" (off: the client's 404s), "probe" (the test list in KLEI_ITEMS_TEST) or "rewards" (each player's cosmetics
+// from Rewards). Both non-empty modes answer the same startup calls.
 func itemsMode() string { return strings.ToLower(os.Getenv("KLEI_ITEMS")) }
 
 // testItems are the item types the probe grants to everyone.
@@ -65,7 +67,7 @@ func (s *server) clientUser(r *http.Request) string {
 // items answers items.kleientertainment.com. It reports false when the request is not one it handles, so the caller
 // falls through to the logged 404.
 func (s *server) items(w http.ResponseWriter, r *http.Request) bool {
-	if itemsMode() != "probe" {
+	if m := itemsMode(); m != "probe" && m != "rewards" {
 		return false
 	}
 	// The Shop screen asks for the server's clock and warns the player when it is more than 60 s from the console's
@@ -86,7 +88,15 @@ func (s *server) items(w http.ResponseWriter, r *http.Request) bool {
 		writeJSON(w, 200, map[string]any{"Error": false, "Message": "Purchase Completed", "Items": []any{}})
 		return true
 	case "/clientitems/DST/GetAllItems":
-		writeJSON(w, 200, inventoryReply(s.clientUser(r), testItems()))
+		ku := s.clientUser(r)
+		types := testItems()
+		if itemsMode() == "rewards" {
+			types = nil
+			if s.inv != nil && ku != "" {
+				types = s.inv.owned(r.Context(), ku, s.baas.get(ku))
+			}
+		}
+		writeJSON(w, 200, inventoryReply(ku, types))
 		return true
 	case "/clientitems/DST/DailyGift":
 		// GiftReceived true would hand the player an item; there is no daily gift.
@@ -102,7 +112,11 @@ func (s *server) items(w http.ResponseWriter, r *http.Request) bool {
 		}
 		// The client wants at least one IAP def, each with an ItemType (string); KleiCurrency plus its cost make a def.
 		defs := []map[string]any{}
-		for _, t := range testItems() {
+		var priced []string
+		if itemsMode() == "probe" {
+			priced = testItems()
+		}
+		for _, t := range priced {
 			// Never free: the Shop only lists item types it has strings for (MISC_ITEMS: chests and packs), so a skin's
 			// def is not shown; the price is a guard if one ever were, and nothing here can be bought.
 			defs = append(defs, map[string]any{"ItemType": t, "KleiCurrency": "KLEI_GEMS", "KleiCurrencyCost": 999999})
