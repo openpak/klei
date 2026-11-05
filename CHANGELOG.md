@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.6.0 — 2026-11-05
+
+- Card #141 (Rewards unlocks game cosmetics): `KLEI_ITEMS=probe` answers `GetPricingInfo` and `GetAllItems` on `items.kleientertainment.com` with an empty, well-formed reply so a Harbor run can show how the client reacts. Off by default (the 404 stands). docs/protocol.md section 4a records the reply keys recovered from the Switch build.
+
 ## v0.5.0 — 2026-11-04
 
 - Account erasure (prds#120): `DELETE /internal/accounts/{account_id}/data` on the health listener (22641; `Authorization: Bearer $ACCOUNT_ERASE_KEY`, unset = 503). Resolves the account's BAAS ids through the core (`ACCOUNT_GRPC_ADDR`, `ACCOUNT_INTERNAL_KEY`, read-only ListAccountLinks; without them the call fails 500 so the account is not marked erased) and removes the `klei_users` rows, the account's entries in `klei_session_clock`, and the in-memory names, versions and lobby listings that mention its Klei id. Idempotent, one `account erased` log line. No authored content is stored, so nothing is kept.

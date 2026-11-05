@@ -93,6 +93,7 @@ func (s *server) route(w http.ResponseWriter, r *http.Request) {
 		s.lobby(w, r)
 	case strings.HasPrefix(host, "lobby-v2-cdn."):
 		s.cdn(w, r)
+	case strings.HasPrefix(host, "items.") && s.items(w, r):
 	default:
 		// Every unhandled request is a finding: this stack was recovered from one title, and the
 		// next name or path a guest asks for is how the next one gets added. Log the body too --

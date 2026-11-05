@@ -306,6 +306,28 @@ authenticated by what login mints. The rest of the surface, from the binary:
 `gameevents/DST/GetStatus`. GetAllItems' reply is read for `Error` and `Unchanged`
 *(nso 0x188324)*.
 
+## 4a. What the client reads from the item server (static analysis, 2026-11-05)
+
+Card openpak/prds#141. Recovered from `main.nso` (v1.29.0) with `scratch/arm64xref.py`; offsets are nso virtual addresses. **Not yet
+confirmed against a running client.** `KLEI_ITEMS=probe` makes `kleid` answer the two main-menu calls with the reply below so a Harbor run
+can confirm (off by default; unset = the logged 404 as before).
+
+`POST /iap/DST/GetPricingInfo` (`ProcessPricingData`, 0x17f9d4). Request `{"PricingHash": n, "ClientToken": "..."}`. Reply keys read:
+`Error`, `Unchanged`, `PricingHash`, `IAPDefs` (array; "Missing IAPDefs" is a warning when absent), `BarterDefs`. Each IAP def entry is read for
+`ItemType`, `SalePercent`, `SaleEnd`, `KleiCurrency`, `KleiCurrencyCost`, `KleiCurrencySaleCost`, `NxItemId`; an entry without a usable item
+type is "Malformed iap def entry received from item server, item_type". Barter defs carry `Buy` and `Sell`.
+
+`POST /clientitems/DST/GetAllItems` (`InternalGetAllItems` 0x18800c, `GetAllItems_Complete` 0x1882cc). Request `{"ClientToken", "InventoryStateToken",
+"EventHash", "CheckTwitchEntitlements"}`. The reply is read for `Error` (object) and `Unchanged`; the body is then kept with
+`,"OfflineUserID":"<id>"` appended and cached with the state token ("using inventory state token from cached file"). The item list's key is
+**not recovered**: item records reach the Lua side as `item_id`, `item_type`, `modified_time`, `skin_custom`, `box_message`,
+`box_build_override`, and the network inventory is exchanged as a bit stream (`DeserializeAppendItems`: `item_count`, `item_id`). `item_type`
+is an integer resolved through the IAP defs ("unknown item type: %u" otherwise), so an item can only be shown if its `ItemType` is in `IAPDefs`.
+Other calls: `Swap`, `ValidateItems`, `SetItemOpened`, `OpenMysteryBox`, `RedeemCode` (replies `Error`, `RemovedItems`, `ErrorCode`
+`E_PRICE_MISMATCH` | `E_CURRENCY_MISMATCH` | `E_BALANCE_MISMATCH`, `NewCurrency`).
+
+Next step: run the probe on Harbor, read `client_log.txt` for the client's reaction, then find the item list key by serving one test item.
+
 ## 5. What is still unknown
 
 - **The join path.** A Switch host reached the lobby and kept its listing alive for five hours on
