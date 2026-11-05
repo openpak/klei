@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.7.0 — 2026-11-05
+
+- Card #141: the item replies now have the shape the client reads. The v0.6.0 probe sent `"Error": ""` (a string) and an empty `IAPDefs`; the client reads `Error` as a boolean that must be false, so the skins screen said "failed to download your item collection". `GetAllItems` answers `Error: false`, `Unchanged: false`, a state token and `Items` (`ItemID` number, `ItemType` string); `DailyGift` and `KeyValuesGetMulti` get proper empty replies; `GetPricingInfo` only with `KLEI_ITEMS_PRICING=on` (needs a non-empty `IAPDefs`). `KLEI_ITEMS_TEST` lists item types every account owns, for the test run. Still off by default.
+
 ## v0.6.0 — 2026-11-05
 
 - Card #141 (Rewards unlocks game cosmetics): `KLEI_ITEMS=probe` answers `GetPricingInfo` and `GetAllItems` on `items.kleientertainment.com` with an empty, well-formed reply so a Harbor run can show how the client reacts. Off by default (the 404 stands). docs/protocol.md section 4a records the reply keys recovered from the Switch build.

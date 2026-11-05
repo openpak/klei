@@ -306,27 +306,35 @@ authenticated by what login mints. The rest of the surface, from the binary:
 `gameevents/DST/GetStatus`. GetAllItems' reply is read for `Error` and `Unchanged`
 *(nso 0x188324)*.
 
-## 4a. What the client reads from the item server (static analysis, 2026-11-05)
+## 4a. What the client reads from the item server (static analysis, 2026-11-05; first console run corrected it)
 
-Card openpak/prds#141. Recovered from `main.nso` (v1.29.0) with `scratch/arm64xref.py`; offsets are nso virtual addresses. **Not yet
-confirmed against a running client.** `KLEI_ITEMS=probe` makes `kleid` answer the two main-menu calls with the reply below so a Harbor run
-can confirm (off by default; unset = the logged 404 as before).
+Card openpak/prds#141. Recovered from `main.nso` (v1.29.0) with `scratch/arm64xref.py` and a disassembly; offsets are nso virtual
+addresses. `KLEI_ITEMS=probe` answers these calls; off by default (the 404 is what players had).
 
-`POST /iap/DST/GetPricingInfo` (`ProcessPricingData`, 0x17f9d4). Request `{"PricingHash": n, "ClientToken": "..."}`. Reply keys read:
-`Error`, `Unchanged`, `PricingHash`, `IAPDefs` (array; "Missing IAPDefs" is a warning when absent), `BarterDefs`. Each IAP def entry is read for
-`ItemType`, `SalePercent`, `SaleEnd`, `KleiCurrency`, `KleiCurrencyCost`, `KleiCurrencySaleCost`, `NxItemId`; an entry without a usable item
-type is "Malformed iap def entry received from item server, item_type". Barter defs carry `Buy` and `Sell`.
+**JSON node types** (the client's own JSON library): 1 array, 2 string, 3 number, 5 true, 6 false. Every reply below carries
+`"Error": false`. **`Error` is a boolean that must be present and false**: missing, or any other type, is an error reply
+("The connection to the inventory server has failed"). The first probe (v0.6.0) sent `"Error": ""` and an empty `IAPDefs`, and on a real
+console (owner's Switch, test account Leia, 2026-11-05 17:36 UTC) the skins screen said "failed to download your item collection".
 
-`POST /clientitems/DST/GetAllItems` (`InternalGetAllItems` 0x18800c, `GetAllItems_Complete` 0x1882cc). Request `{"ClientToken", "InventoryStateToken",
-"EventHash", "CheckTwitchEntitlements"}`. The reply is read for `Error` (object) and `Unchanged`; the body is then kept with
-`,"OfflineUserID":"<id>"` appended and cached with the state token ("using inventory state token from cached file"). The item list's key is
-**not recovered**: item records reach the Lua side as `item_id`, `item_type`, `modified_time`, `skin_custom`, `box_message`,
-`box_build_override`, and the network inventory is exchanged as a bit stream (`DeserializeAppendItems`: `item_count`, `item_id`). `item_type`
-is an integer resolved through the IAP defs ("unknown item type: %u" otherwise), so an item can only be shown if its `ItemType` is in `IAPDefs`.
-Other calls: `Swap`, `ValidateItems`, `SetItemOpened`, `OpenMysteryBox`, `RedeemCode` (replies `Error`, `RemovedItems`, `ErrorCode`
-`E_PRICE_MISMATCH` | `E_CURRENCY_MISMATCH` | `E_BALANCE_MISMATCH`, `NewCurrency`).
+`POST /clientitems/DST/GetAllItems` (`GetAllItems_Complete` 0x1882cc, `ProcessInventory` 0x188b04). Request `{"ClientToken","InventoryStateToken","EventHash","CheckTwitchEntitlements"}`.
+Reply: `{"Error": false, "Unchanged": false, "InventoryStateToken": "<opaque>", "Items": [ ... ]}`. `Unchanged: true` (with `Error: false`) tells the
+client to keep its cached list. Optional `UserID` (string) and `OfflineUserID` (string). Each item entry: `ItemID` (**number**, required),
+`ItemType` (**string**, required, the game's own item name such as `wilson_formal`), and optionally `Context` (number, default 1), `Modified` (number),
+`BoxMessage`, `BoxBuildOverride` (strings). An entry without a numeric ItemID and a string ItemType is logged "Malformed item entry received from
+item server" and skipped. The body is cached on the console under a hash of its text. `ItemType` is the item key the Lua code asks
+`TheInventory:CheckOwnership(item_key)` about; skin keys are in `scripts/skin_assets.lua` / `skin_strings.lua` of the game (`<character>_<variant>`).
 
-Next step: run the probe on Harbor, read `client_log.txt` for the client's reaction, then find the item list key by serving one test item.
+`POST /clientitems/DST/DailyGift` (`DoDailyGift_Complete` 0x181574). Reply `{"Error": false, "GiftReceived": false}`; `GiftReceived: true` with an `ItemType` string
+hands the player that item.
+
+`POST /gameevents/DontStarveTogether/KeyValuesGetMulti` (`ProcessStorageData` ~0x182880). Reply `{"Events": [{"Event": "COOKBOOK", "Revision": n, "KeyValues": {...}}, ...]}`;
+`Unchanged: true` per event keeps the local copy. An `Error` that is a string is logged and ends processing. An empty `Events` starts the player empty.
+
+`POST /iap/DST/GetPricingInfo` (`ProcessPricingData` 0x17f9d4). Reply `{"Error": false, "Unchanged": false, "PricingHash": <number>, "IAPDefs": [ ... ]}`. `IAPDefs` must be
+a **non-empty** array ("Missing IAPDefs" otherwise); each def needs `ItemType` (string) and either `KleiCurrency` (string) with `KleiCurrencyCost` (number), or `NxItemId`
+(string); `SalePercent` and `SaleEnd` are optional numbers. Whether the skins screen needs this to succeed is not known: the server answers it only with `KLEI_ITEMS_PRICING=on`.
+
+Test switch: `KLEI_ITEMS_TEST=wilson_formal,...` is the list of item types every account is shown as owning (the per-account list from Rewards replaces it).
 
 ## 5. What is still unknown
 

@@ -1,36 +1,72 @@
 package main
 
 import (
+	"encoding/json"
 	"net/http"
 	"net/http/httptest"
 	"strings"
 	"testing"
 )
 
-func TestItemsProbeIsOffByDefault(t *testing.T) {
-	t.Setenv("KLEI_ITEMS", "")
-	s := &server{}
+func itemsPost(t *testing.T, s *server, path string) (int, map[string]any) {
+	t.Helper()
 	w := httptest.NewRecorder()
-	r := httptest.NewRequest(http.MethodPost, "http://items.kleientertainment.com/clientitems/DST/GetAllItems", strings.NewReader(`{"ClientToken":"secret"}`))
-	s.route(w, r)
-	if w.Code != 404 {
-		t.Fatalf("default: %d", w.Code)
+	s.route(w, httptest.NewRequest(http.MethodPost, "http://items.kleientertainment.com"+path, strings.NewReader(`{"ClientToken":"secret"}`)))
+	m := map[string]any{}
+	json.Unmarshal(w.Body.Bytes(), &m)
+	return w.Code, m
+}
+
+func TestItemsAreOffByDefault(t *testing.T) {
+	t.Setenv("KLEI_ITEMS", "")
+	if code, _ := itemsPost(t, &server{}, "/clientitems/DST/GetAllItems"); code != 404 {
+		t.Fatalf("default: %d", code)
 	}
 }
 
-func TestItemsProbeAnswersTheTwoMainMenuCalls(t *testing.T) {
+// The client reads "Error" as a boolean that must be present and false (nso 0x188b04, 0x181574): a string or a
+// missing key is an error reply. Item entries need a numeric ItemID and a string ItemType.
+func TestItemRepliesHaveTheShapeTheClientReads(t *testing.T) {
 	t.Setenv("KLEI_ITEMS", "probe")
+	t.Setenv("KLEI_ITEMS_TEST", "wilson_formal, walter_detective")
 	s := &server{}
-	for path, want := range map[string]string{"/iap/DST/GetPricingInfo": `"IAPDefs":[]`, "/clientitems/DST/GetAllItems": `"InventoryStateToken":"openpak-0"`} {
-		w := httptest.NewRecorder()
-		s.route(w, httptest.NewRequest(http.MethodPost, "http://items.kleientertainment.com"+path, strings.NewReader(`{}`)))
-		if w.Code != 200 || !strings.Contains(w.Body.String(), want) || !strings.Contains(w.Body.String(), `"Unchanged":false`) {
-			t.Fatalf("%s: %d %s", path, w.Code, w.Body.String())
-		}
+	code, m := itemsPost(t, s, "/clientitems/DST/GetAllItems")
+	if code != 200 || m["Error"] != false || m["Unchanged"] != false {
+		t.Fatalf("GetAllItems: %d %v", code, m)
 	}
-	w := httptest.NewRecorder()
-	s.route(w, httptest.NewRequest(http.MethodPost, "http://items.kleientertainment.com/clientitems/DST/Swap", strings.NewReader(`{}`)))
-	if w.Code != 404 {
-		t.Fatalf("other path: %d", w.Code)
+	items, _ := m["Items"].([]any)
+	if len(items) != 2 {
+		t.Fatalf("items: %v", m["Items"])
+	}
+	first := items[0].(map[string]any)
+	if first["ItemType"] != "wilson_formal" {
+		t.Fatalf("item: %v", first)
+	}
+	if _, ok := first["ItemID"].(float64); !ok {
+		t.Fatalf("ItemID is not a number: %v", first["ItemID"])
+	}
+	if first["ItemID"] == items[1].(map[string]any)["ItemID"] {
+		t.Fatal("two item types share an ItemID")
+	}
+	if code, m = itemsPost(t, s, "/clientitems/DST/DailyGift"); code != 200 || m["Error"] != false || m["GiftReceived"] != false {
+		t.Fatalf("DailyGift: %d %v", code, m)
+	}
+	if code, m = itemsPost(t, s, "/gameevents/DontStarveTogether/KeyValuesGetMulti"); code != 200 || m["Events"] == nil {
+		t.Fatalf("KeyValuesGetMulti: %d %v", code, m)
+	}
+	// Pricing stays a 404 unless asked for; asked for, it lists a def per test item and Error is false.
+	if code, _ = itemsPost(t, s, "/iap/DST/GetPricingInfo"); code != 404 {
+		t.Fatalf("pricing without the switch: %d", code)
+	}
+	t.Setenv("KLEI_ITEMS_PRICING", "on")
+	code, m = itemsPost(t, s, "/iap/DST/GetPricingInfo")
+	defs, _ := m["IAPDefs"].([]any)
+	if code != 200 || m["Error"] != false || len(defs) != 2 {
+		t.Fatalf("pricing: %d %v", code, m)
+	}
+	// Nothing for the player: the list is empty but the reply still has Error false.
+	t.Setenv("KLEI_ITEMS_TEST", "")
+	if _, m = itemsPost(t, s, "/clientitems/DST/GetAllItems"); m["Error"] != false {
+		t.Fatalf("empty inventory: %v", m)
 	}
 }
