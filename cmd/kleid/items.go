@@ -105,6 +105,11 @@ func (s *server) items(w http.ResponseWriter, r *http.Request) bool {
 		for _, t := range testItems() {
 			defs = append(defs, map[string]any{"ItemType": t, "KleiCurrency": "KLEI_GEMS", "KleiCurrencyCost": 0})
 		}
+		if len(defs) == 0 {
+			// The client rejects an empty list ("Missing IAPDefs"). An item type the game has no strings for is skipped by
+			// the Shop screen ("Missing def for IAP"), so this one is never shown or sold.
+			defs = append(defs, map[string]any{"ItemType": "openpak_none", "KleiCurrency": "KLEI_GEMS", "KleiCurrencyCost": 0})
+		}
 		writeJSON(w, 200, map[string]any{"Error": false, "Unchanged": false, "PricingHash": 1, "IAPDefs": defs})
 		return true
 	}

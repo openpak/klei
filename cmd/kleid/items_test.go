@@ -90,4 +90,9 @@ func TestItemRepliesHaveTheShapeTheClientReads(t *testing.T) {
 	if _, m = itemsPost(t, s, "/clientitems/DST/GetAllItems"); m["Error"] != false {
 		t.Fatalf("empty inventory: %v", m)
 	}
+	// With no test item the pricing reply still has one def (an empty IAPDefs is an error to the client).
+	code, m = itemsPost(t, s, "/iap/DST/GetPricingInfo")
+	if defs, _ := m["IAPDefs"].([]any); code != 200 || len(defs) != 1 {
+		t.Fatalf("pricing without test items: %d %v", code, m)
+	}
 }

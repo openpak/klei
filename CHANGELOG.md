@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.7.4 -- 2026-11-05
+
+- `GetPricingInfo` with no test item still lists one def (`openpak_none`, never shown by the Shop): an empty `IAPDefs` is "Missing IAPDefs" to the client, so the empty-inventory run had a failing pricing reply.
+
 ## v0.7.3 -- 2026-11-05
 
 - `GetAllItems` carries `UserID`: the Klei user id the request's `ClientToken` names. The game's inventory processor compares it with the signed-in user's id and rejects the whole reply otherwise; the 19:28 console run (every call 200, no `UserID`) still showed "failed to download your item collection". Found in the disassembly (nso 0x188d50), not yet confirmed on a console. With `KLEI_ITEMS_TEST` unset the list is empty, which isolates the envelope from the items.
