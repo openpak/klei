@@ -82,7 +82,7 @@ func TestItemRepliesHaveTheShapeTheClientReads(t *testing.T) {
 	t.Setenv("KLEI_ITEMS_PRICING", "on")
 	code, m = itemsPost(t, s, "/iap/DST/GetPricingInfo")
 	defs, _ := m["IAPDefs"].([]any)
-	if code != 200 || m["Error"] != false || len(defs) != 2 {
+	if code != 200 || m["Error"] != false || len(defs) != 3 {
 		t.Fatalf("pricing: %d %v", code, m)
 	}
 	// Nothing for the player: the list is empty but the reply still has Error false.

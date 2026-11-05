@@ -103,13 +103,13 @@ func (s *server) items(w http.ResponseWriter, r *http.Request) bool {
 		// The client wants at least one IAP def, each with an ItemType (string); KleiCurrency plus its cost make a def.
 		defs := []map[string]any{}
 		for _, t := range testItems() {
-			defs = append(defs, map[string]any{"ItemType": t, "KleiCurrency": "KLEI_GEMS", "KleiCurrencyCost": 0})
+			// Never free: the Shop only lists item types it has strings for (MISC_ITEMS: chests and packs), so a skin's
+			// def is not shown; the price is a guard if one ever were, and nothing here can be bought.
+			defs = append(defs, map[string]any{"ItemType": t, "KleiCurrency": "KLEI_GEMS", "KleiCurrencyCost": 999999})
 		}
-		if len(defs) == 0 {
-			// The client rejects an empty list ("Missing IAPDefs"). An item type the game has no strings for is skipped by
-			// the Shop screen ("Missing def for IAP"), so this one is never shown or sold.
-			defs = append(defs, map[string]any{"ItemType": "openpak_none", "KleiCurrency": "KLEI_GEMS", "KleiCurrencyCost": 0})
-		}
+		// The client rejects an empty list ("Missing IAPDefs"), and an item type the game has no strings for is skipped by
+		// the Shop screen ("Missing def for IAP"): this one keeps the list non-empty and is never shown or sold.
+		defs = append(defs, map[string]any{"ItemType": "openpak_none", "KleiCurrency": "KLEI_GEMS", "KleiCurrencyCost": 999999})
 		writeJSON(w, 200, map[string]any{"Error": false, "Unchanged": false, "PricingHash": 1, "IAPDefs": defs})
 		return true
 	}

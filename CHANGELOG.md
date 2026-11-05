@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.7.5 -- 2026-11-05
+
+- Item step (card #141): with `KLEI_ITEMS_TEST=wilson_formal` the list now has the real skin key (`wilson_formal` is a character skin in the game's prefabskins.lua; `ItemID` stays a number, the item key a string) and pricing lists every test item at 999999 plus the `openpak_none` placeholder, so the pricing reply is never empty and no def is free. Variant 1 (empty list + `UserID`) passed on the owner's Switch: My Item Collection opens. The Shop says "The Klei store is closed right now" because the Shop screen shows that when no def survives its filter (in_store, a known MISC_ITEMS type, virtual currency): expected with nothing for sale.
+
 ## v0.7.4 -- 2026-11-05
 
 - `GetPricingInfo` with no test item still lists one def (`openpak_none`, never shown by the Shop): an empty `IAPDefs` is "Missing IAPDefs" to the client, so the empty-inventory run had a failing pricing reply.
