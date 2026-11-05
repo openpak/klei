@@ -150,7 +150,96 @@ func TestInventoryFromRewards(t *testing.T) {
 		t.Fatalf("outage: %v", it)
 	}
 	s.baas.set(kuid("baas-2"), "baas-2")
-	if got := s.inv.owned(context.Background(), kuid("baas-2"), "baas-2"); len(got) != 0 {
+	if got, _ := s.inv.owned(context.Background(), kuid("baas-2"), "baas-2"); len(got) != 0 {
 		t.Fatalf("unknown player: %v", got)
+	}
+}
+
+// The in-game Shop sells Rewards' packs for points: priced as IAPDefs in the game's BOLTS, the balance is the player's points, a purchase
+// goes through Rewards (one ledger) and owning a pack lists the items it gives.
+func TestShopSellsRewardsPacksForPoints(t *testing.T) {
+	balance := int64(100)
+	var bought []string
+	rw := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		switch r.URL.Path {
+		case "/internal/v1/adapter/shop":
+			json.NewEncoder(w).Encode(map[string]any{"items": []map[string]any{{"game_ref": "pack_wilson_formal", "slot": "pack", "price": 80}, {"game_ref": "wilson_formal", "slot": "skin", "price": 200}}})
+		case "/internal/v1/adapter/inventory":
+			o := []map[string]any{}
+			for _, b := range bought {
+				o = append(o, map[string]any{"game_ref": b})
+			}
+			json.NewEncoder(w).Encode(map[string]any{"account": "acc-1", "balance": balance, "owned": o})
+		case "/internal/v1/adapter/redeem":
+			var in struct {
+				GameRef       string `json:"game_ref"`
+				ExpectedPrice int    `json:"expected_price"`
+			}
+			json.NewDecoder(r.Body).Decode(&in)
+			switch {
+			case in.ExpectedPrice != 80:
+				w.WriteHeader(409)
+				json.NewEncoder(w).Encode(map[string]any{"code": "price_mismatch"})
+			case balance < 80:
+				w.WriteHeader(402)
+				json.NewEncoder(w).Encode(map[string]any{"code": "insufficient", "balance": balance})
+			default:
+				balance -= 80
+				bought = append(bought, in.GameRef)
+				json.NewEncoder(w).Encode(map[string]any{"balance": balance})
+			}
+		}
+	}))
+	defer rw.Close()
+	t.Setenv("KLEI_ITEMS", "rewards")
+	t.Setenv("KLEI_ITEMS_PRICING", "on")
+	s := &server{secret: []byte("s"), inv: &rewardsInventory{base: rw.URL, key: "k", http: rw.Client(), now: time.Now, by: map[string]invEntry{}}}
+	ku := kuid("baas-1")
+	s.baas.set(ku, "baas-1")
+	tok := `{"ClientToken":"` + s.mintToken(ku) + `"`
+	call := func(path, extra string) map[string]any {
+		w := httptest.NewRecorder()
+		s.route(w, httptest.NewRequest(http.MethodPost, "http://items.kleientertainment.com"+path, strings.NewReader(tok+extra+"}")))
+		var m map[string]any
+		json.Unmarshal(w.Body.Bytes(), &m)
+		return m
+	}
+	// Pricing: the pack, in BOLTS, at its Rewards price (the skin slot is not a pack and is not listed), plus the placeholder.
+	defs := call("/iap/DST/GetPricingInfo", "")["IAPDefs"].([]any)
+	first := defs[0].(map[string]any)
+	if len(defs) != 2 || first["ItemType"] != "pack_wilson_formal" || first["KleiCurrency"] != "BOLTS" || first["KleiCurrencyCost"] != float64(80) {
+		t.Fatalf("defs: %v", defs)
+	}
+	inv := call("/clientitems/DST/GetAllItems", "")
+	if cm := inv["CurrencyMap"].(map[string]any); cm["BOLTS"] != float64(100) || len(inv["Items"].([]any)) != 0 {
+		t.Fatalf("inventory: %v", inv)
+	}
+	// Wrong price: the game's price-mismatch error, nothing bought. Right price: Error false and the new balance.
+	if m := call("/iap/DST/PurchaseWithCurrency", `,"ItemType":"pack_wilson_formal","TransID":"t1","ExpectedPrice":50`); m["Error"] != true || m["ErrorCode"] != "E_PRICE_MISMATCH" {
+		t.Fatalf("price mismatch: %v", m)
+	}
+	if m := call("/iap/DST/PurchaseWithCurrency", `,"ItemType":"pack_wilson_formal","TransID":"t2","ExpectedPrice":80`); m["Error"] != false || m["NewCurrency"] != float64(20) {
+		t.Fatalf("purchase: %v", m)
+	}
+	// The purchase is at once in the inventory: the pack's items (the pack itself is not kept) and the points left.
+	inv = call("/clientitems/DST/GetAllItems", "")
+	types := map[string]bool{}
+	for _, it := range inv["Items"].([]any) {
+		types[it.(map[string]any)["ItemType"].(string)] = true
+	}
+	if !types["wilson_formalp"] || !types["body_wilson_formalp"] || types["pack_wilson_formal"] || inv["CurrencyMap"].(map[string]any)["BOLTS"] != float64(20) {
+		t.Fatalf("after purchase: %v", inv)
+	}
+	// Not enough points: the game's balance error.
+	balance = 10
+	if m := call("/iap/DST/PurchaseWithCurrency", `,"ItemType":"pack_wilson_formal","TransID":"t3","ExpectedPrice":80`); m["Error"] != true || m["ErrorCode"] != "E_BALANCE_MISMATCH" {
+		t.Fatalf("poor: %v", m)
+	}
+	// Probe mode never sells.
+	t.Setenv("KLEI_ITEMS", "probe")
+	w := httptest.NewRecorder()
+	s.route(w, httptest.NewRequest(http.MethodPost, "http://items.kleientertainment.com/iap/DST/PurchaseWithCurrency", strings.NewReader(tok+"}")))
+	if w.Code != 404 {
+		t.Fatalf("probe mode purchase: %d", w.Code)
 	}
 }

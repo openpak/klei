@@ -2,9 +2,11 @@
 """Build the Rewards import list for Don't Starve Together's character skins (card openpak/prds#141).
 
 Reads the game's own scripts (extract RomFS /scripts with base + update NSP, see docs/protocol.md 4a) and the RomFS file
-listing, and writes the JSON body of POST /internal/v1/admin/games/dst/import:
+listing, and writes the JSON bodies of POST /internal/v1/admin/games/dst/import (send in batches of 100):
 
-    python3 gen_catalog.py <scripts dir> <romfs tree.txt> > dst-import.json
+    python3 gen_catalog.py <scripts dir> <romfs tree.txt> <out dir>
+
+writes dst-import.json (skins), dst-packs-import.json (what the Shop sells) and dst-packs.json (pack -> items it gives)
 
 A skin is a CreatePrefabSkin(...) entry of type "base" in prefabs/skinprefabs.lua; its display name is STRINGS.SKIN_NAMES in
 skin_strings.lua. Only item keys and names are used, no art.
@@ -16,7 +18,7 @@ skin_strings.lua. Only item keys and names are used, no art.
 """
 import json, re, sys
 
-scripts, tree = sys.argv[1], sys.argv[2]
+scripts, tree, outdir = sys.argv[1], sys.argv[2], sys.argv[3]
 sk = open(f"{scripts}/prefabs/skinprefabs.lua", encoding="utf8", errors="replace").read()
 names_src = open(f"{scripts}/skin_strings.lua", encoding="utf8", errors="replace").read()
 i = names_src.index("STRINGS.SKIN_NAMES =")
@@ -52,5 +54,41 @@ for key, body in re.findall(r'CreatePrefabSkin\("([a-z0-9_]+)",\s*\{(.*?)\n\}\)\
     out.append({"game_ref": key, "slot": "skin", "name": f"{who}: {name}" if who else name, "rarity": r_op, "origin": origin,
                 "deliverable": f"/anim/dynamic/{build}.zip" in files, "platforms": ["switch"]})
 out.sort(key=lambda x: x["game_ref"])
-json.dump({"catalog_rev": "dst-1.29.0", "items": out}, sys.stdout, indent=0)
-print(f"skins {len(out)} deliverable {sum(1 for x in out if x['deliverable'])} skipped {skipped}", file=sys.stderr)
+
+# Packs: what the in-game Shop sells. MISC_ITEMS entries of type "purchase" (scripts/misc_items.lua); buying one gives its
+# output_items. The Rewards catalogue sells the pack, so both shops are one catalogue.
+misc = open(f"{scripts}/misc_items.lua", encoding="utf8", errors="replace").read()
+prefab_rarity = {}
+for key, body in re.findall(r'CreatePrefabSkin\("([a-z0-9_]+)",\s*\{(.*?)\n\}\)\)', sk, re.S):
+    r = re.search(r'\brarity\s*=\s*"(\w+)"', body)
+    if r:
+        prefab_rarity[key] = r.group(1)
+clothing = open(f"{scripts}/clothing.lua", encoding="utf8", errors="replace").read()
+build_of = {k: m.group(1) for k, b in re.findall(r'^\t([a-z0-9_]+) =\n\t\{(.*?)\n\t\},', clothing, re.M | re.S)
+            for m in [re.search(r'build_name_override = "([a-z0-9_]+)"', b)] if m}
+ORDER = ["legendary", "epic", "rare", "common"]
+packs, pack_items = {}, []
+for key, body in re.findall(r'^\t(pack_[a-z0-9_]+) =\n\t\{(.*?)\n\t\},', misc, re.M | re.S):
+    if 'type = "purchase"' not in body:
+        continue
+    m = re.search(r'output_items = \{([^}]*)\}', body)
+    outs = re.findall(r'"([a-z0-9_]+)"', m.group(1)) if m else []
+    if not outs:
+        continue
+    tiers = [RARITY[prefab_rarity[o]][0] for o in outs if prefab_rarity.get(o) in RARITY]
+    rarity = next((t for t in ORDER if t in tiers), "rare")
+    skin_ok = {x["game_ref"]: x["deliverable"] for x in out}
+
+    def has_build(k):  # clothing names its build (build_name_override); a woven variant ("...p") draws the base item's
+        b = build_of.get(k, k)
+        return f"/anim/dynamic/{b}.zip" in files or (b.endswith("p") and f"/anim/dynamic/{b[:-1]}.zip" in files)
+
+    ok = all(skin_ok[o] if o in skin_ok else has_build(o) for o in outs if o in skin_ok or o.split("_")[0] in ("body", "hand", "legs", "feet"))
+    packs[key] = outs
+    pack_items.append({"game_ref": key, "slot": "pack", "name": names.get(key) or key, "rarity": rarity, "origin": "store",
+                       "deliverable": ok, "platforms": ["switch"]})
+pack_items.sort(key=lambda x: x["game_ref"])
+json.dump({"catalog_rev": "dst-1.29.0", "items": out}, open(f"{outdir}/dst-import.json", "w"), indent=0)
+json.dump({"catalog_rev": "dst-1.29.0", "items": pack_items}, open(f"{outdir}/dst-packs-import.json", "w"), indent=0)
+json.dump(packs, open(f"{outdir}/dst-packs.json", "w"), indent=0, sort_keys=True)
+print(f"skins {len(out)} deliverable {sum(1 for x in out if x['deliverable'])} skipped {skipped}; packs {len(pack_items)} deliverable {sum(1 for x in pack_items if x['deliverable'])}", file=sys.stderr)

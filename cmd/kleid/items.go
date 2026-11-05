@@ -44,7 +44,7 @@ func itemID(itemType string) int64 {
 
 // inventoryReply is GetAllItems' answer: Error false and the full list (Unchanged false, so the client always
 // reads the list). Item entries carry ItemID (number) and ItemType (string); both are required by the client.
-func inventoryReply(user string, types []string) map[string]any {
+func inventoryReply(user string, types []string, points *int64) map[string]any {
 	items := make([]map[string]any, 0, len(types))
 	for _, t := range types {
 		items = append(items, map[string]any{"ItemID": itemID(t), "ItemType": t})
@@ -52,7 +52,12 @@ func inventoryReply(user string, types []string) map[string]any {
 	// UserID is the Klei user id the login returned. The inventory processor (nso 0x188b04, the branch at 0x188d50)
 	// compares it with the signed-in user's id and rejects the whole list on a mismatch or a missing id; that is
 	// what made the skins screen say "failed to download your item collection" with an otherwise valid reply.
-	return map[string]any{"Error": false, "Unchanged": false, "UserID": user, "InventoryStateToken": "openpak-1", "Items": items}
+	reply := map[string]any{"Error": false, "Unchanged": false, "UserID": user, "InventoryStateToken": "openpak-1", "Items": items}
+	if points != nil {
+		// The game's Shop currency is "BOLTS" (CurrencyMap, nso 0x18bbcc); here it is the player's Rewards points.
+		reply["CurrencyMap"] = map[string]any{"BOLTS": *points}
+	}
+	return reply
 }
 
 // clientUser is the Klei user the request's ClientToken (the session token LoginViaSwitch minted) names, "" if none.
@@ -81,6 +86,33 @@ func (s *server) items(w http.ResponseWriter, r *http.Request) bool {
 		return false
 	}
 	switch r.URL.Path {
+	case "/iap/DST/PurchaseWithCurrency":
+		// Buying a pack in the Shop with points. Body: ItemType, TransID, ExpectedPrice, ClientToken (nso 0x266430). Reply: Error false and the
+		// new balance, or Error true with the game's code (nso 0x173090). Only in rewards mode; real money never reaches here.
+		if itemsMode() != "rewards" || s.inv == nil {
+			return false
+		}
+		var in struct {
+			ItemType      string
+			TransID       string
+			ClientToken   string
+			ExpectedPrice *int
+		}
+		raw, _ := io.ReadAll(io.LimitReader(r.Body, 1<<16))
+		json.Unmarshal(raw, &in)
+		ku := s.userForToken(in.ClientToken)
+		baas := s.baas.get(ku)
+		if ku == "" || baas == "" || in.ItemType == "" {
+			writeJSON(w, 200, map[string]any{"Error": true, "ErrorCode": "E_PRICE_MISMATCH"})
+			return true
+		}
+		bal, code := s.inv.purchase(r.Context(), ku, baas, in.ItemType, in.TransID, in.ExpectedPrice)
+		if code != "" {
+			writeJSON(w, 200, map[string]any{"Error": true, "ErrorCode": code})
+			return true
+		}
+		writeJSON(w, 200, map[string]any{"Error": false, "NewCurrency": bal})
+		return true
 	case "/iap/DST/PurchaseCreateAndComplete":
 		// Asked at every start ("[NX Store] Checking for unconsumed purchases..."): "settle the eShop purchases I have not
 		// consumed yet". OpenPak sells nothing for money, so there is nothing to complete: a finished purchase with no items.
@@ -90,13 +122,15 @@ func (s *server) items(w http.ResponseWriter, r *http.Request) bool {
 	case "/clientitems/DST/GetAllItems":
 		ku := s.clientUser(r)
 		types := testItems()
+		var points *int64
 		if itemsMode() == "rewards" {
 			types = nil
 			if s.inv != nil && ku != "" {
-				types = s.inv.owned(r.Context(), ku, s.baas.get(ku))
+				t, p := s.inv.owned(r.Context(), ku, s.baas.get(ku))
+				types, points = t, &p
 			}
 		}
-		writeJSON(w, 200, inventoryReply(ku, types))
+		writeJSON(w, 200, inventoryReply(ku, types, points))
 		return true
 	case "/clientitems/DST/DailyGift":
 		// GiftReceived true would hand the player an item; there is no daily gift.
@@ -115,6 +149,13 @@ func (s *server) items(w http.ResponseWriter, r *http.Request) bool {
 		var priced []string
 		if itemsMode() == "probe" {
 			priced = testItems()
+		}
+		if itemsMode() == "rewards" && s.inv != nil {
+			// The Shop sells what Rewards sells, priced in points (the game's BOLTS). The Shop screen draws each pack from its own
+			// strings and art, so only packs the game knows are listed.
+			for _, it := range s.inv.shop(r.Context()) {
+				defs = append(defs, map[string]any{"ItemType": it.GameRef, "KleiCurrency": "BOLTS", "KleiCurrencyCost": it.Price, "KleiCurrencySaleCost": it.Price})
+			}
 		}
 		for _, t := range priced {
 			// Never free: the Shop only lists item types it has strings for (MISC_ITEMS: chests and packs), so a skin's

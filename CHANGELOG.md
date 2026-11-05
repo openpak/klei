@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.8.1 -- 2026-11-05
+
+- Card #141: the in-game Shop sells for points. `GetPricingInfo` lists Rewards' packs as `IAPDefs` in `BOLTS`, `GetAllItems` carries `CurrencyMap.BOLTS` = the player's points, `PurchaseWithCurrency` buys through Rewards (insufficient points `E_BALANCE_MISMATCH`, price/unsellable `E_PRICE_MISMATCH`), and owning a pack lists its items (`cmd/kleid/packs.json` from the generator, 487 packs). docs/protocol.md 4c. Only with `KLEI_ITEMS=rewards`.
+
 ## v0.8.0 -- 2026-11-05
 
 - Card #141: `KLEI_ITEMS=rewards`. `GetAllItems` lists the player's DST skins from Rewards by network identity (events key), cached 60 s and refreshed on `entitlement_changed` from the account core stream; `KLEI_ITEMS=probe` and the test list stay for experiments. `tools/catalog/gen_catalog.py` + `dst-import.json`: the 431 character skins for the Rewards import. Equip is local to the console (docs/protocol.md 4c).

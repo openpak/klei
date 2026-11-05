@@ -375,6 +375,17 @@ in the player's own profile on the console, so nothing is reported to Rewards (n
 `skin_strings.lua` (`wilson_formal` is "Guest of Honor"), priced by the game's rarity (Heirloom* legendary 400, Elegant epic 200, Complimentary common 30; Event and Loyal are
 earned, not sold), `deliverable` when the skin's build `anim/dynamic/<name>.zip` is in the installed RomFS (430 of 431).
 
+**The in-game Shop sells for points (`KLEI_ITEMS=rewards` with `KLEI_ITEMS_PRICING=on`).** The Shop screen sells *packs* (`pack_*` in `misc_items.lua`, 493 of type "purchase"); buying one gives its `output_items`
+(e.g. `pack_wilson_formal` gives `wilson_formalp`, `body_wilson_formalp`, ...). Rewards' catalogue therefore sells the packs (slot `pack`, name from `skin_strings.lua`, 487 imported, price from the best
+rarity inside: 80 or 200 points), so both shops are one catalogue and one ledger.
+- `GetPricingInfo`: one `IAPDefs` entry per pack on sale in Rewards (`ItemType` the pack key, `KleiCurrency` "BOLTS", `KleiCurrencyCost` the points price), plus the `openpak_none` placeholder. Whether the Shop screen shows
+  the defs is decided by its filter (`in_store`, a known `MISC_ITEMS` type, virtual currency); not yet seen on a console.
+- `GetAllItems` adds `CurrencyMap: {"BOLTS": <points>}` (nso 0x18bbcc): the game's "bolts" counter is the player's Rewards points.
+- `PurchaseWithCurrency` (body `ItemType`, `TransID`, `ExpectedPrice`, `ClientToken`; nso 0x266430, reply read at 0x173090): kleid calls Rewards `POST /internal/v1/adapter/redeem` and answers `{"Error": false, "NewCurrency": <points left>}`;
+  not enough points is `{"Error": true, "ErrorCode": "E_BALANCE_MISMATCH"}`, a changed price or an unsellable pack `E_PRICE_MISMATCH`. A retried `TransID` is charged once. The purchase drops the player's cached inventory, so
+  `GetAllItems` lists the pack's items at once; a pack is not kept as an item.
+- Real money stays out: `PurchaseCreateAndComplete` and the eShop consumable list answer "nothing", `Barter*` and the rest are unanswered.
+
 ## 5. What is still unknown
 
 - **The join path.** A Switch host reached the lobby and kept its listing alive for five hours on

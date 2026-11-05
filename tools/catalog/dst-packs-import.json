@@ -1,0 +1,5362 @@
+{
+"catalog_rev": "dst-1.29.0",
+"items": [
+{
+"game_ref": "pack_20s_1",
+"slot": "pack",
+"name": "The Roarer Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_adventure_1",
+"slot": "pack",
+"name": "Intrepid Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_all_lunar3western1",
+"slot": "pack",
+"name": "Mystic Moonbound Stampeder Gear 'n' Duds Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ancient1",
+"slot": "pack",
+"name": "Archaic Attire Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ancient1_items",
+"slot": "pack",
+"name": "Archaic Artifacts Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ancient2",
+"slot": "pack",
+"name": "Archaic Attire Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ancient2_combo",
+"slot": "pack",
+"name": "Archaic Array Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ancient2_items",
+"slot": "pack",
+"name": "Archaic Artifacts Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ancient3",
+"slot": "pack",
+"name": "Archaic Attire Chest, Part III",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ancient_wolfgang",
+"slot": "pack",
+"name": "Wolfgang Archaic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ancient_woodie",
+"slot": "pack",
+"name": "Woodie Archaic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ancient_wormwood",
+"slot": "pack",
+"name": "Wormwood Archaic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_artnouveau_items",
+"slot": "pack",
+"name": "Nouveau Terrace Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_backpack_crab_resurrected",
+"slot": "pack",
+"name": "Crabpack Resurrected Chest",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_backpack_deerclops_resurrected",
+"slot": "pack",
+"name": "Deerclops Duffel Resurrected Chest",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_backpack_glommer_resurrected",
+"slot": "pack",
+"name": "Glommer Pack Resurrected Chest",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_backpack_mandrake_resurrected",
+"slot": "pack",
+"name": "Meepsack Resurrected Chest",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_barber_items",
+"slot": "pack",
+"name": "Barber's Kit",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_beefalo",
+"slot": "pack",
+"name": "Resplendent Beefalo Chest",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_boomerang_psn",
+"slot": "pack",
+"name": "Maiming Crescent Chest",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_boy_items",
+"slot": "pack",
+"name": "Homespun Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_builderspack_items",
+"slot": "pack",
+"name": "Decorator's Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_cawnival_items",
+"slot": "pack",
+"name": "Midsummer Cawnival Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_cawnival_items2",
+"slot": "pack",
+"name": "Cawnival Mini-Golf Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_character_wanda",
+"slot": "pack",
+"name": "Wanda Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_character_wormwood",
+"slot": "pack",
+"name": "Wormwood Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_character_wortox",
+"slot": "pack",
+"name": "Wortox Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_character_wurt",
+"slot": "pack",
+"name": "Wurt Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_constant_bundle",
+"slot": "pack",
+"name": "Constant Reimaginings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_container_items",
+"slot": "pack",
+"name": "Cottage Cache Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_all",
+"slot": "pack",
+"name": "Survivors Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_all2",
+"slot": "pack",
+"name": "Survivors Costume Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_bundle",
+"slot": "pack",
+"name": "Complete Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_bundle2",
+"slot": "pack",
+"name": "Complete Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_clothes",
+"slot": "pack",
+"name": "Costume Clothing Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_items",
+"slot": "pack",
+"name": "Costume Belongings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_walter",
+"slot": "pack",
+"name": "Walter Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_wanda",
+"slot": "pack",
+"name": "Wanda Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_warly",
+"slot": "pack",
+"name": "Warly Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_wathgrithr",
+"slot": "pack",
+"name": "Wigfrid Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_waxwell",
+"slot": "pack",
+"name": "Maxwell Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_webber",
+"slot": "pack",
+"name": "Webber Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_wendy",
+"slot": "pack",
+"name": "Wendy Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_wes",
+"slot": "pack",
+"name": "Wes Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_wickerbottom",
+"slot": "pack",
+"name": "Wickerbottom Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_willow",
+"slot": "pack",
+"name": "Willow Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_wilson",
+"slot": "pack",
+"name": "Wilson Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_winona",
+"slot": "pack",
+"name": "Winona Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_wolfgang",
+"slot": "pack",
+"name": "Wolfgang Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_woodie",
+"slot": "pack",
+"name": "Woodie Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_wormwood",
+"slot": "pack",
+"name": "Wormwood Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_wortox",
+"slot": "pack",
+"name": "Wortox Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_wurt",
+"slot": "pack",
+"name": "Wurt Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_costume_wx78",
+"slot": "pack",
+"name": "WX-78 Costume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_critter_items",
+"slot": "pack",
+"name": "Posh Pets Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_depths_bundle",
+"slot": "pack",
+"name": "Constant Curator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_factory_items",
+"slot": "pack",
+"name": "Voxola Warehouse Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_fantasy_items",
+"slot": "pack",
+"name": "Fantasmical Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_fantasy_items2",
+"slot": "pack",
+"name": "Fantasmical Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_forge_armor",
+"slot": "pack",
+"name": "Forge Armor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_forge_weapons",
+"slot": "pack",
+"name": "Forge Weapons Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_formal1",
+"slot": "pack",
+"name": "Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_formal_all",
+"slot": "pack",
+"name": "All Survivors Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_garden_1",
+"slot": "pack",
+"name": "Gardener Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_all",
+"slot": "pack",
+"name": "All Survivors Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_wathgrithr",
+"slot": "pack",
+"name": "Wigfrid Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_waxwell",
+"slot": "pack",
+"name": "Maxwell Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_webber",
+"slot": "pack",
+"name": "Webber Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_wendy",
+"slot": "pack",
+"name": "Wendy Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_wes",
+"slot": "pack",
+"name": "Wes Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_wickerbottom",
+"slot": "pack",
+"name": "Wickerbottom Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_willow",
+"slot": "pack",
+"name": "Willow Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_wilson",
+"slot": "pack",
+"name": "Wilson Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_winona",
+"slot": "pack",
+"name": "Winona Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_wolfgang",
+"slot": "pack",
+"name": "Wolfgang Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_woodie",
+"slot": "pack",
+"name": "Woodie Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gladiator_wx78",
+"slot": "pack",
+"name": "WX-78 Gladiator Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gothic_items",
+"slot": "pack",
+"name": "Gothic Belongings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_gothic_items2",
+"slot": "pack",
+"name": "Gothic Belongings Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_all",
+"slot": "pack",
+"name": "Hallowed Nights Survivors Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_all2",
+"slot": "pack",
+"name": "Hallowed Nights Survivors Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_all3",
+"slot": "pack",
+"name": "Hallowed Nights Survivors Chest, Part III",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_bundle",
+"slot": "pack",
+"name": "Complete Hallowed Nights Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_bundle2",
+"slot": "pack",
+"name": "Complete Hallowed Nights Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_bundle3",
+"slot": "pack",
+"name": "Complete Hallowed Nights Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_items",
+"slot": "pack",
+"name": "Hallowed Nights Belongings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_walter",
+"slot": "pack",
+"name": "The Chatterbox Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_warly",
+"slot": "pack",
+"name": "The Candy Coated Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_wathgrithr",
+"slot": "pack",
+"name": "The Straw-Stuffed Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_waxwell",
+"slot": "pack",
+"name": "The Vampiric Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_webber",
+"slot": "pack",
+"name": "The Rebel Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_wendy",
+"slot": "pack",
+"name": "The Supernatural Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_wes",
+"slot": "pack",
+"name": "The Pierrot Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_wickerbottom",
+"slot": "pack",
+"name": "The Bewitched Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_willow",
+"slot": "pack",
+"name": "The Woeful Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_wilson",
+"slot": "pack",
+"name": "The Mad Scientist Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_winona",
+"slot": "pack",
+"name": "The Creature's Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_wolfgang",
+"slot": "pack",
+"name": "The Wolfman Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_woodie",
+"slot": "pack",
+"name": "The Tree Hugger Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_wormwood",
+"slot": "pack",
+"name": "The Wormwood O'Lantern Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_wortox",
+"slot": "pack",
+"name": "The Draconic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_wurt",
+"slot": "pack",
+"name": "The Little Sinker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hallowed_wx78",
+"slot": "pack",
+"name": "The Unfinished Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hamlet_wormwood",
+"slot": "pack",
+"name": "Don't Starve: Wormwood",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_handmedown_items",
+"slot": "pack",
+"name": "Fanciful Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_harlequin_items",
+"slot": "pack",
+"name": "Fool's Tool Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_haunteddoll_items",
+"slot": "pack",
+"name": "Ghastly Attic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_heart_you",
+"slot": "pack",
+"name": "Beating Heart Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hermitcrab_1",
+"slot": "pack",
+"name": "Hermit's Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hl_gift",
+"slot": "pack",
+"name": "Hot Lava Gift",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_hockey_items",
+"slot": "pack",
+"name": "Canadiana Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_all",
+"slot": "pack",
+"name": "Snowfallen Survivors Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_all2",
+"slot": "pack",
+"name": "Snowfallen Survivors Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_all3",
+"slot": "pack",
+"name": "Snowfallen Survivors Chest, Part III",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_bundle",
+"slot": "pack",
+"name": "Complete Snowfallen Survivors Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_bundle2",
+"slot": "pack",
+"name": "Complete Snowfallen Survivors Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_walter",
+"slot": "pack",
+"name": "Walter Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_wanda",
+"slot": "pack",
+"name": "Wanda Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_warly",
+"slot": "pack",
+"name": "Warly Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_wathgrithr",
+"slot": "pack",
+"name": "Wigfrid Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_waxwell",
+"slot": "pack",
+"name": "Maxwell Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_webber",
+"slot": "pack",
+"name": "Webber Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_wendy",
+"slot": "pack",
+"name": "Wendy Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_wes",
+"slot": "pack",
+"name": "Wes Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_wickerbottom",
+"slot": "pack",
+"name": "Wickerbottom Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_willow",
+"slot": "pack",
+"name": "Willow Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_wilson",
+"slot": "pack",
+"name": "Wilson Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_winona",
+"slot": "pack",
+"name": "Winona Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_wolfgang",
+"slot": "pack",
+"name": "Wolfgang Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_woodie",
+"slot": "pack",
+"name": "Woodie Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_wormwood",
+"slot": "pack",
+"name": "Wormwood Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_wortox",
+"slot": "pack",
+"name": "Wortox Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_wurt",
+"slot": "pack",
+"name": "Wurt Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ice_wx78",
+"slot": "pack",
+"name": "WX-78 Snowfallen Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_kitchen_1",
+"slot": "pack",
+"name": "Cottage Cache Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lost_1",
+"slot": "pack",
+"name": "Lost Adventurers Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lostandfound_items",
+"slot": "pack",
+"name": "Favorite Things Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lostandfound_items2",
+"slot": "pack",
+"name": "Favorite Things Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_2",
+"slot": "pack",
+"name": "Moonbound Survivors Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_3",
+"slot": "pack",
+"name": "Moonbound Survivors Chest, Part III",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_3_western_1",
+"slot": "pack",
+"name": "Moonbound Stampeders Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_all",
+"slot": "pack",
+"name": "Moonbound Survivors Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_complete",
+"slot": "pack",
+"name": "All Survivors Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_walter",
+"slot": "pack",
+"name": "Walter Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_wanda",
+"slot": "pack",
+"name": "Wanda Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_wathgrithr",
+"slot": "pack",
+"name": "Wigfrid Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_waxwell",
+"slot": "pack",
+"name": "Maxwell Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_webber",
+"slot": "pack",
+"name": "Webber Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_wendy",
+"slot": "pack",
+"name": "Wendy Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_wickerbottom",
+"slot": "pack",
+"name": "Wickerbottom Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_wilson",
+"slot": "pack",
+"name": "Wilson Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_winona",
+"slot": "pack",
+"name": "Winona Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_wolfgang",
+"slot": "pack",
+"name": "Wolfgang Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_wormwood",
+"slot": "pack",
+"name": "Wormwood Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunar_wx78",
+"slot": "pack",
+"name": "WX-78 Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunarplant_items",
+"slot": "pack",
+"name": "Moonbound Knight Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_lunarshadow",
+"slot": "pack",
+"name": "Moon vs. Shadow Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magician_chest_shadow_resurrected",
+"slot": "pack",
+"name": "Nightmarish Magician's Chest Resurrected Chest",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_all",
+"slot": "pack",
+"name": "All Survivors Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_bundle",
+"slot": "pack",
+"name": "Magmatic Bundle",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_wathgrithr",
+"slot": "pack",
+"name": "Wigfrid Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_waxwell",
+"slot": "pack",
+"name": "Maxwell Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_webber",
+"slot": "pack",
+"name": "Webber Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_wendy",
+"slot": "pack",
+"name": "Wendy Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_wes",
+"slot": "pack",
+"name": "Wes Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_wickerbottom",
+"slot": "pack",
+"name": "Wickerbottom Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_willow",
+"slot": "pack",
+"name": "Willow Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_wilson",
+"slot": "pack",
+"name": "Wilson Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_winona",
+"slot": "pack",
+"name": "Winona Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_wolfgang",
+"slot": "pack",
+"name": "Wolfgang Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_woodie",
+"slot": "pack",
+"name": "Woodie Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_magma_wx78",
+"slot": "pack",
+"name": "WX-78 Magmatic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_1",
+"slot": "pack",
+"name": "Masquerader Survivors Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_2",
+"slot": "pack",
+"name": "Masquerader Survivors Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_3",
+"slot": "pack",
+"name": "Masquerader Survivors Chest, Part III",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_wanda",
+"slot": "pack",
+"name": "Wanda Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_warly",
+"slot": "pack",
+"name": "Warly Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_wathgrithr",
+"slot": "pack",
+"name": "Wigfrid Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_waxwell",
+"slot": "pack",
+"name": "Maxwell Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_wes",
+"slot": "pack",
+"name": "Wes Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_willow",
+"slot": "pack",
+"name": "Willow Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_wilson",
+"slot": "pack",
+"name": "Wilson Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_woodie",
+"slot": "pack",
+"name": "Woodie Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_wortox",
+"slot": "pack",
+"name": "Wortox Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_masquerade_wurt",
+"slot": "pack",
+"name": "Wurt Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_mighty_items",
+"slot": "pack",
+"name": "Musclebound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_mystical_1_items",
+"slot": "pack",
+"name": "Mystic Medley Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_all",
+"slot": "pack",
+"name": "Original Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_all2",
+"slot": "pack",
+"name": "Fresh Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_all3",
+"slot": "pack",
+"name": "Blooming Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_bundle",
+"slot": "pack",
+"name": "Complete Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_bundle2",
+"slot": "pack",
+"name": "Complete Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_walter",
+"slot": "pack",
+"name": "Walter Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_wanda",
+"slot": "pack",
+"name": "Wanda Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_warly",
+"slot": "pack",
+"name": "Warly Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_wathgrithr",
+"slot": "pack",
+"name": "Wigfrid Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_waxwell",
+"slot": "pack",
+"name": "Maxwell Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_webber",
+"slot": "pack",
+"name": "Webber Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_wendy",
+"slot": "pack",
+"name": "Wendy Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_wes",
+"slot": "pack",
+"name": "Wes Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_wickerbottom",
+"slot": "pack",
+"name": "Wickerbottom Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_willow",
+"slot": "pack",
+"name": "Willow Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_winona",
+"slot": "pack",
+"name": "Winona Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_woodie",
+"slot": "pack",
+"name": "Woodie Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_wormwood",
+"slot": "pack",
+"name": "Wormwood Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_wortox",
+"slot": "pack",
+"name": "Wortox Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_wurt",
+"slot": "pack",
+"name": "Wurt Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_nature_wx78",
+"slot": "pack",
+"name": "WX-78 Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_oni_gift",
+"slot": "pack",
+"name": "Oxygen Not Included Gift",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_ornate_items",
+"slot": "pack",
+"name": "Library Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_1",
+"slot": "pack",
+"name": "Swashbuckler Loot Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_2",
+"slot": "pack",
+"name": "Swashbuckler Trio Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_3",
+"slot": "pack",
+"name": "Swashbuckler Trio II Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_all",
+"slot": "pack",
+"name": "Swashbuckler Survivors Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_warly",
+"slot": "pack",
+"name": "Warly Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_wathgrithr",
+"slot": "pack",
+"name": "Wigfrid Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_wes",
+"slot": "pack",
+"name": "Wes Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_willow",
+"slot": "pack",
+"name": "Willow Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_winona",
+"slot": "pack",
+"name": "Winona Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_wolfgang",
+"slot": "pack",
+"name": "Wolfgang Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_woodie",
+"slot": "pack",
+"name": "Woodie Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_wortox",
+"slot": "pack",
+"name": "Wortox Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_pirate_wurt",
+"slot": "pack",
+"name": "Wurt Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_relic",
+"slot": "pack",
+"name": "Reliquary Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_reliclostandfound_combo",
+"slot": "pack",
+"name": "Favorite Things Reliquary Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_researchlab2_science_resurrected",
+"slot": "pack",
+"name": "All-Chemical Engine Resurrected Chest",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_retro_items",
+"slot": "pack",
+"name": "Experimental Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_rog_gift",
+"slot": "pack",
+"name": "Don't Starve: Reign of Giants Gift",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_rose_all",
+"slot": "pack",
+"name": "Complete Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_rose_batch1",
+"slot": "pack",
+"name": "Roseate Trio Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_rose_furniture",
+"slot": "pack",
+"name": "Rosy Furniture Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_rose_furnitureitems",
+"slot": "pack",
+"name": "Rosy Furnishings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_rose_items",
+"slot": "pack",
+"name": "Rosy Decor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_rosepirate",
+"slot": "pack",
+"name": "Rosy Rogues Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_rosewestern20s_total",
+"slot": "pack",
+"name": "Rosy Roaring Stampeder Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_seaside_items",
+"slot": "pack",
+"name": "Seaside Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_shadow_all",
+"slot": "pack",
+"name": "Complete Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_spring_1",
+"slot": "pack",
+"name": "Equinor Survivors Chest, Part I",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_spring_bundle",
+"slot": "pack",
+"name": "Spring Cleaning Bundle",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_springadventure_items",
+"slot": "pack",
+"name": "Adventurer's Belongings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_springoutdoors_items",
+"slot": "pack",
+"name": "Outdoorsy Belongings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_starter_2019",
+"slot": "pack",
+"name": "Starter Pack 2019",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_starter_2020",
+"slot": "pack",
+"name": "Starter Pack 2020",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_starter_2021",
+"slot": "pack",
+"name": "Starter Pack 2021",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_starter_2023",
+"slot": "pack",
+"name": "Starter Pack 2023",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_starter_2024",
+"slot": "pack",
+"name": "Starter Pack 2024",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_starter_2025",
+"slot": "pack",
+"name": "Starter Pack 2025",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_starter_2026",
+"slot": "pack",
+"name": "Starter Pack 2026",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_survivor",
+"slot": "pack",
+"name": "Survivor Trio Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_survivor_complete",
+"slot": "pack",
+"name": "Complete Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_survivorpirate",
+"slot": "pack",
+"name": "Surviving the Seas Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_sw_gift",
+"slot": "pack",
+"name": "Don't Starve: Shipwrecked Gift",
+"rarity": "rare",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_swamp_bundle",
+"slot": "pack",
+"name": "Swampy Swashbuckler Survivor Vacation Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_swamp_items",
+"slot": "pack",
+"name": "Swamp-Lover's Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_swamphawaiian_items",
+"slot": "pack",
+"name": "Swampy Vacation Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_torso_hawaiian",
+"slot": "pack",
+"name": "Vacation Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_valkyrie_items",
+"slot": "pack",
+"name": "Winged Victory Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_all",
+"slot": "pack",
+"name": "Original Survivors Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_all2",
+"slot": "pack",
+"name": "Latecomers' Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_bundle",
+"slot": "pack",
+"name": "Complete Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_bundle2",
+"slot": "pack",
+"name": "Complete Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_bundle3",
+"slot": "pack",
+"name": "Complete Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_furniture",
+"slot": "pack",
+"name": "Victorian Furnishing Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_items",
+"slot": "pack",
+"name": "Victorian Belongings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_items2",
+"slot": "pack",
+"name": "Victorian Antiques Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_walter",
+"slot": "pack",
+"name": "Walter Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_wathgrithr",
+"slot": "pack",
+"name": "Wigfrid Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_waxwell",
+"slot": "pack",
+"name": "Maxwell Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_webber",
+"slot": "pack",
+"name": "Webber Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_wendy",
+"slot": "pack",
+"name": "Wendy Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_wes",
+"slot": "pack",
+"name": "Wes Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_wickerbottom",
+"slot": "pack",
+"name": "Wickerbottom Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_willow",
+"slot": "pack",
+"name": "Willow Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_wilson",
+"slot": "pack",
+"name": "Wilson Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_winona",
+"slot": "pack",
+"name": "Winona Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_wolfgang",
+"slot": "pack",
+"name": "Wolfgang Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_woodie",
+"slot": "pack",
+"name": "Woodie Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_wormwood",
+"slot": "pack",
+"name": "Wormwood Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_wortox",
+"slot": "pack",
+"name": "Wortox Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_wurt",
+"slot": "pack",
+"name": "Wurt Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_victorian_wx78",
+"slot": "pack",
+"name": "WX-78 Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wagstaffboat_items",
+"slot": "pack",
+"name": "Inventor's Excursion Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_walter_ancient",
+"slot": "pack",
+"name": "Walter Archaic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_walter_deluxe",
+"slot": "pack",
+"name": "Walter Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_walter_detective",
+"slot": "pack",
+"name": "Walter Boy Detective Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_walter_formal",
+"slot": "pack",
+"name": "Walter Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_walter_rose",
+"slot": "pack",
+"name": "Walter Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_walter_shadow",
+"slot": "pack",
+"name": "Walter Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_walter_survivor",
+"slot": "pack",
+"name": "Walter Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_walter_yule",
+"slot": "pack",
+"name": "Walter Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wanda_deluxe",
+"slot": "pack",
+"name": "Wanda Deluxe Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wanda_deluxealt",
+"slot": "pack",
+"name": "Wanda Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wanda_formal",
+"slot": "pack",
+"name": "Wanda Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wanda_rose",
+"slot": "pack",
+"name": "Wanda Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wanda_shadow",
+"slot": "pack",
+"name": "Wanda Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wanda_steampunk",
+"slot": "pack",
+"name": "Wanda Tinkersmith Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wanda_western",
+"slot": "pack",
+"name": "Wanda Stampeder Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_warly_chef",
+"slot": "pack",
+"name": "Warly Head Chef Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_warly_deluxe",
+"slot": "pack",
+"name": "Warly Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_warly_fisherman",
+"slot": "pack",
+"name": "Warly Trawler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_warly_formal",
+"slot": "pack",
+"name": "Warly Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_warly_lunar",
+"slot": "pack",
+"name": "Warly Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_warly_rose",
+"slot": "pack",
+"name": "Warly Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_warly_shadow",
+"slot": "pack",
+"name": "Warly Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_warly_survivor",
+"slot": "pack",
+"name": "Warly Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_warly_victorian",
+"slot": "pack",
+"name": "Warly Victorian Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_warly_yule",
+"slot": "pack",
+"name": "Warly Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wathgrithr_ancient",
+"slot": "pack",
+"name": "Wigfrid Archaic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wathgrithr_deluxe",
+"slot": "pack",
+"name": "Wigfrid Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wathgrithr_deluxe2",
+"slot": "pack",
+"name": "Wigfrid Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wathgrithr_formal",
+"slot": "pack",
+"name": "Wigfrid Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wathgrithr_rose",
+"slot": "pack",
+"name": "Wigfrid Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wathgrithr_shadow",
+"slot": "pack",
+"name": "Wigfrid Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wathgrithr_survivor",
+"slot": "pack",
+"name": "Wigfrid Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wathgrithr_valkyrie",
+"slot": "pack",
+"name": "Wigfrid Winged Victory Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wathgrithr_valkyrie2",
+"slot": "pack",
+"name": "Wigfrid Winged Victory Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wathgrithr_western",
+"slot": "pack",
+"name": "Wigfrid Stampeder Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_waxwell_deluxe",
+"slot": "pack",
+"name": "Maxwell Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_waxwell_formal",
+"slot": "pack",
+"name": "Maxwell Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_waxwell_pirate",
+"slot": "pack",
+"name": "Maxwell Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_waxwell_rose",
+"slot": "pack",
+"name": "Maxwell Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_waxwell_spring",
+"slot": "pack",
+"name": "Maxwell Equinor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_waxwell_survivor",
+"slot": "pack",
+"name": "Maxwell Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_waxwell_unshadow",
+"slot": "pack",
+"name": "Maxwell Untriumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_waxwell_wizard",
+"slot": "pack",
+"name": "Maxwell Dark Wizard Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wearables_item",
+"slot": "pack",
+"name": "Undaunted Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_webber_boy",
+"slot": "pack",
+"name": "Webber Farmspider Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_webber_deluxe",
+"slot": "pack",
+"name": "Webber Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_webber_formal",
+"slot": "pack",
+"name": "Webber Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_webber_masquerade",
+"slot": "pack",
+"name": "Webber Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_webber_pirate",
+"slot": "pack",
+"name": "Webber Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_webber_rose",
+"slot": "pack",
+"name": "Webber Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_webber_shadow",
+"slot": "pack",
+"name": "Webber Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_webber_spring",
+"slot": "pack",
+"name": "Webber Equinor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_webber_survivor",
+"slot": "pack",
+"name": "Webber Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_webber_yule",
+"slot": "pack",
+"name": "Webber Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wendwaltwort_combo",
+"slot": "pack",
+"name": "Eclectic Collector's Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wendy_ancient",
+"slot": "pack",
+"name": "Wendy Archaic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wendy_deluxe",
+"slot": "pack",
+"name": "Wendy Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wendy_formal",
+"slot": "pack",
+"name": "Wendy Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wendy_handmedown",
+"slot": "pack",
+"name": "Wendy Hand-Me-Downs Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wendy_masquerade",
+"slot": "pack",
+"name": "Wendy Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wendy_pirate",
+"slot": "pack",
+"name": "Wendy Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wendy_rose",
+"slot": "pack",
+"name": "Wendy Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wendy_shadow",
+"slot": "pack",
+"name": "Wendy Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wendy_survivor",
+"slot": "pack",
+"name": "Wendy Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wendy_yule",
+"slot": "pack",
+"name": "Wendy Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wes_deluxe",
+"slot": "pack",
+"name": "Wes Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wes_formal",
+"slot": "pack",
+"name": "Wes Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wes_harlequin",
+"slot": "pack",
+"name": "Wes Fool Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wes_lunar",
+"slot": "pack",
+"name": "Wes Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wes_rose",
+"slot": "pack",
+"name": "Wes Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wes_shadow",
+"slot": "pack",
+"name": "Wes Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wes_survivor",
+"slot": "pack",
+"name": "Wes Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wes_western",
+"slot": "pack",
+"name": "Wes Stampeder Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_western2_20s1",
+"slot": "pack",
+"name": "The Roaring Stampeder Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_western_1",
+"slot": "pack",
+"name": "Stampeder Duds Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_western_1_items",
+"slot": "pack",
+"name": "Stampeder Gear Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_western_1_mystical_items",
+"slot": "pack",
+"name": "Mystic Moonbound Stampeder Gear Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_western_2",
+"slot": "pack",
+"name": "Stampeder Duds Chest Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wickerbottom_deluxe",
+"slot": "pack",
+"name": "Wickerbottom Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wickerbottom_formal",
+"slot": "pack",
+"name": "Wickerbottom Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wickerbottom_masquerade",
+"slot": "pack",
+"name": "Wickerbottom Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wickerbottom_ornate",
+"slot": "pack",
+"name": "Wickerbottom Nom de Plume Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wickerbottom_pirate",
+"slot": "pack",
+"name": "Wickerbottom Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wickerbottom_rose",
+"slot": "pack",
+"name": "Wickerbottom Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wickerbottom_shadow",
+"slot": "pack",
+"name": "Wickerbottom Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wickerbottom_survivor",
+"slot": "pack",
+"name": "Wickerbottom Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_willow_ancient",
+"slot": "pack",
+"name": "Willow Archaic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_willow_deluxe",
+"slot": "pack",
+"name": "Willow Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_willow_formal",
+"slot": "pack",
+"name": "Willow Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_willow_haunteddoll",
+"slot": "pack",
+"name": "Willow Forlorn Doll Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_willow_lunar",
+"slot": "pack",
+"name": "Willow Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_willow_rose",
+"slot": "pack",
+"name": "Willow Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_willow_shadow",
+"slot": "pack",
+"name": "Willow Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_willow_spring",
+"slot": "pack",
+"name": "Willow Equinor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_willow_survivor",
+"slot": "pack",
+"name": "Willow Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wilson_barber",
+"slot": "pack",
+"name": "Wilson Barber Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wilson_deluxe",
+"slot": "pack",
+"name": "Wilson Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wilson_formal",
+"slot": "pack",
+"name": "Wilson Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wilson_nature",
+"slot": "pack",
+"name": "Wilson Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wilson_pirate",
+"slot": "pack",
+"name": "Wilson Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wilson_rose",
+"slot": "pack",
+"name": "Wilson Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wilson_shadow",
+"slot": "pack",
+"name": "Wilson Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wilson_spring",
+"slot": "pack",
+"name": "Wilson Equinor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wilson_survivor",
+"slot": "pack",
+"name": "Wilson Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_winona_ancient",
+"slot": "pack",
+"name": "Winona Archaic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_winona_deluxe",
+"slot": "pack",
+"name": "Winona Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_winona_factory",
+"slot": "pack",
+"name": "Winona Industrious Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_winona_formal",
+"slot": "pack",
+"name": "Winona Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_winona_masquerade",
+"slot": "pack",
+"name": "Winona Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_winona_rose",
+"slot": "pack",
+"name": "Winona Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_winona_shadow",
+"slot": "pack",
+"name": "Winona Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_winona_spring",
+"slot": "pack",
+"name": "Winona Equinor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_winona_survivor",
+"slot": "pack",
+"name": "Winona Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wizard_items",
+"slot": "pack",
+"name": "Dark Wizard's Effects Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wolfgang_deluxe",
+"slot": "pack",
+"name": "Wolfgang Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wolfgang_formal",
+"slot": "pack",
+"name": "Wolfgang Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wolfgang_nature",
+"slot": "pack",
+"name": "Wolfgang Verdant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wolfgang_rose",
+"slot": "pack",
+"name": "Wolfgang Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wolfgang_shadow",
+"slot": "pack",
+"name": "Wolfgang Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wolfgang_strongman",
+"slot": "pack",
+"name": "Wolfgang Strongman Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wolfgang_survivor",
+"slot": "pack",
+"name": "Wolfgang Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wolfgang_yule",
+"slot": "pack",
+"name": "Wolfgang Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodie_deluxe",
+"slot": "pack",
+"name": "Woodie Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodie_formal",
+"slot": "pack",
+"name": "Woodie Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodie_hockey",
+"slot": "pack",
+"name": "Woodie Team Player Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodie_lunar",
+"slot": "pack",
+"name": "Woodie Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodie_rose",
+"slot": "pack",
+"name": "Woodie Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodie_shadow",
+"slot": "pack",
+"name": "Woodie Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodie_survivor",
+"slot": "pack",
+"name": "Woodie Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodworking_cawnival",
+"slot": "pack",
+"name": "Cawnival Woodworking Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodworking_fantasy",
+"slot": "pack",
+"name": "Fantasmical Woodworking Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodworking_hallowed",
+"slot": "pack",
+"name": "Hallowed Woodworking Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodworking_handmade",
+"slot": "pack",
+"name": "Cozy Woodworking Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_woodworking_western",
+"slot": "pack",
+"name": "Parlor Woodworking Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wormwood_cactus",
+"slot": "pack",
+"name": "Wormwood Oasis Bound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wormwood_deluxe",
+"slot": "pack",
+"name": "Wormwood Deluxe Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wormwood_deluxealt",
+"slot": "pack",
+"name": "Wormwood Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wormwood_formal",
+"slot": "pack",
+"name": "Wormwood Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wormwood_mushroom",
+"slot": "pack",
+"name": "Wormwood Hollow Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wormwood_rose",
+"slot": "pack",
+"name": "Wormwood Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wormwood_shadow",
+"slot": "pack",
+"name": "Wormwood Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wormwood_survivor",
+"slot": "pack",
+"name": "Wormwood Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wortox_ancient",
+"slot": "pack",
+"name": "Wortox Archaic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wortox_deluxe",
+"slot": "pack",
+"name": "Wortox Deluxe Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wortox_formal",
+"slot": "pack",
+"name": "Wortox Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wortox_lunar",
+"slot": "pack",
+"name": "Wortox Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wortox_minotaur",
+"slot": "pack",
+"name": "Wortox Minotaur Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wortox_original",
+"slot": "pack",
+"name": "Wortox Uncorrupted Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wortox_rose",
+"slot": "pack",
+"name": "Wortox Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wortox_shadow",
+"slot": "pack",
+"name": "Wortox Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wortox_yule",
+"slot": "pack",
+"name": "Wortox Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wrestler_promo1",
+"slot": "pack",
+"name": "Contenders Promo Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wrestler_promo2",
+"slot": "pack",
+"name": "Contenders Promo Chest, Round 2",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wrestler_wathgrithr",
+"slot": "pack",
+"name": "Ultimate Performer's Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wrestler_webber",
+"slot": "pack",
+"name": "El Tigre Cub's Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wrestler_wes",
+"slot": "pack",
+"name": "The Lover's Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wrestler_winona",
+"slot": "pack",
+"name": "The Fixer's Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wrestler_wolfgang",
+"slot": "pack",
+"name": "The Giant's Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wrestler_wx78",
+"slot": "pack",
+"name": "Midori Roboto's Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wurt_ancient",
+"slot": "pack",
+"name": "Wurt Archaic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wurt_cave",
+"slot": "pack",
+"name": "Wurt Abyssal Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wurt_deluxe",
+"slot": "pack",
+"name": "Wurt Deluxe Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wurt_deluxealt",
+"slot": "pack",
+"name": "Wurt Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wurt_formal",
+"slot": "pack",
+"name": "Wurt Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wurt_lunar",
+"slot": "pack",
+"name": "Wurt Moonbound Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wurt_rose",
+"slot": "pack",
+"name": "Wurt Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wurt_shadow",
+"slot": "pack",
+"name": "Wurt Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wurt_survivor",
+"slot": "pack",
+"name": "Wurt Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_ancient",
+"slot": "pack",
+"name": "WX-78 Archaic Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_deluxe",
+"slot": "pack",
+"name": "WX-78 Deluxe Wardrobe",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_formal",
+"slot": "pack",
+"name": "WX-78 Guest of Honor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_gothicjewel",
+"slot": "pack",
+"name": "WX-78 Pretty Dark Things Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_gothicjewel_all",
+"slot": "pack",
+"name": "WX-78 Pretty Dark Idolatry Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_gothicjewel_shadowdrones",
+"slot": "pack",
+"name": "WX-78 Pretty Dark Presence Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_masquerade",
+"slot": "pack",
+"name": "WX-78 Masquerader Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_pirate",
+"slot": "pack",
+"name": "WX-78 Swashbuckler Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_retro",
+"slot": "pack",
+"name": "WX-78 Experimental Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_rose",
+"slot": "pack",
+"name": "WX-78 Roseate Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_shadow",
+"slot": "pack",
+"name": "WX-78 Triumphant Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_wx78_survivor",
+"slot": "pack",
+"name": "WX-78 Survivor Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yotc_builders",
+"slot": "pack",
+"name": "Builder's Belongings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yotc_bundle",
+"slot": "pack",
+"name": "Bounteous Bundle",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yotc_fledgling",
+"slot": "pack",
+"name": "Fledgling's Belongings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yotc_survivalist",
+"slot": "pack",
+"name": "Survivalist's Belongings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_all",
+"slot": "pack",
+"name": "Merrymaker Survivors Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_all2",
+"slot": "pack",
+"name": "Merrymaker Survivors Chest, Part II",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_all3",
+"slot": "pack",
+"name": "Merrymaker Survivors Chest, Part III",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_all4",
+"slot": "pack",
+"name": "Merrymaker Survivors Chest, Part IV",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_bundle",
+"slot": "pack",
+"name": "Complete Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_bundle2",
+"slot": "pack",
+"name": "Complete Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_bundle3",
+"slot": "pack",
+"name": "Complete Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_bundle4",
+"slot": "pack",
+"name": "Complete Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_items",
+"slot": "pack",
+"name": "Merrymaker Belongings Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_wanda",
+"slot": "pack",
+"name": "Wanda Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_wathgrithr",
+"slot": "pack",
+"name": "Wigfrid Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_waxwell",
+"slot": "pack",
+"name": "Maxwell Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_wes",
+"slot": "pack",
+"name": "Wes Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_wickerbottom",
+"slot": "pack",
+"name": "Wickerbottom Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_willow",
+"slot": "pack",
+"name": "Willow Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_wilson",
+"slot": "pack",
+"name": "Wilson Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_winona",
+"slot": "pack",
+"name": "Winona Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_woodie",
+"slot": "pack",
+"name": "Woodie Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_wormwood",
+"slot": "pack",
+"name": "Wormwood Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_wurt",
+"slot": "pack",
+"name": "Wurt Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+},
+{
+"game_ref": "pack_yule_wx78",
+"slot": "pack",
+"name": "WX-78 Merrymaker Chest",
+"rarity": "epic",
+"origin": "store",
+"deliverable": true,
+"platforms": [
+"switch"
+]
+}
+]
+}
