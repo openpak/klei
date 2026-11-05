@@ -11,7 +11,9 @@ package main
 // shown as owning, for the test run on Harbor and the console. The per-account list from Rewards replaces it.
 
 import (
+	"encoding/json"
 	"hash/fnv"
+	"io"
 	"net/http"
 	"os"
 	"strings"
@@ -40,12 +42,24 @@ func itemID(itemType string) int64 {
 
 // inventoryReply is GetAllItems' answer: Error false and the full list (Unchanged false, so the client always
 // reads the list). Item entries carry ItemID (number) and ItemType (string); both are required by the client.
-func inventoryReply(types []string) map[string]any {
+func inventoryReply(user string, types []string) map[string]any {
 	items := make([]map[string]any, 0, len(types))
 	for _, t := range types {
 		items = append(items, map[string]any{"ItemID": itemID(t), "ItemType": t})
 	}
-	return map[string]any{"Error": false, "Unchanged": false, "InventoryStateToken": "openpak-1", "Items": items}
+	// UserID is the Klei user id the login returned. The inventory processor (nso 0x188b04, the branch at 0x188d50)
+	// compares it with the signed-in user's id and rejects the whole list on a mismatch or a missing id; that is
+	// what made the skins screen say "failed to download your item collection" with an otherwise valid reply.
+	return map[string]any{"Error": false, "Unchanged": false, "UserID": user, "InventoryStateToken": "openpak-1", "Items": items}
+}
+
+// clientUser is the Klei user the request's ClientToken (the session token LoginViaSwitch minted) names, "" if none.
+func (s *server) clientUser(r *http.Request) string {
+	var in struct{ ClientToken string }
+	if json.NewDecoder(io.LimitReader(r.Body, 1<<16)).Decode(&in) != nil {
+		return ""
+	}
+	return s.userForToken(in.ClientToken)
 }
 
 // items answers items.kleientertainment.com. It reports false when the request is not one it handles, so the caller
@@ -72,7 +86,7 @@ func (s *server) items(w http.ResponseWriter, r *http.Request) bool {
 		writeJSON(w, 200, map[string]any{"Error": false, "Message": "Purchase Completed", "Items": []any{}})
 		return true
 	case "/clientitems/DST/GetAllItems":
-		writeJSON(w, 200, inventoryReply(testItems()))
+		writeJSON(w, 200, inventoryReply(s.clientUser(r), testItems()))
 		return true
 	case "/clientitems/DST/DailyGift":
 		// GiftReceived true would hand the player an item; there is no daily gift.

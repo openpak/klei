@@ -317,7 +317,7 @@ addresses. `KLEI_ITEMS=probe` answers these calls; off by default (the 404 is wh
 console (owner's Switch, test account Leia, 2026-11-05 17:36 UTC) the skins screen said "failed to download your item collection".
 
 `POST /clientitems/DST/GetAllItems` (`GetAllItems_Complete` 0x1882cc, `ProcessInventory` 0x188b04). Request `{"ClientToken","InventoryStateToken","EventHash","CheckTwitchEntitlements"}`.
-Reply: `{"Error": false, "Unchanged": false, "InventoryStateToken": "<opaque>", "Items": [ ... ]}`. `Unchanged: true` (with `Error: false`) tells the
+Reply: `{"Error": false, "Unchanged": false, "UserID": "<the Klei user id of the ClientToken>", "InventoryStateToken": "<opaque>", "Items": [ ... ]}`. **`UserID` matters**: the processor compares it with the signed-in user's id (nso 0x188d50) and rejects the whole list on a mismatch or when it is missing; v0.7.0-v0.7.2 omitted it and the console still said "failed to download your item collection" (19:28 run, every call 200). Not yet confirmed on a console. `Unchanged: true` (with `Error: false`) tells the
 client to keep its cached list. Optional `UserID` (string) and `OfflineUserID` (string). Each item entry: `ItemID` (**number**, required),
 `ItemType` (**string**, required, the game's own item name such as `wilson_formal`), and optionally `Context` (number, default 1), `Modified` (number),
 `BoxMessage`, `BoxBuildOverride` (strings). An entry without a numeric ItemID and a string ItemType is logged "Malformed item entry received from

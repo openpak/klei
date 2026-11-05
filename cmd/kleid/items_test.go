@@ -30,7 +30,15 @@ func TestItemsAreOffByDefault(t *testing.T) {
 func TestItemRepliesHaveTheShapeTheClientReads(t *testing.T) {
 	t.Setenv("KLEI_ITEMS", "probe")
 	t.Setenv("KLEI_ITEMS_TEST", "wilson_formal, walter_detective")
-	s := &server{}
+	s := &server{secret: []byte("test-secret")}
+	ku := kuid("baas-1")
+	w0 := httptest.NewRecorder()
+	s.route(w0, httptest.NewRequest(http.MethodPost, "http://items.kleientertainment.com/clientitems/DST/GetAllItems", strings.NewReader(`{"ClientToken":"`+s.mintToken(ku)+`"}`)))
+	var own map[string]any
+	json.Unmarshal(w0.Body.Bytes(), &own)
+	if own["UserID"] != ku {
+		t.Fatalf("UserID = %v, want the user the token names (%s)", own["UserID"], ku)
+	}
 	code, m := itemsPost(t, s, "/clientitems/DST/GetAllItems")
 	if code != 200 || m["Error"] != false || m["Unchanged"] != false {
 		t.Fatalf("GetAllItems: %d %v", code, m)
