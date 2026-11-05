@@ -336,6 +336,23 @@ a **non-empty** array ("Missing IAPDefs" otherwise); each def needs `ItemType` (
 
 Test switch: `KLEI_ITEMS_TEST=wilson_formal,...` is the list of item types every account is shown as owning (the per-account list from Rewards replaces it).
 
+## 4b. The in-game Shop and "Loading..." (card #141, 2026-11-05)
+
+The owner's console run showed the Shop stuck on "Loading...". From the game's Lua (RomFS `scripts/screens/redux/multiplayermainscreen.lua`,
+`scripts/screens/checkunusedpurchasespopup.lua`) and `main.nso`:
+
+1. On the Switch the Shop button first pushes `CheckUnusedPurchasesPopup` ("Loading...") and calls `TheInventory:CheckUnusedPurchases()`. The popup closes, and the
+   Shop opens, only when the native code calls back `OnCheckUnusedPurchasesComplete` (nso 0x278030). It has no timeout.
+2. The native side ("[NX Store] Checking for unconsumed purchases...", 0x276a34) asks the **Nintendo eShop shop service** for the game's consumable products:
+   `GET pearljam.hac.<env>.eshop.nintendo.net/civil/v1/consumables/BOLTPACKS0000001/items?country=<CC>&lang=<lang>` (also at the main menu, seen at 17:36 UTC).
+   That host is nx-shop's pearljam pass-through. Parser at 0x277310: `{"inc_tax_message": "", "length": n, "total": n, "consumable_items": [ {item_id, ns_uid, name, description, price: {regular_price, formatted_value}} ]}`.
+   Without `consumable_items` it logs "Error parsing JSON while receiving product list" and never completes, which is the hang. The old reply was `{}`.
+   **Fix (nx-shop v0.3.1):** answer with `consumable_items: []`. OpenPak sells nothing for money, so the currency-pack list is empty and the game never offers a real-money purchase.
+3. Only after that does the Shop screen (`PurchasePackScreen`) open. It reads `TheItems:GetIAPDefs()` (from `GetPricingInfo`) and shows an empty-list text when there are none.
+   The shop's own purchase calls are `iap/DST/PurchaseCreateAndComplete` (an eShop purchase to be consumed), `iap/DST/PurchaseWithCurrency` (virtual currency), `iap/DST/BarterGainItem`,
+   `BarterLoseItem`, `BarterDuplicateItems`, and `clientitems/DST/OpenMysteryBox`, `Swap`, `ValidateItems`, `RedeemCode`, `Tick`, `ReportMission/<name>`,
+   `SetItemOpened`, `ReportUnknownItemType`, `VerifyGiftingReceipt`, `gameevents/DST/GetStatus`. None is answered: with no products and no IAP defs nothing can be bought.
+
 ## 5. What is still unknown
 
 - **The join path.** A Switch host reached the lobby and kept its listing alive for five hours on

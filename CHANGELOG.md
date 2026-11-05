@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.7.1 -- 2026-11-05
+
+- docs/protocol.md 4b: why the in-game Shop hung on "Loading..." (the Nintendo shop-service consumable list, answered by nx-shop v0.3.1 with an empty list) and every call the Shop makes. No code change.
+
 ## v0.7.0 — 2026-11-05
 
 - Card #141: the item replies now have the shape the client reads. The v0.6.0 probe sent `"Error": ""` (a string) and an empty `IAPDefs`; the client reads `Error` as a boolean that must be false, so the skins screen said "failed to download your item collection". `GetAllItems` answers `Error: false`, `Unchanged: false`, a state token and `Items` (`ItemID` number, `ItemType` string); `DailyGift` and `KeyValuesGetMulti` get proper empty replies; `GetPricingInfo` only with `KLEI_ITEMS_PRICING=on` (needs a non-empty `IAPDefs`). `KLEI_ITEMS_TEST` lists item types every account owns, for the test run. Still off by default.
