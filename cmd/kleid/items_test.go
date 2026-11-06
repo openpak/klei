@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 	"net/http/httptest"
+	"os"
 	"strings"
 	"testing"
 	"time"
@@ -266,6 +267,31 @@ func TestEveryChestExpandsToItsContents(t *testing.T) {
 		}
 		if seen[pack] {
 			t.Fatalf("%s is kept as an item", pack)
+		}
+	}
+}
+
+// What Rewards records a chest as giving (tools/catalog/dst-packs-import.json) is exactly what kleid delivers (packs.json).
+func TestRewardsGrantsMatchWhatKleidDelivers(t *testing.T) {
+	raw, err := os.ReadFile("../../tools/catalog/dst-packs-import.json")
+	if err != nil {
+		t.Fatal(err)
+	}
+	var cat struct {
+		Items []struct {
+			GameRef string   `json:"game_ref"`
+			Grants  []string `json:"grants"`
+		} `json:"items"`
+	}
+	if err := json.Unmarshal(raw, &cat); err != nil {
+		t.Fatal(err)
+	}
+	if len(cat.Items) != len(packContents) {
+		t.Fatalf("%d chests in the catalogue, %d delivered", len(cat.Items), len(packContents))
+	}
+	for _, it := range cat.Items {
+		if strings.Join(it.Grants, ",") != strings.Join(packContents[it.GameRef], ",") {
+			t.Fatalf("%s: Rewards says %v, kleid delivers %v", it.GameRef, it.Grants, packContents[it.GameRef])
 		}
 	}
 }

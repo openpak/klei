@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.8.3 -- 2026-11-06
+
+- Card #150: test that Rewards' recorded contents of every chest equal what kleid delivers.
+
 ## v0.8.2 -- 2026-11-06
 
 - Card #150: every chest the game ever sold (481) is on sale in the Shop and the Rewards shops, under the game's own purchase rules. The generator writes `grants` and `requires` per chest, marks the six picture-less gift chests (Loyal) earned, and Heirloom skins earned; a test checks every chest expands to its contents. docs/protocol.md 4d.
