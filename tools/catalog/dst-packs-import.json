@@ -10,7 +10,17 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_20s",
+"body_walter_20s",
+"walterhat_20s",
+"winona_20s",
+"body_winona_20s",
+"hand_winona_20s",
+"feet_winona_20s"
+],
+"requires": []
 },
 {
 "game_ref": "pack_adventure_1",
@@ -21,7 +31,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"birdcage_adventure",
+"eyebrellahat_adventure",
+"footballhat_adventure",
+"researchlab3_adventure",
+"lightning_rod_adventure",
+"dragonflyfurnace_adventure"
+],
+"requires": []
 },
 {
 "game_ref": "pack_all_lunar3western1",
@@ -32,6 +51,60 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"woodie_lunar",
+"body_woodie_lunar",
+"hand_woodie_lunar",
+"legs_woodie_lunar",
+"wortox_lunar",
+"body_wortox_lunar",
+"legs_wortox_lunar",
+"wurt_lunar",
+"body_wurt_lunar",
+"hand_wurt_lunar",
+"legs_wurt_lunar",
+"wanda_western",
+"body_wanda_western",
+"hand_wanda_western",
+"legs_wanda_western",
+"wathgrithr_western",
+"body_wathgrithr_western",
+"legs_wathgrithr_western",
+"wathgrithrhat_western",
+"wes_western",
+"body_wes_western",
+"hand_wes_western",
+"legs_wes_western",
+"feet_wes_western",
+"footballhat_western",
+"raincoat_western",
+"winterhat_western",
+"tophat_western",
+"strawhat_western",
+"lunarplanthat_brave",
+"armor_lunarplant_brave",
+"lunarplanthat_knight",
+"armor_lunarplant_knight",
+"chester_mystical",
+"bushhat_mystical",
+"glasscutter_mystical",
+"lantern_mystical",
+"mushroom_farm_mystical",
+"siestahut_mystical",
+"winterometer_mystical",
+"beargerfursack_mystical",
+"telebase_mystical",
+"telestaff_mystical",
+"mermwatchtower_mystical",
+"mermhouse_crafted_mystical",
+"beefalohat_mystical",
+"bundle_mystical"
+],
+"requires": [
+"wanda_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -43,6 +116,20 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wolfgang_ancient",
+"body_wolfgang_ancient",
+"woodie_ancient",
+"body_woodie_ancient",
+"hand_woodie_ancient",
+"wormwood_ancient",
+"body_wormwood_ancient",
+"hand_wormwood_ancient",
+"legs_wormwood_ancient"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -54,7 +141,17 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"mighty_gym_ancient",
+"tent_ancient",
+"treasurechest_ancient",
+"meatrack_ancient",
+"fence_ancient",
+"fence_gate_ancient",
+"armor_bramble_ancient"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ancient2",
@@ -65,6 +162,24 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"winona_ancient",
+"body_winona_ancient",
+"willow_ancient",
+"body_willow_ancient",
+"hand_willow_ancient",
+"feet_willow_ancient",
+"wurt_ancient",
+"body_wurt_ancient",
+"hand_wurt_ancient",
+"legs_wurt_ancient",
+"wathgrithr_ancient",
+"body_wathgrithr_ancient",
+"feet_wathgrithr_ancient"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -76,6 +191,50 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"winona_ancient",
+"body_winona_ancient",
+"willow_ancient",
+"body_willow_ancient",
+"hand_willow_ancient",
+"feet_willow_ancient",
+"wurt_ancient",
+"body_wurt_ancient",
+"hand_wurt_ancient",
+"legs_wurt_ancient",
+"wathgrithr_ancient",
+"body_wathgrithr_ancient",
+"feet_wathgrithr_ancient",
+"birdcage_adventure",
+"eyebrellahat_adventure",
+"footballhat_adventure",
+"researchlab3_adventure",
+"lightning_rod_adventure",
+"dragonflyfurnace_adventure",
+"cookpot_kitchen",
+"icebox_kitchen",
+"saltbox_kitchen",
+"bundle_kitchen",
+"dock_woodposts_kitchen",
+"dock_woodposts_kitchen2",
+"dock_woodposts_kitchen3",
+"icepack_kitchen",
+"beehat_garden",
+"bugnet_garden",
+"golden_farmhoe_garden",
+"beebox_garden",
+"krampus_sack_garden",
+"seedpouch_garden",
+"fishbox_pirate",
+"mast_pirate",
+"boat_pirate_skin",
+"boat_grass_pirate",
+"ocean_trawler_pirate",
+"winch_pirate"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -87,7 +246,36 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"birdcage_adventure",
+"eyebrellahat_adventure",
+"footballhat_adventure",
+"researchlab3_adventure",
+"lightning_rod_adventure",
+"dragonflyfurnace_adventure",
+"cookpot_kitchen",
+"icebox_kitchen",
+"saltbox_kitchen",
+"bundle_kitchen",
+"dock_woodposts_kitchen",
+"dock_woodposts_kitchen2",
+"dock_woodposts_kitchen3",
+"icepack_kitchen",
+"beehat_garden",
+"bugnet_garden",
+"golden_farmhoe_garden",
+"beebox_garden",
+"krampus_sack_garden",
+"seedpouch_garden",
+"fishbox_pirate",
+"mast_pirate",
+"boat_pirate_skin",
+"boat_grass_pirate",
+"ocean_trawler_pirate",
+"winch_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ancient3",
@@ -98,6 +286,24 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wendy_ancient",
+"body_wendy_ancient",
+"hand_wendy_ancient",
+"feet_wendy_ancient",
+"abigail_ancient",
+"walter_ancient",
+"body_walter_ancient",
+"hand_walter_ancient",
+"legs_walter_ancient",
+"walterhat_ancient",
+"wortox_ancient",
+"body_wortox_ancient",
+"legs_wortox_ancient"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -109,7 +315,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_ancient",
+"body_wolfgang_ancient"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ancient_woodie",
@@ -120,7 +331,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_ancient",
+"body_woodie_ancient",
+"hand_woodie_ancient"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ancient_wormwood",
@@ -131,6 +348,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_ancient",
+"body_wormwood_ancient",
+"hand_wormwood_ancient",
+"legs_wormwood_ancient"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -142,7 +368,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wall_stone_an",
+"eyeturret_an",
+"birdtrap_an",
+"moondial_an",
+"sewing_mannequin_an"
+],
+"requires": []
 },
 {
 "game_ref": "pack_backpack_crab_resurrected",
@@ -153,7 +387,11 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"backpack_crab_resurrected"
+],
+"requires": []
 },
 {
 "game_ref": "pack_backpack_deerclops_resurrected",
@@ -164,7 +402,11 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"backpack_deerclops_resurrected"
+],
+"requires": []
 },
 {
 "game_ref": "pack_backpack_glommer_resurrected",
@@ -175,7 +417,11 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"backpack_glommer_resurrected"
+],
+"requires": []
 },
 {
 "game_ref": "pack_backpack_mandrake_resurrected",
@@ -186,7 +432,11 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"backpack_mandrake_resurrected"
+],
+"requires": []
 },
 {
 "game_ref": "pack_barber_items",
@@ -197,7 +447,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"razor_barber",
+"torch_barber",
+"resurrectionstatue_barber"
+],
+"requires": []
 },
 {
 "game_ref": "pack_beefalo",
@@ -208,18 +464,35 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"beefalo_head_lunar",
+"beefalo_horn_lunar",
+"beefalo_body_lunar",
+"beefalo_feet_lunar",
+"beefalo_tail_lunar",
+"beefalo_head_shadow",
+"beefalo_horn_shadow",
+"beefalo_body_shadow",
+"beefalo_feet_shadow",
+"beefalo_tail_shadow"
+],
+"requires": []
 },
 {
 "game_ref": "pack_boomerang_psn",
 "slot": "pack",
 "name": "Maiming Crescent Chest",
 "rarity": "rare",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"boomerang_bandedwood"
+],
+"requires": []
 },
 {
 "game_ref": "pack_boy_items",
@@ -230,7 +503,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"farm_hoe_rustic",
+"wateringcan_rustic",
+"seedpouch_rustic"
+],
+"requires": []
 },
 {
 "game_ref": "pack_builderspack_items",
@@ -241,7 +520,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wateringcan_cactus",
+"premiumwateringcan_koalefant",
+"molehat_goggles",
+"mushroom_farm_handmade",
+"ruins_bat_arcane",
+"trophyscale_fish_handmade",
+"trophyscale_oversizedveggies_plant",
+"dock_woodposts_carved",
+"dock_woodposts_carved2",
+"dock_woodposts_carved3",
+"dock_woodposts_decorated",
+"dock_woodposts_decorated2",
+"dock_woodposts_decorated3"
+],
+"requires": []
 },
 {
 "game_ref": "pack_cawnival_items",
@@ -252,7 +547,17 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"mushroom_light2_cawnival",
+"reflectivevest_cawnival",
+"siestahut_cawnival",
+"walrushat_cawnival",
+"bundle_cawnival",
+"bushhat_cawnival",
+"hivehat_cawnival"
+],
+"requires": []
 },
 {
 "game_ref": "pack_cawnival_items2",
@@ -263,7 +568,29 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"tophat_minigolf_red",
+"tophat_minigolf_green",
+"tophat_minigolf_purple",
+"body_minigolf_black",
+"body_minigolf_blacktie",
+"body_minigolf_red",
+"body_minigolf_redtie",
+"body_minigolf_mint",
+"body_minigolf_minttie",
+"legs_minigolf_skirt_black",
+"legs_minigolf_skirt_red",
+"legs_minigolf_skirt_mint",
+"legs_minigolf_pants_black",
+"legs_minigolf_pants_red",
+"legs_minigolf_pants_purple",
+"backpack_minigolf",
+"torch_cawnival",
+"minisign_cawnival",
+"mushroom_light_cawnival"
+],
+"requires": []
 },
 {
 "game_ref": "pack_character_wanda",
@@ -274,7 +601,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wanda_none",
+"wanda_formal",
+"body_wanda_formal",
+"hand_wanda_formal",
+"feet_wanda_formal"
+],
+"requires": []
 },
 {
 "game_ref": "pack_character_wormwood",
@@ -285,7 +620,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wormwood_none",
+"wormwood_rose",
+"body_wormwood_rose",
+"hand_wormwood_rose",
+"legs_wormwood_rose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_character_wortox",
@@ -296,7 +639,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wortox_none",
+"wortox_survivor",
+"body_wortox_survivor",
+"hand_wortox_survivor",
+"legs_wortox_survivor"
+],
+"requires": []
 },
 {
 "game_ref": "pack_character_wurt",
@@ -307,7 +658,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wurt_none",
+"wurt_formal",
+"body_wurt_formal",
+"hand_wurt_formal",
+"legs_wurt_formal"
+],
+"requires": []
 },
 {
 "game_ref": "pack_constant_bundle",
@@ -318,7 +677,28 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"critterlab_gothic",
+"wormhole_gothic",
+"gravestone_gothic",
+"gravestone_gothic2",
+"gravestone_gothic3",
+"gravestone_gothic4",
+"cave_entrance_open_gothic",
+"resurrectionstone_gothic",
+"sanityrock_gothic",
+"critterlab_fantasy",
+"wormhole_fantasy",
+"gravestone_fantasy",
+"gravestone_fantasy2",
+"gravestone_fantasy3",
+"gravestone_fantasy4",
+"cave_entrance_open_fantasy",
+"resurrectionstone_fantasy",
+"sanityrock_fantasy"
+],
+"requires": []
 },
 {
 "game_ref": "pack_container_items",
@@ -329,7 +709,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"bundle_vintage",
+"chester_lamb",
+"treasurechest_vintage"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_all",
@@ -340,7 +726,37 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_deerclops_p",
+"body_wathgrithr_deerclopsp",
+"waxwell_krampus_p",
+"body_waxwell_krampusp",
+"webber_bat_p",
+"webber_beard_bat",
+"body_webber_batp",
+"wendy_lureplant_p",
+"body_wendy_lureplantp",
+"abigail_lureplant",
+"wes_mandrake_p",
+"body_wes_mandrakep",
+"wickerbottom_lightninggoat_p",
+"body_wickerbottom_lightninggoatp",
+"willow_dragonfly_p",
+"body_willow_dragonflyp",
+"wilson_pigguard_p",
+"wilson_beard_pigguard",
+"body_wilson_pigguardp",
+"winona_grassgecko_p",
+"body_winona_grassgeckop",
+"wolfgang_walrus_p",
+"body_wolfgang_walrusp",
+"woodie_treeguard_p",
+"body_woodie_treeguardp",
+"wx78_rhinorook_p",
+"body_wx78_rhinorookp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_all2",
@@ -351,6 +767,27 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_bishop_p",
+"body_wanda_bishopp",
+"wurt_toadstool_p",
+"body_wurt_toadstoolp",
+"walter_bee_p",
+"body_walter_beep",
+"walterhat_beep",
+"wortox_noeyeddeer_p",
+"body_wortox_noeyeddeerp",
+"warly_carrat_p",
+"body_warly_carratp",
+"wormwood_saladmander_p",
+"body_wormwood_saladmanderp"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -362,7 +799,49 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_deerclops_p",
+"body_wathgrithr_deerclopsp",
+"waxwell_krampus_p",
+"body_waxwell_krampusp",
+"webber_bat_p",
+"webber_beard_bat",
+"body_webber_batp",
+"wendy_lureplant_p",
+"body_wendy_lureplantp",
+"abigail_lureplant",
+"wes_mandrake_p",
+"body_wes_mandrakep",
+"wickerbottom_lightninggoat_p",
+"body_wickerbottom_lightninggoatp",
+"willow_dragonfly_p",
+"body_willow_dragonflyp",
+"wilson_pigguard_p",
+"wilson_beard_pigguard",
+"body_wilson_pigguardp",
+"winona_grassgecko_p",
+"body_winona_grassgeckop",
+"wolfgang_walrus_p",
+"body_wolfgang_walrusp",
+"woodie_treeguard_p",
+"body_woodie_treeguardp",
+"wx78_rhinorook_p",
+"body_wx78_rhinorookp",
+"torch_spookyp",
+"birdcage_gothicp",
+"cookpot_cauldronp",
+"dragonling_batp",
+"hat_catcoon_costumep",
+"body_catcoon_costumep",
+"hat_chester_costumep",
+"body_chester_costumep",
+"hat_glommer_costumep",
+"body_glommer_costumep",
+"hat_hutch_costumep",
+"body_hutch_costumep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_bundle2",
@@ -373,6 +852,66 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wathgrithr_deerclops_p",
+"body_wathgrithr_deerclopsp",
+"waxwell_krampus_p",
+"body_waxwell_krampusp",
+"webber_bat_p",
+"webber_beard_bat",
+"body_webber_batp",
+"wendy_lureplant_p",
+"body_wendy_lureplantp",
+"abigail_lureplant",
+"wes_mandrake_p",
+"body_wes_mandrakep",
+"wickerbottom_lightninggoat_p",
+"body_wickerbottom_lightninggoatp",
+"willow_dragonfly_p",
+"body_willow_dragonflyp",
+"wilson_pigguard_p",
+"wilson_beard_pigguard",
+"body_wilson_pigguardp",
+"winona_grassgecko_p",
+"body_winona_grassgeckop",
+"wolfgang_walrus_p",
+"body_wolfgang_walrusp",
+"woodie_treeguard_p",
+"body_woodie_treeguardp",
+"wx78_rhinorook_p",
+"body_wx78_rhinorookp",
+"wanda_bishop_p",
+"body_wanda_bishopp",
+"wurt_toadstool_p",
+"body_wurt_toadstoolp",
+"walter_bee_p",
+"body_walter_beep",
+"walterhat_beep",
+"wortox_noeyeddeer_p",
+"body_wortox_noeyeddeerp",
+"warly_carrat_p",
+"body_warly_carratp",
+"wormwood_saladmander_p",
+"body_wormwood_saladmanderp",
+"torch_spookyp",
+"birdcage_gothicp",
+"cookpot_cauldronp",
+"dragonling_batp",
+"hat_catcoon_costumep",
+"body_catcoon_costumep",
+"hat_chester_costumep",
+"body_chester_costumep",
+"hat_glommer_costumep",
+"body_glommer_costumep",
+"hat_hutch_costumep",
+"body_hutch_costumep"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -384,7 +923,18 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"hat_catcoon_costumep",
+"body_catcoon_costumep",
+"hat_chester_costumep",
+"body_chester_costumep",
+"hat_glommer_costumep",
+"body_glommer_costumep",
+"hat_hutch_costumep",
+"body_hutch_costumep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_items",
@@ -395,7 +945,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"torch_spookyp",
+"birdcage_gothicp",
+"cookpot_cauldronp",
+"dragonling_batp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_walter",
@@ -406,7 +963,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_bee_p",
+"body_walter_beep",
+"walterhat_beep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_wanda",
@@ -417,6 +980,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_bishop_p",
+"body_wanda_bishopp"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -428,7 +998,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_carrat_p",
+"body_warly_carratp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_wathgrithr",
@@ -439,7 +1014,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_deerclops_p",
+"body_wathgrithr_deerclopsp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_waxwell",
@@ -450,7 +1030,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_krampus_p",
+"body_waxwell_krampusp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_webber",
@@ -461,7 +1046,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_bat_p",
+"webber_beard_bat",
+"body_webber_batp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_wendy",
@@ -472,7 +1063,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_lureplant_p",
+"body_wendy_lureplantp",
+"abigail_lureplant"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_wes",
@@ -483,7 +1080,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_mandrake_p",
+"body_wes_mandrakep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_wickerbottom",
@@ -494,7 +1096,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_lightninggoat_p",
+"body_wickerbottom_lightninggoatp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_willow",
@@ -505,7 +1112,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_dragonfly_p",
+"body_willow_dragonflyp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_wilson",
@@ -516,7 +1128,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_pigguard_p",
+"wilson_beard_pigguard",
+"body_wilson_pigguardp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_winona",
@@ -527,7 +1145,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_grassgecko_p",
+"body_winona_grassgeckop"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_wolfgang",
@@ -538,7 +1161,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_walrus_p",
+"body_wolfgang_walrusp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_woodie",
@@ -549,7 +1177,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_treeguard_p",
+"body_woodie_treeguardp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_costume_wormwood",
@@ -560,6 +1193,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_saladmander_p",
+"body_wormwood_saladmanderp"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -571,6 +1211,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_noeyeddeer_p",
+"body_wortox_noeyeddeerp"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -582,6 +1229,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_toadstool_p",
+"body_wurt_toadstoolp"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -593,7 +1247,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_rhinorook_p",
+"body_wx78_rhinorookp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_critter_items",
@@ -604,7 +1263,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"chester_horn",
+"dragonling_mantis",
+"lamb_dark",
+"lunarmoth_bright",
+"perdling_crow"
+],
+"requires": []
 },
 {
 "game_ref": "pack_depths_bundle",
@@ -615,7 +1282,74 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winonabattery_high_fancy",
+"winonabattery_low_fancy",
+"winona_catapult_fancy",
+"winona_spotlight_fancy",
+"winonabattery_high_spike",
+"winonabattery_low_spike",
+"winona_catapult_spike",
+"winona_spotlight_spike",
+"lighter_glass",
+"lighter_heart",
+"lighter_old",
+"lighter_ragged",
+"lighter_rose",
+"bernie_dog",
+"stonechair_stool_victorianblack",
+"stonechair_stool_victorianbrass",
+"stonechair_stool_victorianbronze",
+"stonetable_round_victorianblack",
+"stonetable_round_victorianbrass",
+"stonetable_round_victorianbronze",
+"stonetable_square_victorianblack",
+"stonetable_square_victorianbrass",
+"stonetable_square_victorianbronze",
+"stone_chair_victorianblack",
+"stone_chair_victorianbrass",
+"stone_chair_victorianbronze",
+"beefalo_head_lunar",
+"beefalo_horn_lunar",
+"beefalo_body_lunar",
+"beefalo_feet_lunar",
+"beefalo_tail_lunar",
+"beefalo_head_shadow",
+"beefalo_horn_shadow",
+"beefalo_body_shadow",
+"beefalo_feet_shadow",
+"beefalo_tail_shadow",
+"round_table_western",
+"wood_table_western",
+"chair_stool_western",
+"wood_chair_western",
+"decor_centerpiece_western",
+"decor_flowervase_western",
+"decor_lamp_western",
+"decor_phonograph_western",
+"decor_pictureframe_western",
+"decor_portraitframe_western",
+"wall_stone_an",
+"eyeturret_an",
+"birdtrap_an",
+"moondial_an",
+"sewing_mannequin_an",
+"hat_dreadstone_horn",
+"armor_dreadstone_horn",
+"reskin_tool_toilet",
+"molehat_tail",
+"tornado_stick_crow",
+"raincoat_poncho",
+"cowbell_round",
+"deserthat_fedora",
+"chester_horn",
+"dragonling_mantis",
+"lamb_dark",
+"lunarmoth_bright",
+"perdling_crow"
+],
+"requires": []
 },
 {
 "game_ref": "pack_factory_items",
@@ -626,7 +1360,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"arrowsign_post_factory",
+"fence_factory",
+"playerportrait_bg_factory",
+"profileflair_factory"
+],
+"requires": []
 },
 {
 "game_ref": "pack_fantasy_items",
@@ -637,7 +1378,21 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"arrowsign_post_fantasy",
+"minisign_fantasy",
+"fence_fantasy",
+"batbat_fantasy",
+"beefalohat_fantasy",
+"dragonflychest_fantasy",
+"eyebrellahat_fantasy",
+"heatrock_fantasy",
+"mermhouse_crafted_fantasy",
+"glommer_fantasy",
+"hutch_fantasy"
+],
+"requires": []
 },
 {
 "game_ref": "pack_fantasy_items2",
@@ -648,7 +1403,19 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"critterlab_fantasy",
+"wormhole_fantasy",
+"gravestone_fantasy",
+"gravestone_fantasy2",
+"gravestone_fantasy3",
+"gravestone_fantasy4",
+"cave_entrance_open_fantasy",
+"resurrectionstone_fantasy",
+"sanityrock_fantasy"
+],
+"requires": []
 },
 {
 "game_ref": "pack_forge_armor",
@@ -659,7 +1426,26 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"armor_ruins_arcane",
+"armor_ruins_bulky",
+"armor_ruins_leaf",
+"armor_ruins_tusk",
+"armor_grass_cloak",
+"armor_grass_woven",
+"armor_marble_chainmail",
+"armor_marble_rockabs",
+"armor_wood_fangedcollar",
+"armor_wood_haramaki",
+"armor_wood_lamellar",
+"flowerhat_healing",
+"flowerhat_crown",
+"footballhat_combathelm",
+"footballhat_combathelm2",
+"amulet_red_occulteye"
+],
+"requires": []
 },
 {
 "game_ref": "pack_forge_weapons",
@@ -670,7 +1456,17 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"firestaff_meteor",
+"hammer_forge",
+"ruins_bat_heavy",
+"spear_forge_gungnir",
+"spear_forge_lance",
+"hambat_spiralcut",
+"book_brimstone_gilded"
+],
+"requires": []
 },
 {
 "game_ref": "pack_formal1",
@@ -681,6 +1477,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"warly_formal",
+"body_warly_formal",
+"legs_warly_formal",
+"feet_warly_formal",
+"wortox_formal",
+"body_wortox_formal",
+"legs_wortox_formal",
+"wormwood_formal",
+"hand_wormwood_formal",
+"body_wormwood_formal",
+"legs_wormwood_formal"
+],
+"requires": [
+"wormwood_none",
+"wortox_none"
 ]
 },
 {
@@ -692,6 +1505,74 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"willow_formalp",
+"body_willow_formalp",
+"feet_formal_stilettop_black_scribble",
+"winona_formalp",
+"body_winona_formalp",
+"woodie_formalp",
+"body_woodie_formalp",
+"feet_fleece_bootp_brown_sepia",
+"wurt_formal",
+"body_wurt_formal",
+"hand_wurt_formal",
+"legs_wurt_formal",
+"wendy_formalp",
+"body_wendy_formalp",
+"feet_maryjanesp_white_pure",
+"abigail_formal",
+"walter_formal",
+"body_walter_formal",
+"feet_walter_formal",
+"legs_walter_formal",
+"walterhat_formal",
+"wathgrithr_formalp",
+"body_wathgrithr_formalp",
+"wes_formalp",
+"body_wes_formalp",
+"webber_formalp",
+"body_webber_formalp",
+"webber_beard_formal",
+"wanda_formal",
+"body_wanda_formal",
+"hand_wanda_formal",
+"feet_wanda_formal",
+"wolfgang_formalp",
+"body_wolfgang_formalp",
+"feet_ridingbootp_white_pure",
+"wx78_formalp",
+"body_wx78_formalp",
+"wickerbottom_formalp",
+"body_wickerbottom_formalp",
+"feet_formal_highheelp_white_pure",
+"waxwell_formalp",
+"body_waxwell_formalp",
+"feet_formal_winklepickerp_white_ivory",
+"hand_waxwell_formalp",
+"wilson_formalp",
+"body_wilson_formalp",
+"hand_wilson_formalp",
+"feet_formal_lowheelp_black_scribble",
+"wilson_beard_formal",
+"warly_formal",
+"body_warly_formal",
+"legs_warly_formal",
+"feet_warly_formal",
+"wormwood_formal",
+"hand_wormwood_formal",
+"body_wormwood_formal",
+"legs_wormwood_formal",
+"wortox_formal",
+"body_wortox_formal",
+"legs_wortox_formal"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -703,7 +1584,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"beehat_garden",
+"bugnet_garden",
+"golden_farmhoe_garden",
+"beebox_garden",
+"krampus_sack_garden",
+"seedpouch_garden"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_all",
@@ -714,7 +1604,69 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_gladiator",
+"wilson_beard_gladiator",
+"body_wilson_gladiator",
+"feet_wilson_gladiator",
+"hand_wilson_gladiator",
+"legs_wilson_gladiator",
+"willow_gladiator",
+"body_willow_gladiator",
+"feet_willow_gladiator",
+"hand_willow_gladiator",
+"legs_willow_gladiator",
+"wolfgang_gladiator",
+"body_wolfgang_gladiator",
+"feet_wolfgang_gladiator",
+"hand_wolfgang_gladiator",
+"legs_wolfgang_gladiator",
+"wendy_gladiator",
+"body_wendy_gladiator",
+"feet_wendy_gladiator",
+"hand_wendy_gladiator",
+"abigail_gladiator",
+"wx78_gladiator",
+"body_wx78_gladiator",
+"feet_wx78_gladiator",
+"hand_wx78_gladiator",
+"legs_wx78_gladiator",
+"wickerbottom_gladiator",
+"body_wickerbottom_gladiator",
+"feet_wickerbottom_gladiator",
+"hand_wickerbottom_gladiator",
+"woodie_gladiator",
+"body_woodie_gladiator",
+"feet_woodie_gladiator",
+"hand_woodie_gladiator",
+"legs_woodie_gladiator",
+"wes_gladiator",
+"body_wes_gladiator",
+"feet_wes_gladiator",
+"hand_wes_gladiator",
+"waxwell_gladiator",
+"body_waxwell_gladiator",
+"feet_waxwell_gladiator",
+"hand_waxwell_gladiator",
+"legs_waxwell_gladiator",
+"wathgrithr_gladiator",
+"body_wathgrithr_gladiator",
+"feet_wathgrithr_gladiator",
+"hand_wathgrithr_gladiator",
+"legs_wathgrithr_gladiator",
+"webber_gladiator",
+"webber_beard_gladiator",
+"body_webber_gladiator",
+"feet_webber_gladiator",
+"hand_webber_gladiator",
+"winona_gladiator",
+"body_winona_gladiator",
+"feet_winona_gladiator",
+"hand_winona_gladiator",
+"legs_winona_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_wathgrithr",
@@ -725,7 +1677,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_gladiator",
+"body_wathgrithr_gladiator",
+"feet_wathgrithr_gladiator",
+"hand_wathgrithr_gladiator",
+"legs_wathgrithr_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_waxwell",
@@ -736,7 +1696,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_gladiator",
+"body_waxwell_gladiator",
+"feet_waxwell_gladiator",
+"hand_waxwell_gladiator",
+"legs_waxwell_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_webber",
@@ -747,7 +1715,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_gladiator",
+"webber_beard_gladiator",
+"body_webber_gladiator",
+"feet_webber_gladiator",
+"hand_webber_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_wendy",
@@ -758,7 +1734,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_gladiator",
+"body_wendy_gladiator",
+"feet_wendy_gladiator",
+"hand_wendy_gladiator",
+"abigail_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_wes",
@@ -769,7 +1753,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_gladiator",
+"body_wes_gladiator",
+"feet_wes_gladiator",
+"hand_wes_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_wickerbottom",
@@ -780,7 +1771,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_gladiator",
+"body_wickerbottom_gladiator",
+"feet_wickerbottom_gladiator",
+"hand_wickerbottom_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_willow",
@@ -791,7 +1789,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_gladiator",
+"body_willow_gladiator",
+"feet_willow_gladiator",
+"hand_willow_gladiator",
+"legs_willow_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_wilson",
@@ -802,7 +1808,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_gladiator",
+"wilson_beard_gladiator",
+"body_wilson_gladiator",
+"feet_wilson_gladiator",
+"hand_wilson_gladiator",
+"legs_wilson_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_winona",
@@ -813,7 +1828,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_gladiator",
+"body_winona_gladiator",
+"feet_winona_gladiator",
+"hand_winona_gladiator",
+"legs_winona_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_wolfgang",
@@ -824,7 +1847,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_gladiator",
+"body_wolfgang_gladiator",
+"feet_wolfgang_gladiator",
+"hand_wolfgang_gladiator",
+"legs_wolfgang_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_woodie",
@@ -835,7 +1866,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_gladiator",
+"body_woodie_gladiator",
+"feet_woodie_gladiator",
+"hand_woodie_gladiator",
+"legs_woodie_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gladiator_wx78",
@@ -846,7 +1885,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_gladiator",
+"body_wx78_gladiator",
+"feet_wx78_gladiator",
+"hand_wx78_gladiator",
+"legs_wx78_gladiator"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gothic_items",
@@ -857,7 +1904,22 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wall_stone_gothic",
+"coldfirepit_gothic",
+"fence_gothic",
+"fence_gate_gothic",
+"lightning_rod_gothic",
+"pighouse_gothic",
+"researchlab2_gothic",
+"researchlab_gothic",
+"wardrobe_gothic",
+"lantern_gothic",
+"bundle_gothic",
+"sculptingtable_gothic"
+],
+"requires": []
 },
 {
 "game_ref": "pack_gothic_items2",
@@ -868,7 +1930,19 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"critterlab_gothic",
+"wormhole_gothic",
+"gravestone_gothic",
+"gravestone_gothic2",
+"gravestone_gothic3",
+"gravestone_gothic4",
+"cave_entrance_open_gothic",
+"resurrectionstone_gothic",
+"sanityrock_gothic"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_all",
@@ -879,7 +1953,34 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_punk",
+"webber_beard_punk",
+"body_webber_punk",
+"hand_webber_punk",
+"feet_webber_punk",
+"wendy_creepy",
+"body_wendy_creepy",
+"feet_wendy_creepy",
+"abigail_creepy",
+"wes_clown",
+"body_wes_clown",
+"feet_wes_clown",
+"wilson_madscience",
+"wilson_beard_madscience",
+"body_wilson_madscientist",
+"hand_wilson_madscientist",
+"feet_wilson_madscientist",
+"willow_dowdy",
+"body_willow_dowdy",
+"feet_willow_dowdy",
+"wx78_wip",
+"body_wx78_wip",
+"hand_wx78_wip",
+"feet_wx78_wip"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_all2",
@@ -890,6 +1991,35 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"warly_candyman",
+"body_warly_candyman",
+"feet_warly_candyman",
+"legs_warly_candyman",
+"hand_warly_candyman",
+"wathgrithr_scarecrow",
+"body_wathgrithr_scarecrow",
+"feet_wathgrithr_scarecrow",
+"hand_wathgrithr_scarecrow",
+"waxwell_vampire",
+"body_waxwell_vampire",
+"legs_waxwell_vampire",
+"hand_waxwell_vampire",
+"wickerbottom_spiderwitch",
+"body_wickerbottom_spiderwitch",
+"hand_wickerbottom_spiderwitch",
+"legs_wickerbottom_spiderwitch",
+"winona_frankenstein",
+"body_winona_frankenstein",
+"legs_winona_frankenstein",
+"feet_winona_frankenstein",
+"wortox_dragon",
+"body_wortox_dragon",
+"legs_wortox_dragon"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -901,6 +2031,33 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_pumpkin",
+"body_wormwood_pumpkin",
+"hand_wormwood_pumpkin",
+"legs_wormwood_pumpkin",
+"wolfgang_wolfman",
+"body_wolfgang_wolfman",
+"hand_wolfgang_wolfman",
+"legs_wolfgang_wolfman",
+"wurt_squid",
+"body_wurt_squid",
+"hand_wurt_squid",
+"woodie_hippie",
+"body_woodie_hippie",
+"feet_woodie_hippie",
+"hand_woodie_hippie",
+"legs_woodie_hippie",
+"walter_ventriloquist",
+"body_walter_ventriloquist",
+"feet_walter_ventriloquist",
+"legs_walter_ventriloquist",
+"walterhat_ventriloquist"
+],
+"requires": [
+"wormwood_none",
+"wurt_none"
 ]
 },
 {
@@ -912,7 +2069,39 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_punk",
+"webber_beard_punk",
+"body_webber_punk",
+"hand_webber_punk",
+"feet_webber_punk",
+"wendy_creepy",
+"body_wendy_creepy",
+"feet_wendy_creepy",
+"abigail_creepy",
+"wes_clown",
+"body_wes_clown",
+"feet_wes_clown",
+"wilson_madscience",
+"wilson_beard_madscience",
+"body_wilson_madscientist",
+"hand_wilson_madscientist",
+"feet_wilson_madscientist",
+"willow_dowdy",
+"body_willow_dowdy",
+"feet_willow_dowdy",
+"wx78_wip",
+"body_wx78_wip",
+"hand_wx78_wip",
+"feet_wx78_wip",
+"batbat_scythe",
+"kitten_black",
+"treasurechest_monster",
+"icebox_coffin",
+"watermelonhat_pumpkin"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_bundle2",
@@ -923,6 +2112,64 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"webber_punk",
+"webber_beard_punk",
+"body_webber_punk",
+"hand_webber_punk",
+"feet_webber_punk",
+"wendy_creepy",
+"body_wendy_creepy",
+"feet_wendy_creepy",
+"abigail_creepy",
+"wes_clown",
+"body_wes_clown",
+"feet_wes_clown",
+"wilson_madscience",
+"wilson_beard_madscience",
+"body_wilson_madscientist",
+"hand_wilson_madscientist",
+"feet_wilson_madscientist",
+"willow_dowdy",
+"body_willow_dowdy",
+"feet_willow_dowdy",
+"wx78_wip",
+"body_wx78_wip",
+"hand_wx78_wip",
+"feet_wx78_wip",
+"warly_candyman",
+"body_warly_candyman",
+"feet_warly_candyman",
+"legs_warly_candyman",
+"hand_warly_candyman",
+"wathgrithr_scarecrow",
+"body_wathgrithr_scarecrow",
+"feet_wathgrithr_scarecrow",
+"hand_wathgrithr_scarecrow",
+"waxwell_vampire",
+"body_waxwell_vampire",
+"legs_waxwell_vampire",
+"hand_waxwell_vampire",
+"wickerbottom_spiderwitch",
+"body_wickerbottom_spiderwitch",
+"hand_wickerbottom_spiderwitch",
+"legs_wickerbottom_spiderwitch",
+"winona_frankenstein",
+"body_winona_frankenstein",
+"legs_winona_frankenstein",
+"feet_winona_frankenstein",
+"wortox_dragon",
+"body_wortox_dragon",
+"legs_wortox_dragon",
+"batbat_scythe",
+"kitten_black",
+"treasurechest_monster",
+"icebox_coffin",
+"watermelonhat_pumpkin"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -934,6 +2181,87 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"webber_punk",
+"webber_beard_punk",
+"body_webber_punk",
+"hand_webber_punk",
+"feet_webber_punk",
+"wendy_creepy",
+"abigail_creepy",
+"body_wendy_creepy",
+"feet_wendy_creepy",
+"wes_clown",
+"body_wes_clown",
+"feet_wes_clown",
+"wilson_madscience",
+"wilson_beard_madscience",
+"body_wilson_madscientist",
+"hand_wilson_madscientist",
+"feet_wilson_madscientist",
+"willow_dowdy",
+"body_willow_dowdy",
+"feet_willow_dowdy",
+"wx78_wip",
+"body_wx78_wip",
+"hand_wx78_wip",
+"feet_wx78_wip",
+"warly_candyman",
+"body_warly_candyman",
+"feet_warly_candyman",
+"legs_warly_candyman",
+"hand_warly_candyman",
+"wathgrithr_scarecrow",
+"body_wathgrithr_scarecrow",
+"feet_wathgrithr_scarecrow",
+"hand_wathgrithr_scarecrow",
+"waxwell_vampire",
+"body_waxwell_vampire",
+"legs_waxwell_vampire",
+"hand_waxwell_vampire",
+"wickerbottom_spiderwitch",
+"body_wickerbottom_spiderwitch",
+"hand_wickerbottom_spiderwitch",
+"legs_wickerbottom_spiderwitch",
+"winona_frankenstein",
+"body_winona_frankenstein",
+"legs_winona_frankenstein",
+"feet_winona_frankenstein",
+"wortox_dragon",
+"body_wortox_dragon",
+"legs_wortox_dragon",
+"wormwood_pumpkin",
+"body_wormwood_pumpkin",
+"hand_wormwood_pumpkin",
+"legs_wormwood_pumpkin",
+"wolfgang_wolfman",
+"body_wolfgang_wolfman",
+"hand_wolfgang_wolfman",
+"legs_wolfgang_wolfman",
+"wurt_squid",
+"body_wurt_squid",
+"hand_wurt_squid",
+"woodie_hippie",
+"body_woodie_hippie",
+"feet_woodie_hippie",
+"hand_woodie_hippie",
+"legs_woodie_hippie",
+"walter_ventriloquist",
+"body_walter_ventriloquist",
+"feet_walter_ventriloquist",
+"legs_walter_ventriloquist",
+"walterhat_ventriloquist",
+"batbat_scythe",
+"kitten_black",
+"treasurechest_monster",
+"icebox_coffin",
+"watermelonhat_pumpkin"
+],
+"requires": [
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -945,7 +2273,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"batbat_scythe",
+"kitten_black",
+"treasurechest_monster",
+"icebox_coffin",
+"watermelonhat_pumpkin"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_walter",
@@ -956,7 +2292,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_ventriloquist",
+"body_walter_ventriloquist",
+"feet_walter_ventriloquist",
+"legs_walter_ventriloquist",
+"walterhat_ventriloquist"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_warly",
@@ -967,7 +2311,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_candyman",
+"body_warly_candyman",
+"feet_warly_candyman",
+"legs_warly_candyman",
+"hand_warly_candyman"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_wathgrithr",
@@ -978,7 +2330,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_scarecrow",
+"body_wathgrithr_scarecrow",
+"feet_wathgrithr_scarecrow",
+"hand_wathgrithr_scarecrow"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_waxwell",
@@ -989,7 +2348,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_vampire",
+"body_waxwell_vampire",
+"legs_waxwell_vampire",
+"hand_waxwell_vampire"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_webber",
@@ -1000,7 +2366,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_punk",
+"webber_beard_punk",
+"body_webber_punk",
+"hand_webber_punk",
+"feet_webber_punk"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_wendy",
@@ -1011,7 +2385,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_creepy",
+"body_wendy_creepy",
+"feet_wendy_creepy",
+"abigail_creepy"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_wes",
@@ -1022,7 +2403,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_clown",
+"body_wes_clown",
+"feet_wes_clown"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_wickerbottom",
@@ -1033,7 +2420,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_spiderwitch",
+"body_wickerbottom_spiderwitch",
+"hand_wickerbottom_spiderwitch",
+"legs_wickerbottom_spiderwitch"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_willow",
@@ -1044,7 +2438,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_dowdy",
+"body_willow_dowdy",
+"feet_willow_dowdy"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_wilson",
@@ -1055,7 +2455,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_madscience",
+"wilson_beard_madscience",
+"body_wilson_madscientist",
+"hand_wilson_madscientist",
+"feet_wilson_madscientist"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_winona",
@@ -1066,7 +2474,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_frankenstein",
+"body_winona_frankenstein",
+"legs_winona_frankenstein",
+"feet_winona_frankenstein"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_wolfgang",
@@ -1077,7 +2492,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_wolfman",
+"body_wolfgang_wolfman",
+"hand_wolfgang_wolfman",
+"legs_wolfgang_wolfman"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_woodie",
@@ -1088,7 +2510,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_hippie",
+"body_woodie_hippie",
+"feet_woodie_hippie",
+"hand_woodie_hippie",
+"legs_woodie_hippie"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hallowed_wormwood",
@@ -1099,6 +2529,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_pumpkin",
+"body_wormwood_pumpkin",
+"hand_wormwood_pumpkin",
+"legs_wormwood_pumpkin"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -1110,6 +2549,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_dragon",
+"body_wortox_dragon",
+"legs_wortox_dragon"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -1121,6 +2568,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_squid",
+"body_wurt_squid",
+"hand_wurt_squid"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -1132,18 +2587,29 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_wip",
+"body_wx78_wip",
+"hand_wx78_wip",
+"feet_wx78_wip"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hamlet_wormwood",
 "slot": "pack",
 "name": "Don't Starve: Wormwood",
 "rarity": "rare",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wormwood_none"
+],
+"requires": []
 },
 {
 "game_ref": "pack_handmedown_items",
@@ -1154,7 +2620,18 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"parasol_spring",
+"wardrobe_armoire",
+"strawhat_bonnet",
+"abigail_handmedown",
+"abigail_formal",
+"abigail_rose",
+"abigail_shadow",
+"abigail_survivor"
+],
+"requires": []
 },
 {
 "game_ref": "pack_harlequin_items",
@@ -1165,7 +2642,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"cane_harlequin",
+"tophat_harlequin",
+"panflute_harlequin"
+],
+"requires": []
 },
 {
 "game_ref": "pack_haunteddoll_items",
@@ -1176,7 +2659,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"bernie_cat",
+"lighter_haunteddoll",
+"umbrella_parasol"
+],
+"requires": []
 },
 {
 "game_ref": "pack_heart_you",
@@ -1187,7 +2676,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"amulet_red_heart",
+"firepit_firebird",
+"birdcage_romantic",
+"playerportrait_bg_heart1",
+"playerportrait_bg_heart2"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hermitcrab_1",
@@ -1198,18 +2695,41 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"beebox_hermit_shiny",
+"meatrack_hermit_coral",
+"meatrack_hermit_multi_coral",
+"stone_chair_shell",
+"stonechair_stool_shell",
+"stonetable_round_shell",
+"stonetable_square_shell",
+"tackle_station_shell",
+"wall_stone_shell",
+"fence_shell",
+"fence_gate_shell",
+"tacklecontainer_shiny",
+"supertacklecontainer_shiny",
+"fishingrod_block",
+"fishingrod_curl",
+"fishingrod_sword"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hl_gift",
 "slot": "pack",
 "name": "Hot Lava Gift",
 "rarity": "rare",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"firepit_lava"
+],
+"requires": []
 },
 {
 "game_ref": "pack_hockey_items",
@@ -1220,7 +2740,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"pighouse_logcabin",
+"footballhat_hockey",
+"spear_hockey"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_all",
@@ -1231,7 +2757,39 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_ice",
+"webber_beard_ice",
+"wendy_ice",
+"abigail_ice",
+"wickerbottom_ice",
+"willow_ice",
+"wilson_ice",
+"wilson_beard_ice",
+"wolfgang_ice",
+"body_webber_ice",
+"body_wendy_ice",
+"body_wickerbottom_ice",
+"body_willow_ice",
+"body_wilson_ice",
+"body_wolfgang_ice",
+"feet_webber_ice",
+"feet_wendy_ice",
+"feet_wickerbottom_ice1",
+"feet_willow_ice",
+"feet_wilson_ice",
+"feet_wolfgang_ice",
+"hand_wendy_ice",
+"hand_wickerbottom_ice",
+"hand_willow_ice",
+"hand_wilson_ice",
+"hand_wolfgang_ice",
+"legs_webber_ice",
+"legs_wilson_ice",
+"legs_wolfgang_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_all2",
@@ -1242,6 +2800,31 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"walter_ice",
+"body_walter_ice",
+"hand_walter_ice",
+"legs_walter_ice",
+"walterhat_ice",
+"warly_ice",
+"body_warly_ice",
+"feet_warly_ice",
+"legs_warly_ice",
+"wortox_ice",
+"body_wortox_ice",
+"legs_wortox_ice",
+"wx78_ice",
+"body_wx78_ice",
+"feet_wx78_ice",
+"hand_wx78_ice",
+"legs_wx78_ice",
+"winona_ice",
+"body_winona_ice",
+"hand_winona_ice"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -1253,6 +2836,38 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"woodie_ice",
+"body_woodie_ice",
+"hand_woodie_ice",
+"feet_woodie_ice",
+"wes_ice",
+"body_wes_ice",
+"waxwell_ice",
+"body_waxwell_ice",
+"hand_waxwell_ice",
+"legs_waxwell_ice",
+"wathgrithr_ice",
+"body_wathgrithr_ice",
+"hand_wathgrithr_ice",
+"feet_wathgrithr_ice",
+"wormwood_ice",
+"body_wormwood_ice",
+"hand_wormwood_ice",
+"legs_wormwood_ice",
+"wurt_ice",
+"body_wurt_ice",
+"legs_wurt_ice",
+"wanda_ice",
+"body_wanda_ice",
+"hand_wanda_ice",
+"feet_wanda_ice"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wurt_none"
 ]
 },
 {
@@ -1264,6 +2879,60 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"webber_ice",
+"webber_beard_ice",
+"wendy_ice",
+"abigail_ice",
+"wickerbottom_ice",
+"willow_ice",
+"wilson_ice",
+"wilson_beard_ice",
+"wolfgang_ice",
+"body_webber_ice",
+"body_wendy_ice",
+"body_wickerbottom_ice",
+"body_willow_ice",
+"body_wilson_ice",
+"body_wolfgang_ice",
+"feet_webber_ice",
+"feet_wendy_ice",
+"feet_wickerbottom_ice1",
+"feet_willow_ice",
+"feet_wilson_ice",
+"feet_wolfgang_ice",
+"hand_wendy_ice",
+"hand_wickerbottom_ice",
+"hand_willow_ice",
+"hand_wilson_ice",
+"hand_wolfgang_ice",
+"legs_webber_ice",
+"legs_wilson_ice",
+"legs_wolfgang_ice",
+"walter_ice",
+"body_walter_ice",
+"hand_walter_ice",
+"legs_walter_ice",
+"walterhat_ice",
+"warly_ice",
+"body_warly_ice",
+"feet_warly_ice",
+"legs_warly_ice",
+"wortox_ice",
+"body_wortox_ice",
+"legs_wortox_ice",
+"wx78_ice",
+"body_wx78_ice",
+"feet_wx78_ice",
+"hand_wx78_ice",
+"legs_wx78_ice",
+"winona_ice",
+"body_winona_ice",
+"hand_winona_ice"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -1275,6 +2944,88 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"webber_ice",
+"webber_beard_ice",
+"wendy_ice",
+"abigail_ice",
+"wickerbottom_ice",
+"willow_ice",
+"wilson_ice",
+"wilson_beard_ice",
+"wolfgang_ice",
+"body_webber_ice",
+"body_wendy_ice",
+"body_wickerbottom_ice",
+"body_willow_ice",
+"body_wilson_ice",
+"body_wolfgang_ice",
+"feet_webber_ice",
+"feet_wendy_ice",
+"feet_wickerbottom_ice1",
+"feet_willow_ice",
+"feet_wilson_ice",
+"feet_wolfgang_ice",
+"hand_wendy_ice",
+"hand_wickerbottom_ice",
+"hand_willow_ice",
+"hand_wilson_ice",
+"hand_wolfgang_ice",
+"legs_webber_ice",
+"legs_wilson_ice",
+"legs_wolfgang_ice",
+"walter_ice",
+"body_walter_ice",
+"hand_walter_ice",
+"legs_walter_ice",
+"walterhat_ice",
+"warly_ice",
+"body_warly_ice",
+"feet_warly_ice",
+"legs_warly_ice",
+"wortox_ice",
+"body_wortox_ice",
+"legs_wortox_ice",
+"wx78_ice",
+"body_wx78_ice",
+"feet_wx78_ice",
+"hand_wx78_ice",
+"legs_wx78_ice",
+"winona_ice",
+"body_winona_ice",
+"hand_winona_ice",
+"woodie_ice",
+"body_woodie_ice",
+"hand_woodie_ice",
+"feet_woodie_ice",
+"wes_ice",
+"body_wes_ice",
+"waxwell_ice",
+"body_waxwell_ice",
+"hand_waxwell_ice",
+"legs_waxwell_ice",
+"wathgrithr_ice",
+"body_wathgrithr_ice",
+"hand_wathgrithr_ice",
+"feet_wathgrithr_ice",
+"wormwood_ice",
+"body_wormwood_ice",
+"hand_wormwood_ice",
+"legs_wormwood_ice",
+"wurt_ice",
+"body_wurt_ice",
+"legs_wurt_ice",
+"wanda_ice",
+"body_wanda_ice",
+"hand_wanda_ice",
+"feet_wanda_ice"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -1286,7 +3037,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_ice",
+"body_walter_ice",
+"hand_walter_ice",
+"legs_walter_ice",
+"walterhat_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_wanda",
@@ -1297,6 +3056,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_ice",
+"body_wanda_ice",
+"hand_wanda_ice",
+"feet_wanda_ice"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -1308,7 +3076,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_ice",
+"body_warly_ice",
+"feet_warly_ice",
+"legs_warly_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_wathgrithr",
@@ -1319,7 +3094,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_ice",
+"body_wathgrithr_ice",
+"hand_wathgrithr_ice",
+"feet_wathgrithr_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_waxwell",
@@ -1330,7 +3112,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_ice",
+"body_waxwell_ice",
+"hand_waxwell_ice",
+"legs_waxwell_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_webber",
@@ -1341,7 +3130,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_ice",
+"webber_beard_ice",
+"body_webber_ice",
+"feet_webber_ice",
+"legs_webber_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_wendy",
@@ -1352,7 +3149,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_ice",
+"body_wendy_ice",
+"feet_wendy_ice",
+"hand_wendy_ice",
+"abigail_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_wes",
@@ -1363,7 +3168,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_ice",
+"body_wes_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_wickerbottom",
@@ -1374,7 +3184,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_ice",
+"body_wickerbottom_ice",
+"feet_wickerbottom_ice1",
+"hand_wickerbottom_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_willow",
@@ -1385,7 +3202,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_ice",
+"body_willow_ice",
+"feet_willow_ice",
+"hand_willow_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_wilson",
@@ -1396,7 +3220,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_ice",
+"wilson_beard_ice",
+"body_wilson_ice",
+"feet_wilson_ice",
+"hand_wilson_ice",
+"legs_wilson_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_winona",
@@ -1407,7 +3240,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_ice",
+"body_winona_ice",
+"hand_winona_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_wolfgang",
@@ -1418,7 +3257,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_ice",
+"body_wolfgang_ice",
+"feet_wolfgang_ice",
+"hand_wolfgang_ice",
+"legs_wolfgang_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_woodie",
@@ -1429,7 +3276,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_ice",
+"body_woodie_ice",
+"hand_woodie_ice",
+"feet_woodie_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ice_wormwood",
@@ -1440,6 +3294,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_ice",
+"body_wormwood_ice",
+"hand_wormwood_ice",
+"legs_wormwood_ice"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -1451,6 +3314,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_ice",
+"body_wortox_ice",
+"legs_wortox_ice"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -1462,6 +3333,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_ice",
+"body_wurt_ice",
+"legs_wurt_ice"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -1473,7 +3352,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_ice",
+"body_wx78_ice",
+"feet_wx78_ice",
+"hand_wx78_ice",
+"legs_wx78_ice"
+],
+"requires": []
 },
 {
 "game_ref": "pack_kitchen_1",
@@ -1484,7 +3371,18 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"cookpot_kitchen",
+"icebox_kitchen",
+"saltbox_kitchen",
+"bundle_kitchen",
+"dock_woodposts_kitchen",
+"dock_woodposts_kitchen2",
+"dock_woodposts_kitchen3",
+"icepack_kitchen"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lost_1",
@@ -1495,6 +3393,31 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wilson_nature",
+"wilson_beard_nature",
+"body_wilson_nature",
+"legs_wilson_nature",
+"wolfgang_nature",
+"body_wolfgang_nature",
+"feet_wolfgang_nature",
+"wurt_rose",
+"body_wurt_rose",
+"hand_wurt_rose",
+"legs_wurt_rose",
+"wormwood_shadow",
+"body_wormwood_shadow",
+"hand_wormwood_shadow",
+"legs_wormwood_shadow",
+"tophat_chef",
+"warly_chef",
+"body_warly_chef",
+"feet_warly_chef"
+],
+"requires": [
+"wormwood_none",
+"wurt_none"
 ]
 },
 {
@@ -1506,7 +3429,24 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winonabattery_high_fancy",
+"winonabattery_low_fancy",
+"winona_catapult_fancy",
+"winona_spotlight_fancy",
+"winonabattery_high_spike",
+"winonabattery_low_spike",
+"winona_catapult_spike",
+"winona_spotlight_spike",
+"lighter_glass",
+"lighter_heart",
+"lighter_old",
+"lighter_ragged",
+"lighter_rose",
+"bernie_dog"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lostandfound_items2",
@@ -1517,7 +3457,40 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"sisturn_beachhouse",
+"sisturn_nest",
+"lucy_broadaxe",
+"lucy_chained",
+"lucy_picnic",
+"lucy_punk",
+"wx78_scanner_fancy",
+"wx78_scanner_junky",
+"spicepack_porcelain",
+"spicepack_rustic",
+"spicepack_silver",
+"spicepack_survivor",
+"portable_blender_porcelain",
+"portable_blender_rustic",
+"portable_blender_silver",
+"portable_blender_survivor",
+"portable_cook_pot_porcelain",
+"portable_cook_pot_rustic",
+"portable_cook_pot_silver",
+"portable_cook_pot_survivor",
+"portable_spicer_porcelain",
+"portable_spicer_rustic",
+"portable_spicer_silver",
+"portable_spicer_survivor",
+"slingshot_bandaged",
+"slingshot_nature",
+"slingshot_spiked",
+"slingshot_straws",
+"pupington_woby_baddog",
+"pupington_woby_ribbon"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunar_2",
@@ -1528,7 +3501,21 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_lunar",
+"body_warly_lunar",
+"hand_warly_lunar",
+"legs_warly_lunar",
+"feet_warly_lunar",
+"wes_lunar",
+"body_wes_lunar",
+"willow_lunar",
+"body_willow_lunar",
+"feet_willow_lunar",
+"hand_willow_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunar_3",
@@ -1539,6 +3526,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"woodie_lunar",
+"body_woodie_lunar",
+"hand_woodie_lunar",
+"legs_woodie_lunar",
+"wortox_lunar",
+"body_wortox_lunar",
+"legs_wortox_lunar",
+"wurt_lunar",
+"body_wurt_lunar",
+"hand_wurt_lunar",
+"legs_wurt_lunar"
+],
+"requires": [
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -1550,6 +3554,37 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"woodie_lunar",
+"body_woodie_lunar",
+"hand_woodie_lunar",
+"legs_woodie_lunar",
+"wortox_lunar",
+"body_wortox_lunar",
+"legs_wortox_lunar",
+"wurt_lunar",
+"body_wurt_lunar",
+"hand_wurt_lunar",
+"legs_wurt_lunar",
+"wanda_western",
+"body_wanda_western",
+"hand_wanda_western",
+"legs_wanda_western",
+"wathgrithr_western",
+"body_wathgrithr_western",
+"legs_wathgrithr_western",
+"wathgrithrhat_western",
+"wes_western",
+"body_wes_western",
+"hand_wes_western",
+"legs_wes_western",
+"feet_wes_western"
+],
+"requires": [
+"wanda_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -1561,6 +3596,52 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"walter_lunar",
+"walterhat_lunar",
+"body_walter_lunar",
+"legs_walter_lunar",
+"wanda_lunar",
+"body_wanda_lunar",
+"feet_wanda_lunar",
+"hand_wanda_lunar",
+"waxwell_lunar",
+"body_waxwell_lunar",
+"feet_waxwell_lunar",
+"hand_waxwell_lunar",
+"webber_lunar",
+"webber_beard_lunar",
+"body_webber_lunar",
+"feet_webber_lunar",
+"hand_webber_lunar",
+"legs_webber_lunar",
+"wendy_lunar",
+"body_wendy_lunar",
+"feet_wendy_lunar",
+"abigail_lunar",
+"wickerbottom_lunar",
+"body_wickerbottom_lunar",
+"feet_wickerbottom_lunar",
+"hand_wickerbottom_lunar",
+"wilson_lunar",
+"wilson_beard_lunar",
+"body_wilson_lunar",
+"hand_wilson_lunar",
+"legs_wilson_lunar",
+"wormwood_lunar",
+"body_wormwood_lunar",
+"hand_wormwood_lunar",
+"legs_wormwood_lunar",
+"wx78_lunar",
+"body_wx78_lunar",
+"hand_wx78_lunar",
+"legs_wx78_lunar",
+"feet_wx78_lunar"
+],
+"requires": [
+"wanda_none",
+"wormwood_none"
 ]
 },
 {
@@ -1572,6 +3653,89 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"walter_lunar",
+"walterhat_lunar",
+"body_walter_lunar",
+"legs_walter_lunar",
+"wanda_lunar",
+"body_wanda_lunar",
+"feet_wanda_lunar",
+"hand_wanda_lunar",
+"waxwell_lunar",
+"body_waxwell_lunar",
+"feet_waxwell_lunar",
+"hand_waxwell_lunar",
+"webber_lunar",
+"webber_beard_lunar",
+"body_webber_lunar",
+"feet_webber_lunar",
+"hand_webber_lunar",
+"legs_webber_lunar",
+"wendy_lunar",
+"body_wendy_lunar",
+"feet_wendy_lunar",
+"abigail_lunar",
+"wickerbottom_lunar",
+"body_wickerbottom_lunar",
+"feet_wickerbottom_lunar",
+"hand_wickerbottom_lunar",
+"wilson_lunar",
+"wilson_beard_lunar",
+"body_wilson_lunar",
+"hand_wilson_lunar",
+"legs_wilson_lunar",
+"wormwood_lunar",
+"body_wormwood_lunar",
+"hand_wormwood_lunar",
+"legs_wormwood_lunar",
+"wx78_lunar",
+"body_wx78_lunar",
+"hand_wx78_lunar",
+"legs_wx78_lunar",
+"feet_wx78_lunar",
+"warly_lunar",
+"body_warly_lunar",
+"hand_warly_lunar",
+"legs_warly_lunar",
+"feet_warly_lunar",
+"wes_lunar",
+"body_wes_lunar",
+"willow_lunar",
+"body_willow_lunar",
+"feet_willow_lunar",
+"hand_willow_lunar",
+"winona_lunar",
+"body_winona_lunar",
+"legs_winona_lunar",
+"wathgrithr_lunar",
+"body_wathgrithr_lunar",
+"hand_wathgrithr_lunar",
+"legs_wathgrithr_lunar",
+"wathgrithrhat_lunar",
+"spear_wathgrithr_lunar",
+"wolfgang_lunar",
+"body_wolfgang_lunar",
+"hand_wolfgang_lunar",
+"legs_wolfgang_lunar",
+"woodie_lunar",
+"body_woodie_lunar",
+"hand_woodie_lunar",
+"legs_woodie_lunar",
+"wortox_lunar",
+"body_wortox_lunar",
+"legs_wortox_lunar",
+"wurt_lunar",
+"body_wurt_lunar",
+"hand_wurt_lunar",
+"legs_wurt_lunar"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -1583,7 +3747,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_lunar",
+"walterhat_lunar",
+"body_walter_lunar",
+"legs_walter_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunar_wanda",
@@ -1594,6 +3765,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_lunar",
+"body_wanda_lunar",
+"feet_wanda_lunar",
+"hand_wanda_lunar"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -1605,7 +3785,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_lunar",
+"body_wathgrithr_lunar",
+"hand_wathgrithr_lunar",
+"legs_wathgrithr_lunar",
+"wathgrithrhat_lunar",
+"spear_wathgrithr_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunar_waxwell",
@@ -1616,7 +3805,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_lunar",
+"body_waxwell_lunar",
+"feet_waxwell_lunar",
+"hand_waxwell_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunar_webber",
@@ -1627,7 +3823,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_lunar",
+"webber_beard_lunar",
+"body_webber_lunar",
+"feet_webber_lunar",
+"hand_webber_lunar",
+"legs_webber_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunar_wendy",
@@ -1638,7 +3843,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_lunar",
+"body_wendy_lunar",
+"feet_wendy_lunar",
+"abigail_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunar_wickerbottom",
@@ -1649,7 +3861,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_lunar",
+"body_wickerbottom_lunar",
+"feet_wickerbottom_lunar",
+"hand_wickerbottom_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunar_wilson",
@@ -1660,7 +3879,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_lunar",
+"wilson_beard_lunar",
+"body_wilson_lunar",
+"hand_wilson_lunar",
+"legs_wilson_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunar_winona",
@@ -1671,7 +3898,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_lunar",
+"body_winona_lunar",
+"legs_winona_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunar_wolfgang",
@@ -1682,7 +3915,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_lunar",
+"body_wolfgang_lunar",
+"hand_wolfgang_lunar",
+"legs_wolfgang_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunar_wormwood",
@@ -1693,6 +3933,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_lunar",
+"body_wormwood_lunar",
+"hand_wormwood_lunar",
+"legs_wormwood_lunar"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -1704,7 +3953,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_lunar",
+"body_wx78_lunar",
+"hand_wx78_lunar",
+"legs_wx78_lunar",
+"feet_wx78_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunarplant_items",
@@ -1715,7 +3972,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"lunarplanthat_brave",
+"armor_lunarplant_brave",
+"lunarplanthat_knight",
+"armor_lunarplant_knight"
+],
+"requires": []
 },
 {
 "game_ref": "pack_lunarshadow",
@@ -1726,6 +3990,36 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"winona_lunar",
+"body_winona_lunar",
+"legs_winona_lunar",
+"wathgrithr_lunar",
+"body_wathgrithr_lunar",
+"hand_wathgrithr_lunar",
+"legs_wathgrithr_lunar",
+"wathgrithrhat_lunar",
+"spear_wathgrithr_lunar",
+"wolfgang_lunar",
+"body_wolfgang_lunar",
+"hand_wolfgang_lunar",
+"legs_wolfgang_lunar",
+"wortox_shadow",
+"body_wortox_shadow",
+"hand_wortox_shadow",
+"legs_wortox_shadow",
+"walter_shadow",
+"body_walter_shadow",
+"legs_walter_shadow",
+"walterhat_shadow",
+"warly_shadow",
+"body_warly_shadow",
+"legs_warly_shadow",
+"feet_warly_shadow"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -1737,7 +4031,11 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"magician_chest_shadow_resurrected"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_all",
@@ -1748,7 +4046,61 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_magma",
+"waxwell_magma",
+"webber_magma",
+"webber_beard_magma",
+"wendy_magma",
+"abigail_magma",
+"wes_magma",
+"wickerbottom_magma",
+"willow_magma",
+"wilson_magma",
+"wilson_beard_magma",
+"winona_magma",
+"wolfgang_magma",
+"woodie_magma",
+"wx78_magma",
+"body_wathgrithr_magma",
+"body_waxwell_magma",
+"body_webber_magma",
+"body_wendy_magma",
+"body_wes_magma",
+"body_wickerbottom_magma",
+"body_willow_magma",
+"body_wilson_magma",
+"body_winona_magma",
+"body_wolfgang_magma",
+"body_woodie_magma",
+"body_wx78_magma",
+"hand_wathgrithr_magma",
+"hand_waxwell_magma",
+"hand_webber_magma",
+"hand_wendy_magma",
+"hand_wes_magma",
+"hand_wickerbottom_magma",
+"hand_willow_magma",
+"hand_wilson_magma",
+"hand_winona_magma",
+"hand_wolfgang_magma",
+"hand_woodie_magma",
+"hand_wx78_magma",
+"legs_wathgrithr_magma",
+"legs_waxwell_magma",
+"legs_willow_magma",
+"legs_wilson_magma",
+"legs_winona_magma",
+"legs_wolfgang_magma",
+"legs_woodie_magma",
+"feet_webber_magma",
+"feet_wendy_magma",
+"feet_wes_magma",
+"feet_wickerbottom_magma",
+"feet_wx78_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_bundle",
@@ -1759,7 +4111,84 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_magma",
+"waxwell_magma",
+"webber_magma",
+"webber_beard_magma",
+"wendy_magma",
+"abigail_magma",
+"wes_magma",
+"wickerbottom_magma",
+"willow_magma",
+"wilson_magma",
+"wilson_beard_magma",
+"winona_magma",
+"wolfgang_magma",
+"woodie_magma",
+"wx78_magma",
+"body_wathgrithr_magma",
+"body_waxwell_magma",
+"body_webber_magma",
+"body_wendy_magma",
+"body_wes_magma",
+"body_wickerbottom_magma",
+"body_willow_magma",
+"body_wilson_magma",
+"body_winona_magma",
+"body_wolfgang_magma",
+"body_woodie_magma",
+"body_wx78_magma",
+"hand_wathgrithr_magma",
+"hand_waxwell_magma",
+"hand_webber_magma",
+"hand_wendy_magma",
+"hand_wes_magma",
+"hand_wickerbottom_magma",
+"hand_willow_magma",
+"hand_wilson_magma",
+"hand_winona_magma",
+"hand_wolfgang_magma",
+"hand_woodie_magma",
+"hand_wx78_magma",
+"legs_wathgrithr_magma",
+"legs_waxwell_magma",
+"legs_willow_magma",
+"legs_wilson_magma",
+"legs_winona_magma",
+"legs_wolfgang_magma",
+"legs_woodie_magma",
+"feet_webber_magma",
+"feet_wendy_magma",
+"feet_wes_magma",
+"feet_wickerbottom_magma",
+"feet_wx78_magma",
+"armor_ruins_arcane",
+"armor_ruins_bulky",
+"armor_ruins_leaf",
+"armor_ruins_tusk",
+"armor_grass_cloak",
+"armor_grass_woven",
+"armor_marble_chainmail",
+"armor_marble_rockabs",
+"armor_wood_fangedcollar",
+"armor_wood_haramaki",
+"armor_wood_lamellar",
+"flowerhat_healing",
+"flowerhat_crown",
+"footballhat_combathelm",
+"footballhat_combathelm2",
+"amulet_red_occulteye",
+"firestaff_meteor",
+"hammer_forge",
+"ruins_bat_heavy",
+"spear_forge_gungnir",
+"spear_forge_lance",
+"hambat_spiralcut",
+"book_brimstone_gilded"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_wathgrithr",
@@ -1770,7 +4199,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_magma",
+"body_wathgrithr_magma",
+"hand_wathgrithr_magma",
+"legs_wathgrithr_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_waxwell",
@@ -1781,7 +4217,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_magma",
+"body_waxwell_magma",
+"hand_waxwell_magma",
+"legs_waxwell_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_webber",
@@ -1792,7 +4235,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_magma",
+"webber_beard_magma",
+"body_webber_magma",
+"feet_webber_magma",
+"hand_webber_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_wendy",
@@ -1803,7 +4254,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_magma",
+"body_wendy_magma",
+"feet_wendy_magma",
+"hand_wendy_magma",
+"abigail_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_wes",
@@ -1814,7 +4273,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_magma",
+"body_wes_magma",
+"feet_wes_magma",
+"hand_wes_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_wickerbottom",
@@ -1825,7 +4291,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_magma",
+"body_wickerbottom_magma",
+"feet_wickerbottom_magma",
+"hand_wickerbottom_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_willow",
@@ -1836,7 +4309,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_magma",
+"body_willow_magma",
+"hand_willow_magma",
+"legs_willow_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_wilson",
@@ -1847,7 +4327,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_magma",
+"wilson_beard_magma",
+"body_wilson_magma",
+"hand_wilson_magma",
+"legs_wilson_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_winona",
@@ -1858,7 +4346,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_magma",
+"body_winona_magma",
+"hand_winona_magma",
+"legs_winona_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_wolfgang",
@@ -1869,7 +4364,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_magma",
+"body_wolfgang_magma",
+"hand_wolfgang_magma",
+"legs_wolfgang_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_woodie",
@@ -1880,7 +4382,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_magma",
+"body_woodie_magma",
+"hand_woodie_magma",
+"legs_woodie_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_magma_wx78",
@@ -1891,7 +4400,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_magma",
+"body_wx78_magma",
+"feet_wx78_magma",
+"hand_wx78_magma"
+],
+"requires": []
 },
 {
 "game_ref": "pack_masquerade_1",
@@ -1902,6 +4418,29 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"willow_masquerade",
+"body_willow_masquerade",
+"feet_willow_masquerade",
+"warly_masquerade",
+"body_warly_masquerade",
+"hand_warly_masquerade",
+"legs_warly_masquerade",
+"feet_warly_masquerade",
+"wortox_masquerade",
+"body_wortox_masquerade",
+"legs_wortox_masquerade",
+"wes_masquerade",
+"body_wes_masquerade",
+"legs_wes_masquerade",
+"woodie_masquerade",
+"body_woodie_masquerade",
+"hand_woodie_masquerade",
+"legs_woodie_masquerade"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -1913,6 +4452,30 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_masquerade",
+"body_wanda_masquerade",
+"legs_wanda_masquerade",
+"wathgrithr_masquerade",
+"body_wathgrithr_masquerade",
+"legs_wathgrithr_masquerade",
+"feet_wathgrithr_masquerade",
+"wurt_masquerade",
+"body_wurt_masquerade",
+"waxwell_masquerade",
+"body_waxwell_masquerade",
+"legs_waxwell_masquerade",
+"feet_waxwell_masquerade",
+"wilson_masquerade",
+"body_wilson_masquerade",
+"legs_wilson_masquerade",
+"hand_wilson_masquerade",
+"wilson_beard_masquerade"
+],
+"requires": [
+"wanda_none",
+"wurt_none"
 ]
 },
 {
@@ -1924,7 +4487,27 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_masquerade",
+"body_wendy_masquerade",
+"feet_wendy_masquerade",
+"abigail_masquerade",
+"winona_masquerade",
+"body_winona_masquerade",
+"wx78_masquerade",
+"body_wx78_masquerade",
+"legs_wx78_masquerade",
+"feet_wx78_masquerade",
+"webber_masquerade",
+"body_webber_masquerade",
+"feet_webber_masquerade",
+"webber_beard_masquerade",
+"wickerbottom_masquerade",
+"body_wickerbottom_masquerade",
+"feet_wickerbottom_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_masquerade_wanda",
@@ -1935,6 +4518,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_masquerade",
+"body_wanda_masquerade",
+"legs_wanda_masquerade"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -1946,7 +4537,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_masquerade",
+"body_warly_masquerade",
+"hand_warly_masquerade",
+"legs_warly_masquerade",
+"feet_warly_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_masquerade_wathgrithr",
@@ -1957,7 +4556,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_masquerade",
+"body_wathgrithr_masquerade",
+"legs_wathgrithr_masquerade",
+"feet_wathgrithr_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_masquerade_waxwell",
@@ -1968,7 +4574,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_masquerade",
+"body_waxwell_masquerade",
+"legs_waxwell_masquerade",
+"feet_waxwell_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_masquerade_wes",
@@ -1979,7 +4592,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_masquerade",
+"body_wes_masquerade",
+"legs_wes_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_masquerade_willow",
@@ -1990,7 +4609,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_masquerade",
+"body_willow_masquerade",
+"feet_willow_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_masquerade_wilson",
@@ -2001,7 +4626,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_masquerade",
+"body_wilson_masquerade",
+"legs_wilson_masquerade",
+"hand_wilson_masquerade",
+"wilson_beard_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_masquerade_woodie",
@@ -2012,7 +4645,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_masquerade",
+"body_woodie_masquerade",
+"hand_woodie_masquerade",
+"legs_woodie_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_masquerade_wortox",
@@ -2023,6 +4663,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_masquerade",
+"body_wortox_masquerade",
+"legs_wortox_masquerade"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -2034,6 +4682,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_masquerade",
+"body_wurt_masquerade"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -2045,7 +4700,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"bedroll_furry_potato",
+"cavein_boulder_kettlebell",
+"meatrack_circus",
+"piggyback_elephant"
+],
+"requires": []
 },
 {
 "game_ref": "pack_mystical_1_items",
@@ -2056,7 +4718,24 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"chester_mystical",
+"bushhat_mystical",
+"glasscutter_mystical",
+"lantern_mystical",
+"mushroom_farm_mystical",
+"siestahut_mystical",
+"winterometer_mystical",
+"beargerfursack_mystical",
+"telebase_mystical",
+"telestaff_mystical",
+"mermwatchtower_mystical",
+"mermhouse_crafted_mystical",
+"beefalohat_mystical",
+"bundle_mystical"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_all",
@@ -2067,7 +4746,38 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_nature",
+"waxwell_nature",
+"wes_nature",
+"winona_nature",
+"woodie_nature",
+"wx78_nature",
+"body_wathgrithr_nature",
+"body_waxwell_nature",
+"body_wes_nature",
+"body_winona_nature",
+"body_woodie_nature",
+"body_wx78_nature",
+"feet_wathgrithr_nature",
+"feet_waxwell_nature",
+"feet_wes_nature",
+"feet_winona_nature",
+"feet_woodie_nature",
+"feet_wx78_nature",
+"hand_wathgrithr_nature",
+"hand_waxwell_nature",
+"hand_wes_nature",
+"hand_winona_nature",
+"hand_woodie_nature",
+"hand_wx78_nature",
+"legs_wathgrithr_nature",
+"legs_waxwell_nature",
+"legs_winona_nature",
+"legs_woodie_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_all2",
@@ -2078,6 +4788,39 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"walter_nature",
+"warly_nature",
+"webber_nature",
+"wendy_nature",
+"wortox_nature",
+"body_walter_nature",
+"body_warly_nature",
+"body_webber_nature",
+"body_wendy_nature",
+"body_wortox_nature",
+"hand_walter_nature",
+"hand_webber_nature",
+"hand_wortox_nature",
+"legs_walter_nature",
+"legs_wortox_nature",
+"feet_warly_nature",
+"feet_webber_nature",
+"feet_wendy_nature",
+"walterhat_nature",
+"abigail_nature",
+"webber_beard_nature",
+"wilson_nature",
+"wilson_beard_nature",
+"body_wilson_nature",
+"legs_wilson_nature",
+"wolfgang_nature",
+"body_wolfgang_nature",
+"feet_wolfgang_nature"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -2089,6 +4832,32 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"willow_nature",
+"body_willow_nature",
+"feet_willow_nature",
+"hand_willow_nature",
+"wurt_nature",
+"body_wurt_nature",
+"hand_wurt_nature",
+"legs_wurt_nature",
+"wanda_nature",
+"body_wanda_nature",
+"legs_wanda_nature",
+"wickerbottom_nature",
+"body_wickerbottom_nature",
+"hand_wickerbottom_nature",
+"feet_wickerbottom_nature",
+"wormwood_nature",
+"body_wormwood_nature",
+"hand_wormwood_nature",
+"legs_wormwood_nature"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wurt_none"
 ]
 },
 {
@@ -2100,6 +4869,67 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"walter_nature",
+"warly_nature",
+"webber_nature",
+"wendy_nature",
+"wortox_nature",
+"body_walter_nature",
+"body_warly_nature",
+"body_webber_nature",
+"body_wendy_nature",
+"body_wortox_nature",
+"hand_walter_nature",
+"hand_webber_nature",
+"hand_wortox_nature",
+"legs_walter_nature",
+"legs_wortox_nature",
+"feet_warly_nature",
+"feet_webber_nature",
+"feet_wendy_nature",
+"walterhat_nature",
+"abigail_nature",
+"webber_beard_nature",
+"wilson_nature",
+"wilson_beard_nature",
+"body_wilson_nature",
+"legs_wilson_nature",
+"wolfgang_nature",
+"body_wolfgang_nature",
+"feet_wolfgang_nature",
+"wathgrithr_nature",
+"waxwell_nature",
+"wes_nature",
+"winona_nature",
+"woodie_nature",
+"wx78_nature",
+"body_wathgrithr_nature",
+"body_waxwell_nature",
+"body_wes_nature",
+"body_winona_nature",
+"body_woodie_nature",
+"body_wx78_nature",
+"feet_wathgrithr_nature",
+"feet_waxwell_nature",
+"feet_wes_nature",
+"feet_winona_nature",
+"feet_woodie_nature",
+"feet_wx78_nature",
+"hand_wathgrithr_nature",
+"hand_waxwell_nature",
+"hand_wes_nature",
+"hand_winona_nature",
+"hand_woodie_nature",
+"hand_wx78_nature",
+"legs_wathgrithr_nature",
+"legs_waxwell_nature",
+"legs_winona_nature",
+"legs_woodie_nature"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -2111,6 +4941,89 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"walter_nature",
+"warly_nature",
+"webber_nature",
+"wendy_nature",
+"wortox_nature",
+"body_walter_nature",
+"body_warly_nature",
+"body_webber_nature",
+"body_wendy_nature",
+"body_wortox_nature",
+"hand_walter_nature",
+"hand_webber_nature",
+"hand_wortox_nature",
+"legs_walter_nature",
+"legs_wortox_nature",
+"feet_warly_nature",
+"feet_webber_nature",
+"feet_wendy_nature",
+"walterhat_nature",
+"abigail_nature",
+"webber_beard_nature",
+"wilson_nature",
+"wilson_beard_nature",
+"body_wilson_nature",
+"legs_wilson_nature",
+"wolfgang_nature",
+"body_wolfgang_nature",
+"feet_wolfgang_nature",
+"wathgrithr_nature",
+"waxwell_nature",
+"wes_nature",
+"winona_nature",
+"woodie_nature",
+"wx78_nature",
+"body_wathgrithr_nature",
+"body_waxwell_nature",
+"body_wes_nature",
+"body_winona_nature",
+"body_woodie_nature",
+"body_wx78_nature",
+"feet_wathgrithr_nature",
+"feet_waxwell_nature",
+"feet_wes_nature",
+"feet_winona_nature",
+"feet_woodie_nature",
+"feet_wx78_nature",
+"hand_wathgrithr_nature",
+"hand_waxwell_nature",
+"hand_wes_nature",
+"hand_winona_nature",
+"hand_woodie_nature",
+"hand_wx78_nature",
+"legs_wathgrithr_nature",
+"legs_waxwell_nature",
+"legs_winona_nature",
+"legs_woodie_nature",
+"willow_nature",
+"body_willow_nature",
+"feet_willow_nature",
+"hand_willow_nature",
+"wurt_nature",
+"body_wurt_nature",
+"hand_wurt_nature",
+"legs_wurt_nature",
+"wanda_nature",
+"body_wanda_nature",
+"legs_wanda_nature",
+"wickerbottom_nature",
+"body_wickerbottom_nature",
+"hand_wickerbottom_nature",
+"feet_wickerbottom_nature",
+"wormwood_nature",
+"body_wormwood_nature",
+"hand_wormwood_nature",
+"legs_wormwood_nature"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -2122,7 +5035,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_nature",
+"body_walter_nature",
+"hand_walter_nature",
+"legs_walter_nature",
+"walterhat_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_wanda",
@@ -2133,6 +5054,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_nature",
+"body_wanda_nature",
+"legs_wanda_nature"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -2144,7 +5073,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_nature",
+"body_warly_nature",
+"feet_warly_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_wathgrithr",
@@ -2155,7 +5090,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_nature",
+"body_wathgrithr_nature",
+"feet_wathgrithr_nature",
+"hand_wathgrithr_nature",
+"legs_wathgrithr_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_waxwell",
@@ -2166,7 +5109,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_nature",
+"body_waxwell_nature",
+"feet_waxwell_nature",
+"hand_waxwell_nature",
+"legs_waxwell_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_webber",
@@ -2177,7 +5128,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_nature",
+"body_webber_nature",
+"feet_webber_nature",
+"hand_webber_nature",
+"webber_beard_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_wendy",
@@ -2188,7 +5147,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_nature",
+"body_wendy_nature",
+"feet_wendy_nature",
+"abigail_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_wes",
@@ -2199,7 +5165,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_nature",
+"body_wes_nature",
+"feet_wes_nature",
+"hand_wes_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_wickerbottom",
@@ -2210,7 +5183,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_nature",
+"body_wickerbottom_nature",
+"hand_wickerbottom_nature",
+"feet_wickerbottom_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_willow",
@@ -2221,7 +5201,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_nature",
+"body_willow_nature",
+"feet_willow_nature",
+"hand_willow_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_winona",
@@ -2232,7 +5219,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_nature",
+"body_winona_nature",
+"feet_winona_nature",
+"hand_winona_nature",
+"legs_winona_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_woodie",
@@ -2243,7 +5238,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_nature",
+"body_woodie_nature",
+"feet_woodie_nature",
+"hand_woodie_nature",
+"legs_woodie_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_nature_wormwood",
@@ -2254,6 +5257,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_nature",
+"body_wormwood_nature",
+"hand_wormwood_nature",
+"legs_wormwood_nature"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -2265,6 +5277,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_nature",
+"body_wortox_nature",
+"hand_wortox_nature",
+"legs_wortox_nature"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -2276,6 +5297,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_nature",
+"body_wurt_nature",
+"hand_wurt_nature",
+"legs_wurt_nature"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -2287,18 +5317,29 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_nature",
+"body_wx78_nature",
+"feet_wx78_nature",
+"hand_wx78_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_oni_gift",
 "slot": "pack",
 "name": "Oxygen Not Included Gift",
 "rarity": "rare",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"glomling_puft"
+],
+"requires": []
 },
 {
 "game_ref": "pack_ornate_items",
@@ -2309,7 +5350,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"amulet_yellow_ornate",
+"minisign_ornate",
+"wall_wood_ornate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_pirate_1",
@@ -2320,7 +5367,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"fishbox_pirate",
+"mast_pirate",
+"boat_pirate_skin",
+"boat_grass_pirate",
+"ocean_trawler_pirate",
+"winch_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_pirate_2",
@@ -2331,7 +5387,22 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_pirate",
+"body_webber_pirate",
+"hand_webber_pirate",
+"feet_webber_pirate",
+"webber_beard_pirate",
+"wilson_pirate",
+"body_wilson_pirate",
+"legs_wilson_pirate",
+"wilson_beard_pirate",
+"waxwell_pirate",
+"body_waxwell_pirate",
+"legs_waxwell_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_pirate_3",
@@ -2342,7 +5413,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_pirate",
+"body_wendy_pirate",
+"feet_wendy_pirate",
+"legs_wendy_pirate",
+"abigail_pirate",
+"wx78_pirate",
+"body_wx78_pirate",
+"feet_wx78_pirate",
+"hand_wx78_pirate",
+"wickerbottom_pirate",
+"body_wickerbottom_pirate",
+"feet_wickerbottom_pirate",
+"hand_wickerbottom_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_pirate_all",
@@ -2353,6 +5440,46 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wathgrithr_pirate",
+"body_wathgrithr_pirate",
+"hand_wathgrithr_pirate",
+"legs_wathgrithr_pirate",
+"willow_pirate",
+"body_willow_pirate",
+"feet_willow_pirate",
+"hand_willow_pirate",
+"winona_pirate",
+"body_winona_pirate",
+"hand_winona_pirate",
+"legs_winona_pirate",
+"wortox_pirate",
+"body_wortox_pirate",
+"hand_wortox_pirate",
+"legs_wortox_pirate",
+"warly_pirate",
+"body_warly_pirate",
+"feet_warly_pirate",
+"legs_warly_pirate",
+"wes_pirate",
+"body_wes_pirate",
+"legs_wes_pirate",
+"wolfgang_pirate",
+"body_wolfgang_pirate",
+"feet_wolfgang_pirate",
+"woodie_pirate",
+"body_woodie_pirate",
+"hand_woodie_pirate",
+"legs_woodie_pirate",
+"wurt_pirate",
+"body_wurt_pirate",
+"hand_wurt_pirate",
+"legs_wurt_pirate"
+],
+"requires": [
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -2364,7 +5491,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_pirate",
+"body_warly_pirate",
+"feet_warly_pirate",
+"legs_warly_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_pirate_wathgrithr",
@@ -2375,7 +5509,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_pirate",
+"body_wathgrithr_pirate",
+"hand_wathgrithr_pirate",
+"legs_wathgrithr_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_pirate_wes",
@@ -2386,7 +5527,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_pirate",
+"body_wes_pirate",
+"legs_wes_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_pirate_willow",
@@ -2397,7 +5544,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_pirate",
+"body_willow_pirate",
+"feet_willow_pirate",
+"hand_willow_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_pirate_winona",
@@ -2408,7 +5562,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_pirate",
+"body_winona_pirate",
+"hand_winona_pirate",
+"legs_winona_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_pirate_wolfgang",
@@ -2419,7 +5580,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_pirate",
+"body_wolfgang_pirate",
+"feet_wolfgang_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_pirate_woodie",
@@ -2430,7 +5597,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_pirate",
+"body_woodie_pirate",
+"hand_woodie_pirate",
+"legs_woodie_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_pirate_wortox",
@@ -2441,6 +5615,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_pirate",
+"body_wortox_pirate",
+"hand_wortox_pirate",
+"legs_wortox_pirate"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -2452,6 +5635,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_pirate",
+"body_wurt_pirate",
+"hand_wurt_pirate",
+"legs_wurt_pirate"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -2463,7 +5655,22 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"amulet_blue_relic",
+"amulet_green_relic",
+"amulet_orange_relic",
+"amulet_purple_relic",
+"amulet_red_relic",
+"amulet_yellow_relic",
+"armor_skeleton_relic",
+"skeletonhat_relic",
+"starstaff_relic",
+"wall_dreadstone_relic",
+"townportal_relic",
+"nightmare_torch_relic"
+],
+"requires": []
 },
 {
 "game_ref": "pack_reliclostandfound_combo",
@@ -2474,7 +5681,52 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"amulet_blue_relic",
+"amulet_green_relic",
+"amulet_orange_relic",
+"amulet_purple_relic",
+"amulet_red_relic",
+"amulet_yellow_relic",
+"armor_skeleton_relic",
+"skeletonhat_relic",
+"starstaff_relic",
+"wall_dreadstone_relic",
+"townportal_relic",
+"nightmare_torch_relic",
+"sisturn_beachhouse",
+"sisturn_nest",
+"lucy_broadaxe",
+"lucy_chained",
+"lucy_picnic",
+"lucy_punk",
+"wx78_scanner_fancy",
+"wx78_scanner_junky",
+"spicepack_porcelain",
+"spicepack_rustic",
+"spicepack_silver",
+"spicepack_survivor",
+"portable_blender_porcelain",
+"portable_blender_rustic",
+"portable_blender_silver",
+"portable_blender_survivor",
+"portable_cook_pot_porcelain",
+"portable_cook_pot_rustic",
+"portable_cook_pot_silver",
+"portable_cook_pot_survivor",
+"portable_spicer_porcelain",
+"portable_spicer_rustic",
+"portable_spicer_silver",
+"portable_spicer_survivor",
+"slingshot_bandaged",
+"slingshot_nature",
+"slingshot_spiked",
+"slingshot_straws",
+"pupington_woby_baddog",
+"pupington_woby_ribbon"
+],
+"requires": []
 },
 {
 "game_ref": "pack_researchlab2_science_resurrected",
@@ -2485,7 +5737,11 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"researchlab2_science_resurrected"
+],
+"requires": []
 },
 {
 "game_ref": "pack_retro_items",
@@ -2496,18 +5752,28 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"lightning_rod_retro",
+"researchlab_retro",
+"lantern_retro"
+],
+"requires": []
 },
 {
 "game_ref": "pack_rog_gift",
 "slot": "pack",
 "name": "Don't Starve: Reign of Giants Gift",
 "rarity": "rare",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"firepit_stonehenge"
+],
+"requires": []
 },
 {
 "game_ref": "pack_rose_all",
@@ -2518,6 +5784,64 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"winona_rosep",
+"body_winona_rosep",
+"willow_rosep",
+"body_willow_rosep",
+"woodie_rosep",
+"body_woodie_rosep",
+"wurt_rose",
+"body_wurt_rose",
+"hand_wurt_rose",
+"legs_wurt_rose",
+"wendy_rosep",
+"body_wendy_rosep",
+"abigail_rose",
+"wormwood_rose",
+"body_wormwood_rose",
+"hand_wormwood_rose",
+"legs_wormwood_rose",
+"wathgrithr_rosep",
+"body_wathgrithr_rosep",
+"wes_rosep",
+"body_wes_rosep",
+"webber_rosep",
+"body_webber_rosep",
+"webber_beard_rose",
+"warly_rose",
+"body_warly_rose",
+"hand_warly_rose",
+"legs_warly_rose",
+"wolfgang_rosep",
+"body_wolfgang_rosep",
+"wx78_rosep",
+"body_wx78_rosep",
+"wilson_rosep",
+"body_wilson_rosep",
+"wilson_beard_rose",
+"wickerbottom_rosep",
+"body_wickerbottom_rosep",
+"waxwell_rosep",
+"body_waxwell_rosep",
+"wanda_rose",
+"body_wanda_rose",
+"hand_wanda_rose",
+"feet_wanda_rose",
+"wortox_rose",
+"body_wortox_rose",
+"legs_wortox_rose",
+"walter_rose",
+"body_walter_rose",
+"legs_walter_rose",
+"walterhat_rose"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -2529,6 +5853,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_rose",
+"body_wanda_rose",
+"hand_wanda_rose",
+"feet_wanda_rose",
+"wortox_rose",
+"body_wortox_rose",
+"legs_wortox_rose",
+"walter_rose",
+"body_walter_rose",
+"legs_walter_rose",
+"walterhat_rose"
+],
+"requires": [
+"wanda_none",
+"wortox_none"
 ]
 },
 {
@@ -2540,7 +5881,20 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"chair_stool_rose",
+"decor_centerpiece_rose",
+"decor_flowervase_rose",
+"decor_lamp_rose",
+"decor_phonograph_rose",
+"decor_pictureframe_rose",
+"decor_portraitframe_rose",
+"round_table_rose",
+"wood_chair_rose",
+"wood_table_rose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_rose_furnitureitems",
@@ -2551,7 +5905,28 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"axe_rose",
+"pitchfork_rose",
+"shovel_rose",
+"stone_chair_rose",
+"stonetable_square_rose",
+"wall_stone_rose",
+"fence_rose",
+"fence_gate_rose",
+"chair_stool_rose",
+"decor_centerpiece_rose",
+"decor_flowervase_rose",
+"decor_lamp_rose",
+"decor_phonograph_rose",
+"decor_pictureframe_rose",
+"decor_portraitframe_rose",
+"round_table_rose",
+"wood_chair_rose",
+"wood_table_rose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_rose_items",
@@ -2562,7 +5937,18 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"axe_rose",
+"pitchfork_rose",
+"shovel_rose",
+"stone_chair_rose",
+"stonetable_square_rose",
+"wall_stone_rose",
+"fence_rose",
+"fence_gate_rose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_rosepirate",
@@ -2573,6 +5959,35 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_rose",
+"body_wanda_rose",
+"hand_wanda_rose",
+"feet_wanda_rose",
+"wortox_rose",
+"body_wortox_rose",
+"legs_wortox_rose",
+"walter_rose",
+"body_walter_rose",
+"legs_walter_rose",
+"walterhat_rose",
+"webber_pirate",
+"body_webber_pirate",
+"hand_webber_pirate",
+"feet_webber_pirate",
+"webber_beard_pirate",
+"wilson_pirate",
+"body_wilson_pirate",
+"legs_wilson_pirate",
+"wilson_beard_pirate",
+"waxwell_pirate",
+"body_waxwell_pirate",
+"legs_waxwell_pirate"
+],
+"requires": [
+"wanda_none",
+"wortox_none"
 ]
 },
 {
@@ -2584,6 +5999,47 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"waxwell_western",
+"body_waxwell_western",
+"hand_waxwell_western",
+"legs_waxwell_western",
+"wolfgang_western",
+"body_wolfgang_western",
+"legs_wolfgang_western",
+"wurt_western",
+"body_wurt_western",
+"hand_wurt_western",
+"legs_wurt_western",
+"walter_20s",
+"body_walter_20s",
+"walterhat_20s",
+"winona_20s",
+"body_winona_20s",
+"hand_winona_20s",
+"feet_winona_20s",
+"axe_rose",
+"pitchfork_rose",
+"shovel_rose",
+"stone_chair_rose",
+"stonetable_square_rose",
+"wall_stone_rose",
+"fence_rose",
+"fence_gate_rose",
+"chair_stool_rose",
+"decor_centerpiece_rose",
+"decor_flowervase_rose",
+"decor_lamp_rose",
+"decor_phonograph_rose",
+"decor_pictureframe_rose",
+"decor_portraitframe_rose",
+"round_table_rose",
+"wood_chair_rose",
+"wood_table_rose"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -2595,7 +6051,17 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"chester_walrus",
+"perdling_pelican",
+"perdling_puffin",
+"seafaring_prototyper_lighthouse",
+"supertacklecontainer_shell",
+"tacklecontainer_shell",
+"tent_beach"
+],
+"requires": []
 },
 {
 "game_ref": "pack_shadow_all",
@@ -2606,6 +6072,65 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"winona_shadowp",
+"body_winona_shadowp",
+"willow_shadowp",
+"body_willow_shadowp",
+"woodie_shadowp",
+"body_woodie_shadowp",
+"wurt_shadow",
+"body_wurt_shadow",
+"hand_wurt_shadow",
+"legs_wurt_shadow",
+"wendy_shadowp",
+"body_wendy_shadowp",
+"wormwood_shadow",
+"abigail_shadow",
+"body_wormwood_shadow",
+"hand_wormwood_shadow",
+"legs_wormwood_shadow",
+"wathgrithr_shadowp",
+"body_wathgrithr_shadowp",
+"wes_shadowp",
+"body_wes_shadowp",
+"webber_shadowp",
+"body_webber_shadowp",
+"webber_beard_shadow",
+"wanda_shadow",
+"body_wanda_shadow",
+"hand_wanda_shadow",
+"legs_wanda_shadow",
+"wolfgang_shadowp",
+"body_wolfgang_shadowp",
+"wx78_shadowp",
+"body_wx78_shadowp",
+"wickerbottom_shadowp",
+"body_wickerbottom_shadowp",
+"waxwell_unshadowp",
+"body_waxwell_unshadowp",
+"wilson_shadowp",
+"body_wilson_shadowp",
+"wilson_beard_shadow",
+"wortox_shadow",
+"body_wortox_shadow",
+"hand_wortox_shadow",
+"legs_wortox_shadow",
+"walter_shadow",
+"body_walter_shadow",
+"legs_walter_shadow",
+"walterhat_shadow",
+"warly_shadow",
+"body_warly_shadow",
+"legs_warly_shadow",
+"feet_warly_shadow"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -2617,7 +6142,26 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_spring",
+"body_willow_spring",
+"feet_willow_spring",
+"waxwell_spring",
+"body_waxwell_spring",
+"wilson_spring",
+"wilson_beard_spring",
+"body_wilson_spring",
+"feet_wilson_spring",
+"winona_spring",
+"body_winona_spring",
+"hand_winona_spring",
+"webber_spring",
+"webber_beard_spring",
+"body_webber_spring",
+"legs_webber_spring"
+],
+"requires": []
 },
 {
 "game_ref": "pack_spring_bundle",
@@ -2628,7 +6172,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"bugnet_frog",
+"tent_leaf",
+"beehat_sunhat",
+"earmuffshat_beeguard",
+"coldfirepit_flower",
+"walrushat_blue",
+"icebox_porcelain",
+"researchlab3_nature",
+"featherhat_exotic",
+"backpack_koalefant",
+"krampus_sack_basket",
+"nightsword_curve",
+"armor_sanity_curve"
+],
+"requires": []
 },
 {
 "game_ref": "pack_springadventure_items",
@@ -2639,7 +6199,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"featherhat_exotic",
+"backpack_koalefant",
+"krampus_sack_basket",
+"nightsword_curve",
+"armor_sanity_curve"
+],
+"requires": []
 },
 {
 "game_ref": "pack_springoutdoors_items",
@@ -2650,7 +6218,18 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"bugnet_frog",
+"tent_leaf",
+"beehat_sunhat",
+"earmuffshat_beeguard",
+"coldfirepit_flower",
+"walrushat_blue",
+"icebox_porcelain",
+"researchlab3_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_starter_2019",
@@ -2661,7 +6240,35 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wurt_none",
+"wilson_gladiator",
+"wilson_beard_gladiator",
+"body_wilson_gladiator",
+"feet_wilson_gladiator",
+"hand_wilson_gladiator",
+"legs_wilson_gladiator",
+"willow_ice",
+"body_willow_ice",
+"feet_willow_ice",
+"hand_willow_ice",
+"wendy_victorian",
+"body_wendy_victorian",
+"hand_wendy_victorian",
+"feet_wendy_victorian",
+"abigail_victorian",
+"wx78_nature",
+"body_wx78_nature",
+"feet_wx78_nature",
+"hand_wx78_nature",
+"spear_simple",
+"backpack_hound",
+"body_pj_green_hunters",
+"legs_pj_green_hunters",
+"bedroll_furry_quilt_green_hunters"
+],
+"requires": []
 },
 {
 "game_ref": "pack_starter_2020",
@@ -2672,7 +6279,33 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wortox_none",
+"wilson_victorian",
+"wilson_beard_victorian",
+"body_wilson_victorian",
+"feet_wilson_victorian",
+"hand_wilson_victorian",
+"willow_formalp",
+"body_willow_formalp",
+"feet_formal_stilettop_black_scribble",
+"wathgrithr_nature",
+"body_wathgrithr_nature",
+"hand_wathgrithr_nature",
+"legs_wathgrithr_nature",
+"feet_wathgrithr_nature",
+"webber_wrestler",
+"webber_beard_wrestler",
+"body_webber_wrestler",
+"hand_webber_wrestler",
+"spear_ragged",
+"backpack_babybeef",
+"body_pj_red_redbird",
+"legs_pj_red_redbird",
+"bedroll_furry_quilt_red_redbird"
+],
+"requires": []
 },
 {
 "game_ref": "pack_starter_2021",
@@ -2683,7 +6316,33 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wanda_none",
+"wilson_ice",
+"wilson_beard_ice",
+"body_wilson_ice",
+"feet_wilson_ice",
+"hand_wilson_ice",
+"legs_wilson_ice",
+"willow_victorian",
+"body_willow_victorian",
+"hand_willow_victorian",
+"feet_willow_victorian",
+"walter_formal",
+"body_walter_formal",
+"feet_walter_formal",
+"legs_walter_formal",
+"walterhat_formal",
+"winona_rosep",
+"body_winona_rosep",
+"backpack_splumonkey",
+"torch_pronged",
+"body_pj_orange_honey",
+"legs_pj_orange_honey",
+"bedroll_furry_quilt_orange_honey"
+],
+"requires": []
 },
 {
 "game_ref": "pack_starter_2023",
@@ -2694,7 +6353,30 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wortox_none",
+"wilson_magma",
+"wilson_beard_magma",
+"body_wilson_magma",
+"hand_wilson_magma",
+"legs_wilson_magma",
+"wendy_formalp",
+"body_wendy_formalp",
+"feet_maryjanesp_white_pure",
+"abigail_formal",
+"wolfgang_pirate",
+"body_wolfgang_pirate",
+"feet_wolfgang_pirate",
+"wx78_shadowp",
+"body_wx78_shadowp",
+"researchlab_gothic",
+"lantern_gothic",
+"body_pj_blue_agean",
+"legs_pj_blue_agean",
+"bedroll_furry_quilt_blue_frost"
+],
+"requires": []
 },
 {
 "game_ref": "pack_starter_2024",
@@ -2705,7 +6387,34 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wurt_none",
+"wilson_nature",
+"wilson_beard_nature",
+"body_wilson_nature",
+"legs_wilson_nature",
+"willow_pirate",
+"body_willow_pirate",
+"feet_willow_pirate",
+"hand_willow_pirate",
+"wolfgang_gladiator",
+"body_wolfgang_gladiator",
+"feet_wolfgang_gladiator",
+"hand_wolfgang_gladiator",
+"legs_wolfgang_gladiator",
+"wx78_lunar",
+"body_wx78_lunar",
+"hand_wx78_lunar",
+"legs_wx78_lunar",
+"feet_wx78_lunar",
+"treasurechest_vintage",
+"chester_walrus",
+"body_pj_purple_mauve",
+"legs_pj_purple_mauve",
+"bedroll_furry_quilt_white_ivory"
+],
+"requires": []
 },
 {
 "game_ref": "pack_starter_2025",
@@ -2716,7 +6425,31 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wanda_none",
+"wilson_pirate",
+"body_wilson_pirate",
+"legs_wilson_pirate",
+"wilson_beard_pirate",
+"wendy_shadowp",
+"body_wendy_shadowp",
+"abigail_shadow",
+"winona_victorian",
+"body_winona_victorian",
+"hand_winona_victorian",
+"legs_winona_victorian",
+"waxwell_ice",
+"body_waxwell_ice",
+"hand_waxwell_ice",
+"legs_waxwell_ice",
+"firepit_fangedp",
+"backpack_catcoonp",
+"body_pj_grey",
+"legs_pj_grey",
+"bedroll_furry_quilt_grey"
+],
+"requires": []
 },
 {
 "game_ref": "pack_starter_2026",
@@ -2727,7 +6460,30 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wortox_none",
+"wilson_survivorp",
+"body_wilson_survivorp",
+"wilson_beard_survivor",
+"wendy_rosep",
+"body_wendy_rosep",
+"abigail_rose",
+"webber_boy",
+"body_webber_boy",
+"legs_webber_boy",
+"webber_beard_boy",
+"warly_ice",
+"body_warly_ice",
+"feet_warly_ice",
+"legs_warly_ice",
+"birdcage_curly",
+"cookpot_clay",
+"body_pj_polkadot",
+"legs_pj_polkadot",
+"bedroll_furry_quilt_red_polkadot"
+],
+"requires": []
 },
 {
 "game_ref": "pack_survivor",
@@ -2738,6 +6494,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"warly_survivor",
+"body_warly_survivor",
+"feet_warly_survivor",
+"wurt_survivor",
+"body_wurt_survivor",
+"hand_wurt_survivor",
+"legs_wurt_survivor",
+"wormwood_survivor",
+"body_wormwood_survivor",
+"hand_wormwood_survivor",
+"legs_wormwood_survivor"
+],
+"requires": [
+"wormwood_none",
+"wurt_none"
 ]
 },
 {
@@ -2749,6 +6522,59 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"warly_survivor",
+"body_warly_survivor",
+"feet_warly_survivor",
+"wurt_survivor",
+"body_wurt_survivor",
+"hand_wurt_survivor",
+"legs_wurt_survivor",
+"wormwood_survivor",
+"body_wormwood_survivor",
+"hand_wormwood_survivor",
+"legs_wormwood_survivor",
+"wathgrithr_survivorp",
+"body_wathgrithr_survivorp",
+"waxwell_survivorp",
+"body_waxwell_survivorp",
+"webber_survivorp",
+"body_webber_survivorp",
+"webber_beard_survivor",
+"wendy_survivorp",
+"body_wendy_survivorp",
+"abigail_survivor",
+"wes_survivorp",
+"body_wes_survivorp",
+"wickerbottom_survivorp",
+"body_wickerbottom_survivorp",
+"willow_survivorp",
+"body_willow_survivorp",
+"wilson_survivorp",
+"body_wilson_survivorp",
+"wilson_beard_survivor",
+"winona_survivorp",
+"body_winona_survivorp",
+"wolfgang_survivorp",
+"body_wolfgang_survivorp",
+"woodie_survivorp",
+"body_woodie_survivorp",
+"wx78_survivorp",
+"body_wx78_survivorp",
+"walter_survivor",
+"body_walter_survivor",
+"feet_walter_survivor",
+"walterhat_survivor",
+"wortox_survivor",
+"body_wortox_survivor",
+"hand_wortox_survivor",
+"legs_wortox_survivor"
+],
+"requires": [
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -2760,6 +6586,36 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"warly_survivor",
+"body_warly_survivor",
+"feet_warly_survivor",
+"wurt_survivor",
+"body_wurt_survivor",
+"hand_wurt_survivor",
+"legs_wurt_survivor",
+"wormwood_survivor",
+"body_wormwood_survivor",
+"hand_wormwood_survivor",
+"legs_wormwood_survivor",
+"wendy_pirate",
+"body_wendy_pirate",
+"feet_wendy_pirate",
+"legs_wendy_pirate",
+"abigail_pirate",
+"wx78_pirate",
+"body_wx78_pirate",
+"feet_wx78_pirate",
+"hand_wx78_pirate",
+"wickerbottom_pirate",
+"body_wickerbottom_pirate",
+"feet_wickerbottom_pirate",
+"hand_wickerbottom_pirate"
+],
+"requires": [
+"wormwood_none",
+"wurt_none"
 ]
 },
 {
@@ -2767,11 +6623,15 @@
 "slot": "pack",
 "name": "Don't Starve: Shipwrecked Gift",
 "rarity": "rare",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"birdcage_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_swamp_bundle",
@@ -2782,6 +6642,55 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"hutch_swamp",
+"mermhouse_crafted_swamp",
+"mermwatchtower_swamp",
+"panflute_swamp",
+"oar_driftwood_swamp",
+"oar_swamp",
+"rainometer_swamp",
+"sculptingtable_swamp",
+"siestahut_swamp",
+"starstaff_swamp",
+"bushhat_swamp",
+"hat_antlion_swamp",
+"hat_woodcarved_swamp",
+"nightstick_swamp",
+"torso_hawaiian_blue",
+"torso_hawaiian_red",
+"torso_hawaiian_eyeplant",
+"torso_hawaiian_palmtree1",
+"torso_hawaiian_palmtree2",
+"warly_survivor",
+"body_warly_survivor",
+"feet_warly_survivor",
+"wurt_survivor",
+"body_wurt_survivor",
+"hand_wurt_survivor",
+"legs_wurt_survivor",
+"wormwood_survivor",
+"body_wormwood_survivor",
+"hand_wormwood_survivor",
+"legs_wormwood_survivor",
+"wendy_pirate",
+"body_wendy_pirate",
+"feet_wendy_pirate",
+"legs_wendy_pirate",
+"abigail_pirate",
+"wx78_pirate",
+"body_wx78_pirate",
+"feet_wx78_pirate",
+"hand_wx78_pirate",
+"wickerbottom_pirate",
+"body_wickerbottom_pirate",
+"feet_wickerbottom_pirate",
+"hand_wickerbottom_pirate"
+],
+"requires": [
+"wormwood_none",
+"wurt_none"
 ]
 },
 {
@@ -2793,7 +6702,24 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"hutch_swamp",
+"mermhouse_crafted_swamp",
+"mermwatchtower_swamp",
+"panflute_swamp",
+"oar_driftwood_swamp",
+"oar_swamp",
+"rainometer_swamp",
+"sculptingtable_swamp",
+"siestahut_swamp",
+"starstaff_swamp",
+"bushhat_swamp",
+"hat_antlion_swamp",
+"hat_woodcarved_swamp",
+"nightstick_swamp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_swamphawaiian_items",
@@ -2804,7 +6730,29 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"hutch_swamp",
+"mermhouse_crafted_swamp",
+"mermwatchtower_swamp",
+"panflute_swamp",
+"oar_driftwood_swamp",
+"oar_swamp",
+"rainometer_swamp",
+"sculptingtable_swamp",
+"siestahut_swamp",
+"starstaff_swamp",
+"bushhat_swamp",
+"hat_antlion_swamp",
+"hat_woodcarved_swamp",
+"nightstick_swamp",
+"torso_hawaiian_blue",
+"torso_hawaiian_red",
+"torso_hawaiian_eyeplant",
+"torso_hawaiian_palmtree1",
+"torso_hawaiian_palmtree2"
+],
+"requires": []
 },
 {
 "game_ref": "pack_torso_hawaiian",
@@ -2815,7 +6763,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"torso_hawaiian_blue",
+"torso_hawaiian_red",
+"torso_hawaiian_eyeplant",
+"torso_hawaiian_palmtree1",
+"torso_hawaiian_palmtree2"
+],
+"requires": []
 },
 {
 "game_ref": "pack_valkyrie_items",
@@ -2826,7 +6782,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"spear_wathgrithr_valkyrie",
+"wathgrithrhat_valkyrie",
+"armor_marble_valkyrie"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_all",
@@ -2837,7 +6799,61 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_victorian",
+"waxwell_victorian",
+"webber_victorian",
+"webber_beard_victorian",
+"wendy_victorian",
+"abigail_victorian",
+"wes_victorian",
+"wickerbottom_victorian",
+"willow_victorian",
+"wilson_victorian",
+"wilson_beard_victorian",
+"wolfgang_victorian",
+"woodie_victorian",
+"wx78_victorian",
+"winona_victorian",
+"body_wathgrithr_victorian",
+"body_waxwell_victorian",
+"body_webber_victorian",
+"body_wendy_victorian",
+"body_wes_victorian",
+"body_wickerbottom_victorian",
+"body_willow_victorian",
+"body_wilson_victorian",
+"body_wolfgang_victorian",
+"body_woodie_victorian",
+"body_wx78_victorian",
+"body_winona_victorian",
+"hand_wathgrithr_victorian",
+"hand_waxwell_victorian",
+"hand_webber_victorian",
+"hand_wendy_victorian",
+"hand_wes_victorian",
+"hand_wickerbottom_victorian",
+"hand_willow_victorian",
+"hand_wilson_victorian",
+"hand_winona_victorian",
+"hand_wolfgang_victorian",
+"hand_woodie_victorian",
+"hand_wx78_victorian",
+"legs_winona_victorian",
+"legs_wathgrithr_victorian",
+"legs_waxwell_victorian",
+"legs_wolfgang_victorian",
+"legs_woodie_victorian",
+"legs_wx78_victorian",
+"feet_webber_victorian",
+"feet_willow_victorian",
+"feet_wilson_victorian",
+"feet_wendy_victorian",
+"feet_wickerbottom_victorian",
+"feet_wes_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_all2",
@@ -2848,6 +6864,33 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"warly_victorian",
+"body_warly_victorian",
+"feet_warly_victorian",
+"legs_warly_victorian",
+"wormwood_victorian",
+"body_wormwood_victorian",
+"hand_wormwood_victorian",
+"legs_wormwood_victorian",
+"wortox_victorian",
+"body_wortox_victorian",
+"legs_wortox_victorian",
+"hand_wortox_victorian",
+"wurt_victorian",
+"body_wurt_victorian",
+"hand_wurt_victorian",
+"legs_wurt_victorian",
+"walter_victorian",
+"body_walter_victorian",
+"legs_walter_victorian",
+"walterhat_victorian"
+],
+"requires": [
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -2859,7 +6902,68 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_victorian",
+"waxwell_victorian",
+"webber_victorian",
+"webber_beard_victorian",
+"wendy_victorian",
+"abigail_victorian",
+"wes_victorian",
+"wickerbottom_victorian",
+"willow_victorian",
+"wilson_victorian",
+"wilson_beard_victorian",
+"wolfgang_victorian",
+"woodie_victorian",
+"wx78_victorian",
+"winona_victorian",
+"body_wathgrithr_victorian",
+"body_waxwell_victorian",
+"body_webber_victorian",
+"body_wendy_victorian",
+"body_wes_victorian",
+"body_wickerbottom_victorian",
+"body_willow_victorian",
+"body_wilson_victorian",
+"body_wolfgang_victorian",
+"body_woodie_victorian",
+"body_wx78_victorian",
+"body_winona_victorian",
+"hand_wathgrithr_victorian",
+"hand_waxwell_victorian",
+"hand_webber_victorian",
+"hand_wendy_victorian",
+"hand_wes_victorian",
+"hand_wickerbottom_victorian",
+"hand_willow_victorian",
+"hand_wilson_victorian",
+"hand_winona_victorian",
+"hand_wolfgang_victorian",
+"hand_woodie_victorian",
+"hand_wx78_victorian",
+"legs_winona_victorian",
+"legs_wathgrithr_victorian",
+"legs_waxwell_victorian",
+"legs_wolfgang_victorian",
+"legs_woodie_victorian",
+"legs_wx78_victorian",
+"feet_webber_victorian",
+"feet_willow_victorian",
+"feet_wilson_victorian",
+"feet_wendy_victorian",
+"feet_wickerbottom_victorian",
+"feet_wes_victorian",
+"hambat_potroast",
+"cookpot_tureen",
+"icebox_victorian",
+"firepit_victorian",
+"cane_victorian",
+"axe_victorian",
+"shovel_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_bundle2",
@@ -2870,7 +6974,84 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_victorian",
+"waxwell_victorian",
+"webber_victorian",
+"webber_beard_victorian",
+"wendy_victorian",
+"abigail_victorian",
+"wes_victorian",
+"wickerbottom_victorian",
+"willow_victorian",
+"wilson_victorian",
+"wilson_beard_victorian",
+"wolfgang_victorian",
+"woodie_victorian",
+"wx78_victorian",
+"winona_victorian",
+"body_wathgrithr_victorian",
+"body_waxwell_victorian",
+"body_webber_victorian",
+"body_wendy_victorian",
+"body_wes_victorian",
+"body_wickerbottom_victorian",
+"body_willow_victorian",
+"body_wilson_victorian",
+"body_wolfgang_victorian",
+"body_woodie_victorian",
+"body_wx78_victorian",
+"body_winona_victorian",
+"hand_wathgrithr_victorian",
+"hand_waxwell_victorian",
+"hand_webber_victorian",
+"hand_wendy_victorian",
+"hand_wes_victorian",
+"hand_wickerbottom_victorian",
+"hand_willow_victorian",
+"hand_wilson_victorian",
+"hand_winona_victorian",
+"hand_wolfgang_victorian",
+"hand_woodie_victorian",
+"hand_wx78_victorian",
+"legs_winona_victorian",
+"legs_wathgrithr_victorian",
+"legs_waxwell_victorian",
+"legs_wolfgang_victorian",
+"legs_woodie_victorian",
+"legs_wx78_victorian",
+"feet_webber_victorian",
+"feet_willow_victorian",
+"feet_wilson_victorian",
+"feet_wendy_victorian",
+"feet_wickerbottom_victorian",
+"feet_wes_victorian",
+"hambat_potroast",
+"cookpot_tureen",
+"icebox_victorian",
+"firepit_victorian",
+"cane_victorian",
+"axe_victorian",
+"shovel_victorian",
+"beebox_victorian",
+"mushroom_light2_victorian",
+"pickaxe_victorian",
+"saltbox_victorian",
+"featherhat_victorian",
+"eyebrellahat_victorian",
+"meatrack_victorian",
+"fence_victorianblack",
+"fence_victorianbrass",
+"fence_victorianbronze",
+"fence_gate_victorianblack",
+"fence_gate_victorianbrass",
+"fence_gate_victorianbronze",
+"wall_moonrock_victorian",
+"wall_ruins_victorian",
+"wall_stone_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_bundle3",
@@ -2881,6 +7062,107 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wathgrithr_victorian",
+"waxwell_victorian",
+"webber_victorian",
+"webber_beard_victorian",
+"wendy_victorian",
+"abigail_victorian",
+"wes_victorian",
+"wickerbottom_victorian",
+"willow_victorian",
+"wilson_victorian",
+"wilson_beard_victorian",
+"wolfgang_victorian",
+"woodie_victorian",
+"wx78_victorian",
+"winona_victorian",
+"body_wathgrithr_victorian",
+"body_waxwell_victorian",
+"body_webber_victorian",
+"body_wendy_victorian",
+"body_wes_victorian",
+"body_wickerbottom_victorian",
+"body_willow_victorian",
+"body_wilson_victorian",
+"body_wolfgang_victorian",
+"body_woodie_victorian",
+"body_wx78_victorian",
+"body_winona_victorian",
+"hand_wathgrithr_victorian",
+"hand_waxwell_victorian",
+"hand_webber_victorian",
+"hand_wendy_victorian",
+"hand_wes_victorian",
+"hand_wickerbottom_victorian",
+"hand_willow_victorian",
+"hand_wilson_victorian",
+"hand_winona_victorian",
+"hand_wolfgang_victorian",
+"hand_woodie_victorian",
+"hand_wx78_victorian",
+"legs_winona_victorian",
+"legs_wathgrithr_victorian",
+"legs_waxwell_victorian",
+"legs_wolfgang_victorian",
+"legs_woodie_victorian",
+"legs_wx78_victorian",
+"feet_webber_victorian",
+"feet_willow_victorian",
+"feet_wilson_victorian",
+"feet_wendy_victorian",
+"feet_wickerbottom_victorian",
+"feet_wes_victorian",
+"hambat_potroast",
+"cookpot_tureen",
+"icebox_victorian",
+"firepit_victorian",
+"cane_victorian",
+"axe_victorian",
+"shovel_victorian",
+"beebox_victorian",
+"mushroom_light2_victorian",
+"pickaxe_victorian",
+"saltbox_victorian",
+"featherhat_victorian",
+"eyebrellahat_victorian",
+"meatrack_victorian",
+"fence_victorianblack",
+"fence_victorianbrass",
+"fence_victorianbronze",
+"fence_gate_victorianblack",
+"fence_gate_victorianbrass",
+"fence_gate_victorianbronze",
+"wall_moonrock_victorian",
+"wall_ruins_victorian",
+"wall_stone_victorian",
+"warly_victorian",
+"body_warly_victorian",
+"feet_warly_victorian",
+"legs_warly_victorian",
+"wormwood_victorian",
+"body_wormwood_victorian",
+"hand_wormwood_victorian",
+"legs_wormwood_victorian",
+"wortox_victorian",
+"body_wortox_victorian",
+"legs_wortox_victorian",
+"hand_wortox_victorian",
+"wurt_victorian",
+"body_wurt_victorian",
+"hand_wurt_victorian",
+"legs_wurt_victorian",
+"walter_victorian",
+"body_walter_victorian",
+"legs_walter_victorian",
+"walterhat_victorian"
+],
+"requires": [
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -2892,7 +7174,22 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"stonechair_stool_victorianblack",
+"stonechair_stool_victorianbrass",
+"stonechair_stool_victorianbronze",
+"stonetable_round_victorianblack",
+"stonetable_round_victorianbrass",
+"stonetable_round_victorianbronze",
+"stonetable_square_victorianblack",
+"stonetable_square_victorianbrass",
+"stonetable_square_victorianbronze",
+"stone_chair_victorianblack",
+"stone_chair_victorianbrass",
+"stone_chair_victorianbronze"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_items",
@@ -2903,7 +7200,17 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"hambat_potroast",
+"cookpot_tureen",
+"icebox_victorian",
+"firepit_victorian",
+"cane_victorian",
+"axe_victorian",
+"shovel_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_items2",
@@ -2914,7 +7221,26 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"beebox_victorian",
+"mushroom_light2_victorian",
+"pickaxe_victorian",
+"saltbox_victorian",
+"featherhat_victorian",
+"eyebrellahat_victorian",
+"meatrack_victorian",
+"fence_victorianblack",
+"fence_victorianbrass",
+"fence_victorianbronze",
+"fence_gate_victorianblack",
+"fence_gate_victorianbrass",
+"fence_gate_victorianbronze",
+"wall_moonrock_victorian",
+"wall_ruins_victorian",
+"wall_stone_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_walter",
@@ -2925,7 +7251,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_victorian",
+"body_walter_victorian",
+"legs_walter_victorian",
+"walterhat_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_wathgrithr",
@@ -2936,7 +7269,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_victorian",
+"body_wathgrithr_victorian",
+"hand_wathgrithr_victorian",
+"legs_wathgrithr_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_waxwell",
@@ -2947,7 +7287,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_victorian",
+"body_waxwell_victorian",
+"hand_waxwell_victorian",
+"legs_waxwell_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_webber",
@@ -2958,7 +7305,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_victorian",
+"webber_beard_victorian",
+"body_webber_victorian",
+"hand_webber_victorian",
+"feet_webber_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_wendy",
@@ -2969,7 +7324,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_victorian",
+"body_wendy_victorian",
+"hand_wendy_victorian",
+"feet_wendy_victorian",
+"abigail_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_wes",
@@ -2980,7 +7343,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_victorian",
+"body_wes_victorian",
+"hand_wes_victorian",
+"feet_wes_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_wickerbottom",
@@ -2991,7 +7361,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_victorian",
+"body_wickerbottom_victorian",
+"hand_wickerbottom_victorian",
+"feet_wickerbottom_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_willow",
@@ -3002,7 +7379,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_victorian",
+"body_willow_victorian",
+"hand_willow_victorian",
+"feet_willow_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_wilson",
@@ -3013,7 +7397,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_victorian",
+"wilson_beard_victorian",
+"body_wilson_victorian",
+"hand_wilson_victorian",
+"feet_wilson_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_winona",
@@ -3024,7 +7416,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_victorian",
+"body_winona_victorian",
+"hand_winona_victorian",
+"legs_winona_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_wolfgang",
@@ -3035,7 +7434,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_victorian",
+"body_wolfgang_victorian",
+"hand_wolfgang_victorian",
+"legs_wolfgang_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_woodie",
@@ -3046,7 +7452,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_victorian",
+"body_woodie_victorian",
+"hand_woodie_victorian",
+"legs_woodie_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_victorian_wormwood",
@@ -3057,6 +7470,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_victorian",
+"body_wormwood_victorian",
+"hand_wormwood_victorian",
+"legs_wormwood_victorian"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -3068,6 +7490,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_victorian",
+"body_wortox_victorian",
+"hand_wortox_victorian",
+"legs_wortox_victorian"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -3079,6 +7510,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_victorian",
+"body_wurt_victorian",
+"hand_wurt_victorian",
+"legs_wurt_victorian"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -3090,7 +7530,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_victorian",
+"body_wx78_victorian",
+"hand_wx78_victorian",
+"legs_wx78_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wagstaffboat_items",
@@ -3101,7 +7548,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"mast_malbatross_wagstaff",
+"boat_wagstaff",
+"steeringwheel_wagstaff"
+],
+"requires": []
 },
 {
 "game_ref": "pack_walter_ancient",
@@ -3112,7 +7565,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_ancient",
+"body_walter_ancient",
+"hand_walter_ancient",
+"legs_walter_ancient",
+"walterhat_ancient"
+],
+"requires": []
 },
 {
 "game_ref": "pack_walter_deluxe",
@@ -3123,7 +7584,24 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_formal",
+"body_walter_formal",
+"feet_walter_formal",
+"legs_walter_formal",
+"walterhat_formal",
+"walter_detective",
+"body_walter_detective",
+"feet_walter_detective",
+"legs_walter_detective",
+"walterhat_detective",
+"walter_survivor",
+"body_walter_survivor",
+"feet_walter_survivor",
+"walterhat_survivor"
+],
+"requires": []
 },
 {
 "game_ref": "pack_walter_detective",
@@ -3134,7 +7612,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_detective",
+"body_walter_detective",
+"feet_walter_detective",
+"legs_walter_detective",
+"walterhat_detective"
+],
+"requires": []
 },
 {
 "game_ref": "pack_walter_formal",
@@ -3145,7 +7631,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_formal",
+"body_walter_formal",
+"feet_walter_formal",
+"legs_walter_formal",
+"walterhat_formal"
+],
+"requires": []
 },
 {
 "game_ref": "pack_walter_rose",
@@ -3156,7 +7650,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_rose",
+"body_walter_rose",
+"legs_walter_rose",
+"walterhat_rose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_walter_shadow",
@@ -3167,7 +7668,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_shadow",
+"body_walter_shadow",
+"legs_walter_shadow",
+"walterhat_shadow"
+],
+"requires": []
 },
 {
 "game_ref": "pack_walter_survivor",
@@ -3178,7 +7686,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_survivor",
+"body_walter_survivor",
+"feet_walter_survivor",
+"walterhat_survivor"
+],
+"requires": []
 },
 {
 "game_ref": "pack_walter_yule",
@@ -3189,7 +7704,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_yule",
+"body_walter_yule",
+"legs_walter_yule",
+"feet_walter_yule",
+"walterhat_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wanda_deluxe",
@@ -3200,7 +7723,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wanda_none",
+"wanda_formal",
+"body_wanda_formal",
+"feet_wanda_formal",
+"hand_wanda_formal",
+"wanda_steampunk",
+"body_wanda_steampunk",
+"hand_wanda_steampunk",
+"legs_wanda_steampunk",
+"wanda_shadow",
+"body_wanda_shadow",
+"hand_wanda_shadow",
+"legs_wanda_shadow"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wanda_deluxealt",
@@ -3211,6 +7750,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_formal",
+"body_wanda_formal",
+"feet_wanda_formal",
+"hand_wanda_formal",
+"wanda_steampunk",
+"body_wanda_steampunk",
+"hand_wanda_steampunk",
+"legs_wanda_steampunk",
+"wanda_shadow",
+"body_wanda_shadow",
+"hand_wanda_shadow",
+"legs_wanda_shadow"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -3222,6 +7778,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_formal",
+"body_wanda_formal",
+"feet_wanda_formal",
+"hand_wanda_formal"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -3233,6 +7798,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_rose",
+"body_wanda_rose",
+"hand_wanda_rose",
+"feet_wanda_rose"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -3244,6 +7818,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_shadow",
+"body_wanda_shadow",
+"hand_wanda_shadow",
+"legs_wanda_shadow"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -3255,6 +7838,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_steampunk",
+"body_wanda_steampunk",
+"hand_wanda_steampunk",
+"legs_wanda_steampunk"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -3266,6 +7858,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_western",
+"body_wanda_western",
+"hand_wanda_western",
+"legs_wanda_western"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -3277,7 +7878,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"tophat_chef",
+"warly_chef",
+"body_warly_chef",
+"feet_warly_chef"
+],
+"requires": []
 },
 {
 "game_ref": "pack_warly_deluxe",
@@ -3288,7 +7896,22 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_rose",
+"warly_victorian",
+"warly_fisherman",
+"body_warly_rose",
+"hand_warly_rose",
+"legs_warly_rose",
+"body_warly_victorian",
+"feet_warly_victorian",
+"legs_warly_victorian",
+"body_warly_fisherman",
+"feet_warly_fisherman",
+"legs_warly_fisherman"
+],
+"requires": []
 },
 {
 "game_ref": "pack_warly_fisherman",
@@ -3299,7 +7922,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_fisherman",
+"body_warly_fisherman",
+"feet_warly_fisherman",
+"legs_warly_fisherman"
+],
+"requires": []
 },
 {
 "game_ref": "pack_warly_formal",
@@ -3310,7 +7940,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_formal",
+"body_warly_formal",
+"legs_warly_formal",
+"feet_warly_formal"
+],
+"requires": []
 },
 {
 "game_ref": "pack_warly_lunar",
@@ -3321,7 +7958,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_lunar",
+"body_warly_lunar",
+"hand_warly_lunar",
+"legs_warly_lunar",
+"feet_warly_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_warly_rose",
@@ -3332,7 +7977,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_rose",
+"body_warly_rose",
+"hand_warly_rose",
+"legs_warly_rose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_warly_shadow",
@@ -3343,7 +7995,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_shadow",
+"body_warly_shadow",
+"legs_warly_shadow",
+"feet_warly_shadow"
+],
+"requires": []
 },
 {
 "game_ref": "pack_warly_survivor",
@@ -3354,7 +8013,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_survivor",
+"body_warly_survivor",
+"feet_warly_survivor"
+],
+"requires": []
 },
 {
 "game_ref": "pack_warly_victorian",
@@ -3365,7 +8030,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_victorian",
+"body_warly_victorian",
+"feet_warly_victorian",
+"legs_warly_victorian"
+],
+"requires": []
 },
 {
 "game_ref": "pack_warly_yule",
@@ -3376,7 +8048,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"warly_yule",
+"body_warly_yule",
+"legs_warly_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wathgrithr_ancient",
@@ -3387,7 +8065,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_ancient",
+"body_wathgrithr_ancient",
+"feet_wathgrithr_ancient"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wathgrithr_deluxe",
@@ -3398,7 +8082,21 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_valkyrie",
+"body_wathgrithr_valkyrie",
+"legs_wathgrithr_valkyrie",
+"wathgrithr_formalp",
+"body_wathgrithr_formalp",
+"wathgrithr_survivorp",
+"body_wathgrithr_survivorp",
+"wathgrithr_shadowp",
+"body_wathgrithr_shadowp",
+"wathgrithr_rosep",
+"body_wathgrithr_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wathgrithr_deluxe2",
@@ -3409,7 +8107,24 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_valkyrie",
+"body_wathgrithr_valkyrie",
+"legs_wathgrithr_valkyrie",
+"wathgrithr_formalp",
+"body_wathgrithr_formalp",
+"wathgrithr_survivorp",
+"body_wathgrithr_survivorp",
+"wathgrithr_shadowp",
+"body_wathgrithr_shadowp",
+"wathgrithr_rosep",
+"body_wathgrithr_rosep",
+"spear_wathgrithr_valkyrie",
+"wathgrithrhat_valkyrie",
+"armor_marble_valkyrie"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wathgrithr_formal",
@@ -3420,7 +8135,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_formalp",
+"body_wathgrithr_formalp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wathgrithr_rose",
@@ -3431,7 +8151,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_rosep",
+"body_wathgrithr_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wathgrithr_shadow",
@@ -3442,7 +8167,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_shadowp",
+"body_wathgrithr_shadowp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wathgrithr_survivor",
@@ -3453,7 +8183,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_survivorp",
+"body_wathgrithr_survivorp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wathgrithr_valkyrie",
@@ -3464,7 +8199,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_valkyrie",
+"body_wathgrithr_valkyrie",
+"legs_wathgrithr_valkyrie"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wathgrithr_valkyrie2",
@@ -3475,7 +8216,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_valkyrie",
+"body_wathgrithr_valkyrie",
+"legs_wathgrithr_valkyrie",
+"spear_wathgrithr_valkyrie",
+"wathgrithrhat_valkyrie",
+"armor_marble_valkyrie"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wathgrithr_western",
@@ -3486,7 +8236,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_western",
+"body_wathgrithr_western",
+"legs_wathgrithr_western",
+"wathgrithrhat_western"
+],
+"requires": []
 },
 {
 "game_ref": "pack_waxwell_deluxe",
@@ -3497,7 +8254,25 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_wizard",
+"body_waxwell_wizard",
+"feet_waxwell_wizard",
+"hand_waxwell_wizard",
+"tophat_wizard",
+"waxwell_formalp",
+"body_waxwell_formalp",
+"feet_formal_winklepickerp_white_ivory",
+"hand_waxwell_formalp",
+"waxwell_survivorp",
+"body_waxwell_survivorp",
+"waxwell_unshadowp",
+"body_waxwell_unshadowp",
+"waxwell_rosep",
+"body_waxwell_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_waxwell_formal",
@@ -3508,7 +8283,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_formalp",
+"body_waxwell_formalp",
+"feet_formal_winklepickerp_white_ivory",
+"hand_waxwell_formalp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_waxwell_pirate",
@@ -3519,7 +8301,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_pirate",
+"body_waxwell_pirate",
+"legs_waxwell_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_waxwell_rose",
@@ -3530,7 +8318,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_rosep",
+"body_waxwell_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_waxwell_spring",
@@ -3541,7 +8334,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_spring",
+"body_waxwell_spring"
+],
+"requires": []
 },
 {
 "game_ref": "pack_waxwell_survivor",
@@ -3552,7 +8350,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_survivorp",
+"body_waxwell_survivorp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_waxwell_unshadow",
@@ -3563,7 +8366,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_unshadowp",
+"body_waxwell_unshadowp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_waxwell_wizard",
@@ -3574,7 +8382,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_wizard",
+"body_waxwell_wizard",
+"feet_waxwell_wizard",
+"hand_waxwell_wizard",
+"tophat_wizard"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wearables_item",
@@ -3585,7 +8401,18 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"hat_dreadstone_horn",
+"armor_dreadstone_horn",
+"reskin_tool_toilet",
+"molehat_tail",
+"tornado_stick_crow",
+"raincoat_poncho",
+"cowbell_round",
+"deserthat_fedora"
+],
+"requires": []
 },
 {
 "game_ref": "pack_webber_boy",
@@ -3596,7 +8423,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_boy",
+"body_webber_boy",
+"legs_webber_boy",
+"webber_beard_boy"
+],
+"requires": []
 },
 {
 "game_ref": "pack_webber_deluxe",
@@ -3607,7 +8441,26 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_boy",
+"body_webber_boy",
+"legs_webber_boy",
+"webber_beard_boy",
+"webber_formalp",
+"body_webber_formalp",
+"webber_beard_formal",
+"webber_survivorp",
+"body_webber_survivorp",
+"webber_beard_survivor",
+"webber_shadowp",
+"body_webber_shadowp",
+"webber_beard_shadow",
+"webber_rosep",
+"body_webber_rosep",
+"webber_beard_rose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_webber_formal",
@@ -3618,7 +8471,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_formalp",
+"body_webber_formalp",
+"webber_beard_formal"
+],
+"requires": []
 },
 {
 "game_ref": "pack_webber_masquerade",
@@ -3629,7 +8488,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_masquerade",
+"body_webber_masquerade",
+"feet_webber_masquerade",
+"webber_beard_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_webber_pirate",
@@ -3640,7 +8506,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_pirate",
+"body_webber_pirate",
+"hand_webber_pirate",
+"feet_webber_pirate",
+"webber_beard_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_webber_rose",
@@ -3651,7 +8525,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_rosep",
+"body_webber_rosep",
+"webber_beard_rose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_webber_shadow",
@@ -3662,7 +8542,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_shadowp",
+"body_webber_shadowp",
+"webber_beard_shadow"
+],
+"requires": []
 },
 {
 "game_ref": "pack_webber_spring",
@@ -3673,7 +8559,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_spring",
+"webber_beard_spring",
+"body_webber_spring",
+"legs_webber_spring"
+],
+"requires": []
 },
 {
 "game_ref": "pack_webber_survivor",
@@ -3684,7 +8577,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_survivorp",
+"body_webber_survivorp",
+"webber_beard_survivor"
+],
+"requires": []
 },
 {
 "game_ref": "pack_webber_yule",
@@ -3695,7 +8594,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_yule",
+"body_webber_yule",
+"webber_beard_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wendwaltwort_combo",
@@ -3706,6 +8611,66 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wendy_ancient",
+"body_wendy_ancient",
+"hand_wendy_ancient",
+"feet_wendy_ancient",
+"abigail_ancient",
+"walter_ancient",
+"body_walter_ancient",
+"hand_walter_ancient",
+"legs_walter_ancient",
+"walterhat_ancient",
+"wortox_ancient",
+"body_wortox_ancient",
+"legs_wortox_ancient",
+"amulet_blue_relic",
+"amulet_green_relic",
+"amulet_orange_relic",
+"amulet_purple_relic",
+"amulet_red_relic",
+"amulet_yellow_relic",
+"armor_skeleton_relic",
+"skeletonhat_relic",
+"starstaff_relic",
+"wall_dreadstone_relic",
+"townportal_relic",
+"nightmare_torch_relic",
+"sisturn_beachhouse",
+"sisturn_nest",
+"lucy_broadaxe",
+"lucy_chained",
+"lucy_picnic",
+"lucy_punk",
+"wx78_scanner_fancy",
+"wx78_scanner_junky",
+"spicepack_porcelain",
+"spicepack_rustic",
+"spicepack_silver",
+"spicepack_survivor",
+"portable_blender_porcelain",
+"portable_blender_rustic",
+"portable_blender_silver",
+"portable_blender_survivor",
+"portable_cook_pot_porcelain",
+"portable_cook_pot_rustic",
+"portable_cook_pot_silver",
+"portable_cook_pot_survivor",
+"portable_spicer_porcelain",
+"portable_spicer_rustic",
+"portable_spicer_silver",
+"portable_spicer_survivor",
+"slingshot_bandaged",
+"slingshot_nature",
+"slingshot_spiked",
+"slingshot_straws",
+"pupington_woby_baddog",
+"pupington_woby_ribbon"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -3717,7 +8682,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_ancient",
+"body_wendy_ancient",
+"hand_wendy_ancient",
+"feet_wendy_ancient",
+"abigail_ancient"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wendy_deluxe",
@@ -3728,7 +8701,28 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_formalp",
+"body_wendy_formalp",
+"feet_maryjanesp_white_pure",
+"abigail_formal",
+"wendy_survivorp",
+"body_wendy_survivorp",
+"abigail_survivor",
+"wendy_shadowp",
+"body_wendy_shadowp",
+"abigail_shadow",
+"wendy_rosep",
+"body_wendy_rosep",
+"abigail_rose",
+"wendy_handmedown",
+"body_wendy_handmedown",
+"feet_wendy_handmedown",
+"hand_wendy_handmedown",
+"abigail_handmedown"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wendy_formal",
@@ -3739,7 +8733,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_formalp",
+"body_wendy_formalp",
+"feet_maryjanesp_white_pure",
+"abigail_formal"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wendy_handmedown",
@@ -3750,7 +8751,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_handmedown",
+"body_wendy_handmedown",
+"feet_wendy_handmedown",
+"hand_wendy_handmedown",
+"abigail_handmedown"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wendy_masquerade",
@@ -3761,7 +8770,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_masquerade",
+"body_wendy_masquerade",
+"feet_wendy_masquerade",
+"abigail_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wendy_pirate",
@@ -3772,7 +8788,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_pirate",
+"body_wendy_pirate",
+"feet_wendy_pirate",
+"legs_wendy_pirate",
+"abigail_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wendy_rose",
@@ -3783,7 +8807,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_rosep",
+"body_wendy_rosep",
+"abigail_rose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wendy_shadow",
@@ -3794,7 +8824,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_shadowp",
+"body_wendy_shadowp",
+"abigail_shadow"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wendy_survivor",
@@ -3805,7 +8841,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_survivorp",
+"body_wendy_survivorp",
+"abigail_survivor"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wendy_yule",
@@ -3816,7 +8858,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wendy_yule",
+"body_wendy_yule",
+"hand_wendy_yule",
+"feet_wendy_yule",
+"abigail_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wes_deluxe",
@@ -3827,7 +8877,20 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_harlequin",
+"body_wes_harlequin",
+"wes_formalp",
+"body_wes_formalp",
+"wes_survivorp",
+"body_wes_survivorp",
+"wes_shadowp",
+"body_wes_shadowp",
+"wes_rosep",
+"body_wes_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wes_formal",
@@ -3838,7 +8901,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_formalp",
+"body_wes_formalp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wes_harlequin",
@@ -3849,7 +8917,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_harlequin",
+"body_wes_harlequin"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wes_lunar",
@@ -3860,7 +8933,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_lunar",
+"body_wes_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wes_rose",
@@ -3871,7 +8949,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_rosep",
+"body_wes_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wes_shadow",
@@ -3882,7 +8965,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_shadowp",
+"body_wes_shadowp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wes_survivor",
@@ -3893,7 +8981,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_survivorp",
+"body_wes_survivorp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wes_western",
@@ -3904,7 +8997,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_western",
+"body_wes_western",
+"hand_wes_western",
+"legs_wes_western",
+"feet_wes_western"
+],
+"requires": []
 },
 {
 "game_ref": "pack_western2_20s1",
@@ -3915,6 +9016,29 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"waxwell_western",
+"body_waxwell_western",
+"hand_waxwell_western",
+"legs_waxwell_western",
+"wolfgang_western",
+"body_wolfgang_western",
+"legs_wolfgang_western",
+"wurt_western",
+"body_wurt_western",
+"hand_wurt_western",
+"legs_wurt_western",
+"walter_20s",
+"body_walter_20s",
+"walterhat_20s",
+"winona_20s",
+"body_winona_20s",
+"hand_winona_20s",
+"feet_winona_20s"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -3926,6 +9050,24 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_western",
+"body_wanda_western",
+"hand_wanda_western",
+"legs_wanda_western",
+"wathgrithr_western",
+"body_wathgrithr_western",
+"legs_wathgrithr_western",
+"wathgrithrhat_western",
+"wes_western",
+"body_wes_western",
+"hand_wes_western",
+"legs_wes_western",
+"feet_wes_western"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -3937,7 +9079,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"footballhat_western",
+"raincoat_western",
+"winterhat_western",
+"tophat_western",
+"strawhat_western"
+],
+"requires": []
 },
 {
 "game_ref": "pack_western_1_mystical_items",
@@ -3948,7 +9098,33 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"footballhat_western",
+"raincoat_western",
+"winterhat_western",
+"tophat_western",
+"strawhat_western",
+"lunarplanthat_brave",
+"armor_lunarplant_brave",
+"lunarplanthat_knight",
+"armor_lunarplant_knight",
+"chester_mystical",
+"bushhat_mystical",
+"glasscutter_mystical",
+"lantern_mystical",
+"mushroom_farm_mystical",
+"siestahut_mystical",
+"winterometer_mystical",
+"beargerfursack_mystical",
+"telebase_mystical",
+"telestaff_mystical",
+"mermwatchtower_mystical",
+"mermhouse_crafted_mystical",
+"beefalohat_mystical",
+"bundle_mystical"
+],
+"requires": []
 },
 {
 "game_ref": "pack_western_2",
@@ -3959,6 +9135,22 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"waxwell_western",
+"body_waxwell_western",
+"hand_waxwell_western",
+"legs_waxwell_western",
+"wolfgang_western",
+"body_wolfgang_western",
+"legs_wolfgang_western",
+"wurt_western",
+"body_wurt_western",
+"hand_wurt_western",
+"legs_wurt_western"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -3970,7 +9162,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_ornate",
+"body_wickerbottom_ornate",
+"feet_wickerbottom_ornate",
+"hand_wickerbottom_ornate",
+"wickerbottom_formalp",
+"body_wickerbottom_formalp",
+"feet_formal_highheelp_white_pure",
+"wickerbottom_survivorp",
+"body_wickerbottom_survivorp",
+"wickerbottom_shadowp",
+"body_wickerbottom_shadowp",
+"wickerbottom_rosep",
+"body_wickerbottom_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wickerbottom_formal",
@@ -3981,7 +9189,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_formalp",
+"body_wickerbottom_formalp",
+"feet_formal_highheelp_white_pure"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wickerbottom_masquerade",
@@ -3992,7 +9206,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_masquerade",
+"body_wickerbottom_masquerade",
+"feet_wickerbottom_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wickerbottom_ornate",
@@ -4003,7 +9223,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_ornate",
+"body_wickerbottom_ornate",
+"feet_wickerbottom_ornate",
+"hand_wickerbottom_ornate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wickerbottom_pirate",
@@ -4014,7 +9241,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_pirate",
+"body_wickerbottom_pirate",
+"feet_wickerbottom_pirate",
+"hand_wickerbottom_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wickerbottom_rose",
@@ -4025,7 +9259,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_rosep",
+"body_wickerbottom_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wickerbottom_shadow",
@@ -4036,7 +9275,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_shadowp",
+"body_wickerbottom_shadowp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wickerbottom_survivor",
@@ -4047,7 +9291,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_survivorp",
+"body_wickerbottom_survivorp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_willow_ancient",
@@ -4058,7 +9307,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_ancient",
+"body_willow_ancient",
+"hand_willow_ancient",
+"feet_willow_ancient"
+],
+"requires": []
 },
 {
 "game_ref": "pack_willow_deluxe",
@@ -4069,7 +9325,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_haunteddoll",
+"body_willow_haunteddoll",
+"feet_willow_haunteddoll",
+"hand_willow_haunteddoll",
+"willow_formalp",
+"body_willow_formalp",
+"feet_formal_stilettop_black_scribble",
+"willow_survivorp",
+"body_willow_survivorp",
+"willow_shadowp",
+"body_willow_shadowp",
+"willow_rosep",
+"body_willow_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_willow_formal",
@@ -4080,7 +9352,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_formalp",
+"body_willow_formalp",
+"feet_formal_stilettop_black_scribble"
+],
+"requires": []
 },
 {
 "game_ref": "pack_willow_haunteddoll",
@@ -4091,7 +9369,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_haunteddoll",
+"body_willow_haunteddoll",
+"feet_willow_haunteddoll",
+"hand_willow_haunteddoll"
+],
+"requires": []
 },
 {
 "game_ref": "pack_willow_lunar",
@@ -4102,7 +9387,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_lunar",
+"body_willow_lunar",
+"hand_willow_lunar",
+"feet_willow_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_willow_rose",
@@ -4113,7 +9405,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_rosep",
+"body_willow_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_willow_shadow",
@@ -4124,7 +9421,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_shadowp",
+"body_willow_shadowp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_willow_spring",
@@ -4135,7 +9437,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_spring",
+"body_willow_spring",
+"feet_willow_spring"
+],
+"requires": []
 },
 {
 "game_ref": "pack_willow_survivor",
@@ -4146,7 +9454,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_survivorp",
+"body_willow_survivorp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wilson_barber",
@@ -4157,7 +9470,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_barber",
+"body_wilson_barber",
+"hand_wilson_barber",
+"legs_wilson_barber",
+"feet_wilson_barber",
+"wilson_beard_barber"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wilson_deluxe",
@@ -4168,7 +9490,30 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_barber",
+"body_wilson_barber",
+"hand_wilson_barber",
+"legs_wilson_barber",
+"feet_wilson_barber",
+"wilson_beard_barber",
+"wilson_formalp",
+"body_wilson_formalp",
+"hand_wilson_formalp",
+"feet_formal_lowheelp_black_scribble",
+"wilson_beard_formal",
+"wilson_survivorp",
+"body_wilson_survivorp",
+"wilson_beard_survivor",
+"wilson_shadowp",
+"body_wilson_shadowp",
+"wilson_beard_shadow",
+"wilson_rosep",
+"body_wilson_rosep",
+"wilson_beard_rose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wilson_formal",
@@ -4179,7 +9524,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_formalp",
+"body_wilson_formalp",
+"hand_wilson_formalp",
+"feet_formal_lowheelp_black_scribble",
+"wilson_beard_formal"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wilson_nature",
@@ -4190,7 +9543,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_nature",
+"wilson_beard_nature",
+"body_wilson_nature",
+"legs_wilson_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wilson_pirate",
@@ -4201,7 +9561,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_pirate",
+"body_wilson_pirate",
+"legs_wilson_pirate",
+"wilson_beard_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wilson_rose",
@@ -4212,7 +9579,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_rosep",
+"body_wilson_rosep",
+"wilson_beard_rose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wilson_shadow",
@@ -4223,7 +9596,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_shadowp",
+"body_wilson_shadowp",
+"wilson_beard_shadow"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wilson_spring",
@@ -4234,7 +9613,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_spring",
+"wilson_beard_spring",
+"body_wilson_spring",
+"feet_wilson_spring"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wilson_survivor",
@@ -4245,7 +9631,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_survivorp",
+"body_wilson_survivorp",
+"wilson_beard_survivor"
+],
+"requires": []
 },
 {
 "game_ref": "pack_winona_ancient",
@@ -4256,7 +9648,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_ancient",
+"body_winona_ancient"
+],
+"requires": []
 },
 {
 "game_ref": "pack_winona_deluxe",
@@ -4267,7 +9664,22 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_factory",
+"body_winona_factory",
+"feet_winona_factory",
+"hand_winona_factory",
+"winona_formalp",
+"body_winona_formalp",
+"winona_rosep",
+"body_winona_rosep",
+"winona_shadowp",
+"body_winona_shadowp",
+"winona_survivorp",
+"body_winona_survivorp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_winona_factory",
@@ -4278,7 +9690,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_factory",
+"body_winona_factory",
+"feet_winona_factory",
+"hand_winona_factory"
+],
+"requires": []
 },
 {
 "game_ref": "pack_winona_formal",
@@ -4289,7 +9708,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_formalp",
+"body_winona_formalp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_winona_masquerade",
@@ -4300,7 +9724,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_masquerade",
+"body_winona_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_winona_rose",
@@ -4311,7 +9740,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_rosep",
+"body_winona_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_winona_shadow",
@@ -4322,7 +9756,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_shadowp",
+"body_winona_shadowp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_winona_spring",
@@ -4333,7 +9772,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_spring",
+"body_winona_spring",
+"hand_winona_spring"
+],
+"requires": []
 },
 {
 "game_ref": "pack_winona_survivor",
@@ -4344,7 +9789,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_survivorp",
+"body_winona_survivorp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wizard_items",
@@ -4355,7 +9805,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"armor_sanity_wizard",
+"nightsword_wizard",
+"tophat_spiked"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wolfgang_deluxe",
@@ -4366,7 +9822,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_strongman",
+"body_wolfgang_strongman",
+"legs_wolfgang_strongman",
+"hand_wolfgang_strongman",
+"wolfgang_formalp",
+"body_wolfgang_formalp",
+"feet_ridingbootp_white_pure",
+"wolfgang_survivorp",
+"body_wolfgang_survivorp",
+"wolfgang_shadowp",
+"body_wolfgang_shadowp",
+"wolfgang_rosep",
+"body_wolfgang_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wolfgang_formal",
@@ -4377,7 +9849,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_formalp",
+"body_wolfgang_formalp",
+"feet_ridingbootp_white_pure"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wolfgang_nature",
@@ -4388,7 +9866,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_nature",
+"body_wolfgang_nature",
+"feet_wolfgang_nature"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wolfgang_rose",
@@ -4399,7 +9883,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_rosep",
+"body_wolfgang_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wolfgang_shadow",
@@ -4410,7 +9899,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_shadowp",
+"body_wolfgang_shadowp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wolfgang_strongman",
@@ -4421,7 +9915,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_strongman",
+"body_wolfgang_strongman",
+"legs_wolfgang_strongman",
+"hand_wolfgang_strongman"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wolfgang_survivor",
@@ -4432,7 +9933,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_survivorp",
+"body_wolfgang_survivorp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wolfgang_yule",
@@ -4443,7 +9949,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_yule",
+"body_wolfgang_yule",
+"legs_wolfgang_yule",
+"feet_wolfgang_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodie_deluxe",
@@ -4454,7 +9967,24 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_hockey",
+"body_woodie_hockey",
+"feet_woodie_hockey",
+"hand_woodie_hockey",
+"legs_woodie_hockey",
+"woodie_formalp",
+"body_woodie_formalp",
+"feet_fleece_bootp_brown_sepia",
+"woodie_survivorp",
+"body_woodie_survivorp",
+"woodie_shadowp",
+"body_woodie_shadowp",
+"woodie_rosep",
+"body_woodie_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodie_formal",
@@ -4465,7 +9995,13 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_formalp",
+"body_woodie_formalp",
+"feet_fleece_bootp_brown_sepia"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodie_hockey",
@@ -4476,7 +10012,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_hockey",
+"body_woodie_hockey",
+"feet_woodie_hockey",
+"legs_woodie_hockey",
+"hand_woodie_hockey"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodie_lunar",
@@ -4487,7 +10031,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_lunar",
+"body_woodie_lunar",
+"hand_woodie_lunar",
+"legs_woodie_lunar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodie_rose",
@@ -4498,7 +10049,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_rosep",
+"body_woodie_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodie_shadow",
@@ -4509,7 +10065,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_shadowp",
+"body_woodie_shadowp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodie_survivor",
@@ -4520,7 +10081,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_survivorp",
+"body_woodie_survivorp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodworking_cawnival",
@@ -4531,7 +10097,20 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"round_table_cawnival",
+"wood_table_cawnival",
+"chair_stool_cawnival",
+"wood_chair_cawnival",
+"decor_centerpiece_cawnival",
+"decor_flowervase_cawnival",
+"decor_lamp_cawnival",
+"decor_phonograph_cawnival",
+"decor_pictureframe_cawnival",
+"decor_portraitframe_cawnival"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodworking_fantasy",
@@ -4542,7 +10121,20 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"round_table_fantasy",
+"wood_table_fantasy",
+"chair_stool_fantasy",
+"wood_chair_fantasy",
+"decor_centerpiece_fantasy",
+"decor_flowervase_fantasy",
+"decor_lamp_fantasy",
+"decor_phonograph_fantasy",
+"decor_pictureframe_fantasy",
+"decor_portraitframe_fantasy"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodworking_hallowed",
@@ -4553,7 +10145,20 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"round_table_hallowed",
+"wood_table_hallowed",
+"chair_stool_hallowed",
+"wood_chair_hallowed",
+"decor_centerpiece_hallowed",
+"decor_flowervase_hallowed",
+"decor_lamp_hallowed",
+"decor_phonograph_hallowed",
+"decor_pictureframe_hallowed",
+"decor_portraitframe_hallowed"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodworking_handmade",
@@ -4564,7 +10169,20 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"round_table_handmade",
+"wood_table_handmade",
+"chair_stool_handmade",
+"wood_chair_handmade",
+"decor_centerpiece_handmade",
+"decor_flowervase_handmade",
+"decor_lamp_handmade",
+"decor_phonograph_handmade",
+"decor_pictureframe_handmade",
+"decor_portraitframe_handmade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_woodworking_western",
@@ -4575,7 +10193,20 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"round_table_western",
+"wood_table_western",
+"chair_stool_western",
+"wood_chair_western",
+"decor_centerpiece_western",
+"decor_flowervase_western",
+"decor_lamp_western",
+"decor_phonograph_western",
+"decor_pictureframe_western",
+"decor_portraitframe_western"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wormwood_cactus",
@@ -4586,6 +10217,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_cactus",
+"body_wormwood_cactus",
+"hand_wormwood_cactus",
+"legs_wormwood_cactus"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -4597,7 +10237,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wormwood_none",
+"wormwood_rose",
+"wormwood_cactus",
+"wormwood_mushroom",
+"body_wormwood_rose",
+"hand_wormwood_rose",
+"legs_wormwood_rose",
+"body_wormwood_cactus",
+"hand_wormwood_cactus",
+"legs_wormwood_cactus",
+"body_wormwood_mushroom",
+"hand_wormwood_mushroom",
+"legs_wormwood_mushroom"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wormwood_deluxealt",
@@ -4608,6 +10264,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_rose",
+"wormwood_cactus",
+"wormwood_mushroom",
+"body_wormwood_rose",
+"hand_wormwood_rose",
+"legs_wormwood_rose",
+"body_wormwood_cactus",
+"hand_wormwood_cactus",
+"legs_wormwood_cactus",
+"body_wormwood_mushroom",
+"hand_wormwood_mushroom",
+"legs_wormwood_mushroom"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -4619,6 +10292,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_formal",
+"hand_wormwood_formal",
+"body_wormwood_formal",
+"legs_wormwood_formal"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -4630,6 +10312,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_mushroom",
+"body_wormwood_mushroom",
+"hand_wormwood_mushroom",
+"legs_wormwood_mushroom"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -4641,6 +10332,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_rose",
+"body_wormwood_rose",
+"hand_wormwood_rose",
+"legs_wormwood_rose"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -4652,6 +10352,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_shadow",
+"body_wormwood_shadow",
+"hand_wormwood_shadow",
+"legs_wormwood_shadow"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -4663,6 +10372,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_survivor",
+"body_wormwood_survivor",
+"hand_wormwood_survivor",
+"legs_wormwood_survivor"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -4674,6 +10392,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_ancient",
+"body_wortox_ancient",
+"legs_wortox_ancient"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -4685,7 +10411,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wortox_none",
+"wortox_survivor",
+"body_wortox_survivor",
+"hand_wortox_survivor",
+"legs_wortox_survivor",
+"wortox_minotaur",
+"body_wortox_minotaur",
+"hand_wortox_minotaur",
+"legs_wortox_minotaur",
+"wortox_original",
+"body_wortox_original",
+"hand_wortox_original",
+"legs_wortox_original"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wortox_formal",
@@ -4696,6 +10438,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_formal",
+"body_wortox_formal",
+"legs_wortox_formal"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -4707,6 +10457,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_lunar",
+"body_wortox_lunar",
+"legs_wortox_lunar"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -4718,6 +10476,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_minotaur",
+"body_wortox_minotaur",
+"hand_wortox_minotaur",
+"legs_wortox_minotaur"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -4729,6 +10496,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_original",
+"body_wortox_original",
+"hand_wortox_original",
+"legs_wortox_original"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -4740,6 +10516,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_rose",
+"body_wortox_rose",
+"legs_wortox_rose"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -4751,6 +10535,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_shadow",
+"body_wortox_shadow",
+"hand_wortox_shadow",
+"legs_wortox_shadow"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -4762,6 +10555,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_yule",
+"body_wortox_yule",
+"legs_wortox_yule"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -4773,7 +10574,26 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_wrestler",
+"body_wathgrithr_wrestler",
+"hand_wathgrithr_wrestler",
+"feet_wathgrithr_wrestler",
+"wes_wrestler",
+"body_wes_wrestler",
+"hand_wes_wrestler",
+"wolfgang_wrestler",
+"body_wolfgang_wrestler",
+"hand_wolfgang_wrestler",
+"hammer_crowbar",
+"strawhat_cowboy",
+"umbrella_heart",
+"wardrobe_heart",
+"spear_wathgrithr_wrestle",
+"wathgrithrhat_wrestle"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wrestler_promo2",
@@ -4784,7 +10604,28 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_wrestler",
+"webber_beard_wrestler",
+"body_webber_wrestler",
+"hand_webber_wrestler",
+"boomerang_tiger",
+"trap_teeth_tiger",
+"winona_wrestler",
+"body_winona_wrestler",
+"hand_winona_wrestler",
+"legs_winona_wrestler",
+"trap_metal",
+"beemine_jamjar",
+"wx78_wrestler",
+"body_wx78_wrestler",
+"hand_wx78_wrestler",
+"feet_wx78_wrestler",
+"lightning_rod_robot",
+"firesuppressor_robot"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wrestler_wathgrithr",
@@ -4795,7 +10636,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_wrestler",
+"body_wathgrithr_wrestler",
+"hand_wathgrithr_wrestler",
+"feet_wathgrithr_wrestler",
+"spear_wathgrithr_wrestle",
+"wathgrithrhat_wrestle"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wrestler_webber",
@@ -4806,7 +10656,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"webber_wrestler",
+"webber_beard_wrestler",
+"body_webber_wrestler",
+"hand_webber_wrestler",
+"boomerang_tiger",
+"trap_teeth_tiger"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wrestler_wes",
@@ -4817,7 +10676,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_wrestler",
+"body_wes_wrestler",
+"hand_wes_wrestler",
+"umbrella_heart",
+"wardrobe_heart"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wrestler_winona",
@@ -4828,7 +10695,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_wrestler",
+"body_winona_wrestler",
+"hand_winona_wrestler",
+"legs_winona_wrestler",
+"trap_metal",
+"beemine_jamjar"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wrestler_wolfgang",
@@ -4839,7 +10715,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wolfgang_wrestler",
+"body_wolfgang_wrestler",
+"hand_wolfgang_wrestler",
+"hammer_crowbar",
+"strawhat_cowboy"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wrestler_wx78",
@@ -4850,7 +10734,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_wrestler",
+"body_wx78_wrestler",
+"hand_wx78_wrestler",
+"feet_wx78_wrestler",
+"lightning_rod_robot",
+"firesuppressor_robot"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wurt_ancient",
@@ -4861,6 +10754,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_ancient",
+"body_wurt_ancient",
+"hand_wurt_ancient",
+"legs_wurt_ancient"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -4872,6 +10774,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_cave",
+"body_wurt_cave",
+"hand_wurt_cave",
+"legs_wurt_cave"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -4883,7 +10794,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wurt_none",
+"wurt_formal",
+"body_wurt_formal",
+"hand_wurt_formal",
+"legs_wurt_formal",
+"wurt_shadow",
+"body_wurt_shadow",
+"hand_wurt_shadow",
+"legs_wurt_shadow",
+"wurt_cave",
+"body_wurt_cave",
+"hand_wurt_cave",
+"legs_wurt_cave"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wurt_deluxealt",
@@ -4894,6 +10821,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_formal",
+"body_wurt_formal",
+"hand_wurt_formal",
+"legs_wurt_formal",
+"wurt_shadow",
+"body_wurt_shadow",
+"hand_wurt_shadow",
+"legs_wurt_shadow",
+"wurt_cave",
+"body_wurt_cave",
+"hand_wurt_cave",
+"legs_wurt_cave"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -4905,6 +10849,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_formal",
+"body_wurt_formal",
+"hand_wurt_formal",
+"legs_wurt_formal"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -4916,6 +10869,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_lunar",
+"body_wurt_lunar",
+"hand_wurt_lunar",
+"legs_wurt_lunar"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -4927,6 +10889,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_rose",
+"body_wurt_rose",
+"hand_wurt_rose",
+"legs_wurt_rose"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -4938,6 +10909,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_shadow",
+"body_wurt_shadow",
+"hand_wurt_shadow",
+"legs_wurt_shadow"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -4949,6 +10929,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_survivor",
+"body_wurt_survivor",
+"hand_wurt_survivor",
+"legs_wurt_survivor"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -4960,7 +10949,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_ancient",
+"body_wx78_ancient",
+"feet_wx78_ancient",
+"hand_wx78_ancient"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wx78_deluxe",
@@ -4971,7 +10967,22 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_retro",
+"body_wx78_retro",
+"hand_wx78_retro",
+"legs_wx78_retro",
+"wx78_formalp",
+"body_wx78_formalp",
+"wx78_survivorp",
+"body_wx78_survivorp",
+"wx78_shadowp",
+"body_wx78_shadowp",
+"wx78_rosep",
+"body_wx78_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wx78_formal",
@@ -4982,7 +10993,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_formalp",
+"body_wx78_formalp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wx78_gothicjewel",
@@ -4993,7 +11009,20 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_moduleremover_gothic",
+"wx78_scanner_gothic",
+"wx78_dronedeliverysmall_gothic",
+"wx78_dronescout_gothic",
+"wx78_dronezapremote_gothic",
+"wx78_moduleremover_jewelbox",
+"wx78_scanner_jewelbox",
+"wx78_dronedeliverysmall_jewelbox",
+"wx78_dronescout_jewelbox",
+"wx78_dronezapremote_jewelbox"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wx78_gothicjewel_all",
@@ -5004,7 +11033,24 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_ancient",
+"body_wx78_ancient",
+"feet_wx78_ancient",
+"hand_wx78_ancient",
+"wx78_moduleremover_gothic",
+"wx78_scanner_gothic",
+"wx78_dronedeliverysmall_gothic",
+"wx78_dronescout_gothic",
+"wx78_dronezapremote_gothic",
+"wx78_moduleremover_jewelbox",
+"wx78_scanner_jewelbox",
+"wx78_dronedeliverysmall_jewelbox",
+"wx78_dronescout_jewelbox",
+"wx78_dronezapremote_jewelbox"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wx78_gothicjewel_shadowdrones",
@@ -5015,7 +11061,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_shadowdrone_harvester_gothic",
+"wx78_shadowdrone_debuffer_gothic",
+"wx78_shadowdrone_harvester_jewelbox",
+"wx78_shadowdrone_debuffer_jewelbox"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wx78_masquerade",
@@ -5026,7 +11079,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_masquerade",
+"body_wx78_masquerade",
+"legs_wx78_masquerade",
+"feet_wx78_masquerade"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wx78_pirate",
@@ -5037,7 +11097,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_pirate",
+"body_wx78_pirate",
+"feet_wx78_pirate",
+"hand_wx78_pirate"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wx78_retro",
@@ -5048,7 +11115,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_retro",
+"body_wx78_retro",
+"hand_wx78_retro",
+"legs_wx78_retro"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wx78_rose",
@@ -5059,7 +11133,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_rosep",
+"body_wx78_rosep"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wx78_shadow",
@@ -5070,7 +11149,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_shadowp",
+"body_wx78_shadowp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_wx78_survivor",
@@ -5081,7 +11165,12 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_survivorp",
+"body_wx78_survivorp"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yotc_builders",
@@ -5092,7 +11181,29 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"beebox_house",
+"researchlab3_ancient",
+"mushroom_light2_lily",
+"mushroom_light_tiffany",
+"meatrack_butcher",
+"birdcage_curly",
+"pighouse_cabin",
+"rabbithouse_carrat",
+"cookpot_clay",
+"dragonflyfurnace_antique",
+"fence_picketwhite",
+"fence_gate_picketwhite",
+"minisign_picketwhite",
+"fence_picketbrown",
+"fence_gate_picketbrown",
+"minisign_picketbrown",
+"fence_pickettan",
+"fence_gate_pickettan",
+"minisign_pickettan"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yotc_bundle",
@@ -5103,7 +11214,48 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"campfire_cabin",
+"armor_wood_roman",
+"spear_northern",
+"pickaxe_northern",
+"axe_northern",
+"shovel_northern",
+"backpack_carrat",
+"trap_basket",
+"spear_wathgrithr_northern",
+"featherfan_exotic",
+"nightsword_sharp",
+"armor_sanity_sharp",
+"cane_sharp",
+"ruinshat_arcane",
+"greenstaff_clockwork",
+"goldenaxe_northern",
+"goldenpickaxe_northern",
+"goldenshovel_northern",
+"piggyback_nose",
+"beebox_house",
+"researchlab3_ancient",
+"mushroom_light2_lily",
+"mushroom_light_tiffany",
+"meatrack_butcher",
+"birdcage_curly",
+"pighouse_cabin",
+"rabbithouse_carrat",
+"cookpot_clay",
+"dragonflyfurnace_antique",
+"fence_picketwhite",
+"fence_gate_picketwhite",
+"minisign_picketwhite",
+"fence_picketbrown",
+"fence_gate_picketbrown",
+"minisign_picketbrown",
+"fence_pickettan",
+"fence_gate_pickettan",
+"minisign_pickettan"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yotc_fledgling",
@@ -5114,7 +11266,19 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"campfire_cabin",
+"armor_wood_roman",
+"spear_northern",
+"pickaxe_northern",
+"axe_northern",
+"shovel_northern",
+"backpack_carrat",
+"trap_basket",
+"spear_wathgrithr_northern"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yotc_survivalist",
@@ -5125,7 +11289,20 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"featherfan_exotic",
+"nightsword_sharp",
+"armor_sanity_sharp",
+"cane_sharp",
+"ruinshat_arcane",
+"greenstaff_clockwork",
+"goldenaxe_northern",
+"goldenpickaxe_northern",
+"goldenshovel_northern",
+"piggyback_nose"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_all",
@@ -5136,7 +11313,36 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_yule",
+"waxwell_yule",
+"wes_yule",
+"winona_yule",
+"woodie_yule",
+"wx78_yule",
+"body_wathgrithr_yule",
+"body_waxwell_yule",
+"body_wes_yule",
+"body_winona_yule",
+"body_woodie_yule",
+"body_wx78_yule",
+"feet_wathgrithr_yule",
+"feet_wes_yule",
+"feet_wx78_yule",
+"hand_wathgrithr_yule",
+"hand_waxwell_yule",
+"hand_wes_yule",
+"hand_winona_yule",
+"hand_woodie_yule",
+"hand_wx78_yule",
+"legs_waxwell_yule",
+"legs_wes_yule",
+"legs_winona_yule",
+"legs_woodie_yule",
+"legs_wx78_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_all2",
@@ -5147,6 +11353,38 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"willow_yule",
+"body_willow_yule",
+"feet_willow_yule",
+"hand_willow_yule",
+"wormwood_yule",
+"body_wormwood_yule",
+"hand_wormwood_yule",
+"legs_wormwood_yule",
+"wurt_yule",
+"body_wurt_yule",
+"legs_wurt_yule",
+"wanda_yule",
+"body_wanda_yule",
+"hand_wanda_yule",
+"legs_wanda_yule",
+"wilson_yule",
+"wilson_beard_yule",
+"body_wilson_yule",
+"feet_wilson_yule",
+"hand_wilson_yule",
+"legs_wilson_yule",
+"wickerbottom_yule",
+"body_wickerbottom_yule",
+"legs_wickerbottom_yule",
+"feet_wickerbottom_yule"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wurt_none"
 ]
 },
 {
@@ -5158,7 +11396,23 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"walter_yule",
+"body_walter_yule",
+"legs_walter_yule",
+"feet_walter_yule",
+"walterhat_yule",
+"wendy_yule",
+"body_wendy_yule",
+"hand_wendy_yule",
+"feet_wendy_yule",
+"abigail_yule",
+"webber_yule",
+"body_webber_yule",
+"webber_beard_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_all4",
@@ -5169,6 +11423,21 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wortox_yule",
+"body_wortox_yule",
+"legs_wortox_yule",
+"warly_yule",
+"body_warly_yule",
+"legs_warly_yule",
+"wolfgang_yule",
+"body_wolfgang_yule",
+"legs_wolfgang_yule",
+"feet_wolfgang_yule"
+],
+"requires": [
+"wortox_none"
 ]
 },
 {
@@ -5180,7 +11449,41 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_yule",
+"waxwell_yule",
+"wes_yule",
+"winona_yule",
+"woodie_yule",
+"wx78_yule",
+"body_wathgrithr_yule",
+"body_waxwell_yule",
+"body_wes_yule",
+"body_winona_yule",
+"body_woodie_yule",
+"body_wx78_yule",
+"feet_wathgrithr_yule",
+"feet_wes_yule",
+"feet_wx78_yule",
+"hand_wathgrithr_yule",
+"hand_waxwell_yule",
+"hand_wes_yule",
+"hand_winona_yule",
+"hand_woodie_yule",
+"hand_wx78_yule",
+"legs_waxwell_yule",
+"legs_wes_yule",
+"legs_winona_yule",
+"legs_woodie_yule",
+"legs_wx78_yule",
+"fence_gingerbread",
+"fence_gate_gingerbread",
+"cane_candycane",
+"earmuffshat_deerclops",
+"mushroom_light_festive"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_bundle2",
@@ -5191,6 +11494,69 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wathgrithr_yule",
+"waxwell_yule",
+"wes_yule",
+"winona_yule",
+"woodie_yule",
+"wx78_yule",
+"body_wathgrithr_yule",
+"body_waxwell_yule",
+"body_wes_yule",
+"body_winona_yule",
+"body_woodie_yule",
+"body_wx78_yule",
+"feet_wathgrithr_yule",
+"feet_wes_yule",
+"feet_wx78_yule",
+"hand_wathgrithr_yule",
+"hand_waxwell_yule",
+"hand_wes_yule",
+"hand_winona_yule",
+"hand_woodie_yule",
+"hand_wx78_yule",
+"legs_waxwell_yule",
+"legs_wes_yule",
+"legs_winona_yule",
+"legs_woodie_yule",
+"legs_wx78_yule",
+"willow_yule",
+"body_willow_yule",
+"feet_willow_yule",
+"hand_willow_yule",
+"wormwood_yule",
+"body_wormwood_yule",
+"hand_wormwood_yule",
+"legs_wormwood_yule",
+"wurt_yule",
+"body_wurt_yule",
+"legs_wurt_yule",
+"wanda_yule",
+"body_wanda_yule",
+"hand_wanda_yule",
+"legs_wanda_yule",
+"wilson_yule",
+"wilson_beard_yule",
+"body_wilson_yule",
+"feet_wilson_yule",
+"hand_wilson_yule",
+"legs_wilson_yule",
+"wickerbottom_yule",
+"body_wickerbottom_yule",
+"legs_wickerbottom_yule",
+"feet_wickerbottom_yule",
+"fence_gingerbread",
+"fence_gate_gingerbread",
+"cane_candycane",
+"earmuffshat_deerclops",
+"mushroom_light_festive"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wurt_none"
 ]
 },
 {
@@ -5202,6 +11568,82 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wathgrithr_yule",
+"waxwell_yule",
+"wes_yule",
+"winona_yule",
+"woodie_yule",
+"wx78_yule",
+"body_wathgrithr_yule",
+"body_waxwell_yule",
+"body_wes_yule",
+"body_winona_yule",
+"body_woodie_yule",
+"body_wx78_yule",
+"feet_wathgrithr_yule",
+"feet_wes_yule",
+"feet_wx78_yule",
+"hand_wathgrithr_yule",
+"hand_waxwell_yule",
+"hand_wes_yule",
+"hand_winona_yule",
+"hand_woodie_yule",
+"hand_wx78_yule",
+"legs_waxwell_yule",
+"legs_wes_yule",
+"legs_winona_yule",
+"legs_woodie_yule",
+"legs_wx78_yule",
+"willow_yule",
+"body_willow_yule",
+"feet_willow_yule",
+"hand_willow_yule",
+"wormwood_yule",
+"body_wormwood_yule",
+"hand_wormwood_yule",
+"legs_wormwood_yule",
+"wurt_yule",
+"body_wurt_yule",
+"legs_wurt_yule",
+"wanda_yule",
+"body_wanda_yule",
+"hand_wanda_yule",
+"legs_wanda_yule",
+"wilson_yule",
+"wilson_beard_yule",
+"body_wilson_yule",
+"feet_wilson_yule",
+"hand_wilson_yule",
+"legs_wilson_yule",
+"wickerbottom_yule",
+"body_wickerbottom_yule",
+"legs_wickerbottom_yule",
+"feet_wickerbottom_yule",
+"walter_yule",
+"body_walter_yule",
+"legs_walter_yule",
+"feet_walter_yule",
+"walterhat_yule",
+"wendy_yule",
+"body_wendy_yule",
+"hand_wendy_yule",
+"feet_wendy_yule",
+"abigail_yule",
+"webber_yule",
+"body_webber_yule",
+"webber_beard_yule",
+"fence_gingerbread",
+"fence_gate_gingerbread",
+"cane_candycane",
+"earmuffshat_deerclops",
+"mushroom_light_festive"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wurt_none"
 ]
 },
 {
@@ -5213,6 +11655,93 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wathgrithr_yule",
+"waxwell_yule",
+"wes_yule",
+"winona_yule",
+"woodie_yule",
+"wx78_yule",
+"body_wathgrithr_yule",
+"body_waxwell_yule",
+"body_wes_yule",
+"body_winona_yule",
+"body_woodie_yule",
+"body_wx78_yule",
+"feet_wathgrithr_yule",
+"feet_wes_yule",
+"feet_wx78_yule",
+"hand_wathgrithr_yule",
+"hand_waxwell_yule",
+"hand_wes_yule",
+"hand_winona_yule",
+"hand_woodie_yule",
+"hand_wx78_yule",
+"legs_waxwell_yule",
+"legs_wes_yule",
+"legs_winona_yule",
+"legs_woodie_yule",
+"legs_wx78_yule",
+"willow_yule",
+"body_willow_yule",
+"feet_willow_yule",
+"hand_willow_yule",
+"wormwood_yule",
+"body_wormwood_yule",
+"hand_wormwood_yule",
+"legs_wormwood_yule",
+"wurt_yule",
+"body_wurt_yule",
+"legs_wurt_yule",
+"wanda_yule",
+"body_wanda_yule",
+"hand_wanda_yule",
+"legs_wanda_yule",
+"wilson_yule",
+"wilson_beard_yule",
+"body_wilson_yule",
+"feet_wilson_yule",
+"hand_wilson_yule",
+"legs_wilson_yule",
+"wickerbottom_yule",
+"body_wickerbottom_yule",
+"legs_wickerbottom_yule",
+"feet_wickerbottom_yule",
+"walter_yule",
+"body_walter_yule",
+"legs_walter_yule",
+"feet_walter_yule",
+"walterhat_yule",
+"wendy_yule",
+"body_wendy_yule",
+"hand_wendy_yule",
+"feet_wendy_yule",
+"abigail_yule",
+"webber_yule",
+"body_webber_yule",
+"webber_beard_yule",
+"wortox_yule",
+"body_wortox_yule",
+"legs_wortox_yule",
+"warly_yule",
+"body_warly_yule",
+"legs_warly_yule",
+"wolfgang_yule",
+"body_wolfgang_yule",
+"legs_wolfgang_yule",
+"feet_wolfgang_yule",
+"fence_gingerbread",
+"fence_gate_gingerbread",
+"cane_candycane",
+"earmuffshat_deerclops",
+"mushroom_light_festive"
+],
+"requires": [
+"wanda_none",
+"wormwood_none",
+"wortox_none",
+"wurt_none"
 ]
 },
 {
@@ -5224,7 +11753,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"fence_gingerbread",
+"fence_gate_gingerbread",
+"cane_candycane",
+"earmuffshat_deerclops",
+"mushroom_light_festive"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_wanda",
@@ -5235,6 +11772,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wanda_yule",
+"body_wanda_yule",
+"hand_wanda_yule",
+"legs_wanda_yule"
+],
+"requires": [
+"wanda_none"
 ]
 },
 {
@@ -5246,7 +11792,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wathgrithr_yule",
+"body_wathgrithr_yule",
+"feet_wathgrithr_yule",
+"hand_wathgrithr_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_waxwell",
@@ -5257,7 +11810,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"waxwell_yule",
+"body_waxwell_yule",
+"hand_waxwell_yule",
+"legs_waxwell_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_wes",
@@ -5268,7 +11828,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wes_yule",
+"body_wes_yule",
+"feet_wes_yule",
+"hand_wes_yule",
+"legs_wes_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_wickerbottom",
@@ -5279,7 +11847,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wickerbottom_yule",
+"body_wickerbottom_yule",
+"legs_wickerbottom_yule",
+"feet_wickerbottom_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_willow",
@@ -5290,7 +11865,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"willow_yule",
+"body_willow_yule",
+"feet_willow_yule",
+"hand_willow_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_wilson",
@@ -5301,7 +11883,16 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wilson_yule",
+"wilson_beard_yule",
+"body_wilson_yule",
+"feet_wilson_yule",
+"hand_wilson_yule",
+"legs_wilson_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_winona",
@@ -5312,7 +11903,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"winona_yule",
+"body_winona_yule",
+"hand_winona_yule",
+"legs_winona_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_woodie",
@@ -5323,7 +11921,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"woodie_yule",
+"body_woodie_yule",
+"hand_woodie_yule",
+"legs_woodie_yule"
+],
+"requires": []
 },
 {
 "game_ref": "pack_yule_wormwood",
@@ -5334,6 +11939,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wormwood_yule",
+"body_wormwood_yule",
+"hand_wormwood_yule",
+"legs_wormwood_yule"
+],
+"requires": [
+"wormwood_none"
 ]
 },
 {
@@ -5345,6 +11959,14 @@
 "deliverable": true,
 "platforms": [
 "switch"
+],
+"grants": [
+"wurt_yule",
+"body_wurt_yule",
+"legs_wurt_yule"
+],
+"requires": [
+"wurt_none"
 ]
 },
 {
@@ -5356,7 +11978,15 @@
 "deliverable": true,
 "platforms": [
 "switch"
-]
+],
+"grants": [
+"wx78_yule",
+"body_wx78_yule",
+"feet_wx78_yule",
+"hand_wx78_yule",
+"legs_wx78_yule"
+],
+"requires": []
 }
 ]
 }

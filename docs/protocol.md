@@ -386,6 +386,24 @@ rarity inside: 80 or 200 points), so both shops are one catalogue and one ledger
   `GetAllItems` lists the pack's items at once; a pack is not kept as an item.
 - Real money stays out: `PurchaseCreateAndComplete` and the eShop consumable list answer "nothing", `Barter*` and the rest are unanswered.
 
+## 4d. Which chests are sold, and the game's purchase rules (card #150, 2026-11-06)
+
+What Klei sold for money is the Shop's chests: the 493 `type = "purchase"` entries of `misc_items.lua`. Six give in-game currency (`output_klei_currency`,
+no OpenPak equivalent: points are the currency). Of the 487 that hand out items, **481 have a Shop picture** (`display_atlas`) and are sold; the other six
+(`pack_hl_gift`, `pack_oni_gift`, `pack_rog_gift`, `pack_sw_gift`, `pack_hamlet_wormwood`, `pack_boomerang_psn`, rarity `Loyal`) have none: they are gifts for owning
+another product and stay earned (origin `earned`, no price). Single skins are never sold alone: a character skin row (`wilson_formal`, `Heirloom*`, the woven `...p`
+variants) is either a chest's content or earned (Heirloom, Event, Loyal, Complimentary), so skin rows carry no price and the chest is what is listed.
+
+The one rule the game applies before a sale is `IsPackRestrictedDueToOwnership` (`skinsutils.lua`, used by `purchasepackscreen.lua`): a chest holding a base skin
+for a restricted character (`is_restricted`: Wanda, Wormwood, Wortox, Wurt) needs that character owned (`<name>_none`), unless the chest includes the character itself.
+The game only warns and lets a player continue; OpenPak refuses. 108 chests carry it. The generator writes it as `requires` and a chest's contents as `grants`;
+Rewards 0.27.0 enforces `requires` on every redeem (website, console shops, this Shop), and a chest that gives the character (`pack_character_*`, `pack_*_deluxe`,
+`pack_starter_*`) satisfies it. Re-buying a chest the player owns is refused (a points ledger holds one copy); the game would warn and allow it.
+
+Not sold, as in the game: drops (`Tick`), weaving with spools (`Swap`, `Barter*`), mystery boxes, event, loyalty and achievement items, and the starting defaults.
+Those calls are not answered (404) and the defaults need nothing from a server; items earned through OpenPak missions are granted in Rewards (origin `event`/`earned`,
+draft, never activatable for event items) and listed in `GetAllItems` like any owned item.
+
 ## 5. What is still unknown
 
 - **The join path.** A Switch host reached the lobby and kept its listing alive for five hours on

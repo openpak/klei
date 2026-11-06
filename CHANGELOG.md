@@ -1,5 +1,9 @@
 # Changelog — klei
 
+## v0.8.2 -- 2026-11-06
+
+- Card #150: every chest the game ever sold (481) is on sale in the Shop and the Rewards shops, under the game's own purchase rules. The generator writes `grants` and `requires` per chest, marks the six picture-less gift chests (Loyal) earned, and Heirloom skins earned; a test checks every chest expands to its contents. docs/protocol.md 4d.
+
 ## v0.8.1 -- 2026-11-05
 
 - Card #141: the in-game Shop sells for points. `GetPricingInfo` lists Rewards' packs as `IAPDefs` in `BOLTS`, `GetAllItems` carries `CurrencyMap.BOLTS` = the player's points, `PurchaseWithCurrency` buys through Rewards (insufficient points `E_BALANCE_MISMATCH`, price/unsellable `E_PRICE_MISMATCH`), and owning a pack lists its items (`cmd/kleid/packs.json` from the generator, 487 packs). docs/protocol.md 4c. Only with `KLEI_ITEMS=rewards`.

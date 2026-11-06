@@ -26,8 +26,8 @@ j = names_src.index("STRINGS.SKIN_DESCRIPTIONS =")
 names = dict(re.findall(r'^\s*([a-z0-9_]+)\s*=\s*"((?:[^"\\]|\\.)*)"', names_src[i:j], re.M))
 files = set(l.split()[-1] for l in open(tree, encoding="utf8", errors="replace") if l.startswith("File"))
 
-RARITY = {"HeirloomElegant": ("legendary", "store"), "HeirloomDistinguished": ("legendary", "store"),
-          "HeirloomSpiffy": ("legendary", "store"), "HeirloomClassy": ("legendary", "store"),
+RARITY = {"HeirloomElegant": ("legendary", "earned"), "HeirloomDistinguished": ("legendary", "earned"),
+          "HeirloomSpiffy": ("legendary", "earned"), "HeirloomClassy": ("legendary", "earned"),
           "Elegant": ("epic", "store"), "Distinguished": ("epic", "store"), "Spiffy": ("rare", "store"), "Classy": ("rare", "store"),
           "Complimentary": ("common", "promo"), "Common": ("common", "store"),
           "Event": ("event", "event"), "Loyal": ("event", "earned"), "Reward": ("event", "earned"),
@@ -66,6 +66,9 @@ for key, body in re.findall(r'CreatePrefabSkin\("([a-z0-9_]+)",\s*\{(.*?)\n\}\)\
 clothing = open(f"{scripts}/clothing.lua", encoding="utf8", errors="replace").read()
 build_of = {k: m.group(1) for k, b in re.findall(r'^\t([a-z0-9_]+) =\n\t\{(.*?)\n\t\},', clothing, re.M | re.S)
             for m in [re.search(r'build_name_override = "([a-z0-9_]+)"', b)] if m}
+restricted = {k for k, b in re.findall(r'CreatePrefabSkin\("([a-z0-9_]+)",\s*\{(.*?)\n\}\)\)', sk, re.S) if "is_restricted = true" in b}
+base_of = {k: m.group(1) for k, b in re.findall(r'CreatePrefabSkin\("([a-z0-9_]+)",\s*\{(.*?)\n\}\)\)', sk, re.S)
+           if re.search(r'\btype\s*=\s*"base"', b) for m in [re.search(r'base_prefab\s*=\s*"([a-z0-9_]+)"', b)] if m}
 ORDER = ["legendary", "epic", "rare", "common"]
 packs, pack_items = {}, []
 for key, body in re.findall(r'^\t(pack_[a-z0-9_]+) =\n\t\{(.*?)\n\t\},', misc, re.M | re.S):
@@ -85,8 +88,15 @@ for key, body in re.findall(r'^\t(pack_[a-z0-9_]+) =\n\t\{(.*?)\n\t\},', misc, r
 
     ok = all(skin_ok[o] if o in skin_ok else has_build(o) for o in outs if o in skin_ok or o.split("_")[0] in ("body", "hand", "legs", "feet"))
     packs[key] = outs
-    pack_items.append({"game_ref": key, "slot": "pack", "name": names.get(key) or key, "rarity": rarity, "origin": "store",
-                       "deliverable": ok, "platforms": ["switch"]})
+    # The game's own purchase rules (skinsutils.lua IsPackRestrictedDueToOwnership): a chest with a base skin of a restricted
+    # character (is_restricted: Wanda, Wormwood, Wortox, Wurt) needs that character owned, unless the chest includes the character.
+    included = {base_of[o] for o in outs if o in restricted}
+    needs = sorted({base_of[o] + "_none" for o in outs if o in base_of and base_of[o] not in included and base_of[o] + "_none" in restricted})
+    # Sold for money = shown in the in-game Shop (display_atlas). A chest with no shop picture is a gift for owning another
+    # product (rarity Loyal: Hot Lava, Oxygen Not Included, Reign of Giants, Shipwrecked, Hamlet, PSN): earned, never sold here.
+    sold = 'display_atlas' in body
+    pack_items.append({"game_ref": key, "slot": "pack", "name": names.get(key) or key, "rarity": rarity, "origin": "store" if sold else "earned",
+                       "deliverable": ok, "platforms": ["switch"], "grants": outs, "requires": needs})
 pack_items.sort(key=lambda x: x["game_ref"])
 json.dump({"catalog_rev": "dst-1.29.0", "items": out}, open(f"{outdir}/dst-import.json", "w"), indent=0)
 json.dump({"catalog_rev": "dst-1.29.0", "items": pack_items}, open(f"{outdir}/dst-packs-import.json", "w"), indent=0)

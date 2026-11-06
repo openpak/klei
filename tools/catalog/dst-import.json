@@ -94,7 +94,7 @@
 "slot": "skin",
 "name": "Walter: Buzzy Boy Head",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -259,7 +259,7 @@
 "slot": "skin",
 "name": "Wanda: Wandashop Bulb",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -424,7 +424,7 @@
 "slot": "skin",
 "name": "Warly: Warrat Head",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -644,7 +644,7 @@
 "slot": "skin",
 "name": "Wathgrithr: Deerfrid Mask",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -666,7 +666,7 @@
 "slot": "skin",
 "name": "Wathgrithr: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -776,7 +776,7 @@
 "slot": "skin",
 "name": "Wathgrithr: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -809,7 +809,7 @@
 "slot": "skin",
 "name": "Wathgrithr: The Triumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -831,7 +831,7 @@
 "slot": "skin",
 "name": "Wathgrithr: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -930,7 +930,7 @@
 "slot": "skin",
 "name": "Waxwell: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -996,7 +996,7 @@
 "slot": "skin",
 "name": "Waxwell: Krampwell Head",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1073,7 +1073,7 @@
 "slot": "skin",
 "name": "Waxwell: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1106,7 +1106,7 @@
 "slot": "skin",
 "name": "Waxwell: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1128,7 +1128,7 @@
 "slot": "skin",
 "name": "Waxwell: The Untriumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1216,7 +1216,7 @@
 "slot": "skin",
 "name": "Webber: Webilisk Head",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1271,7 +1271,7 @@
 "slot": "skin",
 "name": "Webber: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1392,7 +1392,7 @@
 "slot": "skin",
 "name": "Webber: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1414,7 +1414,7 @@
 "slot": "skin",
 "name": "Webber: The Triumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1447,7 +1447,7 @@
 "slot": "skin",
 "name": "Webber: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1546,7 +1546,7 @@
 "slot": "skin",
 "name": "Wendy: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1634,7 +1634,7 @@
 "slot": "skin",
 "name": "Wendy: Wendyflower Head",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1700,7 +1700,7 @@
 "slot": "skin",
 "name": "Wendy: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1722,7 +1722,7 @@
 "slot": "skin",
 "name": "Wendy: The Triumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1744,7 +1744,7 @@
 "slot": "skin",
 "name": "Wendy: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1821,7 +1821,7 @@
 "slot": "skin",
 "name": "Wes: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1920,7 +1920,7 @@
 "slot": "skin",
 "name": "Wes: Wesdrake Makeup",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1975,7 +1975,7 @@
 "slot": "skin",
 "name": "Wes: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -1997,7 +1997,7 @@
 "slot": "skin",
 "name": "Wes: The Triumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2019,7 +2019,7 @@
 "slot": "skin",
 "name": "Wes: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2107,7 +2107,7 @@
 "slot": "skin",
 "name": "Wickerbottom: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2173,7 +2173,7 @@
 "slot": "skin",
 "name": "Wickerbottom: Ms. Voltbottom Antlers",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2261,7 +2261,7 @@
 "slot": "skin",
 "name": "Wickerbottom: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2283,7 +2283,7 @@
 "slot": "skin",
 "name": "Wickerbottom: The Triumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2316,7 +2316,7 @@
 "slot": "skin",
 "name": "Wickerbottom: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2415,7 +2415,7 @@
 "slot": "skin",
 "name": "Willow: Willowfly Head",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2437,7 +2437,7 @@
 "slot": "skin",
 "name": "Willow: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2558,7 +2558,7 @@
 "slot": "skin",
 "name": "Willow: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2580,7 +2580,7 @@
 "slot": "skin",
 "name": "Willow: The Triumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2613,7 +2613,7 @@
 "slot": "skin",
 "name": "Willow: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2690,7 +2690,7 @@
 "slot": "skin",
 "name": "Wilson: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2811,7 +2811,7 @@
 "slot": "skin",
 "name": "Wilson: Piggsbury Mask",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2844,7 +2844,7 @@
 "slot": "skin",
 "name": "Wilson: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2866,7 +2866,7 @@
 "slot": "skin",
 "name": "Wilson: The Triumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2899,7 +2899,7 @@
 "slot": "skin",
 "name": "Wilson: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -2998,7 +2998,7 @@
 "slot": "skin",
 "name": "Winona: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3053,7 +3053,7 @@
 "slot": "skin",
 "name": "Winona: Nona Gekko Head",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3152,7 +3152,7 @@
 "slot": "skin",
 "name": "Winona: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3174,7 +3174,7 @@
 "slot": "skin",
 "name": "Winona: The Triumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3207,7 +3207,7 @@
 "slot": "skin",
 "name": "Winona: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3295,7 +3295,7 @@
 "slot": "skin",
 "name": "Wolfgang: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3394,7 +3394,7 @@
 "slot": "skin",
 "name": "Wolfgang: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3416,7 +3416,7 @@
 "slot": "skin",
 "name": "Wolfgang: The Triumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3449,7 +3449,7 @@
 "slot": "skin",
 "name": "Wolfgang: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3493,7 +3493,7 @@
 "slot": "skin",
 "name": "Wolfgang: MacWolf Bald Cap",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3592,7 +3592,7 @@
 "slot": "skin",
 "name": "Woodie: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3724,7 +3724,7 @@
 "slot": "skin",
 "name": "Woodie: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3746,7 +3746,7 @@
 "slot": "skin",
 "name": "Woodie: The Triumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3768,7 +3768,7 @@
 "slot": "skin",
 "name": "Woodie: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3801,7 +3801,7 @@
 "slot": "skin",
 "name": "Woodie: Woodguard Head",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -3966,7 +3966,7 @@
 "slot": "skin",
 "name": "Wormwood: Wormander Head",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -4142,7 +4142,7 @@
 "slot": "skin",
 "name": "Wortox: No-Eyed Deertox Antlers",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -4395,7 +4395,7 @@
 "slot": "skin",
 "name": "Wurt: Wurtstool Cap",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -4483,7 +4483,7 @@
 "slot": "skin",
 "name": "Wx78: Guest of Honor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -4615,7 +4615,7 @@
 "slot": "skin",
 "name": "Wx78: Rookiebot Headplate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -4637,7 +4637,7 @@
 "slot": "skin",
 "name": "Wx78: The Roseate",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -4659,7 +4659,7 @@
 "slot": "skin",
 "name": "Wx78: The Triumphant",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"
@@ -4681,7 +4681,7 @@
 "slot": "skin",
 "name": "Wx78: The Survivor",
 "rarity": "legendary",
-"origin": "store",
+"origin": "earned",
 "deliverable": true,
 "platforms": [
 "switch"

@@ -243,3 +243,29 @@ func TestShopSellsRewardsPacksForPoints(t *testing.T) {
 		t.Fatalf("probe mode purchase: %d", w.Code)
 	}
 }
+
+// Buying any chest the catalogue sells gives exactly what the game's own data says it contains (packs.json is generated
+// from misc_items.lua, tools/catalog/gen_catalog.py): no chest is empty and none expands to something else.
+func TestEveryChestExpandsToItsContents(t *testing.T) {
+	if len(packContents) < 480 {
+		t.Fatalf("only %d chests", len(packContents))
+	}
+	for pack, want := range packContents {
+		if len(want) == 0 {
+			t.Fatalf("%s gives nothing", pack)
+		}
+		got := expand([]string{pack})
+		seen := map[string]bool{}
+		for _, g := range got {
+			seen[g] = true
+		}
+		for _, w := range want {
+			if !seen[w] {
+				t.Fatalf("%s: %s not delivered", pack, w)
+			}
+		}
+		if seen[pack] {
+			t.Fatalf("%s is kept as an item", pack)
+		}
+	}
+}
